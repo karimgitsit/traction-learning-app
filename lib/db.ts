@@ -46,12 +46,19 @@ export interface SessionRow {
   itemsReviewed: number;
 }
 
+export interface ChapterCompletionRow {
+  id: string;             // chapterId (one row per chapter)
+  chapterId: string;
+  completedAt: number;
+}
+
 export class TractionDB extends Dexie {
   fsrsCards!: Table<FsrsCardRow, string>;
   scenarioAttempts!: Table<ScenarioAttemptRow, string>;
   teachbackAttempts!: Table<TeachbackAttemptRow, string>;
   journalEntries!: Table<JournalEntryRow, string>;
   sessions!: Table<SessionRow, string>;
+  chapterCompletions!: Table<ChapterCompletionRow, string>;
 
   constructor() {
     super("traction");
@@ -61,6 +68,9 @@ export class TractionDB extends Dexie {
       teachbackAttempts: "id, conceptId, attemptedAt",
       journalEntries: "id, sessionId, createdAt",
       sessions: "id, startedAt",
+    });
+    this.version(2).stores({
+      chapterCompletions: "id, chapterId, completedAt",
     });
   }
 }

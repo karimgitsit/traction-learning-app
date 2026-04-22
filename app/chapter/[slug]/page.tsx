@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getChapter } from "@/lib/content";
+import ChapterCompleteButton from "./ChapterCompleteButton";
 
 interface Params {
   slug: string;
@@ -33,13 +34,14 @@ export default async function ChapterDetail({
         <p className="text-[14px] text-[var(--muted)] leading-relaxed max-w-prose">
           {chapter.summary}
         </p>
-        <div className="mt-4">
+        <div className="mt-4 flex flex-wrap items-center gap-3">
           <Link
             href={`/study?chapter=${chapter.slug}`}
             className="inline-block text-[13px] px-4 py-2 rounded bg-[var(--accent)] text-white hover:opacity-90"
           >
             Start study session
           </Link>
+          <ChapterCompleteButton chapterId={chapter.id} />
         </div>
       </header>
 
