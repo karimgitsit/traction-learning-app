@@ -1,0 +1,593 @@
+{
+  "id": "ch17",
+  "number": 17,
+  "slug": "business-development",
+  "title": "Business Development (BD)",
+  "summary": "Business development as a traction channel uses structured partnerships with other companies — integrations, joint ventures, co-marketing, licensing — where their distribution plus your product creates mutual value that neither side could produce alone.",
+  "concepts": [
+    {
+      "id": "ch17-bd-definition",
+      "chapterId": "ch17",
+      "title": "Business Development — the Definition",
+      "isLandmark": true,
+      "order": 1,
+      "pretest": {
+        "prompt": "Sales sells to end customers one at a time. Business development is often confused with sales but is structurally different. Before reading: what's the core distinction, and what does 'BD as a traction channel' specifically exclude that people commonly lump in?",
+        "modelAnswer": "Sales targets individual end-customers directly — one founder, one SDR, one AE, one meeting at a time. BD targets entities (other companies, platforms, large organizations) whose existing distribution can expose you to many end-customers at once through a structured partnership. A single BD deal with Shopify's app store exposes you to 2M merchants; that's not replicable through sales. BD-as-a-traction-channel excludes: (a) ad-hoc informal collaborations ('let's do a joint Tweet'), (b) customer development / user research (talking to prospects to learn what they need), (c) sales enablement deals (sharing leads with a complementary company once — that's affiliate or partner marketing), (d) strategic partnerships motivated purely by optics with no distribution outcome. BD is specifically: deliberate, mutual-value partnerships with structured distribution outcomes."
+      },
+      "lesson": {
+        "markdown": "## The definition\n\nBusiness development as a traction channel is the practice of **making structured deals with other companies where your product + their distribution creates mutual value that neither side could produce alone.** Three words in that sentence are load-bearing:\n\n- **Structured.** BD produces written agreements with defined deliverables, not 'let's see where this goes' conversations. Ambiguity is where BD deals die.\n- **Mutual.** Both sides get something they can't easily replicate. One-sided deals produce incentive decay within weeks and usually fail.\n- **Distribution.** The *point* of BD is getting your product in front of customers you couldn't reach directly. If a partnership doesn't move distribution, it's not a BD channel — it might be a good thing, but it's not traction.\n\n## Why one BD deal can equal 1,000 sales calls\n\nThe leverage comes from distribution asymmetry. A sales team reaches one prospect per conversation. A BD partnership with a company that has 100,000 relevant customers — and an established channel to those customers — reaches all of them in one integration announcement. Even if only 1% convert, that's 1,000 customers from one deal.\n\nThe math only works when the partner's distribution is:\n1. **Aligned** — their customers match your ICP.\n2. **Active** — the partner actually uses the distribution mechanism for partners (not just 'lists you in their directory').\n3. **Compatible** — your product integrates with or extends the partner's product in a way that makes sense to their users.\n\nWhen all three hold, BD is the most leveraged channel in the book. When any fails, BD is the slowest and most-expensive-to-execute channel — long legal cycles, negotiation overhead, account management — and often produces nothing.\n\n## The three shapes of a BD deal\n\nMost BD deals fall into one of three categories:\n\n1. **Integration / technical partnership.** Your product plugs into theirs. You live in their app directory, you appear in their workflow, users can use you from within their product. Stripe inside Shopify checkout. Slack apps. Zapier's pre-built integrations. This is the highest-leverage shape when it works — distribution happens inside their active product.\n2. **Co-marketing partnership.** Joint webinars, co-created content, bundled offers, cross-promotions. You and the partner promote each other to your respective audiences. Lower-leverage than integrations but faster to execute; no engineering work required.\n3. **Licensing / distribution deal.** The partner embeds your technology or content inside their product, pays you a fee or rev-share, and their users consume your product as part of theirs. Telecom carriers pre-installing apps. White-label SaaS embedded in bigger platforms.\n\nSome deals mix these (an integration + co-marketing launch). The category determines the legal structure, the timeline, the engineering required, and the revenue model.\n\n## Distinguished from three close cousins\n\n- **Sales (Ch 18).** Sales closes individual customers. BD closes partnerships that produce customers. The same company can have both functions.\n- **Affiliate programs (Ch 19).** Affiliates are performance-based: you pay per conversion. BD is usually flat-fee or rev-share on structured outcomes; affiliate is a subset shape of BD but typically transactional rather than strategic.\n- **Strategic partnerships (vague/non-channel).** Many 'strategic partnerships' are press releases without distribution mechanics. If you can't name the distribution mechanism and the expected customer flow, it's PR dressed as BD.\n\n## What makes BD work for startups\n\nStartups can do BD despite being small by being *the right fit* for a partner, not the biggest possible partner. DuckDuckGo's 2014 Safari integration deal worked because Apple wanted a credible private-search alternative, not because DuckDuckGo was the largest search engine. Fit matters more than size. A 50-customer startup with unique tech can land a 10,000-customer integration deal if the mutual value is real.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Pavel runs Cadastre, a $199/mo property-parcel data SaaS used by real estate pros. 300 customers. He evaluates three possible BD moves.",
+        "walkthrough": "**Option A — Integration with a big CRM platform (Salesforce AppExchange).** Leverage: potentially huge — AppExchange reaches 100k+ businesses. But: to qualify for featured placement, he needs a polished integration (~4 engineer-months), plus Salesforce's rigorous review. Salesforce's AppExchange has 10,000+ apps; most get almost no traffic. The distribution isn't as 'active' for newcomers as founders think. Verdict: high-ceiling, long timeline, unclear payoff. Defer to later cycle when he has more eng capacity.\n\n**Option B — Co-marketing with a complementary tool (a real-estate-specific CRM with 5k customers).** Joint webinar + shared content + bundle offer. Low-engineering, fast to execute (60 days). Mutual value is clear: his parcel data enhances their CRM's property records; their distribution puts him in front of 5k real-estate agents. Projected outcome: 150–300 qualified introductions, 30–80 trials, 10–25 paid customers in first wave. Budget: ~$3k for content + promotion. Payoff: $2–5k MRR added. Verdict: strong fit, fast test, clear outcome.\n\n**Option C — Licensing his parcel dataset to a large title-insurance company.** They'd embed his data in their underwriting workflow. Potential: massive (single deal worth $100k+ annually). Challenge: enterprise procurement cycles are 6–12 months, require security reviews, legal negotiations, and he'd need a solid SOC2 process. Also: it's 90% a sales motion (one big customer) dressed as BD. Not really a scalable traction channel. Verdict: worth pursuing as a separate enterprise-sales play, not as his Bullseye BD channel.\n\n**Decision:** he picks Option B. Structured co-marketing with the complementary CRM. Writes a one-page deal memo, signs a simple partnership MoU, and schedules a joint webinar in 45 days.\n\n**60-day outcome:**\n- Webinar attended by 280 of the CRM's customers.\n- 110 visited Cadastre's landing page.\n- 34 opted into trial.\n- 12 converted to paid. MRR added: $2,388.\n- Ongoing: the CRM lists Cadastre in their 'recommended integrations' section permanently. Steady trickle continues: 6–10 additional trials per month from that listing alone.\n\n**Why this worked:**\n- Mutual value was specific (his data improved their CRM's property records, and their customers got a better experience).\n- Distribution was active (joint webinar, email promotion, in-product placement).\n- Alignment was tight (both serve real-estate pros).\n- Deal was small enough to structure in days, not months.\n\n**Why he didn't try to 'get bigger' partners first:** a Salesforce integration would have taken 4 months to execute and might have produced equivalent or less volume. Fast-fit partners produce learnings and revenue while big-platform deals are still in review cycles."
+      },
+      "contrast": {
+        "neighborConceptId": "ch18-sales-definition",
+        "explanation": "Sales and BD are often on the same team but produce traction differently. Sales closes individual customers through repeated human-to-human conversations; it's labor-intensive and scales with headcount. BD closes partnerships that produce customers downstream; it's deal-intensive and scales with deal quality, not volume. A single BD deal's output can dwarf months of sales activity — but BD deals also take longer to close and are harder to predict. The channels complement: sales converts individual high-intent prospects; BD opens new prospect pools at scale. Startups should understand which function they're running at any moment to allocate effort correctly."
+      },
+      "flashcards": [
+        {
+          "id": "ch17-bd-definition-fc1",
+          "type": "recall",
+          "front": "Name the three load-bearing qualifiers in the definition of BD as a traction channel.",
+          "back": "(1) Structured — written agreements with defined deliverables. (2) Mutual — both sides get real value neither could replicate. (3) Distribution — the partnership produces customer flow, not just optics or goodwill."
+        },
+        {
+          "id": "ch17-bd-definition-fc2",
+          "type": "recall",
+          "front": "Name the three shapes of BD deals.",
+          "back": "(1) Integration / technical partnership — your product plugs into theirs. (2) Co-marketing partnership — joint webinars, content, bundled offers. (3) Licensing / distribution — partner embeds your product or data in theirs for fee or rev-share."
+        },
+        {
+          "id": "ch17-bd-definition-fc3",
+          "type": "cloze",
+          "front": "BD leverage works only when partner distribution is ______, ______, and ______ — customers match your ICP, partner actively uses the partner-distribution mechanism, and your product integrates meaningfully.",
+          "back": "aligned ; active ; compatible — all three conditions must hold."
+        },
+        {
+          "id": "ch17-bd-definition-fc4",
+          "type": "recall",
+          "front": "How can a 50-customer startup land a partnership with a 10,000-customer platform?",
+          "back": "By being the RIGHT fit, not the biggest. Mutual value based on unique capability (tech, data, audience) matters more than company size. DuckDuckGo's Safari deal worked because Apple wanted credible private-search, not because DuckDuckGo was largest."
+        },
+        {
+          "id": "ch17-bd-definition-fc5",
+          "type": "recognition",
+          "front": "What's the diagnostic for distinguishing 'strategic partnership' press release from real BD?",
+          "back": "If you can't name the specific distribution mechanism and expected customer flow, it's PR dressed as BD. Real BD produces measurable customer movement; press-release partnerships produce a logo on a slide but no traction."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch17-bd-definition-sc1",
+          "setup": "A founder tells you: 'We signed a big partnership with Company X. It's going to change our business.' 3 months later: zero customers from the partnership, no specific activities have happened. No joint marketing, no integration, no product launches together.",
+          "question": "What happened, and what's the diagnostic lesson?",
+          "modelAnswer": "The partnership existed on paper but had no specific distribution mechanism. Either the mutual value wasn't clear (one side didn't actually benefit enough to invest effort), or the activities weren't structured (no defined deliverables or dates), or both. Common failure modes: (a) enthusiasm at the relationship-building stage didn't translate into a written plan; (b) the partner's BD team signed but the product and marketing teams (who'd actually execute) weren't aligned; (c) the value was optics-based ('we're partners with X!') rather than distribution-based. Diagnostic lesson: before signing, the agreement should include at least three specifics — (1) named deliverable(s) — e.g., 'joint webinar by date,' 'product integration live by date,' 'co-branded content published monthly,' (2) named owner(s) on each side, and (3) concrete metric to evaluate after 90 days. Without these, 'partnership' is just a handshake.",
+          "rubric": [
+            "Identifies the lack of structured deliverables",
+            "Names potential failure modes (mutual-value, cross-team alignment, optics)",
+            "Prescribes specific agreement requirements (deliverables, owners, metrics)",
+            "Distinguishes optics from distribution",
+            "Notes that handshake-level agreements fail predictably",
+            "Gives concrete improvements for future deals"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch17-bd-definition-sc2",
+          "setup": "A founder is evaluating two BD options: (a) get listed in Salesforce AppExchange (10,000+ apps in the directory), (b) build a direct integration with a niche vertical CRM (4,000 customers, 80 apps in their directory).",
+          "question": "Which is likely higher-leverage for an early-stage startup, and what diagnostic question would you use?",
+          "modelAnswer": "Option (b) is likely higher-leverage despite smaller absolute reach. Diagnostic question: 'How many apps compete for attention in each directory, and how does the partner actively promote third-party apps?' Salesforce AppExchange has 10,000+ apps — discoverability is brutal for newcomers, and most apps see minimal traffic. The partner's 'distribution' is passive at newcomer tier. The niche CRM with 80 apps has better placement visibility and likely more active partner promotion (featured apps in newsletters, in-product recommendations, sales team awareness of partners). Even with 4,000 customers instead of 100,000+, the niche CRM might produce 3× or more customer flow because attention is less diluted. Rule of thumb: in active partner-distribution programs, fewer-apps-per-customer often beats more-apps-per-customer-times-bigger-customer-base. Early-stage startups should optimize for partner attention, not raw partner size.",
+          "rubric": [
+            "Identifies niche CRM as likely higher-leverage",
+            "Explains dilution effect in large app directories",
+            "Prescribes the diagnostic question (competitors in directory + partner promotion)",
+            "Quantifies the tradeoff",
+            "Recommends partner attention over raw size",
+            "Doesn't dismiss Salesforce entirely — might fit later"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain BD as a traction channel to a founder who's been told 'you should do more partnerships.' Cover: (1) the definition's three load-bearing words, (2) the three deal shapes, (3) the three conditions for partner distribution to produce leverage, (4) how BD differs from sales and from affiliate programs, and (5) one concrete example of a BD deal that produced outsized outcomes.",
+        "rubric": [
+          "Defines BD precisely (structured, mutual, distribution)",
+          "Lists all three deal shapes with brief examples",
+          "All three distribution conditions (aligned, active, compatible)",
+          "Distinguishes from sales and affiliate",
+          "Specific example (DuckDuckGo/Safari, Stripe/Shopify, or similar)",
+          "Uses causal reasoning"
+        ]
+      }
+    },
+    {
+      "id": "ch17-leverage-mechanism",
+      "chapterId": "ch17",
+      "title": "The Leverage Mechanism — Why BD Compounds",
+      "isLandmark": true,
+      "order": 2,
+      "pretest": {
+        "prompt": "BD is often described as 'high-leverage.' Before reading: what exactly produces the leverage, and why does the same time investment often produce wildly different outcomes across BD deals (some produce nothing, some produce a significant percentage of a startup's customer base)?",
+        "modelAnswer": "The leverage comes from substituting partner-executed distribution for your own effort. A sales team reaches one prospect per conversation; a partner's existing channel reaches their entire relevant audience once the integration or co-marketing mechanism is set up. That substitution turns weeks of BD work into months of customer flow. The variance comes from three factors: (1) whether the partner's distribution is actually active toward partners (many directories are passive, producing little traffic); (2) whether the partner's team invests in the deal post-signing (a signed MoU without follow-through produces nothing); (3) whether the mutual-value alignment is strong enough that the partner genuinely champions the integration to their users. When all three hit, one deal can add thousands of users; when any fails, years of executive time yields nothing."
+      },
+      "lesson": {
+        "markdown": "## Three levers multiply into one outcome\n\nThe leverage in BD is a multiplication, not an addition:\n\n**Your distribution output = Your product value × Partner's reach × Partner's effort**\n\nIf any factor is close to zero, the product is close to zero — regardless of how large the other factors are. Founders evaluating BD opportunities should inspect each factor independently.\n\n- **Product value** — how much your product matters to the partner's audience. A product that slots naturally into the partner's workflow with high perceived value earns strong endorsement; a product that requires explanation or integration work sees low uptake regardless of partner reach.\n- **Partner's reach** — absolute customer base × fraction that matches your ICP × activeness of the partner's distribution toward partners.\n- **Partner's effort** — the bandwidth the partner invests in making the deal work: marketing promotion, sales enablement, customer success referrals, joint content. This is the most-underestimated factor.\n\nChanging any factor from 0.1 to 0.5 improves outcomes 5×. Changing all three from 0.1 to 0.5 improves outcomes 125×.\n\n## The shared-metric principle\n\nThe most reliable way to keep BD deals working over time is **shared metrics and shared accountability**. A deal where both sides have a number they report on — trials referred, customers acquired, usage metrics, dollar value moved — keeps attention on execution long after the signing enthusiasm fades.\n\nDeals without shared metrics frequently drift: one side gets distracted, the other has no signal to hold them accountable, momentum evaporates. Six months later: 'Oh yeah, that partnership… what happened with it?'\n\nShape the shared metric at signing time. Examples: 'monthly new trials referred,' 'integrations activated per month,' 'webinar attendance in bundled promotions,' 'co-branded content pieces published.' The exact metric matters less than both sides tracking and reporting it together.\n\n## The joint-business-review cadence\n\nGood BD programs run a quarterly joint business review (QBR): both sides meet, review the shared metrics, discuss what's working and what isn't, and agree on adjustments. This is the operational cadence that prevents drift.\n\nWithout a QBR rhythm, good deals quietly decay. A partner's champion leaves or changes roles; their team's priorities shift; the integration starts breaking because of product changes; no one notices for months. The QBR cadence surfaces these issues early.\n\n## Why BD compounds over multiple deals\n\nA single successful BD deal doesn't just produce customers — it produces proof. Proof makes the next deal easier:\n\n- **Social proof.** 'We partnered with X and it produced Y' is a credible pitch to the next potential partner.\n- **Operational learning.** Your team gets better at structuring deals, avoiding common pitfalls, writing lighter-weight contracts, running integrations.\n- **Inbound momentum.** Partners start reaching out to you after seeing your integrations elsewhere. Inbound BD is 5–10× cheaper than outbound.\n- **Network effects across partners.** Some partnerships open doors to *other* partnerships (a deal with a big platform can attract that platform's own partner ecosystem).\n\nThis is why mature BD-heavy companies (Stripe, Shopify, Zapier, Salesforce, HubSpot) run 10+ partnerships and have entire BD teams: the compounding of deal N+1 on deal N eventually produces most of the top-of-funnel pipeline.\n\n## Why BD is also slow\n\nThe downside: BD takes months per deal, not days. A typical structured BD deal requires:\n\n- 2–6 weeks of mutual discovery and opportunity definition.\n- 2–8 weeks of negotiation and legal.\n- 2–12 weeks of implementation (engineering integration or content production).\n- 4–24 weeks of go-to-market ramp.\n\nTotal: 3–12 months from first conversation to first customer. For early-stage startups needing traction fast, BD is usually NOT the first Bullseye channel — paid, content, or targeting blogs produce signal faster. BD earns its spot in later cycles when the faster channels start saturating.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Yumi runs Timeline, a $79/mo project-management tool. She's 18 months in, 800 customers, and has three candidate partners. She evaluates each through the leverage-multiplication lens.",
+        "walkthrough": "**Partner A: TopTime, a time-tracking SaaS with 40k customers.**\n- Product value: high. TopTime customers currently export timesheets manually to PM tools. Integration would auto-sync — clear pain relief.\n- Reach: 40k customers, ~60% in Timeline's ICP range = 24k aligned. Active partner program with featured-partners section. Score: strong.\n- Effort: TopTime's partner team was willing to promote in a monthly 'new integrations' email and feature in-product. Both sides willing to co-invest. Score: strong.\n- Multiplication: 0.7 × 0.8 × 0.7 = 0.39 — strong candidate.\n\n**Partner B: BigInvoice, an invoicing platform with 200k customers.**\n- Product value: medium. Timeline and BigInvoice are adjacent but don't share workflow. Integration value isn't obvious to BigInvoice's users.\n- Reach: 200k customers, but only ~8% are in PM buying range (most are solo freelancers, not team-based PM needs). 16k aligned.\n- Effort: BigInvoice's partner team signed the deal but is understaffed. Won't do joint marketing. Will list Yumi in a directory (~15,000 other partners). Score: weak.\n- Multiplication: 0.4 × 0.5 × 0.2 = 0.04 — likely to produce almost nothing.\n\n**Partner C: FreelanceHub, a freelancer community with 8k members.**\n- Product value: very high. Freelancers often juggle PM across clients.\n- Reach: 8k members, ~70% in Timeline's ICP. 5.6k aligned.\n- Effort: FreelanceHub's operator offers dedicated email blasts to the community, webinar slots, resource page placements. Active distribution. Score: strong.\n- Multiplication: 0.8 × 0.6 × 0.7 = 0.34 — strong per-member but smaller base.\n\n**Decision: pursue A and C; decline B.**\n\nYumi writes a one-pager for each partnership — shared metric (monthly new trials referred), named owners on each side (her as founder, their BD rep), and QBR cadence (every 90 days).\n\n**6-month outcomes:**\n- TopTime deal: integration live by month 2. Quarterly shared-metric: 180 referred trials in Q1, 320 in Q2. ~85 paid conversions by month 6. Added MRR: $6,715.\n- FreelanceHub deal: joint webinar + resource page. Month 1: 95 referred trials, 28 paid. Month 4: slowed to 12/mo. Added MRR: $2,054 by month 6.\n- Combined: $8,769 MRR added over 6 months from 2 deals. Compared to her Bullseye baseline of ~$3k/mo added from paid ads, BD is now her highest-output channel.\n\n**Compounding:** Month 7, an inbound message from a fourth partner: 'We saw your TopTime integration — we'd love to do something similar.' That's the leverage compounding — deal N+1 is easier because deal N exists and is visible.\n\n**What Yumi didn't do:** BigInvoice deal. Without mutual-value and partner effort, the 200k-customer base is meaningless. She'd have burned 3 months on a dud deal."
+      },
+      "contrast": {
+        "neighborConceptId": "ch17-bd-definition",
+        "explanation": "The definition concept describes what BD IS. The leverage-mechanism concept describes *why it produces outsize outcomes when it works*, and the math of that leverage — a multiplication of three factors. Understanding the multiplication tells you where to look when a deal underperforms: product-value, reach, or effort — fix the weak factor or walk away. Without this mental model, founders tend to blame the partner or declare 'BD doesn't work' when usually one specific factor fell to zero."
+      },
+      "flashcards": [
+        {
+          "id": "ch17-leverage-mechanism-fc1",
+          "type": "recall",
+          "front": "State the BD leverage formula.",
+          "back": "Output = Product value × Partner's reach × Partner's effort. A multiplication — if any factor is near zero, output is near zero, regardless of how large the others are."
+        },
+        {
+          "id": "ch17-leverage-mechanism-fc2",
+          "type": "recall",
+          "front": "What's the most-underestimated factor in the leverage multiplication?",
+          "back": "Partner's effort — the bandwidth they actually invest in making the deal work (marketing, sales enablement, joint content). Partners often sign deals but don't invest, which silently kills outcomes. This is why shared metrics + QBRs matter."
+        },
+        {
+          "id": "ch17-leverage-mechanism-fc3",
+          "type": "recall",
+          "front": "What's the shared-metric principle in BD?",
+          "back": "Both sides agree on a specific metric (trials referred, integrations activated, etc.) and report on it together. Deals without shared metrics drift because there's no signal to hold either side accountable."
+        },
+        {
+          "id": "ch17-leverage-mechanism-fc4",
+          "type": "cloze",
+          "front": "Quarterly ______ ______ is the operational rhythm that prevents good BD deals from quietly decaying over time.",
+          "back": "business reviews (QBRs) — both sides meet, review shared metrics, and agree on adjustments."
+        },
+        {
+          "id": "ch17-leverage-mechanism-fc5",
+          "type": "recall",
+          "front": "Why does BD compound across multiple deals?",
+          "back": "(1) Social proof — 'we partnered with X and it produced Y' opens the next conversation. (2) Operational learning — teams get better at structuring deals. (3) Inbound momentum — successful integrations attract unsolicited partner interest. (4) Network effects across partner ecosystems."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch17-leverage-mechanism-sc1",
+          "setup": "A founder has a signed partnership with a 50k-customer SaaS. 4 months in: zero integrations activated. The partner's team hasn't responded to emails in 6 weeks.",
+          "question": "Diagnose what's happening, and what's the right move now?",
+          "modelAnswer": "Leverage-mechanism diagnosis: Partner's effort has dropped to near-zero, which zeroes out the product of the multiplication regardless of the other factors. Likely causes: (a) partnership sponsor on the partner's side left or changed roles; (b) partner's priorities shifted; (c) internal misalignment on partner's side — their BD signed but product/marketing never committed; (d) the deal didn't include shared accountability so no one on the partner's side owns the outcome. Right move: (1) find out what's really happening via a reset call with whoever's currently responsive on the partner side. (2) If there's a new champion, reset the partnership with specific 90-day deliverables, shared metrics, and a QBR. (3) If nobody's championing it internally and they can't identify an owner, accept that the deal is dead and pull focus. (4) Consider whether a 6–12 month pause + retry with a different partner contact makes sense. The wrong move: wait another quarter hoping something happens. BD deals without effort don't self-start.",
+          "rubric": [
+            "Diagnoses as a partner-effort collapse",
+            "Names plausible specific causes",
+            "Prescribes a reset conversation",
+            "Sets specific 90-day deliverables if reset possible",
+            "Accepts dead-deal conclusion if no champion found",
+            "Rejects 'wait and hope'"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch17-leverage-mechanism-sc2",
+          "setup": "A founder signed a BD deal that's now producing customers. They want to expand their BD program but are torn between (a) deepening this first relationship (second deal or more integration depth) vs (b) signing a new partner to diversify.",
+          "question": "What's your advice, and what data would inform the call?",
+          "modelAnswer": "Early in a BD program, deepening the first relationship is often the right move. Reasons: (a) trust is already built; (b) operational learnings from the first deal transfer to the second; (c) incremental effort tends to produce incremental yield for the partner relationship. BUT three data points change the call: (1) Is the first partner's customer base close to saturated? If 80% of their aligned customers have already seen your integration, deepening won't produce much — find a new partner. (2) Is the first partner strategically limited? If your product needs wider reach than they provide, diversification matters. (3) Is the first relationship easy to deepen, or would expansion require major commitment on both sides? Light deepening (second product integration surface, a joint campaign) is fast; heavy deepening (rev-share restructuring) can stall for months. Recommendation: depending on data, probably deepen first, then start the second deal 30–60 days later. But treat it as a portfolio question — you want 3–5 active partners within the year. The first partner's volume matters less than the pipeline structure.",
+          "rubric": [
+            "Initial preference for deepening first relationship",
+            "Lists specific data points that would change the call (saturation, strategic fit, ease of expansion)",
+            "Recommends a portfolio approach (3–5 partners within a year)",
+            "Balances quick wins (deepen) with long-term diversification",
+            "Doesn't endorse a one-deal-forever strategy",
+            "Shows understanding of the compounding pattern"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the BD leverage mechanism to a founder deciding whether to invest in a partnership. Cover: (1) the output = product × reach × effort formula, (2) the shared-metric and QBR operational rhythm, (3) why BD compounds across deals, and (4) why BD is often NOT the first Bullseye channel despite being high-leverage.",
+        "rubric": [
+          "States the multiplication formula correctly",
+          "Explains shared-metric principle + QBR cadence",
+          "Lists the 4+ compounding effects across deals",
+          "Articulates why BD is slow (timeline breakdown)",
+          "Positions BD relative to Bullseye (not first channel)",
+          "Uses specific factors (product value, reach, effort) consistently"
+        ]
+      }
+    },
+    {
+      "id": "ch17-bd-fit",
+      "chapterId": "ch17",
+      "title": "When BD Fits as a Traction Channel",
+      "isLandmark": false,
+      "order": 3,
+      "pretest": {
+        "prompt": "BD requires conditions to produce meaningful traction. Before reading: name the three conditions a startup should meet before investing in BD, and the two startup shapes where BD is unlikely to be the right Bullseye channel.",
+        "modelAnswer": "Preconditions: (1) Product-market fit clear enough that you can describe the ICP and value prop in one paragraph — a partner's team needs to pitch this to their users, and they can't pitch what you can't describe. (2) Product integrates or extends something bigger — either technically, through a data layer, or via complementary workflow. If your product is entirely self-contained with no adjacent surface, BD leverage is hard to engineer. (3) Capacity for slow-timeline execution — BD takes 3–12 months per deal; a startup with 6 weeks of runway can't afford that rhythm. Bad shapes: (a) Pre-PMF startups — no paragraph-sized pitch exists yet; partners won't sign. (b) Pure-consumer products in crowded mass markets — finding a partner willing to do meaningful promotion is hard when the product is one of many."
+      },
+      "lesson": {
+        "markdown": "## Three preconditions\n\nBD pays back when:\n\n1. **You have PMF-level clarity on product and ICP.** A partner's team has to be able to explain your product to their customers. If you can't articulate the ICP and value prop in a paragraph, partners will decline to endorse, or endorse weakly.\n2. **Your product integrates with or extends something bigger.** The mechanism of 'your product + their distribution' requires a meaningful integration surface — a technical API, a data layer, a workflow extension, a content format. Products that are entirely self-contained have fewer natural partnership surfaces.\n3. **You have capacity for slow-timeline execution.** BD deals take months from first conversation to first customer. If your runway is short and you need signal in weeks, BD is the wrong first channel.\n\n## Where BD fits strongly\n\n- **B2B SaaS with integration surfaces.** Your product plugs into other tools. Every plug-in point is a potential partnership. (Stripe everywhere, Zapier everywhere, Segment integrations, HubSpot App Marketplace.)\n- **Infrastructure and developer tools.** APIs and SDKs create natural distribution surfaces — partners can embed you in their product. (Twilio, Sendgrid, Algolia, Auth0.)\n- **Data providers.** Your data enriches someone else's product. Partnerships with CRMs, analytics tools, workflow platforms produce structural distribution.\n- **Vertical SaaS with complementary adjacent tools.** Real-estate tools partnering with other real-estate tools; healthcare SaaS with EHR vendors; etc.\n- **Platforms with ecosystems.** Your product BECOMES the distribution for smaller partners. This is less about 'BD' and more about running a partner program — but it's the same channel inverted.\n\n## Where BD fits weakly\n\n- **Pre-PMF startups.** No clear pitch exists yet. Partners can't endorse what you can't describe. Defer BD until PMF is clearer.\n- **Pure-consumer mass-market products.** Finding a partner willing to invest in your promotion when you're one of many isn't structural — no natural mutual value.\n- **Products with no integration surface.** Self-contained apps with no API, no workflow extension, no data layer. Partner can put you in their directory, but there's no mechanism for natural integration into their product.\n- **Highly competitive crowded verticals.** If there are 50 tools just like yours, partners can pick any — you're one of many, not specially-chosen. BD leverage depends on relative uniqueness.\n\n## Borderline cases\n\n- **Consumer brand adjacent to a workflow.** A specialty-coffee subscription partnering with a coffee-gear community. Not 'traditional BD' but shares mechanics. Works if mutual value is clear and audience match is tight.\n- **Early-stage startup with a single well-known potential partner.** One great deal with one great partner can produce meaningful traction before 'BD portfolio' exists. Fit is unusual but can work.\n- **Narrow niches with small partner ecosystems.** Even 3–5 partnerships, executed well, can be enough to drive meaningful traction in a specific vertical.\n\n## Diagnostic checklist\n\nBefore making BD your Bullseye channel:\n\n- Can you describe your ICP and value prop in 100 words?\n- Does your product have at least 2 integration surfaces (API, data layer, workflow hook, plugin, etc.)?\n- Can you name 5 specific potential partners whose ICP overlaps with yours by 30%+?\n- Do you have 3–6 months of runway to run the first deal end-to-end?\n- Can you dedicate 10–15 hours/week to BD execution?\n\nFour yeses and BD fits. Two or fewer and it's probably not the right cycle's Bullseye.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Three founders evaluate BD fit:\n- Anita runs Boxbird, a $9/mo consumer subscription for monthly wine-and-cheese pairings. 3k customers.\n- Deepak runs Gradient, a $299/mo SaaS that analyzes performance data for retail websites. 80 customers. Post-PMF signals emerging.\n- Ronen runs Chorus, a pre-launch AI-voice-coaching consumer app. 0 customers.",
+        "walkthrough": "**Anita (Boxbird):** Weak fit. Mass-consumer product with no integration surface. Partnerships conceivable (wine sellers, cheese clubs), but mutual value would be fuzzy and execution hard. More importantly, her product is mass-consumer with typical mass-consumer channels: paid social, influencer marketing, referral. BD distribution mechanism (your product + their distribution) doesn't cleanly apply. Channels like Ch 19 (affiliate) or Ch 10 (social/display) are more natural. Don't make BD her Bullseye.\n\n**Deepak (Gradient):** Strong fit. B2B SaaS with a clear integration surface — retail performance data can enrich CRM records, e-commerce platforms, marketing automation, BI tools. He can name potential partners: Shopify app ecosystem, Klaviyo, Segment, Amplitude, Salesforce Commerce. Diagnostic: 5/5 yeses. Also: 80 customers means PMF is emerging but not rock-solid; might want to sharpen the ICP by 1 more quarter before pushing BD hard. But BD is a strong Bullseye candidate for his next cycle.\n\n**Ronen (Chorus):** Weak fit (pre-PMF). He hasn't launched; can't describe what's unique and who the ICP is in concrete terms. Partners won't endorse vague products. Defer BD for now; focus on product, early customers, and early-adopter feedback. Once PMF is emerging (say, 500+ active users, clear ICP definition), revisit BD. Other channels better for pre-launch: community building, targeting blogs in relevant niches, Product Hunt launch.\n\n**Verdict:**\n- Anita: NO BD; use consumer channels.\n- Deepak: STRONG candidate for BD in next Bullseye cycle.\n- Ronen: DEFER BD; pre-PMF work first.\n\n**How Deepak would start:** pick 2–3 top candidates (Klaviyo, Segment, or similar). Build a one-page pitch explaining mutual value for each. Reach out to BD contacts at each. Structure a 4–6 week mutual-discovery phase before committing to a specific deal."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-focus-and-repeat",
+        "explanation": "Bullseye's Focus step says commit to one channel that's clearly winning. BD's slow timeline creates tension with Bullseye's fast-testing rhythm: you often can't tell if BD is 'winning' in 4 weeks. Most startups should test BD alongside faster channels but not base their next-stage growth on it until the first BD deal has produced a real signal over 3–6 months. For mature companies where BD is the primary channel, the discipline flips — BD IS the Focus, and faster channels (paid, content) support it rather than compete with it."
+      },
+      "flashcards": [
+        {
+          "id": "ch17-bd-fit-fc1",
+          "type": "recall",
+          "front": "Name the three preconditions for BD to fit as a traction channel.",
+          "back": "(1) PMF-level clarity on product and ICP (partner's team has to pitch this). (2) Product integrates with or extends something bigger (integration surface, data layer, workflow extension). (3) Capacity for slow-timeline execution (3–12 months per deal)."
+        },
+        {
+          "id": "ch17-bd-fit-fc2",
+          "type": "recall",
+          "front": "Name three startup shapes where BD fits strongly.",
+          "back": "(1) B2B SaaS with integration surfaces (API, plugin, workflow). (2) Infrastructure and developer tools with embeddable SDKs. (3) Data providers whose data enriches other products. Also: vertical SaaS with complementary adjacencies; platforms with partner ecosystems."
+        },
+        {
+          "id": "ch17-bd-fit-fc3",
+          "type": "recall",
+          "front": "Name three startup shapes where BD fits weakly.",
+          "back": "(1) Pre-PMF startups — no clear pitch. (2) Pure-consumer mass-market products — no natural mutual value with partners. (3) Products with no integration surface — nothing for partners to plug into."
+        },
+        {
+          "id": "ch17-bd-fit-fc4",
+          "type": "cloze",
+          "front": "Most startups should test BD ______ faster channels, but not base next-stage growth on it until the first deal has produced signal over ______ months.",
+          "back": "alongside ; 3–6 — BD's slow timeline creates tension with Bullseye's fast-test rhythm."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch17-bd-fit-sc1",
+          "setup": "A founder of a pre-launch consumer fitness app (no customers yet) says: 'I've been told partnerships are the best way to grow. I'm going to pitch a partnership with a major fitness influencer platform as my launch strategy.'",
+          "question": "Evaluate this plan.",
+          "modelAnswer": "The plan has multiple fit issues. (1) Pre-launch: no customer base, no proven PMF, no clear ICP. Partners can't effectively promote a product the founder can't describe concretely. (2) Consumer mass-market: finding a fitness influencer platform willing to invest in a no-track-record app is hard. (3) Timeline: a structured partnership takes 3–12 months; a pre-launch startup doesn't have that runway for a Bullseye test. Better alternatives: (a) Community building (Ch 24) — get 200–500 engaged beta users first. (b) Targeting blogs (Ch 16) — fitness niches have rich creator ecosystems where small sponsorships can produce early users. (c) Viral loops (Ch 6) — if the product has any natural invitation mechanic, build that into v1. (d) Once 500+ users with retention data exist, revisit BD with a specific partner candidate and real proof the product works. BD is a post-PMF channel for consumer products, not a pre-launch strategy.",
+          "rubric": [
+            "Identifies pre-launch / no PMF as primary fit issue",
+            "Notes the 'partners can't pitch what you can't describe' problem",
+            "Cites timeline mismatch with runway",
+            "Prescribes alternative channels for pre-launch",
+            "Leaves BD open for later cycles post-PMF",
+            "Doesn't enable premature BD"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch17-bd-fit-sc2",
+          "setup": "A founder runs a $49/mo SaaS for small restaurants. PMF is clear, 1,500 customers, but growth is stalling. They're torn between BD (partnering with POS systems) and paid ads.",
+          "question": "Which should they test first, and how?",
+          "modelAnswer": "Probably both, but with different expected timelines and test shapes. Paid ads (social/display or search): cheap test, 2–3 weeks, $1,500 budget. Will give fast signal on acquisition cost. BD with POS systems: slower test, 2–4 months to first deal closing, but potentially much higher ceiling if the right POS partnership fires — POS systems have 10k-100k restaurant customers and natural integration fit. Run them in parallel as two Bullseye tests. Paid ads goes first because it's faster; BD outreach starts in week 1 but results take months. If paid-ads CAC is reasonable, maintain that while building BD; if paid-ads fails, BD becomes more important. After 90 days: evaluate both. If BD produces the first substantial deal, invest more in BD. Don't abandon faster channels until BD proves out — but don't delay starting BD either because of its timeline. Practical steps: list 5 potential POS partners, start outreach immediately, aim to close first deal by month 3 in parallel with running paid-ad tests.",
+          "rubric": [
+            "Recommends running both in parallel given timeline mismatch",
+            "Specifies different test shapes (fast for paid, long for BD)",
+            "Notes paid-ads first for signal velocity",
+            "Outlines BD outreach parallel to paid-ad testing",
+            "Sets 90-day evaluation point",
+            "Addresses the 'don't delay BD because of timeline' principle"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain how to evaluate whether BD fits a startup's current stage. Cover: (1) the three preconditions, (2) at least two good-fit shapes and two weak-fit shapes, (3) the diagnostic checklist, and (4) why BD rarely belongs as the first Bullseye channel even when fit is strong.",
+        "rubric": [
+          "All three preconditions named",
+          "Good-fit and weak-fit shapes with brief reasoning",
+          "Diagnostic checklist articulated (5 questions)",
+          "Timeline tension with Bullseye discussed",
+          "Notes BD compatibility with post-PMF stage",
+          "Uses causal reasoning"
+        ]
+      }
+    },
+    {
+      "id": "ch17-core-tactics",
+      "chapterId": "ch17",
+      "title": "Core BD Tactics: Prospecting, Pitching, Structuring",
+      "isLandmark": false,
+      "order": 4,
+      "pretest": {
+        "prompt": "Once BD fits, execution choices determine outcomes. Before reading: what are the high-leverage tactical moves for (a) finding the right partner candidates, (b) writing a pitch that gets a meeting, and (c) structuring a deal that both sides will actually execute?",
+        "modelAnswer": "Prospecting: identify partners whose ICP overlap is at least 30%, whose distribution to partners is active, whose product has an integration surface compatible with yours. Filter aggressively; 15 strong candidates beat 50 weak ones. Pitching: lead with THEIR goal, not yours — show why the partnership helps their users, their strategic priorities, or their metrics. A 1-page memo that names a specific hypothesis, deliverable, and mutual benefit opens more doors than a feature-comparison deck. Structuring: minimize complexity. Early BD deals should be as lightweight as possible — MoU > long-form contract, shared-metric > complex rev-share, 90-day pilot > multi-year commitment. Complexity signals risk to both sides and slows execution. Most successful BD deals share these three traits: defined mutual value, simple legal structure, and short initial commitment with clear success criteria."
+      },
+      "lesson": {
+        "markdown": "## Prospecting\n\nThe BD list is smaller than the sales list — quality matters more than volume. For each candidate partner, score on four dimensions:\n\n1. **ICP overlap.** What fraction of their customer base matches yours? 30%+ is strong. 10% is too diffuse for a first deal.\n2. **Distribution activeness.** Do they actively promote partners (in-product, email, case studies) or just list them? Directories without active promotion are low-yield.\n3. **Integration compatibility.** Do they have APIs, embedding, plugin architecture, or the ability to co-market? Products with no integration surface limit deal shapes.\n4. **Strategic alignment.** Is your product complementary to their roadmap, or in tension with it? Complementary partnerships survive; competitive ones stall.\n\nTarget list: 8–15 well-qualified candidates from these four criteria. Less than that and you don't have enough diversity; more than that and your execution bandwidth gets diluted.\n\n## The pitch — lead with their goal\n\nThe single most common BD pitch failure: describing what YOUR product does and why THEY should integrate with YOU. Partners hear dozens of pitches like this a month; most get declined.\n\nThe pitch that works: lead with *their* goal. Example:\n\n*'I noticed [partner] has been pushing hard on multi-channel commerce in the last two launches. Our product is the piece your multi-channel customers don't have — automated inventory reconciliation across channels. We think a preferred integration would accelerate your multi-channel positioning AND give your customers a workflow they've been manually hacking. Happy to send a short one-pager.'*\n\nThis pitch assumes homework. It names their current strategic priority, connects your product to that priority, frames the deal as helping them (not helping you), and proposes a concrete next step. Response rates are 3–5× better than generic pitches.\n\n## The one-pager\n\nAfter initial contact, send a one-page memo that covers:\n\n- Mutual value (for them / for you)\n- Specific proposed deliverable (integration, joint webinar, co-created content, bundled offer)\n- Tentative timeline (milestones)\n- Draft shared metric\n- Proposed first-call agenda\n\nOne page. Not a deck. Partners need to share this memo internally — long docs lose focus.\n\n## Deal structure — keep it light\n\nEarly-stage BD deals should be as structurally light as possible:\n\n- **MoU before contract.** A non-binding memorandum of understanding defines the shape of the deal in 1–2 pages without committing to legal contracts. If both sides proceed, then draft the contract. Many early deals never need a full contract.\n- **90-day pilot with renewal criteria.** Not multi-year exclusive commitments. Define: we'll run X for 90 days; at 90 days we evaluate; at that point we either renew, expand, or walk away amicably.\n- **Shared-metric > complex rev-share.** Simpler is faster. 'We track referred trials; we celebrate the number' beats '5% rev-share on all attributed revenue after discount adjustments and refunds.'\n- **Defined owners on both sides.** Names, emails, cadence of check-ins.\n\nThis lightness is what lets early deals move in weeks not months. The complexity stack can grow once the deal proves value.\n\n## Pitfalls in deal structure\n\n- **Exclusivity clauses too early.** Partners often want exclusivity ('don't integrate with our competitor'). Fair sometimes, but locks you out of future opportunities. Push for limited exclusivity (category + term) only if the deal's volume actually warrants it.\n- **Legal bloat.** Legal teams default to comprehensive contracts. For early deals, the simplest MoU often wins. A 20-page contract can take 3 months to negotiate — the partnership dies in legal review.\n- **Payment terms that break cash flow.** 'We pay you net-60 after the customer pays us' is a death trap for startup cash flow. Negotiate payment terms realistically.\n\n## Ramp — getting the deal to actually ship\n\nSigning is 20% of the work; shipping is 80%. Post-signing:\n\n- **Assign an internal BD owner** to drive the deal end-to-end. Diffuse ownership = silent death.\n- **Name the shared-metric dashboard.** Both sides need visibility into how the deal is performing.\n- **Joint launch activities.** A co-announcement, joint content, partner-ecosystem visibility. Without this, the integration ships and no one notices.\n- **First-90-day check-ins.** Weekly in month 1, biweekly in months 2–3. The first 90 days are where most BD deals stall if there's no accountability rhythm.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Yumi (Timeline PM tool) is pitching TopTime (time-tracking SaaS). She's writing the outreach pitch.",
+        "walkthrough": "**Bad first draft — 'all about us':**\n'Hi — I'm Yumi, founder of Timeline. We're a $79/mo project-management tool with 800 customers. I think a Timeline integration with TopTime would be great — it would let our customers track time on projects. Would you consider a partnership?'\n\n**Problems:** All about Yumi's product. No homework on TopTime's priorities. Generic ask. Low response rate expected.\n\n**Better draft — lead with their goal:**\n'Hi Jamal — saw TopTime's recent blog post about automating the 'manual timesheet export' workflow pain. Your users exporting to PM tools is exactly the pain our product also serves. A deep integration (TopTime time auto-syncs to Timeline projects; Timeline tasks visible in TopTime timer) would turn that manual 40-minute-a-week task into zero-effort for your customers — and would put TopTime squarely in the middle of the team-PM workflow, where you've been positioning for a while. I'd love to send a one-page proposal if this resonates. I'm thinking a 90-day pilot with 3 named early-adopter customers. Happy to adapt — what would make this most interesting to you?'\n\n**Why this works:**\n- References specific recent content (blog post)\n- Names TopTime's strategic priority (positioning in team-PM workflow)\n- Frames the value for THEIR customers first\n- Offers a concrete next step (one-pager)\n- Proposes a simple structure (90-day pilot, 3 customers)\n- Asks for their input ('what would make this interesting to you?')\n\n**Response rate:** 60% vs. ~15% for the first draft.\n\n**After Jamal responds, Yumi sends the one-pager:**\n\n---\n\n**Timeline × TopTime Integration Proposal**\n\n**Mutual value**\n- For TopTime customers: zero-effort timesheet-to-project sync. Eliminates 30–60 min/week of manual work per user. Addresses a frequent feature request.\n- For TopTime: positions you as the center of multi-tool PM workflows. Competitive differentiator vs other time-tracking tools.\n- For Timeline: exposure to 24k aligned TopTime customers. Strengthens our 'works with your existing stack' positioning.\n\n**Proposed integration**\n- Bi-directional sync: TopTime timer entries → Timeline project time logs; Timeline tasks → TopTime selectable timer projects.\n- One-click setup via OAuth.\n- Shared 'Integrations' page on both sides.\n\n**Timeline and milestones**\n- Week 1–2: technical spec review, joint roadmap commitment.\n- Week 3–6: Yumi's team builds integration. TopTime reviews.\n- Week 7: joint launch. Co-announcement, shared content piece, in-product placement.\n- Week 8–20: 90-day pilot with shared metric.\n\n**Shared metric**\n- Number of active integrations (OAuth-connected users).\n- Target: 200 active integrations by end of 90 days.\n\n**Renewal criteria (month 3)**\n- If 200+ active integrations: continue, expand into co-marketing.\n- If <100: diagnose and adjust.\n- If <50: amicable wind-down.\n\n**Ownership**\n- Timeline: Yumi (founder), CTO for technical.\n- TopTime: Jamal (BD), product lead TBD.\n- Cadence: weekly check-in for first month, biweekly for months 2–3.\n\n**Legal**\n- MoU only for the pilot; full contract if we expand post-90-days.\n\n---\n\n**Outcome:** Jamal signs the MoU within 10 days. Integration ships 6 weeks later. Month-3 active-integration count: 312. Renewal: expand to co-marketing + featured partner status.\n\n**Why the one-pager worked:** concrete, 2-way value, short timeline, defined metric, clear ownership. Jamal could circulate it internally — within TopTime, the product lead and marketing leads saw the same one-pager and aligned on it."
+      },
+      "contrast": {
+        "neighborConceptId": "ch17-leverage-mechanism",
+        "explanation": "The leverage-mechanism concept establishes the math of why BD pays back. Core tactics is the execution required to make the math fire — prospecting narrowly, pitching with their goal first, structuring deals lightly, and ramping post-signing. Many deals have good leverage potential on paper (right partner, right integration surface) but fail execution because the pitch was generic, the structure was bloated, or the post-signing ramp lacked ownership. Tactics close the gap between potential and actual."
+      },
+      "flashcards": [
+        {
+          "id": "ch17-core-tactics-fc1",
+          "type": "recall",
+          "front": "Name the four prospecting criteria for BD candidates.",
+          "back": "(1) ICP overlap (30%+ is strong). (2) Distribution activeness (actively promotes partners vs just lists them). (3) Integration compatibility (API, plugin, co-marketing options). (4) Strategic alignment (complementary vs competitive)."
+        },
+        {
+          "id": "ch17-core-tactics-fc2",
+          "type": "recall",
+          "front": "What's the single biggest failure pattern in BD pitches?",
+          "back": "Describing what YOUR product does and why THEY should integrate with YOU. Partners receive dozens of these monthly; they decline most. Better: lead with THEIR goal — connect your product to their strategic priority or their customers' unmet needs."
+        },
+        {
+          "id": "ch17-core-tactics-fc3",
+          "type": "recall",
+          "front": "What belongs in a BD one-pager?",
+          "back": "(1) Mutual value (for them / for you). (2) Specific deliverable (integration, webinar, co-content, bundle). (3) Timeline with milestones. (4) Draft shared metric. (5) First-call agenda. One page, not a deck — partners need to share it internally."
+        },
+        {
+          "id": "ch17-core-tactics-fc4",
+          "type": "cloze",
+          "front": "Early-stage BD deals should use ______ > contract, ______-day pilot > multi-year commitment, and ______ > complex rev-share — keep structure light to move fast.",
+          "back": "MoU ; 90 ; shared metric — complexity signals risk and slows execution."
+        },
+        {
+          "id": "ch17-core-tactics-fc5",
+          "type": "recognition",
+          "front": "Why is the first 90 days post-signing the critical window for BD deals?",
+          "base": "Most BD deals stall during this ramp period if there's no accountability rhythm. Assign an internal owner; run weekly (month 1) then biweekly (months 2–3) check-ins; ensure shared metrics are visible to both sides. Without this rhythm, deals quietly decay before producing value.",
+          "back": "Most BD deals stall during this ramp period if there's no accountability rhythm. Assign an internal owner; run weekly (month 1) then biweekly (months 2–3) check-ins; ensure shared metrics are visible to both sides. Without this rhythm, deals quietly decay before producing value."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch17-core-tactics-sc1",
+          "setup": "A founder gets warm-intros to 12 BD targets. They want to send a single well-crafted pitch template to all 12. How would you advise?",
+          "question": "Should they, and if not, what's the alternative?",
+          "modelAnswer": "No. A single template across 12 targets defeats the 'lead with their goal' principle — each partner has their own strategic priorities, and a generic pitch doesn't reference theirs. Response rate will be mediocre (15–25%) even with warm intros. Better approach: personalize each pitch. 30 minutes of research per partner (read their recent blog posts, check their product changelog, scan their social for strategic signals) + 10 minutes of customization on the pitch. 40 minutes per pitch × 12 targets = 8 hours, spread over 3–4 days. Response rate typically jumps to 50–70%+ with warm intros and personalization. If time is constrained, pick 6 partners instead of 12 and do them properly. Better to have 4 conversations with well-qualified partners than 2 with 12 half-pitched ones.",
+          "rubric": [
+            "Rejects templated mass-pitch approach",
+            "Explains why generic defeats 'lead with their goal'",
+            "Quantifies the time cost (8 hours total for 12 personalized pitches)",
+            "Compares response rates (template vs personalized)",
+            "Suggests cutting list if time-constrained",
+            "Prioritizes quality over quantity"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch17-core-tactics-sc2",
+          "setup": "A founder's first BD deal is negotiating a 30-page contract. Legal review is at week 5 with no signing date in sight. The founder is frustrated.",
+          "question": "Diagnose and recommend a path forward.",
+          "modelAnswer": "Classic legal-bloat pattern. 30-page contract for an early-stage partnership is typically overkill; legal teams default to comprehensive agreements that can take months to align. The deal is at risk of dying in legal review. Recommendation: (1) Pause the contract negotiation. (2) Propose an MoU — 1–2 pages — covering the pilot's essential terms (what each side does, shared metric, timeline, optional future-contract trigger). An MoU is non-binding but establishes the shape of the deal. (3) If both sides agree to operate under the MoU, ship the pilot. Revisit full contract only after 90-day pilot results are in. (4) If legal on the partner side insists on full contract pre-pilot: offer a simplified one-page addendum to their standard partnership agreement rather than a bespoke 30-page doc. This is a common pattern — legal wants comprehensive; founders need speed. Early-stage deals should be engineered for speed; complexity can grow once results justify it. If the partner's legal team refuses any lightweight path, consider whether this is the right first partner — some partners are structurally too slow for early-stage startups.",
+          "rubric": [
+            "Identifies legal bloat as the cause",
+            "Prescribes MoU approach for pilot",
+            "Suggests simplified addendum as middle path",
+            "Notes 90-day pilot as basis for later-full-contract trigger",
+            "Addresses the 'partner legal too slow' extreme",
+            "Prioritizes execution speed at early stage"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Walk through the execution playbook for a BD program — prospecting, pitching, structuring, and ramping. Cover: (1) the four prospecting criteria, (2) the 'lead with their goal' pitch principle with an example, (3) what belongs in the one-pager, (4) the deal-structure principles for early-stage, and (5) the first-90-days rhythm.",
+        "rubric": [
+          "All four prospecting criteria named",
+          "Pitch principle with a before/after example",
+          "All five one-pager sections",
+          "MoU > contract and 90-day pilot principles",
+          "First-90-days rhythm (weekly → biweekly check-ins)",
+          "Specific, not generic language"
+        ]
+      }
+    },
+    {
+      "id": "ch17-testing-bd",
+      "chapterId": "ch17",
+      "title": "Testing BD Cheaply — Despite the Long Timeline",
+      "isLandmark": false,
+      "order": 5,
+      "pretest": {
+        "prompt": "BD deals take 3–12 months. That breaks Bullseye's cheap-testing rhythm. Before reading: how would you run a minimum-viable test of BD as a channel, given that you can't meaningfully evaluate in weeks?",
+        "modelAnswer": "You adjust the test shape: smallest possible first deal, short-horizon pilot (90 days rather than multi-year), lightweight structure (MoU, shared metric, no exclusivity), and pre-defined pass/fail criteria. Run 1–2 parallel first-deals with different partners rather than committing to one. Pre-defined thresholds: first deal closes within 60–90 days of initial outreach; 90-day pilot produces meaningful shared-metric outcomes (e.g., 100+ referred trials, $2k+ MRR added, etc.); inbound interest from related partners after seeing the first deal. If thresholds hit across 1–2 pilot deals, BD is worth scaling. If thresholds miss, diagnose whether it was a specific partner, execution, or channel-fit issue. Don't conclude 'BD doesn't work' from a single bad first deal; run two lightweight pilots and compare."
+      },
+      "lesson": {
+        "markdown": "## The testing problem\n\nBullseye's 1-week test rhythm can't apply to BD: deals take months to close and months more to produce customer flow. The cheap-testing principles still hold but the timeline is 3–6 months for a meaningful signal.\n\nThe right test shape: **two parallel lightweight pilot deals**, short-horizon structure, pre-defined success thresholds. Cost is mostly time (10–20 hours/week of BD execution) plus minimal cash (content creation, possibly some joint-campaign budget).\n\n## Minimum viable BD test\n\nLaunch 1–2 parallel pilots with different partners. Each pilot should be:\n\n- **Scoped as a 90-day pilot** with a specific shared metric and renewal criteria.\n- **Lightweight in structure** — MoU preferred, no exclusivity, simple shared metric.\n- **Quick to stand up** — first-call to MoU-signing in ≤6 weeks; pilot live within 3–4 weeks of MoU.\n- **Clearly measurable** — both sides see the shared-metric dashboard.\n\nRunning 2 pilots in parallel is better than 1 — variance in outcomes between partners is significant, and 2 deals give you comparison data.\n\n## Pre-defined thresholds\n\nExample for a B2B SaaS testing BD as a Bullseye:\n\n1. **Close velocity:** first MoU signed within 45–60 days of initial outreach across at least one of the 2 pilots. Below that is a partner-side-slow signal or pitch issue.\n2. **Pilot launch:** pilot ships within 4–6 weeks of MoU. Slower suggests internal execution problem on one or both sides.\n3. **Shared-metric outcomes:** by day 90, meaningful customer flow. Specific target depends on partner size — 50–200 trials from a 10k-customer partner; 200–500 from a 50k-customer partner. Zero is clear miss; partial is inconclusive; target or above is pass.\n4. **Renewal rate:** at 90-day review, both sides agree to continue. If either side wants out, deal fails regardless of the metrics — forced continuation doesn't produce value.\n\nIf 1+ pilots pass all four thresholds, BD is worth scaling. If 0/2 pass, investigate (channel, partner selection, execution) before concluding BD failed.\n\n## Cheaper tests BEFORE committing\n\nYou can test pieces of BD without committing to full deals:\n\n- **Outreach response rate.** Send 10 well-qualified pitches. If 30–50% respond positively, the pitch and target-list work. If <15% respond, fix the pitch before proceeding.\n- **Partner-fit conversations.** 2–3 exploratory conversations with potential partners (no commitment) to validate that mutual-value hypotheses are real. These surface 'yes, interesting' vs 'no, doesn't fit' much faster than a formal pitch.\n- **Co-marketing micro-tests.** A single joint webinar or co-created content piece can test promotion-style BD at much lower commitment than a full integration. 2–4 weeks, 1 deliverable, easy to wind down.\n\nThese pre-tests let you validate the channel shape before committing to full integrations.\n\n## Common test failure patterns\n\n- **Slow to MoU.** If 3+ months in, no MoU signed with any partner, the pitch is probably the issue — not the channel. Fix the pitch, re-qualify the target list, restart.\n- **MoU signed but pilot doesn't ship.** Partner-side execution problem. Either the partner's team didn't prioritize, or the deal structure was too complex. Lightweight the deal; assign owners; weekly check-ins.\n- **Pilot ships but no customer flow.** Either the partner's distribution isn't active (promised but didn't deliver), or your landing/onboarding doesn't convert their traffic. Distinguish: check the traffic first (did they send any?) then the conversion.\n- **Customer flow but low retention.** The partner sent you the wrong audience. Not your fault structurally, but indicates the partner's ICP wasn't as aligned as expected. Learnings for next deal.\n\n## When to kill a BD test\n\nPre-defined kill criterion: if after 4 months from test launch (2 months of execution + 2 months of pilot time) no partner has produced meaningful customer flow, pause BD. Don't write off the channel permanently — some channels take multiple cycles to produce first-deal wins — but shift focus to other channels for the current Bullseye cycle.\n\nAvoid the sunk-cost trap: 'we've invested 3 months, let's give it another 2.' BD deals have real timelines, but they also have clear signals — if none of the signals fire by month 4, additional waiting typically doesn't change the outcome.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Deepak (Gradient — retail performance SaaS) is running a BD Bullseye test. He's identified 3 top candidate partners: Klaviyo, a mid-size retail BI tool, and a vertical e-commerce platform.",
+        "walkthrough": "**Pre-defined thresholds:**\n- Close velocity: MoU with ≥1 of 3 within 60 days.\n- Pilot launch: live within 6 weeks of first MoU.\n- Customer flow: 150+ aligned trials referred across all pilots in 90 days.\n- Renewal: both sides want to continue after pilot.\n\n**Weeks 1–4 — outreach:**\n- Deepak sends personalized pitches to warm-intro contacts at each partner.\n- Response rate: 3/3 replied (high, warm intros help).\n- Klaviyo: interested but their BD team is constrained for 2+ quarters. Deprioritized for later.\n- Retail BI tool: strong interest, sends one-pager request.\n- Vertical e-commerce platform: medium interest, wants more discovery.\n\n**Weeks 5–8 — MoUs:**\n- Retail BI tool: MoU signed at week 6. Pass velocity threshold for this pilot.\n- Vertical e-commerce platform: still discussing at week 8; Deepak backs off, leaves door open for next quarter.\n- Klaviyo: re-qualified for next quarter.\n\n**Weeks 9–14 — pilot execution:**\n- Retail BI tool pilot: API integration for data-layer connection. 4 weeks of eng time on his side; 2 weeks of product work on theirs.\n- Joint launch (co-branded blog post, in-product placement for retail BI tool customers, email promotion).\n- Live at week 14.\n\n**Weeks 14–24 — 90-day pilot:**\n- Week 14–16: 85 trials referred, 16 activated, 4 paid conversions. Strong start.\n- Week 17–20: 120 additional trials, 24 activated, 7 paid.\n- Week 21–24: 140 trials, 38 activated, 11 paid.\n- 90-day total: 345 trials, 78 activated, 22 paid. Blends to $2,191 MRR added from this one pilot.\n- Both sides review at day 90: want to continue. Retail BI tool extends, adds featured-partner placement.\n\n**Threshold scoring at day 90:**\n- Close velocity: 1 of 3 within 60 days — PASS (threshold was ≥1 of 3).\n- Pilot launch: 6 weeks after MoU — PASS.\n- Customer flow: 345 trials (threshold was 150+) — PASS.\n- Renewal: both want to continue — PASS.\n\n**Decision:** BD is a working channel for him. Scale:\n- Re-engage Klaviyo now that the retail-BI-tool case study exists (social proof).\n- Identify 2 more candidates in adjacent verticals (Shopify ecosystem, e-commerce analytics tools).\n- Deepen retail BI tool relationship — second integration surface, more co-marketing.\n\n**Counterfactual:** if the retail BI pilot had produced 20 trials and 0 paid (miss), Deepak would have diagnosed (partner's distribution underperformed? integration issues? Audience fit off?) and decided whether to try another partner or shift focus. The pre-defined thresholds prevented him from declaring 'BD works' after 20 trials or 'BD doesn't work' after the vertical e-commerce platform stalled."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-cheap-testing",
+        "explanation": "The Bullseye cheap-testing principle holds — small commitment, pre-defined thresholds, explicit kill criteria. The test shape adapts: for BD the timeline is 3–6 months not 1 week, the 'budget' is mostly time not cash, and success thresholds focus on close-velocity and pilot outcomes rather than CPA-style metrics. The founder's common mistake is either declaring 'BD failed' after 4 weeks of no closed deal, or running one deal for 9 months without pre-defined thresholds and losing the ability to cut losses. Adjust the test shape to the channel; keep the discipline."
+      },
+      "flashcards": [
+        {
+          "id": "ch17-testing-bd-fc1",
+          "type": "recall",
+          "front": "What's the minimum viable test shape for BD?",
+          "back": "1–2 parallel lightweight pilot deals with different partners. 90-day pilots, MoU-preferred structure, pre-defined success thresholds. Total timeline 3–6 months from first outreach to 90-day pilot read."
+        },
+        {
+          "id": "ch17-testing-bd-fc2",
+          "type": "recall",
+          "front": "Name the four pre-defined thresholds for a BD test.",
+          "back": "(1) Close velocity — first MoU within 45–60 days. (2) Pilot launch — live within 4–6 weeks of MoU. (3) Shared-metric outcomes by day 90. (4) Renewal rate — both sides want to continue."
+        },
+        {
+          "id": "ch17-testing-bd-fc3",
+          "type": "recall",
+          "front": "Name three cheaper tests you can run BEFORE committing to full BD deals.",
+          "back": "(1) Outreach response rate — 10 pitches, measure % interested. (2) Partner-fit conversations — informal discussions to validate mutual-value hypotheses. (3) Co-marketing micro-tests — single joint webinar or co-content piece without full integration."
+        },
+        {
+          "id": "ch17-testing-bd-fc4",
+          "type": "cloze",
+          "front": "Running ______ pilots in parallel is better than ______ — variance in outcomes between partners is significant, and parallel deals give you comparison data.",
+          "back": "2 ; 1 — one deal isn't enough to distinguish partner-specific from channel-level issues."
+        },
+        {
+          "id": "ch17-testing-bd-fc5",
+          "type": "recognition",
+          "front": "When should you kill a BD test?",
+          "back": "After 4 months from test launch (2 months execution + 2 months pilot time) if no partner has produced meaningful customer flow. Pause BD for the current Bullseye cycle; don't write off permanently. Avoid sunk-cost extension without clear signal."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch17-testing-bd-sc1",
+          "setup": "A founder launches a single BD pilot. 90 days in, 8 trials referred, 1 paid customer. Threshold was 100+ trials and 10+ paid. Clear miss. But the founder still feels 'this is the right channel.'",
+          "question": "Is the kill justified? What would you investigate before walking away?",
+          "modelAnswer": "The kill of THIS pilot is justified — thresholds missed by a wide margin. But 'kill the channel' is premature from n=1. Before declaring BD failed: (1) Was the partner's distribution actually active? 8 trials suggests they didn't promote the integration. Check: did they send any emails, do any in-product placement, feature it in their partner newsletter? (2) Was the integration useful? Low activation (or low traffic-to-activation) would hint at weak product fit on the partner's customer base. (3) Was the ICP overlap real? Maybe only 10% of their base was actually in Deepak's ICP range, in which case even a great deal only produces thin flow. (4) Was there an execution issue on our side (landing page, welcome sequence)? The right move: diagnose this specific partner failure; start a second pilot with a different partner using what you learned; re-test. If the second pilot also fails at similar scale, then BD likely isn't a fit for this startup's shape. But declaring channel failure from one deal is motivated reasoning dressed as decisiveness.",
+          "rubric": [
+            "Justifies killing THIS pilot on thresholds",
+            "Rejects declaring 'channel failure' from one deal",
+            "Names specific investigation areas (distribution activeness, integration fit, ICP overlap, execution)",
+            "Prescribes a second pilot with a different partner",
+            "Calibrates two-pilot signal as sufficient for channel-level conclusions",
+            "Shows understanding of partner-specific vs channel-level problems"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch17-testing-bd-sc2",
+          "setup": "A founder is 3 months into BD testing. No MoU signed with any of 4 partners. Conversations ongoing but nothing structural. They're running out of patience.",
+          "question": "What's the likely problem, and what should they do?",
+          "modelAnswer": "Slow-to-MoU pattern. 3 months without a single signed MoU from 4 targets indicates (a) pitch or target-list issue, (b) deal-structure too heavy (partners declining long contracts), or (c) partners stalling without telling them no. Specific moves: (1) Ask one of the stalled partners directly: 'Is there a specific blocker? If this isn't a fit on your side right now, I'd rather know so I can focus elsewhere.' Forces a clear response. (2) Review the pitch — did it lead with their goal, or pitch your product? Re-personalize if generic. (3) Simplify the proposed deal structure — if you've been asking for too much (exclusivity, long-term commitment, complex revenue shares), offer a lightweight alternative (MoU pilot, simple shared metric, 90-day). (4) Re-qualify the list — are these partners actually the right fit for your current stage? A 50-customer startup pitching Salesforce for a co-integration is a timeline mismatch. (5) Make a clear decision at month 4: if no MoU, BD pauses for this cycle. Move the Bullseye focus elsewhere. Re-visit BD in 6 months with updated traction and social proof.",
+          "rubric": [
+            "Diagnoses slow-to-MoU pattern with specific causes",
+            "Prescribes direct inquiry to partners ('what's the blocker')",
+            "Suggests pitch review and deal-structure simplification",
+            "Recommends re-qualifying the list",
+            "Sets month-4 kill criterion",
+            "Notes BD can be deferred, not necessarily abandoned"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Design a cheap test of BD for a post-PMF B2B SaaS. Cover: (1) pre-build validation options (cheaper tests before full deals), (2) the minimum viable pilot structure, (3) the four pre-defined thresholds, (4) how to distinguish partner-specific failures from channel-level failures.",
+        "rubric": [
+          "Pre-build validation options (outreach rate, partner-fit convos, micro-tests)",
+          "Minimum viable pilot structure (1–2 parallel, 90 days, lightweight)",
+          "All four thresholds with numeric targets",
+          "Partner-specific vs channel-level failure distinction",
+          "Time budget and kill criterion specified",
+          "Uses Bullseye-style reasoning throughout"
+        ]
+      }
+    },
+    {
+      "id": "ch17-bd-pitfalls",
+      "chapterId": "ch17",
+      "title": "Pitfalls: How BD Deals Fail",
+      "isLandmark": false,
+      "order": 6,
+      "pretest": {
+        "prompt": "Even good BD ideas fail in specific repeatable ways. Before reading: list the three most common BD failure modes you think happen despite founder-side good execution — the patterns that come from the partnership itself rather than from sloppy startup work.",
+        "modelAnswer": "Three structural-partnership failure modes: (1) Vanity partnerships — impressive logos on a slide that produce no customer flow. Usually result from deals motivated by optics rather than distribution. (2) Misaligned incentives — one side has reason to push the deal, the other's team doesn't. Even if both legally signed, only one side invests effort. Predictably dies after signing. (3) Legal and support overhead that eats the upside — a deal that required 6 months of legal and ongoing support bandwidth can produce less net value than the effort it consumed. Particularly bad when the partner's processes require founder-level attention for ongoing maintenance. A fourth: partner-dependency risk — the deal works and produces meaningful customers, and now you're structurally dependent on the partner's goodwill, which introduces strategic risk."
+      },
+      "lesson": {
+        "markdown": "## Five structural failure modes\n\n### 1. Vanity partnerships\n\nImpressive logos on a slide, zero distribution. The deal happens because it makes good optics — 'we're partners with X' — but no side has incentive to execute the customer-flow mechanism. Often originates when a founder or BD lead is rewarded for signing deals rather than shipping them.\n\nSymptom: press release at signing; no co-marketing activity six months later.\n\nFix: require a shared metric at signing that's reported on publicly or in QBRs. No metric = no deal. This filters out optics-only deals.\n\n### 2. Misaligned incentives\n\nOne side has a clear reason to push the deal (the sales leader who negotiated it, the founder who pitched it). The other side's team — product, marketing, customer success — doesn't. They signed, but they won't invest in execution.\n\nSymptom: deal signed; partner's product/marketing teams are unresponsive; integration is low priority on their roadmap.\n\nFix: at signing, identify the owner on the partner side who has metrics-based accountability for the deal's outcome. If no such owner exists, the deal is probably going to stall. Walk away or restructure so someone on the partner side is explicitly measured.\n\n### 3. Legal and support overhead eats the upside\n\nA deal that required 6 months of legal negotiation and then ongoing support infrastructure (custom SLAs, dedicated account management, special compliance handling) can consume more value than it produces. Common for large-enterprise-partner deals with small startups — the startup's bandwidth gets overwhelmed.\n\nSymptom: founder ends up in legal / account-management meetings taking 20 hours/week; product velocity slows; no measurable uplift from the deal.\n\nFix: (a) pre-calculate the overhead cost of the deal before signing. (b) Simplify structure (MoU, shared metric, lightweight SLAs). (c) For deals that genuinely need heavy infrastructure, ensure the outcome is large enough to justify it — not every big partner is worth a big lift.\n\n### 4. Partner blocks your roadmap\n\nAfter signing, you discover the partner has informal or contractual restrictions on what you can build — 'you can't add this feature because it'd compete with our product,' 'you can't partner with X because it's our competitor.' Your roadmap is now constrained.\n\nSymptom: a feature decision gets blocked by partnership considerations; competitive partnerships become off-limits.\n\nFix: (a) read contracts carefully for implicit or explicit roadmap restrictions. (b) avoid exclusivity clauses early unless the deal's volume genuinely warrants the trade-off. (c) when choosing partners, consider whether their strategic adjacency to your roadmap is stable — partners who'd want to block your moves are risky regardless of short-term deal value.\n\n### 5. Partner-dependency risk\n\nThe deal works SO well that you become structurally dependent on the partner. 60–80% of your new customers come from them. Then: the partner's priorities change, their contact leaves, their new BD regime has different strategies. Your pipeline evaporates.\n\nSymptom: a single partner produces most of your growth; loss of that relationship would seriously hurt.\n\nFix: portfolio approach. Even if one partnership is dominant, maintain 3–5 active relationships so no single partner can sink you. Diversify across partner types (integration, co-marketing, licensing) so different relationships produce flow through different mechanisms.\n\n## Secondary failures worth knowing\n\n- **Commission-structure traps.** Deals with complex revenue shares that require bespoke accounting eat operational bandwidth. Fix: simpler structures.\n- **Partner pivot.** Partner changes their strategic direction; your integration becomes irrelevant to their roadmap. Fix: quarterly strategic check-ins; early signal of partner priority shifts.\n- **Political casualty.** A partnership becomes a political football in the partner's org. The champion leaves; the replacement has different views. Deal stalls. Fix: build relationships at multiple levels on the partner side.\n\n## Prevention checklist\n\nBefore signing a BD deal, verify:\n\n1. Shared metric defined and both sides committed to tracking.\n2. Named owner on partner side with metrics-based accountability.\n3. Overhead cost of the deal pre-calculated and budget for it confirmed.\n4. No roadmap-restricting exclusivity clauses in fine print.\n5. Even if this deal is significant, portfolio of 3+ active partner relationships or plan to build one.\n\nFive 'yes'es and predictable failure modes are preempted. Most bad BD deals miss on 2 or 3 of these.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Yumi's BD program is 10 months in. TopTime deal working well (major contributor). FreelanceHub deal stalled after first wave. She's recently signed with a third partner — a large enterprise PM platform — that's produced impressive co-announcement press but zero customer flow in the first 60 days.",
+        "walkthrough": "Pitfall audit:\n\n**Vanity partnership with enterprise PM platform?** Likely yes. Press release at signing, co-branded blog post, but... no shared metric was defined (the deal emphasized 'strategic alignment' without a measurable outcome), no named product/marketing owner on their side, no joint-launch activities beyond the announcement. Classic vanity pattern.\n\n**Misaligned incentives?** Their BD lead was enthusiastic; their product and marketing teams appear uninterested. The BD team got the win; nobody on the execution side has accountability.\n\n**Legal overhead?** Deal took 3 months of legal; long-form contract with custom SLAs. High overhead for a deal producing zero output.\n\n**Roadmap restrictions?** The contract has an exclusivity clause — Yumi can't partner with two named competitors of the enterprise PM platform. She hadn't noticed the implication — one of those competitors was actually a good potential partner she'd been planning to approach.\n\n**Partner dependency?** Not yet (the deal's producing nothing), but if it did start working, it would become concentrated. Currently her portfolio is balanced (TopTime carrying most weight).\n\n**Diagnosis:** the enterprise PM deal has hit 3 of 5 failure modes. The deal as currently constructed isn't producing value. Interventions:\n\n- **Reset conversation.** Yumi reaches out to the BD lead: 'I want to revisit the shared-metric commitment and see if we can realign on execution, or agree that this isn't the right time for the deal.' Forces clarity.\n- **If no metrics-accountable owner can be identified:** amicably wind down. The exclusivity clause is the bigger concern — she'd rather have the freedom than keep a dead deal with that restriction.\n- **If the partner can align on metrics + owners:** 90-day defined pilot with clear deliverables.\n\n**Outcome at month 12:** the partner acknowledges they can't find an internal owner — the BD team pushed for the deal but product/marketing have other priorities. They agree to a mutual wind-down. Yumi loses the logo from her slide but gains the freedom to pursue the two restricted competitor partnerships. Within 6 months, she closes a deal with one of them that produces 40% of her subsequent growth.\n\n**Lesson:** a dead BD deal isn't neutral — it occupies strategic space (exclusivity restrictions, mental bandwidth, reputation) and is worth actively unwinding rather than letting linger.\n\n**What she's now applying:** the five-item prevention checklist. No new BD deal signs without shared metric, named owner, overhead budget, exclusivity review, and portfolio plan."
+      },
+      "contrast": {
+        "neighborConceptId": "ch17-leverage-mechanism",
+        "explanation": "The leverage-mechanism concept explains how BD compounds when things go well. The pitfalls concept explains how partnerships silently fail — usually because one of the three factors (product value × reach × effort) collapses to near-zero, turning the multiplication into near-zero output. Each pitfall maps to a specific factor: vanity partnerships zero-out product-value signaling; misaligned incentives zero-out effort; roadmap restrictions zero-out future product value. Understanding the failure modes as deficient factors in the multiplication makes them diagnosable rather than mysterious."
+      },
+      "flashcards": [
+        {
+          "id": "ch17-bd-pitfalls-fc1",
+          "type": "recall",
+          "front": "Name the five structural BD failure modes.",
+          "back": "(1) Vanity partnerships — optics without execution. (2) Misaligned incentives — one side invests, the other doesn't. (3) Legal/support overhead eats upside. (4) Partner blocks your roadmap. (5) Partner-dependency risk — over-concentration in one relationship."
+        },
+        {
+          "id": "ch17-bd-pitfalls-fc2",
+          "type": "recognition",
+          "front": "What's the diagnostic for a vanity partnership?",
+          "back": "No shared metric defined at signing. Press release but no co-marketing activity 6 months later. Fix prevention: require a shared metric reported on in QBRs as a condition of signing. No metric = no deal."
+        },
+        {
+          "id": "ch17-bd-pitfalls-fc3",
+          "type": "recall",
+          "front": "Why is 'named metrics-accountable owner on partner side' critical?",
+          "back": "Partners' teams have competing priorities. Without a named owner with metrics-based accountability, the deal drifts — legal signed, nobody executes. The owner ensures the deal has a champion through execution."
+        },
+        {
+          "id": "ch17-bd-pitfalls-fc4",
+          "type": "cloze",
+          "front": "Partner-dependency risk is avoided via ______ approach — maintain ______ active partnerships so no single relationship can sink your pipeline.",
+          "back": "portfolio ; 3–5 — diversification across partner types and distribution mechanisms."
+        },
+        {
+          "id": "ch17-bd-pitfalls-fc5",
+          "type": "recall",
+          "front": "Name the five items on the BD deal-prevention checklist.",
+          "back": "(1) Shared metric defined. (2) Named metrics-accountable owner on partner side. (3) Overhead cost pre-calculated and budgeted. (4) No roadmap-restricting exclusivity. (5) Portfolio of 3+ active partner relationships or plan to build one."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch17-bd-pitfalls-sc1",
+          "setup": "A founder's BD deal has run for 9 months. It produces 15% of total new customers — modest but consistent. The partner just introduced an exclusivity clause during renewal: 'Sign this or we walk.' The exclusivity blocks the founder from partnering with any other tool in the same category.",
+          "question": "What's the right move and what's the underlying pattern?",
+          "modelAnswer": "This is a trap. The partner is leveraging the existing dependence to extract a structural restriction that limits the startup's future optionality. Multiple risks: (1) the founder loses ability to diversify — if this partner's strategy changes, there's no plan B; (2) exclusivity blocks deals that might collectively produce 50%+ of new customers; (3) 15% consistent is good but not so good that it's worth locking out all competitors; (4) renewal-time ultimatums are typical of partners who feel they have leverage — often a negotiation tactic, sometimes a real ultimatum. Response: first, clarify what exactly 'walk' means — end of integration? End of co-marketing? If the deal lapses gracefully, 15% isn't catastrophic, especially if diversification opens up 2–3 competitor partnerships that together produce 30–40%. Second, negotiate: offer limited exclusivity (by specific named competitor, by region, by time-bound, by category scope). Many such clauses get softened if pushed. Third, if the partner insists on broad exclusivity, let the deal lapse. The exclusivity loss is a permanent structural risk; the 15% is recoverable through alternate partners.",
+          "rubric": [
+            "Identifies this as a leverage/dependency trap",
+            "Values optionality over 15% revenue",
+            "Prescribes negotiating limited-scope exclusivity",
+            "Accepts letting the deal lapse if no workable terms",
+            "Estimates diversification upside from freed-up partnerships",
+            "Distinguishes ultimatum-as-tactic from ultimatum-as-real"
+          ],
+          "difficulty": 3
+        },
+        {
+          "id": "ch17-bd-pitfalls-sc2",
+          "setup": "A founder signed with a large enterprise platform. 6 months in: no customers, no activity. The partner's product team never prioritized the integration. The founder asks: should I give up or push harder?",
+          "question": "Frame this through the pitfalls lens.",
+          "modelAnswer": "Classic misaligned-incentives failure. Partner's BD team signed, but product/marketing didn't commit. Pushing harder without changing the incentive structure won't work — the same non-prioritization will continue. Right moves: (1) Have a direct conversation with the BD contact: 'The deal isn't producing — what would it take to get product prioritization?' If the answer is 'they can't commit resources in this quarter,' that's an honest signal the deal is misaligned. (2) Try to identify a named product or marketing owner who has metrics-based accountability. If one can be identified and committed, the deal can be reset. (3) If no such owner exists, amicably wind down — not in anger, just recognizing that the structural fit isn't there. Preserve the relationship so a future deal with changed conditions (new leadership, new priorities) could work. Do NOT push harder on the current structure. Pushing against a misaligned partner team produces friction without result. Pouring effort into a deal that doesn't have executive alignment on the partner side is throwing time at an unchangeable problem.",
+          "rubric": [
+            "Identifies misaligned-incentives pattern specifically",
+            "Rejects 'push harder' as a fix",
+            "Prescribes direct inquiry for internal prioritization status",
+            "Looks for named metrics-accountable owner as rescue path",
+            "Accepts amicable wind-down as legitimate outcome",
+            "Preserves future-deal optionality"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the five structural failure modes of BD deals to a founder about to sign their first partnership. For each: (a) the mechanism that fails, (b) the external symptom, (c) the specific fix. Then walk through the five-item prevention checklist with reasoning for each item.",
+        "rubric": [
+          "All five failure modes with mechanism / symptom / fix triples",
+          "Vanity partnership failure and fix (shared metric requirement)",
+          "Misaligned incentives and fix (named metrics-accountable owner)",
+          "Overhead trap and fix (pre-calculation + simplification)",
+          "Roadmap restrictions and fix (careful contract reading + limited exclusivity)",
+          "Dependency risk and fix (portfolio of 3+ relationships)",
+          "Five-item prevention checklist in order"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "id": "ch05",
+  "number": 5,
+  "slug": "critical-path",
+  "title": "Critical Path",
+  "summary": "A framework for deciding what to work on: set a single significant traction goal, enumerate the absolutely necessary milestones to reach it in the shortest order, and ruthlessly cut any work that doesn't advance that path.",
+  "concepts": [
+    {
+      "id": "ch05-traction-goal",
+      "chapterId": "ch05",
+      "title": "The Traction Goal: What You're Actually Aiming At",
+      "isLandmark": true,
+      "order": 1,
+      "pretest": {
+        "prompt": "Before reading on: write down a traction goal for a hypothetical B2B SaaS you're running. Now stress-test it. Is it a number? Does hitting it change something meaningful about the business? Could you tell, six months from now, whether you hit it or not? If any of those answers is 'kind of,' what's missing?",
+        "modelAnswer": "A well-formed traction goal has three properties. (1) It's *quantitative* — a specific number like '1,000 paying customers' or '10% of our addressable market,' not 'grow a lot' or 'get to product/market fit.' (2) It's *significant* — if you hit it, something important changes for the company: profitability, default-alive, fundability, market-leader status, moving between stages. Hitting a number that changes nothing is just vanity. (3) It's *time-bound* enough to test — you can tell in finite time whether you hit it, so the goal is falsifiable and the team is accountable. 'Kind of' answers usually mean the goal is either fuzzy (not quantitative), arbitrary (no linked significance), or open-ended (no time anchor). Missing any of the three undermines everything downstream — you can't plan a path to a goal that isn't sharp."
+      },
+      "lesson": {
+        "markdown": "## Why the goal is upstream of everything\n\nEverything in Critical Path flows from one decision: **what is your traction goal?** Pick the wrong goal and every milestone, every feature, every channel decision tilts toward the wrong place. The goal isn't a rallying cry — it's a load-bearing input to the rest of the framework.\n\nA traction goal has to clear three bars.\n\n## 1. It has to be quantitative\n\n'Get to product/market fit.' 'Grow the business.' 'Win the market.' None of these are traction goals — they're directions. A traction goal is a number: *1,000 paying customers. 100 million searches a month. 10% of the search market. $1M ARR. 500 weekly transactions.* You should be able to plot it on a chart and know, on any given day, how far you are from it.\n\nThis matters because the rest of the framework — enumerating milestones, cutting off-path work — only works if 'are we there yet?' has an unambiguous answer. You can't reason backward from a feeling.\n\n## 2. It has to be significant\n\nThe harder bar. A goal is significant when **reaching it changes something meaningful about your company**. Examples of what 'meaningful' can look like:\n\n- You become profitable (or default-alive).\n- You can raise your next round on better terms, or at all.\n- You cross an inflection where a channel unlocks (e.g., enough usage for platform deals, PR, or organic word-of-mouth).\n- You move from 'an early-stage startup' to 'an entrenched player' in your market.\n\nDuckDuckGo's stated goal of *1% of the general search market* is the instructive example. One percent of most markets is a rounding error. In general search, with a market that size and that few competitors, 1% means being taken seriously as a permanent player — which unlocks better distribution deals, more PR, more hiring. The number isn't magic. The *significance* is. Before that, their goal was 100 million searches a month, because that's what got them to break-even. Different stage, different number, same logic: *what changes if we hit this?*\n\nThe diagnostic question for any proposed goal: **if we hit this, what specifically changes?** If the honest answer is 'we'd feel good' or 'it's a round number,' the goal isn't significant enough to anchor a Critical Path.\n\n## 3. It has to be time-anchored enough to act on\n\nYou don't need a hard deadline, but the goal has to exist on a timeline you're actually planning against — often six months to two years at startup stage. DuckDuckGo's traction goals have each taken about two years. That's not a prescription; the point is that the timescale has to be *long enough to be ambitious* and *short enough to force choices today*. A ten-year goal doesn't shape this quarter's decisions; a one-week goal doesn't cover enough ground to matter. Somewhere in the middle is where the goal starts doing real work.\n\n## The relationship to sub-goals\n\nOnce you've set the main goal, you'll break it into quantitative time-boxed sub-goals — '1,000 customers by Q2,' '20% MoM growth for six months.' Sub-goals come later in the framework. First, the main one must be sharp.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Theo is CEO of FleetPing, an 18-month-old SaaS ($399/mo/vehicle) selling GPS + incident tracking to small trucking fleets. Current state: 28 paying fleets, $11k MRR, 14 months of runway at current burn, 2 engineers + Theo. A board member asks: 'What's your traction goal?' Theo's first answer: 'Hit product/market fit and grow fast.'",
+        "walkthrough": "That's not a traction goal — it's a direction. Walk it through the three bars.\n\n**Quantitative?** No. 'Grow fast' isn't plottable. Force a number. Theo considers three candidates:\n\n- *10,000 paying fleets.* Big, exciting. But not reachable in any plausible Critical Path from 28 — it's a 10-year goal, not a 1–2-year anchor.\n- *500 paying fleets.* Would be roughly $200k MRR at current pricing. That *is* plausible from 28 over 18 months if a channel works.\n- *$1M ARR.* Roughly the same magnitude. Same candidate, framed differently.\n\n**Significant?** Interrogate 500 fleets: what would change? Theo runs the math. At $200k MRR with current burn he's default-alive — runway extends indefinitely. More importantly, at ~500 fleets he'd have enough logos and data to credibly raise a Series A on strong terms, *if* he chose to. And at 500 fleets he'd be the largest vertical-specific player in his niche, which opens partnership conversations with telematics-hardware vendors that don't return his calls today. That's three distinct things that meaningfully change. The goal passes the significance bar.\n\n**Time-anchored?** 500 fleets in 18 months from 28. That works out to roughly 9% MoM compounding — ambitious but not fantasy. Short enough to force this quarter's decisions, long enough to span real work.\n\n**Final goal:** 500 paying fleets by end of next year (18 months). Stated with the linked significance: 'at which point we're default-alive and can raise on our terms.'\n\nContrast: Theo's co-founder suggests 'let's aim for 50,000 website signups.' Apply the bars: quantitative (yes), significant (no — signups don't change anything about the business for a $399/mo sales-led product), time-anchored (sure). Fails bar #2, so it's not a usable traction goal — it's a vanity metric.\n\nNote what the 500-fleet goal now enables. Every future discussion — which features to build, which channel to test, which role to hire — has a north star to be evaluated against. 'Does this get us closer to 500 fleets in 18 months?' is now a question with a real answer."
+      },
+      "contrast": {
+        "neighborConceptId": "ch01-what-is-traction",
+        "explanation": "Chapter 1's concept defines *what traction is* — quantitative evidence of customer demand. A traction goal is a *specific, time-bound target* for that evidence. Don't confuse them: 'traction is paying customers' is a definition of the metric; 'we want 500 paying fleets in 18 months' is a traction goal. The Ch1 concept is about how you measure; this concept is about what target you aim that measurement at. The goal inherits the Ch1 rules (must be real demand, not vanity) but adds two more: significance and time horizon."
+      },
+      "flashcards": [
+        {
+          "id": "ch05-traction-goal-fc1",
+          "type": "recall",
+          "front": "What three properties must a traction goal have?",
+          "back": "(1) Quantitative — a specific number you can plot. (2) Significant — hitting it changes something meaningful about the company (profitability, fundability, market position, stage transition). (3) Time-anchored enough to act on — typically 6–24 months, long enough to be ambitious and short enough to force current decisions."
+        },
+        {
+          "id": "ch05-traction-goal-fc2",
+          "type": "recognition",
+          "front": "DuckDuckGo's traction goal of 1% of the general search market — why does it count as 'significant' when 1% of most markets wouldn't?",
+          "back": "Because the general search market is huge and has very few serious players. At 1% DuckDuckGo gets taken seriously as an entrenched participant — which unlocks better distribution deals, PR, and hiring. Significance is context-dependent: the number isn't magic, the consequence of hitting it is."
+        },
+        {
+          "id": "ch05-traction-goal-fc3",
+          "type": "cloze",
+          "front": "The diagnostic question for any proposed traction goal is: if we hit this, what ______ changes?",
+          "back": "specifically — if the honest answer is 'we'd feel good' or 'it's a round number,' the goal isn't significant enough to anchor a Critical Path."
+        },
+        {
+          "id": "ch05-traction-goal-fc4",
+          "type": "recall",
+          "front": "Why is 'get to product/market fit' not a usable traction goal?",
+          "back": "It fails the quantitative bar — it's a direction, not a number. You can't tell on any given day how close you are, and you can't plan a path to a goal you can't measure. A goal has to be plottable."
+        },
+        {
+          "id": "ch05-traction-goal-fc5",
+          "type": "recall",
+          "front": "Why does a traction goal need to be time-anchored?",
+          "back": "Because a goal with no timescale doesn't shape current decisions. 10-year goals don't force choices today; 1-week goals don't cover enough ground to matter. Somewhere in between (often 6–24 months) is where the goal starts acting as a real constraint on what you do this quarter."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch05-traction-goal-sc1",
+          "setup": "A founder tells you: 'Our traction goal is to hit 1 million downloads of our mobile app.' Their app is free, monetized by ads at roughly $0.20 eCPM, and they have 40,000 downloads today with high churn (60% of installs uninstall within a week).",
+          "question": "Evaluate this traction goal against the three bars. What, if anything, is wrong?",
+          "modelAnswer": "Passes bar 1 (quantitative: 1M is a plottable number). Probably passes bar 3 if they've scoped a timeline. But the goal arguably fails bar 2 (significance) and definitely chooses the wrong metric. At $0.20 eCPM with the kind of session usage ad-monetized apps see, 1M *downloads* doesn't translate into meaningful revenue — especially when 60% uninstall within a week. Hitting 1M downloads wouldn't make them profitable, fundable at better terms, or shift the business's shape. The real load-bearing metric for an ad-monetized app is weekly or monthly active users (or ad-viewable sessions). A better goal: '250,000 weekly active users by next year' — which, given session economics, would meaningfully change revenue and fundability. The download count is the vanity version of the right metric. Fix: rewrite the goal around retention-adjusted activity, not installs.",
+          "rubric": [
+            "Identifies downloads as a vanity metric given the business model",
+            "Notes the significance problem — 1M downloads with 60% weekly churn doesn't change the business",
+            "Prescribes an active-user or session metric instead",
+            "Gives a concrete replacement goal with a plausible number",
+            "Ties the critique back to bar 2 (significance), not just generic 'vanity metric' hand-waving"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch05-traction-goal-sc2",
+          "setup": "Two co-founders are debating. Founder A wants the traction goal to be '$10M ARR in three years.' Founder B wants it to be 'default-alive within 12 months.'",
+          "question": "Which is the better traction goal for an early-stage startup with 10 months of runway, and why? What's the trade-off between them?",
+          "modelAnswer": "Founder B's goal is better for this stage. With 10 months of runway, the significance of 'default-alive' is survival — it's the most company-changing event possible. 'Default-alive' is also reachable in a timeframe (12 months) that forces real decisions this quarter. '$10M ARR in three years' is aspirational but fails the time-anchor bar for present-day planning — three years is too long to shape the next milestone, and if they run out of money in month 10, the $10M goal never mattered. That said, Founder B's goal needs to be made quantitative — 'default-alive' is a concept, not a number. The refined version: 'MRR that covers monthly burn, hit by month 12' — e.g., '$80k MRR by next October.' Trade-off: shorter, survival-oriented goals are correct for low runway; longer, ambition-oriented goals are correct once survival is secured. The framework doesn't forbid having both, but the one that drives the Critical Path *right now* should be the one whose timescale matches your most pressing constraint.",
+          "rubric": [
+            "Picks Founder B's goal and explains why (significance of survival given runway)",
+            "Critiques $10M/3yr as too distant to shape current decisions",
+            "Flags 'default-alive' as needing to be made quantitative (MRR number)",
+            "Articulates the trade-off: goal horizon should match the binding constraint",
+            "Notes you can have both but the driving goal is the shorter one here"
+          ],
+          "difficulty": 3
+        },
+        {
+          "id": "ch05-traction-goal-sc3",
+          "setup": "A founder says: 'My traction goal for the year is 1,000 paying customers.' You ask: 'What changes if you hit that?' He pauses, then says: 'I mean… it's 1,000 customers. That's a lot.'",
+          "question": "What's the problem, and what would you push him to answer?",
+          "modelAnswer": "The pause and the circular answer are the tell: he set the number first, then assumed significance would follow. That's backward. Push him to answer: at 1,000 customers, is he profitable? Fundable on better terms? A market leader in his niche? Unlocks a specific channel or partnership? If he can name one or more specific things that meaningfully change, the goal is good. If he can't, the number is arbitrary — a round-number vanity target that will feel like achievement but won't move the business. The fix isn't necessarily to change the number — 1,000 might be exactly right — it's to make the linked consequence explicit. A better formulation: '1,000 paying customers — at which point we're at $X MRR, default-alive, and can credibly raise a Series A.' Now the goal has teeth.",
+          "rubric": [
+            "Identifies the circular answer as the diagnostic signal",
+            "Names the bar being failed (significance)",
+            "Prescribes making the linked consequence explicit",
+            "Notes the number itself might be fine — it's the rationale that's missing",
+            "Gives a reformulated goal with linked significance"
+          ],
+          "difficulty": 1
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the concept of a traction goal to a first-time founder. Cover: (1) the three bars any goal must clear, (2) why each bar exists (what failure mode it prevents), (3) the diagnostic question you'd ask them to stress-test their own goal, and (4) how a traction goal relates to — but is distinct from — the definition of traction itself.",
+        "rubric": [
+          "Names all three bars: quantitative, significant, time-anchored",
+          "Explains the failure each bar prevents (unplottable goals, vanity numbers, timeless goals that don't force action)",
+          "States the diagnostic question ('if we hit this, what specifically changes?')",
+          "Distinguishes 'definition of traction' (what you measure) from 'traction goal' (specific target for that measurement)",
+          "Gives at least one concrete example (DuckDuckGo, or a different applied case) of a goal with linked significance",
+          "Explanation is causal: each bar is justified by what it prevents, not just listed"
+        ]
+      }
+    },
+    {
+      "id": "ch05-backward-milestones",
+      "chapterId": "ch05",
+      "title": "Working Backward: Milestones to the Goal",
+      "isLandmark": false,
+      "order": 2,
+      "pretest": {
+        "prompt": "You have a well-formed traction goal 18 months out. Before reading on: describe how you'd figure out what you need to do *this quarter* to be on track. What mistakes are easy to make in that translation?",
+        "modelAnswer": "The natural move is to reason *forward* — 'here's what we're working on, let's see how far it gets us' — but that anchors the plan to existing assumptions and easily produces a roadmap that doesn't actually reach the goal. The right move is to reason *backward* from the goal: what absolutely has to be true for us to hit 500 customers in 18 months? Maybe: a channel must be producing at least 30 new customers/month, onboarding friction must be low enough to convert at X%, and one or two product gaps must be closed. Each of those is a milestone. Common mistakes: (a) confusing 'things we want to do' with 'things we must do' — pet features sneak in, (b) under-specifying — 'improve the product' isn't a milestone, (c) skipping the dependency question — you list milestones but never ask which ones block which, (d) drawing the list once and never revisiting as you learn."
+      },
+      "lesson": {
+        "markdown": "## Reason backward, not forward\n\nOnce you have a traction goal, the planning move is counterintuitive: **start at the goal and walk backward**. Ask: what has to be true for us to hit this goal? What must happen, directly upstream of that? And upstream of *that*?\n\nThe forward-reasoning alternative — listing what you're currently working on and hoping it adds up to the goal — is what produces roadmaps that feel productive but don't get you there. Forward reasoning anchors to existing assumptions. Backward reasoning forces the question 'is this actually necessary?' at every step.\n\n## What counts as a milestone\n\nA milestone, in this framework, is **something that must be true for you to reach the traction goal**. It's a concrete, checkable state — not an activity.\n\n- 'Build a faster site' — activity, not milestone.\n- 'Site loads under 1s on 3G, verified across 20 pages' — milestone.\n- 'Work on mobile' — activity.\n- 'iOS app feature-matches desktop experience and has >4.0 App Store rating' — milestone.\n- 'Do PR' — activity.\n- 'Featured on national broadcast TV at least once' — milestone.\n\nMilestones can be product, traction, hiring, or operational — the framework doesn't care about category. What matters is the necessity test: if this milestone doesn't get hit, does reaching the traction goal fail? If the answer is 'no, we could still get there,' it's not a milestone.\n\n## The DuckDuckGo example\n\nTo reach 100 million searches/month, DuckDuckGo's necessary milestones included: a faster site (speed was blocking users on the margin), a more compelling mobile experience (mobile share of search was rising), and meaningful broadcast TV coverage via PR (the channel that could move the needle). Notably *not* on the list: image search and auto-suggest. Those were continually requested by users but weren't necessary to hit 100M — the existing user base was motivated enough to forgive their absence at that stage. (The next goal — 1% of general search — required reaching mainstream users less willing to forgive those gaps, so images and auto-suggest *became* milestones in the new Critical Path.)\n\nNotice what this reveals: whether something is a milestone isn't a property of the thing, it's a property of the *goal it's being evaluated against*. The same feature is on-path for one goal and off-path for another.\n\n## The necessity test is the whole game\n\nThe hardest and most valuable work in this step is ruthlessly distinguishing 'necessary' from 'useful.' Useful things are infinite. Necessary things are few. Every item you put on the list is one you're committing to do; every item you leave off is work you're explicitly choosing not to do (at least under this goal). The second category is what gives you focus.\n\n## What the output looks like\n\nBy the end of this step you should have a short list — often 3 to 8 items — of checkable states that together are sufficient to hit your traction goal. No actions, no wishes. Just: *these are the things that must be true.* The next step (ordering and dependency) converts that list into a path.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Theo (from FleetPing) has set his traction goal: 500 paying fleets in 18 months. He sits down to list milestones.",
+        "walkthrough": "Starting at the goal and walking backward.\n\n**What must be true at 500 fleets?** He'd need a reliable channel producing at least ~30 new paying fleets/month. Onboarding has to be fast enough that a small fleet manager can go live in under a day (current: 5-day onboarding with a required call is a conversion cliff). Pricing or packaging has to work at the current $399/mo — or a lower-friction entry tier has to exist.\n\n**What has to be true for a channel to produce 30 fleets/month?** He has to find and commit to one. Right now he has no systematic channel; he's closing fleets through founder-led outbound and word-of-mouth, neither of which scales to 30/month. So: *run Bullseye and commit to a channel* is a milestone.\n\n**What has to be true for onboarding to be <1 day?** He has to remove the required implementation call. That requires self-serve setup flow for the hardware (currently the big friction) and in-product walkthrough. So: *ship self-serve onboarding* is a milestone.\n\nContinuing the backward walk, Theo ends with a candidate list:\n\n1. *Run Bullseye, commit to one channel, prove it can deliver ≥30 new fleets/month at CAC < $1,200.*\n2. *Ship self-serve onboarding so a new fleet can go live in under one day.*\n3. *Launch an entry tier ($149/mo, 5 vehicles max) to reduce pilot friction.*\n4. *Hire one dedicated AE by month 6 to handle inbound from channel scaling.*\n5. *Reach 95% month-1 retention on self-serve signups (currently 72%).*\n\nNow he stress-tests each against the necessity bar. Someone on the team proposes 'build a white-label version for insurance partners.' It's interesting, but: could Theo hit 500 fleets without it? Yes — the channel strategy is direct-to-fleet. So the white-label is *useful* but not *necessary*. Off the list.\n\nAnother proposal: 'hire a VP of Engineering.' Same test. Could they hit 500 fleets with the current 2-engineer team plus one more hire? Probably, if scope is managed. So VP of Engineering fails necessity at this stage. Off the list.\n\nNotice what he *didn't* include: lots of requested features (route optimization, driver-scoring dashboards, multi-language UI). All useful. None necessary for 500 fleets — the existing user base isn't leaving over them. If and when Theo sets a bigger goal (say, 2,000 fleets requiring enterprise customers), those may become milestones. At today's goal, they aren't.\n\nThe output: five checkable states, not actions. Theo can look at his board a year from now and definitively say which are hit and which aren't."
+      },
+      "contrast": {
+        "neighborConceptId": "ch05-traction-goal",
+        "explanation": "The traction goal is the *endpoint*; milestones are the *waypoints*. Founders sometimes confuse a sub-goal with a milestone — e.g., '$50k MRR by Q2' is a sub-goal (a quantitative traction target at a smaller scale), whereas 'ship self-serve onboarding' is a milestone (a state that unlocks progress toward the MRR goal). Sub-goals are intermediate endpoints on the same metric; milestones are the distinct prerequisite states that *produce* those endpoints."
+      },
+      "flashcards": [
+        {
+          "id": "ch05-backward-milestones-fc1",
+          "type": "recall",
+          "front": "Why reason backward from the goal instead of forward from your current roadmap?",
+          "back": "Forward reasoning anchors to existing assumptions and produces roadmaps that feel productive but don't necessarily reach the goal. Backward reasoning forces the 'is this actually necessary?' question at every step and exposes gaps between what you're doing and what the goal requires."
+        },
+        {
+          "id": "ch05-backward-milestones-fc2",
+          "type": "recognition",
+          "front": "Which of these is a milestone vs. an activity? (a) 'Improve onboarding.' (b) 'Self-serve onboarding enables new fleet to go live in under 1 day.' (c) 'Start doing PR.'",
+          "back": "Only (b) is a milestone. (a) and (c) are activities — verb phrases describing effort, not checkable end states. A milestone is something that is *true or not true*, not something you work on."
+        },
+        {
+          "id": "ch05-backward-milestones-fc3",
+          "type": "cloze",
+          "front": "The necessity test for a milestone: if this isn't hit, does reaching the traction goal ______?",
+          "back": "fail — if you could still reach the goal without it, it's useful but not necessary. Necessary milestones are few; useful activities are infinite."
+        },
+        {
+          "id": "ch05-backward-milestones-fc4",
+          "type": "recall",
+          "front": "Why was 'image search' not a milestone for DuckDuckGo's 100M-searches goal, but became one for their 1% market-share goal?",
+          "back": "Because milestone-hood is relative to the goal, not absolute. At 100M searches, the existing user base was motivated enough to forgive missing image search. At 1% of mainstream search, users were less forgiving and the feature became necessary for retention. The feature didn't change; the goal it was evaluated against did."
+        },
+        {
+          "id": "ch05-backward-milestones-fc5",
+          "type": "recall",
+          "front": "What does a 'useful but not necessary' item look like, and where does it go?",
+          "back": "It's a proposal that would help the business but isn't required to hit the current traction goal — e.g., a white-label version, an advanced feature with limited demand, or a nice-to-have integration. It goes off the current milestone list. It may become a milestone for a future goal, but under the current one, committing to it steals focus from necessary work."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch05-backward-milestones-sc1",
+          "setup": "A PM presents the quarter's plan. It's a list of 14 items: 'Improve search performance,' 'Hire marketing manager,' 'Start content marketing,' 'Build SSO,' 'Redesign homepage,' 'Expand to Canada,' etc.",
+          "question": "What's wrong with this list as a set of milestones, and what would you ask the PM to do to fix it?",
+          "modelAnswer": "Two problems. First, most items are *activities*, not milestones — 'improve search performance' and 'start content marketing' are verb phrases describing effort, not checkable end states. Ask the PM to rewrite each as 'state X is true' (e.g., 'search returns top result in <200ms for 95% of queries,' 'content marketing produces ≥100 organic signups/month'). Second, 14 is almost certainly too many — the necessity test almost never yields 14 must-haves. Ask: for each of these, if we don't do it this quarter, does the traction goal fail? Items where the honest answer is 'no, we could still get there' come off the list. Expect the list to collapse to 3–6 real milestones. The ones that fall off aren't killed — they're just not on the current path. Third move: for the surviving milestones, identify which ones block which (dependency order) — but that's the next step of the framework, after the list is pruned.",
+          "rubric": [
+            "Flags activities vs. milestones and gives the 'state X is true' reformulation",
+            "Identifies 14 as almost certainly too many under the necessity test",
+            "Applies the necessity test explicitly ('does the goal fail without this?')",
+            "Expects the pruned list to be 3–8 items",
+            "Notes that off-list items aren't killed permanently, just not on the current path",
+            "Mentions dependency ordering as the next step"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch05-backward-milestones-sc2",
+          "setup": "A founder builds her milestone list by forward reasoning: 'Here's what the team is already working on for the next 18 months — and here's our traction goal at the end.' The team's existing roadmap happens to include five major items; she labels all five as milestones.",
+          "question": "What's the risk of this approach, even if each item on the existing roadmap is independently reasonable?",
+          "modelAnswer": "The risk is that the existing roadmap was built on old assumptions — possibly pre-goal, possibly shaped by whichever team members were loudest — and labeling it 'the milestone list' retroactively legitimizes work that was never evaluated against the current goal. Forward reasoning lets the *current activity* define the plan; the whole point of backward reasoning is to let the *goal* define the plan, which often reveals mismatches. A proper backward walk might show (a) one or two roadmap items are essential milestones, (b) two or three are useful but unnecessary at this goal, and (c) one or two critical milestones weren't on the roadmap at all and are being missed. She should run the backward exercise cleanly — starting at the goal, not the roadmap — and then compare the two lists. Where they match, good; where they diverge, the goal-derived list wins.",
+          "rubric": [
+            "Identifies legitimation of old assumptions as the core risk",
+            "Notes that the goal should define the plan, not vice versa",
+            "Predicts the three likely categories of mismatch (essentials, useful-not-necessary, missing-critical)",
+            "Prescribes running the backward exercise cleanly from the goal",
+            "States the goal-derived list wins where the two diverge"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach a peer how to produce a milestone list from a traction goal. Cover: (1) why backward reasoning beats forward reasoning, (2) the difference between a milestone and an activity, (3) the necessity test, and (4) why milestone-hood depends on the goal, not on the feature itself.",
+        "rubric": [
+          "Explains backward reasoning and its advantage over forward reasoning",
+          "Clearly distinguishes milestone (end state) from activity (effort)",
+          "States and applies the necessity test ('does the goal fail without this?')",
+          "Gives at least one example of a feature that's a milestone under one goal and not another (e.g., DuckDuckGo's images)",
+          "Notes that useful-but-unnecessary items come off the list without being killed",
+          "Gives a worked example, at least in sketch"
+        ]
+      }
+    },
+    {
+      "id": "ch05-shortest-path",
+      "chapterId": "ch05",
+      "title": "The Critical Path: Shortest Order Through the Milestones",
+      "isLandmark": true,
+      "order": 3,
+      "pretest": {
+        "prompt": "You have 5 necessary milestones and a traction goal. Before reading: what would make one ordering of those milestones better than another? What's the cost of getting the order wrong even if you do all 5 eventually?",
+        "modelAnswer": "Ordering matters for two reasons. First, *dependencies*: some milestones can't start until others are done (you can't meaningfully scale a channel before you've committed to one, can't build feature B if it depends on A). Violating dependencies means wasted work — you do B without A and have to redo B. Second, *shortness*: different valid orderings may produce different total elapsed times. The right ordering respects dependencies AND chooses the shortest route through them — e.g., starting external contracts now because they take eight weeks to close, even if they're not needed until month four. Getting the order wrong costs you calendar time even when every individual milestone gets done, because you hit dependencies mid-stream, do rework, or sit idle waiting for a blocker you could have started earlier."
+      },
+      "lesson": {
+        "markdown": "## The definition\n\nYour **Critical Path** is the shortest ordered sequence of absolutely necessary milestones that gets you from where you are to your traction goal. Two words are doing work: *ordered* and *shortest*.\n\nOrdered: the milestones aren't a set — they're a sequence, with dependencies made explicit.\n\nShortest: among valid orderings, you pick the one with the least total calendar time, which often means picking non-obvious shortcuts.\n\n## Why ordering matters\n\nFounders often stop at the milestone list and treat it as a backlog to pull from. That's a mistake. A list is parallel; a path is serial (with occasional parallelism where dependencies allow). The serial view forces two questions the parallel view hides:\n\n1. **What blocks what?** If milestone B depends on A — B can't be started, or shouldn't be started, until A is done — then any plan that starts B first is broken. Build feature A before B if B requires A. Validate a channel in Bullseye before scaling it (DuckDuckGo's pattern: get on broadcast TV *once*, confirm the needle moves, then invest). This is the dependency question.\n2. **What's the shortest way through?** Even when dependencies allow multiple orderings, one is usually faster in elapsed time than another — because of external wait times, team capacity, or compounding effects. This is the shortness question.\n\n## The shortcut principle\n\nFor every milestone, ask: **is there a faster way to satisfy this?** Rather than 'how do we build X,' ask 'how do we have X be true by the earliest date?' Those sound identical; they're not.\n\nDuckDuckGo's default move illustrates this: **incorporate software from external providers before embarking on a more complicated build-out themselves.** If the milestone is 'we have a working image search,' licensing or proxying an existing provider might satisfy it in two weeks where a from-scratch build takes six months. The milestone is a state, and states can often be achieved faster than the obvious path suggests — but only if you actively hunt for the shortcut.\n\nShortcuts aren't always technical. They can be organizational (partner with a company that already has the asset), commercial (buy rather than build), or sequential (parallelize two milestones that aren't actually dependent).\n\n## What the output looks like\n\nA Critical Path is literally a diagram or ordered list — you should be able to draw it. Nodes are milestones, arrows are dependencies, and the total calendar time from start to finish is visible. It's short: typically 3–8 milestones. And it's *the* path — not 'a plan' or 'some options,' but the one path you're committing to walk.\n\n## The payoff\n\nOnce the Critical Path is drawn, deciding what to do next becomes trivial: **work on the first step(s) and nothing else.** Everything behind is done; everything after is blocked waiting on current work; anything off the path isn't on the path at all. The existence of a Critical Path converts a foggy planning problem into a clear 'what's next' problem.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Theo has his FleetPing milestone list: (1) run Bullseye and commit to a channel, (2) ship self-serve onboarding, (3) launch entry tier, (4) hire AE by month 6, (5) reach 95% month-1 retention. Time to draw the path.",
+        "walkthrough": "**Dependency mapping:**\n\n- Milestone 1 (channel) has no hard dependency — he can start Bullseye now.\n- Milestone 2 (self-serve onboarding) has no hard dependency, but has a *strong soft* dependency on milestone 1 — you want to know what channel you're optimizing for before designing the flow.\n- Milestone 3 (entry tier) depends on milestone 2 — a $149 tier without self-serve is economic nonsense (margins collapse if each signup needs an implementation call).\n- Milestone 4 (AE hire) depends on milestone 1 producing inbound — hiring an AE before the channel delivers leads is premature.\n- Milestone 5 (95% retention) depends on milestone 2 — most of the churn comes from painful onboarding; fix that and retention follows.\n\n**Initial ordering (naive serial):** 1 → 2 → 3 → 4, with 5 folded into 2. Timeline: ~11 months of serial work, leaving 7 months of 'execution.' Too slow.\n\n**Apply the shortness question:**\n\n- Can 1 and 2 overlap? Mostly yes. Start Bullseye testing in week 1 (some channel tests take weeks to produce data; idle time can be used on onboarding work). First four weeks of milestone 2 (building generic self-serve flow) don't require knowing the channel. So parallelize 1 and 2 with a sync point in week 4.\n- Is there a shortcut for milestone 2? Theo considers it. The hardest part is hardware provisioning. He looks at external options — a white-label telematics hardware provider has a self-serve installer app. Licensing it cuts 8 weeks of in-house work. Take the shortcut.\n- Is there a shortcut for milestone 4 (AE hire)? Hiring a senior AE cold takes ~10 weeks. He could start sourcing now so the hire lands just as the channel is producing leads — parallelizing the wait time with milestone 1. Start sourcing in week 2.\n- Is there a faster way for milestone 1 (channel commit)? Not really — Bullseye has its own cadence (test, parallel, ~3 weeks to data, ~2 weeks to commitment). Roughly 5 weeks minimum. Accept.\n\n**Revised Critical Path:**\n\n- Week 1: Start Bullseye tests (milestone 1). Start AE sourcing (milestone 4). Begin onboarding-flow work using licensed installer (milestone 2).\n- Week 5: Bullseye commits to channel. Onboarding flow in alpha with 5 pilot fleets.\n- Week 8: Self-serve onboarding live. Retention measurement begins (milestone 5).\n- Week 10: Entry tier launches on top of self-serve (milestone 3).\n- Week 11: AE starts, plugged into channel pipeline (milestone 4).\n- Week 24: Retention target validated at 95% on channel cohort (milestone 5).\n\nTotal calendar time to 'path complete': ~6 months, leaving 12 months of compounding channel scaling to hit 500 fleets.\n\nNote how the shortness question changed things. Naive serial would have taken 11 months and left 7 for scaling. The revised path takes 6 and leaves 12 — a doubling of scaling time without adding any new work, just by parallelizing where dependencies allowed and taking one shortcut (licensing the installer).\n\nAnd note what's easy to decide now: in week 1, what does Theo work on? Bullseye, AE sourcing, and onboarding scaffolding. Nothing else. If someone emails a feature request for route optimization, the answer is trivially 'not on path.'"
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-focus-and-repeat",
+        "explanation": "Bullseye's Focus step and the Critical Path both produce a single thing to commit to, but at different levels of the planning stack. Bullseye outputs a committed *channel* — the one marketing channel you pour effort into. Critical Path outputs a committed *sequence of milestones* — one of which might be 'run Bullseye and commit to a channel.' Bullseye is nested inside Critical Path, not parallel to it. A Critical Path for a startup almost always contains a Bullseye loop as one of its nodes. Conflating them leads founders to treat channel selection as the whole plan, when it's actually one milestone among several."
+      },
+      "flashcards": [
+        {
+          "id": "ch05-shortest-path-fc1",
+          "type": "recall",
+          "front": "Define Critical Path in one sentence.",
+          "back": "The shortest ordered sequence of absolutely necessary milestones that gets you from your current state to your traction goal."
+        },
+        {
+          "id": "ch05-shortest-path-fc2",
+          "type": "recall",
+          "front": "What two questions does ordering force that a parallel milestone list hides?",
+          "back": "(1) What blocks what? (dependencies — which milestones must be done before others). (2) What's the shortest way through? (given dependencies, which valid ordering finishes fastest in calendar time)."
+        },
+        {
+          "id": "ch05-shortest-path-fc3",
+          "type": "cloze",
+          "front": "When evaluating a milestone, rather than asking 'how do we build X,' ask 'how do we have X ______ by the earliest date?'",
+          "back": "be true — reframing as a state, not a build, opens up non-obvious shortcuts (licensing, partnerships, buying instead of building, parallelizing non-dependent work)."
+        },
+        {
+          "id": "ch05-shortest-path-fc4",
+          "type": "recall",
+          "front": "What's DuckDuckGo's default move when a milestone could be satisfied faster?",
+          "back": "Incorporate software from external providers before embarking on a more complicated in-house build. If licensing or integrating an existing solution makes the milestone true sooner, take the shortcut — then revisit whether to build it in-house later, only if still necessary."
+        },
+        {
+          "id": "ch05-shortest-path-fc5",
+          "type": "recognition",
+          "front": "Once you've drawn your Critical Path, how do you decide what to work on today?",
+          "back": "Work on the first step(s) of the path and nothing else. Everything before is done; everything later is blocked on current work; anything off the path isn't on the path. The Critical Path turns 'what should I do?' into a trivial question."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch05-shortest-path-sc1",
+          "setup": "A team produces a clean milestone list (5 items), then draws a Critical Path as a single straight line: A → B → C → D → E. Total calendar time: 14 months. Their traction goal is 12 months out.",
+          "question": "What's likely wrong with the path, and what questions would you push them to ask?",
+          "modelAnswer": "A fully serial path of 5 items almost always wastes calendar time, and in this case it's mathematically impossible — 14 months of serial work won't finish by month 12. Two questions to push. First, dependency: do B, C, D, E *actually* all depend serially on their predecessors, or are some dependencies nominal? Often at least one pair has no hard dependency and can run in parallel. Second, shortcut: for each milestone, is there a way to make the state true faster than the 'natural' build — licensing, partnering, buying, scope-cutting? Likely the path can be collapsed to 8–10 months by a combination of parallelizing two pairs and taking one or two shortcuts. If after honest work it still can't fit in 12 months, that's important information: either the traction goal was unrealistic on the given timeline (revise it), or a milestone has to come off the list (revisit necessity). Don't just pretend the 14-month path fits a 12-month window.",
+          "rubric": [
+            "Identifies the timeline math problem (14 > 12)",
+            "Asks whether all dependencies are real (parallelization opportunity)",
+            "Asks about shortcuts for each milestone",
+            "Predicts rough compression to 8–10 months",
+            "Names the fallback: revise goal or revisit necessity if still doesn't fit",
+            "Rejects 'just push harder' as a solution"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch05-shortest-path-sc2",
+          "setup": "A founder has drawn his Critical Path. Someone on the team asks: 'This is basically a project plan, right? How is it different from a Gantt chart?'",
+          "question": "Answer the teammate's question. What distinguishes a Critical Path from a standard project plan?",
+          "modelAnswer": "A Critical Path is a project plan in form — ordered milestones with dependencies — but it's different in three ways that matter. First, *selection criterion*: every milestone on the path has passed the necessity test against a single specific traction goal. Standard project plans often include 'strategic initiatives,' 'must-dos,' and 'nice-to-haves' mixed together. A Critical Path has only must-dos for one specific outcome. Second, *completeness bound*: the path is explicitly *the shortest* sequence, not 'what the team is working on.' Anything off the path is explicitly deprioritized, not 'also happening.' Third, *decision function*: the Critical Path is designed to answer 'should we do X?' trivially — yes if it's on the path or accelerates it, no otherwise. Standard project plans rarely have that sharp a filter; they accumulate items. The implication: if you're running a project plan that includes work not justified by your current traction goal, you're running a project plan, not a Critical Path.",
+          "rubric": [
+            "Names the three distinctions (necessity filter, shortest-explicit, decision function)",
+            "Gives the traction-goal linkage as the core criterion",
+            "Contrasts with project plans that accumulate items",
+            "Explains why the decision function matters",
+            "Notes the implication: mixed project plans fail the Critical Path test"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch05-shortest-path-sc3",
+          "setup": "A CTO insists that milestone X (a rewrite of the core scheduling engine) must come before milestone Y (shipping a new pricing tier). 'Y depends on X — the engine needs to handle the new billing model.' You investigate: actually, Y can be shipped by bolting a lightweight billing adapter onto the existing engine without the rewrite. The rewrite would be cleaner, but Y doesn't require it.",
+          "question": "What principle is in play, and how should the Critical Path be redrawn?",
+          "modelAnswer": "The principle: dependencies must be *real*, not *preferred*. The CTO's stated dependency is an engineering preference (cleaner code) masquerading as a technical requirement. Under the Critical Path's shortest-path rule, the correct redrawing removes the dependency: Y ships on the existing engine with an adapter, now, in parallel with or before the X rewrite. The engine rewrite either stays on the path later (if truly necessary for the goal) or comes off entirely (if it fails the necessity test — a rewrite for cleanliness is rarely necessary for a near-term traction goal). Watch for this pattern generally: engineering teams often assert dependencies that are actually quality preferences. The framework's filter — 'is this a real dependency, or is it how we'd prefer to do it?' — cuts through. Shortest path favors shipping the adapter and revisiting the rewrite against the next goal.",
+          "rubric": [
+            "Identifies the fake dependency as a preference, not a requirement",
+            "Prescribes parallel/earlier shipping of Y via the adapter",
+            "Revisits whether the rewrite itself passes the necessity test",
+            "Generalizes the pattern (engineering teams assert preference as dependency)",
+            "Notes the deferred rewrite may come back for the next goal"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the Critical Path concept to a co-founder, distinguishing it clearly from a simple milestone list or a project plan. Cover (1) the definition, (2) why ordering matters, (3) the shortest-path principle and at least one shortcut tactic, and (4) the decision function the path enables day-to-day.",
+        "rubric": [
+          "States the one-sentence definition (shortest ordered sequence of necessary milestones)",
+          "Explains why a list isn't a path (dependencies + shortness)",
+          "Gives at least one shortcut tactic (licensing, parallelizing, scope-cut, partnership)",
+          "Describes the 'work the first step only' decision rule",
+          "Distinguishes Critical Path from a Gantt chart / project plan",
+          "Uses a concrete example or analogy (DuckDuckGo licensing, or an applied case)"
+        ]
+      }
+    },
+    {
+      "id": "ch05-on-path-test",
+      "chapterId": "ch05",
+      "title": "The On-Path Test and Useful-But-Off-Path Work",
+      "isLandmark": true,
+      "order": 4,
+      "pretest": {
+        "prompt": "A customer you really like emails asking for a feature. Your team is excited to build it — it'd take two weeks. It's not on your Critical Path. Before reading: what do you do, and what would tempt you to do the wrong thing? Be specific about the mechanism by which this decision, repeated, kills startups.",
+        "modelAnswer": "The correct answer is: don't build it — log it for potential future consideration, and stay on path. What tempts people wrong: the feature is useful, the customer is real, the team is willing, and the time cost (two weeks) feels small. In isolation, every instance looks reasonable. The mechanism that kills startups is that these decisions accumulate. Twenty 'just two weeks' detours across a year is a lost year — not of effort, but of *goal-directed* effort. The team is always busy; the traction goal just never gets closer. This is distinct from laziness or poor execution; it's the specific pathology of *useful but off-path* work. The defense is a hard, unsexy rule: every proposed piece of work faces the same binary test — does it advance the Critical Path, yes or no? 'It's only two weeks' and 'but the customer really wants it' are not answers to that question."
+      },
+      "lesson": {
+        "markdown": "## The decision function\n\nOnce the Critical Path exists, evaluating any proposed work becomes a single question: **does this advance the Critical Path — yes or no?** If yes, do it. If no, don't — at least not now.\n\nThat's it. The test is binary. It's not 'is this valuable?' (everything is somewhat valuable). It's not 'would customers like this?' (many things customers would like are off path). It's not 'is this fun to build?' (often the dangerous ones are). The only admissible question is whether the work moves you toward the current traction goal along the currently-drawn path.\n\n## The load-bearing failure mode: useful-but-off-path\n\nUseless work is easy to spot and kill. The work that actually kills startups is work that is **genuinely useful, just not on the current path**. Examples founders face constantly:\n\n- A prospective customer says, 'we'd sign if you had feature X.' X isn't on your path.\n- A competitor ships a flashy feature; your team wants to match it.\n- A partner pitches an integration that would help some subset of users. Off path.\n- A bug-fix request comes in from a real paying customer for a non-critical bug. Off path for the sprint.\n- An engineer proposes a refactor that would make the codebase cleaner. Off path.\n\nEach of these, in isolation, looks like a reasonable use of time. Each is useful. And each is a trap, because the comparison isn't 'is this useful vs. useless?' — it's 'is this the *best* use of this week's focus, given that our traction goal hinges on the Critical Path?' Useful work that delays on-path work is a net negative. You don't just pay the cost of the off-path work; you pay the *opportunity cost* of the on-path work you didn't do.\n\nThis is the mechanism Chapter 1 pointed at when it said most startups die from distribution failure. Teams rarely die because they didn't work hard; they die because they worked hard on the wrong things — things that felt productive, looked productive, and didn't close the gap between where they were and where they needed to be.\n\n## The right response to useful-but-off-path requests\n\nThis part is uncomfortable: you have to say no to things that are genuinely good ideas. The structured version:\n\n1. **Acknowledge the validity.** The request isn't crazy. Often the feature *is* worth building — eventually.\n2. **Check against the path.** Does building it advance the current Critical Path? Sometimes the honest answer is yes (the prospect would be the first 10 customers on a new channel tier; that changes the calculation). Usually it's no.\n3. **Log it.** Put it in a 'off-path, reconsider next cycle' list. This matters — not logging it makes the 'no' feel arbitrary, and you'll lose the information.\n4. **Decline with the frame.** 'This is a good idea. It's not on our Critical Path to [goal]. We'll revisit after we've hit that goal or when we redraw the path.' That's more credible than vague deferrals.\n\n## What the path protects against\n\nStartups are environments of *infinite opportunity*. Customers want things. Competitors do things. Trends emerge. Every week presents a dozen reasonable-seeming asks. Without a Critical Path, the default behavior is reactive: do the thing in front of you that seems highest-value this moment. The Critical Path is the **forcing function** that converts reactive decision-making into goal-directed decision-making. Every 'no' to off-path work is implicitly a 'yes' to the goal.\n\n## The one honest out\n\nOccasionally an off-path proposal is so strong it suggests the path itself is wrong. A prospective customer asking for feature X might be revealing that X is actually necessary for your goal — in which case the right response is to redraw the path to include it, not to grudgingly bolt it on. That's a valid move, but it has to be done deliberately. The wrong version is to add off-path work *without* redrawing — that's how paths quietly become wishlists. If a request is strong enough to warrant doing, it's strong enough to warrant a real re-examination of the path.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Theo is six weeks into his FleetPing Critical Path. Self-serve onboarding is in alpha, Bullseye has identified targeting blogs (trucking-industry newsletters) as the likely winner, and AE sourcing is underway. Four requests arrive in one week.",
+        "walkthrough": "**Request 1: A prospect — Carter Hauling, 40 trucks — says they'll sign today if FleetPing supports ELD logs (federal compliance logging) natively. FleetPing doesn't.**\n\nApply the test. Is ELD on the path? No. What would it cost? About 10 weeks of engineering. But wait — Carter Hauling would be 40 fleets-equivalent of paid revenue immediately, and ELD is presumably a fleet-wide ask. Honest check: is this evidence the *path* is wrong, not just that a prospect wants something? Theo checks. His Bullseye-winning channel is targeting blogs aimed at small fleets (5–15 vehicles); ELD is mandatory for fleets >10 vehicles commercially. If his channel converts small-fleet readers, a meaningful fraction of them will need ELD too. The request isn't just 'off-path'; it's surfacing a gap in the path itself.\n\nCorrect move: *redraw the path* to include ELD as milestone 6, placed after self-serve and in parallel with AE hiring. Don't accept Carter's deal as a one-off bolt-on — that's the wrong pattern. Do accept that ELD is newly-necessary and add it formally.\n\n**Request 2: A current customer — a solo owner-operator — emails asking for iOS dark mode in the driver app. He's a fan and wants to evangelize to trucker forums.**\n\nTest. On the path? No. Is this evidence the path is wrong? No — dark mode isn't necessary for any milestone; existing users aren't churning over it; it's not a conversion blocker. Does 'he'll evangelize' move the path? Probably not — one superfan's Twitter thread isn't a channel.\n\nCorrect move: log in the off-path list, respond warmly ('great idea, not a priority right now, will revisit as we redraw'), don't build.\n\n**Request 3: An engineer proposes a refactor of the scheduling core. It's technical debt, would take 3 weeks, would make future work ~15% faster.**\n\nTest. On the path? No. Does 15% faster on future work mean the refactor advances the Critical Path? Do the math: remaining on-path engineering is ~16 weeks; 15% savings is ~2.5 weeks. Refactor cost is 3 weeks. Net negative by half a week, and that's optimistic.\n\nCorrect move: decline. Log in off-path list. If the path is redrawn after the current goal, reconsider the refactor then — the new path may be long enough that 15% savings pencils out.\n\n**Request 4: A partner — a telematics hardware vendor — proposes a co-marketing bundle (their hardware + FleetPing software, jointly sold). Would require 4 weeks of integration work.**\n\nTest. On the path? Not as written. But wait — his current milestone 1 is 'commit to a channel.' Bullseye is pointing at targeting blogs, but a *partnership* could be a different channel that Bullseye didn't surface sharply. Is this evidence his ranking was off? He looks: the partner's installed base is ~2,000 small fleets — his exact ICP. At 5% conversion that's 100 fleets in year one, at effectively zero CAC. That changes the comparison.\n\nCorrect move: don't bolt this on. But do rerun the Bullseye ranking with this option weighted properly — if partnerships score higher than targeting blogs, redraw the path around a partnerships-first channel. If they don't, politely defer the bundle to post-goal.\n\n**The pattern.** Two of the four requests were pure off-path noise (dark mode, refactor) — easy declines, log and move on. Two were strong enough to warrant reconsidering the path (ELD, partner bundle). Theo's discipline isn't 'say no to everything off-path'; it's 'don't quietly add work to the path without redrawing the path.' The discipline is the redrawing — either the path stays, the work is declined, or the path changes deliberately.\n\nWithout this test, Theo would probably accept Carter's ELD deal as a one-off (engineering scrambles for 10 weeks, the path slips 10 weeks), build dark mode to be nice (2 weeks slip), do the refactor for hygiene (3 weeks slip), and sign the partner bundle as a side project (4 weeks slip). Nineteen weeks of slip. The traction goal retreats almost five months. This is how 18-month goals become 24-month goals become 'we ran out of runway.'"
+      },
+      "contrast": {
+        "neighborConceptId": "ch01-three-frameworks",
+        "explanation": "Chapter 1 introduces three frameworks — Bullseye, Critical Path, and the 50% rule — and the on-path test is specifically the *decision engine* inside Critical Path. Don't confuse the test with the 50% rule. The 50% rule is about time allocation *between* product and traction. The on-path test is about evaluating *any* proposed work — product or traction — against the currently drawn path. A founder could be splitting time 50/50 between product and traction and still be doing useful-but-off-path work on both sides. The 50% rule protects against under-investing in traction categorically; the on-path test protects against misdirected investment within either category."
+      },
+      "flashcards": [
+        {
+          "id": "ch05-on-path-test-fc1",
+          "type": "recall",
+          "front": "State the on-path test in one question.",
+          "back": "Does this piece of work advance the Critical Path — yes or no? If yes, do it. If no, don't do it now. The test is binary; 'useful' is not a third option."
+        },
+        {
+          "id": "ch05-on-path-test-fc2",
+          "type": "recognition",
+          "front": "Which kind of work most often kills startups: useless work, or useful work?",
+          "back": "Useful work — specifically useful-but-off-path work. Useless work is easy to spot and kill. Genuinely useful work that doesn't advance the current path is the dangerous category because it passes the 'is this worthwhile?' check while failing the 'does it move the goal?' check."
+        },
+        {
+          "id": "ch05-on-path-test-fc3",
+          "type": "cloze",
+          "front": "Every 'no' to off-path work is implicitly a ______ to the traction goal.",
+          "back": "yes — the Critical Path is a forcing function that converts reactive decision-making into goal-directed decision-making. Declining off-path work is how on-path work gets the focus it needs."
+        },
+        {
+          "id": "ch05-on-path-test-fc4",
+          "type": "recall",
+          "front": "When is adding off-path work actually the right move?",
+          "back": "When the request reveals that the *path itself* is wrong — i.e., the proposed work is actually necessary for the current goal and your original path missed it. The correct response in that case is to *redraw the path* to include the work, not to bolt it on as an exception. If the case isn't strong enough to justify redrawing, it isn't strong enough to do."
+        },
+        {
+          "id": "ch05-on-path-test-fc5",
+          "type": "recall",
+          "front": "Why is logging declined off-path ideas (rather than just dismissing them) important?",
+          "back": "Two reasons. First, when the path is redrawn for the next goal, the logged ideas become candidate milestones without needing to be rediscovered. Second, explicit logging makes the 'no' feel considered rather than arbitrary — both to the team and to whoever made the request."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch05-on-path-test-sc1",
+          "setup": "A customer support lead pushes back on the on-path test: 'We're ignoring our customers. Five of them have asked for feature X this month. If we don't build it, we'll lose them.' Feature X is not on the Critical Path.",
+          "question": "Engage with the pushback honestly. What's valid about it, what's not, and how should the decision be made?",
+          "modelAnswer": "Valid: customer signal is real information. Five independent requests for the same thing in a month is higher signal than one; it's worth taking seriously. Not valid: 'a customer asked' is not automatically a reason to build. The correct process: (1) Investigate the claim 'we'll lose them.' Is there evidence these five are actually at risk of churning over X, or is X a wish-list item? Ask them directly. (2) If some are genuinely at risk, assess magnitude — five churns out of how many customers? Against the current traction goal, what's the impact? (3) If the signal is strong enough that building X materially changes the path's shape — e.g., retention is a milestone and X-related churn threatens it — then redraw the path to include X. Do so explicitly, not as a side-project. (4) If the signal is moderate (wish-list, no imminent churn), log X in the off-path list, respond to the five customers with genuine acknowledgment and rough timing, and stay on path. The support lead's frame ('we're ignoring customers') is a category error — declining to build isn't ignoring; it's prioritizing. The cure for the category error is making the trade-off explicit: 'We're staying focused on [goal] — X is logged and we'll revisit after.'",
+          "rubric": [
+            "Validates that customer signal is real information",
+            "Rejects 'they asked' as automatic justification",
+            "Prescribes investigating the 'we'll lose them' claim directly",
+            "Splits the decision by signal strength (redraw vs. log)",
+            "Addresses the 'ignoring customers' frame as a category error",
+            "Notes the redraw-or-log discipline protects the framework's integrity"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch05-on-path-test-sc2",
+          "setup": "A team has a clear Critical Path. In practice, over the last quarter, they've accepted three 'small' off-path projects — each looked reasonable in isolation. Progress on the path's first two milestones has slipped by six weeks total. The team insists they're 'still on track' because they're 'working hard.'",
+          "question": "What pattern is in play, and what would you change about how decisions get made?",
+          "modelAnswer": "Classic useful-but-off-path accumulation. 'Working hard' is almost certainly true — and it's also almost certainly the problem. Effort hasn't been goal-directed. The pattern: each off-path decision was defensible in isolation but catastrophic in aggregate, because the comparison was never made at the right level. Fixes: (1) Institute a single place where any new work, before being started, is checked against the path in writing. Even one sentence: 'This advances the Critical Path because…' or 'This is off-path; logged in the register.' Forcing a written answer prevents verbal-commitment drift. (2) Make the register of declined off-path work visible to the team. Saying 'no' stops feeling arbitrary when the alternatives are visible. (3) Review the path weekly as a standing item — even a two-minute sync ('are we still on the same path? any slips?'). DuckDuckGo uses a standing agenda item in 1:1s and all-hands for exactly this. (4) At each milestone hit, formally redraw — which both catches accumulated drift and normalizes the 'the path can change, but only deliberately' rule. The diagnosis: the framework was drawn once and not enforced. Enforcement is a process, not a memory.",
+          "rubric": [
+            "Names useful-but-off-path accumulation as the pattern",
+            "Identifies 'working hard' as a red herring if effort isn't goal-directed",
+            "Prescribes a written on-path check for new work",
+            "Prescribes visible off-path register",
+            "Prescribes weekly path review (standing item)",
+            "Notes formal redraw at each milestone",
+            "Frames the problem as enforcement, not framework"
+          ],
+          "difficulty": 3
+        },
+        {
+          "id": "ch05-on-path-test-sc3",
+          "setup": "An engineer asks whether fixing a bug reported by a paying customer is 'on-path.' The bug causes incorrect reports for about 2% of users once a week. The traction goal is 500 paying customers; the current milestone is reaching 95% month-1 retention.",
+          "question": "Is the fix on-path? Walk through the decision.",
+          "modelAnswer": "Probably yes — but for a specific reason, not automatically. The test: does fixing this advance the Critical Path? The current milestone is 95% month-1 retention. If the bug contributes to churn — users see wrong reports, lose trust, cancel — then fixing it directly advances a milestone, and it's on-path. Investigate: do any of the 2% who hit the bug churn as a result? If yes, the fix is on-path and should be prioritized. If no (users notice, report it, but don't churn), the fix is useful-but-off-path — log it, don't drop current work to fix it. The general lesson: 'paying customer reported a bug' isn't automatic on-path status. The question is always whether fixing it moves the current milestone, not whether it's a reasonable thing to do. Most startups would reflexively fix every bug for paying customers; the discipline here is distinguishing bugs that block the milestone from bugs that merely exist.",
+          "rubric": [
+            "Doesn't automatically say yes — applies the test",
+            "Connects the fix to the specific current milestone (retention)",
+            "Prescribes investigation (does the bug cause churn?)",
+            "Correctly handles both branches (on-path if churn-causing, log if not)",
+            "Generalizes: paying-customer bugs aren't automatically on-path",
+            "Recognizes the uncomfortable implication and argues for the discipline"
+          ],
+          "difficulty": 1
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the on-path test and the useful-but-off-path trap to a peer. Cover (1) the binary question the test reduces to, (2) why useful-but-off-path work is more dangerous than useless work, (3) the structured response to an off-path request (acknowledge → check → log → decline or redraw), and (4) when adding off-path work is actually correct.",
+        "rubric": [
+          "States the binary test clearly",
+          "Explains why useful work is the dangerous category (passes the 'worthwhile' check, fails the 'moves goal' check)",
+          "Walks through the structured response (acknowledge, check, log, decline-or-redraw)",
+          "Identifies the one legitimate exception (the request reveals the path is wrong → redraw)",
+          "Notes that ad-hoc bolt-ons without redrawing are the wrong pattern",
+          "Gives at least one concrete example of each category (off-path to decline, off-path that warrants a redraw)"
+        ]
+      }
+    },
+    {
+      "id": "ch05-reassess-after-milestone",
+      "chapterId": "ch05",
+      "title": "Reassessing the Path After Each Milestone",
+      "isLandmark": false,
+      "order": 5,
+      "pretest": {
+        "prompt": "You've just hit the first milestone on your Critical Path — two weeks ahead of schedule. Before reading: what do you do now, and why would 'keep going on the path you drew three months ago' be risky?",
+        "modelAnswer": "Don't just roll forward. Hitting a milestone produces new information — you now know things you were guessing about when you drew the path. Maybe the channel converted better than expected, changing the math on subsequent milestones. Maybe onboarding revealed a user segment you hadn't designed for. Maybe the feature you were about to build is no longer necessary given what you learned. The risk of ignoring that information: the original path was optimal given assumptions that are now outdated, so continuing on it means executing a stale plan. The right move is a hard reassessment: 'Given what we know now, is the path still the shortest sequence to the goal?' Most of the time the answer is mostly yes with small revisions; occasionally it's 'skip milestone B entirely and add D.' Either way, the reassessment is mandatory, not optional."
+      },
+      "lesson": {
+        "markdown": "## The original plan is often wrong\n\nYou draw your Critical Path with the information you have. That information is always incomplete. Every milestone you hit replaces guesses with data — and that data routinely invalidates assumptions underneath later milestones on the path. So the path as drawn is a *best current guess*, not a fixed plan.\n\nThe book's blunt version: *your original plan is often wrong.* You thought you had to build features A, B, C to get to your traction goal, but after building A and getting market feedback you realize you should skip B and build D. Sometimes you realize a milestone you thought would take three weeks can be satisfied in three days with a shortcut you now see. Sometimes you realize a milestone you deemed unnecessary was actually blocking.\n\n## The reassessment discipline\n\nThe rule: **after each milestone is hit, formally re-examine the rest of the path with the new information.** Not a gut check — a real walk-through of the remaining milestones against the current goal and current knowledge.\n\nThe questions to ask at each reassessment:\n\n1. **Is the traction goal still right?** Usually yes, but occasionally the milestone you hit reveals that the goal was poorly calibrated — too small, too big, or not meaningfully significant anymore. If the goal is wrong, everything downstream is wrong.\n2. **Is the next milestone still the right one?** The milestone you thought came next may no longer be necessary (an assumption collapsed), or another one you hadn't listed is now clearly blocking.\n3. **Are the remaining milestones still correctly ordered and still the shortest path?** New information often unlocks shortcuts or exposes hidden dependencies.\n4. **What off-path items now deserve promotion onto the path?** Requests you declined last quarter may be load-bearing this quarter given what you learned.\n\nMost of the time the answer to each question is 'mostly yes' and the reassessment takes thirty minutes. Occasionally it's a major redraw. Either is fine. The failure mode is skipping the reassessment entirely.\n\n## Build it into your cadence\n\nFounder discipline alone isn't enough — reassessment has to be scheduled. Useful structures from DuckDuckGo's practice:\n\n- **Weekly 1:1s and all-hands with a standing agenda item** to corroborate current paths. Usually brief (paths don't change week to week).\n- **After each milestone is hit, a longer strategic discussion.** Deliberate, multi-hour, documents the new path explicitly.\n\nThe reason to pre-schedule these discussions: they otherwise get crowded out by whatever is loudest. Scheduling them makes them habitual — 'we always revisit the path after a milestone' becomes the default, which prevents the path from silently calcifying.\n\n## Why the loop matters more than the draw\n\nFounders who run Critical Path well aren't better at drawing the initial path. They're better at *redrawing*. The first draft is a guess; the third or fourth draft, each informed by a milestone-worth of real learning, is a plan. Treating the path as immutable breaks this property. Treating it as perpetually revised — but only deliberately revised, at milestone boundaries — is what the framework actually asks of you.\n\n## The connection to Bullseye's repeat step\n\nThis is the same principle Bullseye uses in its own loop: after committing to a winning channel, you eventually rerun the whole cycle because stages change. Critical Path applies the same discipline to the higher-level plan. Milestones hit → learning → reassessment → revised path → next milestone → learning → reassessment. The framework isn't a one-shot tool; it's a loop, and the loop is the point.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Theo has just hit his first FleetPing milestone: Bullseye concluded and targeting blogs (trucking-industry newsletters) is the committed channel. Five weeks have passed. He sits down for the scheduled post-milestone reassessment with his team.",
+        "walkthrough": "**What changed since path-drawing:**\n\n- Targeting blogs tested better than expected on CAC (~$800, vs. the $1,200 ceiling he set). Channel economics are 50% better than planned.\n- Unexpectedly, one partner (a telematics hardware vendor, from Request 4 in the previous concept) has re-entered the picture — they're offering a genuinely strong bundle with access to their 2,000-fleet customer list.\n- Self-serve onboarding work revealed the ELD gap (Request 1) is more common than expected — ~40% of small fleets need ELD commercially.\n- The entry tier ($149) is looking less necessary; most newsletter-traffic leads happily start at $399 for the full product.\n\n**Walk the reassessment questions:**\n\n1. *Traction goal still right?* 500 fleets in 18 months. Better channel CAC means it's more reachable than when drawn — no reason to revise the goal.\n\n2. *Is the next milestone still right?* Next on path: self-serve onboarding. Check: with ELD now known-necessary for ~40% of leads, onboarding has to include ELD handling or half the signups will fail at the compliance step. The milestone itself is still on path — it just has a larger scope than drawn.\n\n3. *Remaining milestones still correctly ordered and shortest?* Two revisions:\n   - *Entry tier* ($149, milestone 3) drops off the path. Evidence from Bullseye says it isn't necessary — the current $399 converts newsletter traffic fine. Remove.\n   - *ELD support* (previously off-path; surfaced from Request 1) gets promoted to a milestone, positioned between self-serve onboarding and the AE hire. Original plan ignored it; new information says it's necessary.\n\n4. *Off-path items deserving promotion?* The partner bundle (Request 4). At the previous cycle, the partner was off-path — they'd have been a bolt-on. But now the channel is committed and working. The partner's installed base is a *second* channel that could add meaningful volume. Theo considers: should he add the partner as a milestone now, or hold off? Decision: hold for now — he hasn't saturated targeting blogs yet, and adding a second channel before the first is fully proven dilutes focus (Bullseye's principle). Log as 'revisit at next milestone; strong candidate if channel scales as expected, promote to path if blogs hit diminishing returns.'\n\n**Revised path (post-reassessment):**\n\n- [DONE] 1. Commit to channel → targeting blogs\n- 2. Ship self-serve onboarding *including ELD support* — scope expanded\n- 3. [REMOVED — entry tier not necessary]\n- 3. Hire AE by month 6\n- 4. Reach 95% month-1 retention on self-serve signups\n- (Watching) Partner bundle — promote if primary channel saturates\n\n**Net effect:** One milestone removed, one scope-expanded, one watching-list item added. Theo's weekly path slightly shortened. He writes the revised path on the shared doc and the team syncs — now everyone operates on the same current picture.\n\nImportant to notice what Theo *didn't* do: he didn't 'just keep going' on the original path (he would have built an unnecessary entry tier and hit ELD as a blocking surprise mid-stream). He also didn't redraw from scratch — most of the original path was still right, and re-drawing-for-the-sake-of-it would've been performative. The discipline is in the check, which most of the time yields small surgical revisions."
+      },
+      "contrast": {
+        "neighborConceptId": "ch05-shortest-path",
+        "explanation": "Drawing the initial Critical Path (shortest-path concept) and reassessing it after each milestone are different actions, and founders often do one without the other. The draw is a *guess made with current information*; the reassessment is *updating the guess with new information*. Drawing once and never reassessing produces a stale plan — you execute beautifully against assumptions that became wrong. Constantly redrawing without milestone-hitting produces thrash — the path changes every week based on vibes, not learning. The framework asks for both: draw deliberately, then revise deliberately at milestone boundaries."
+      },
+      "flashcards": [
+        {
+          "id": "ch05-reassess-after-milestone-fc1",
+          "type": "recall",
+          "front": "When should you formally reassess the Critical Path?",
+          "back": "After each milestone is hit. That's when you have new information that the original path was drawn without — learning about the channel, users, scope, or assumptions that routinely invalidates parts of the plan."
+        },
+        {
+          "id": "ch05-reassess-after-milestone-fc2",
+          "type": "recall",
+          "front": "What four questions does a reassessment walk through?",
+          "back": "(1) Is the traction goal still right? (2) Is the next milestone still the right one? (3) Are remaining milestones still correctly ordered and still the shortest path? (4) Are there off-path items that now deserve promotion onto the path?"
+        },
+        {
+          "id": "ch05-reassess-after-milestone-fc3",
+          "type": "cloze",
+          "front": "Your original plan is often ______ — the Critical Path as drawn is a best current guess, not a fixed plan.",
+          "back": "wrong — every milestone hit replaces guesses with data, which routinely invalidates assumptions behind later milestones."
+        },
+        {
+          "id": "ch05-reassess-after-milestone-fc4",
+          "type": "recognition",
+          "front": "Why pre-schedule reassessments (DuckDuckGo's weekly 1:1 agenda item + post-milestone deep dive) rather than relying on founder discipline?",
+          "back": "Because unscheduled reassessments get crowded out by whatever's loudest that week. Pre-scheduling makes them habitual and prevents the path from silently calcifying while the team executes a stale plan."
+        },
+        {
+          "id": "ch05-reassess-after-milestone-fc5",
+          "type": "recall",
+          "front": "What's the difference between 'draw once' founders and founders who run Critical Path well?",
+          "back": "Good Critical Path founders aren't better at drawing the initial path — the first draft is always a guess. They're better at *redrawing* after each milestone with the new information. The loop (draw → execute → learn → redraw) is what the framework actually is."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch05-reassess-after-milestone-sc1",
+          "setup": "A founder's team has hit three milestones in six months. The Critical Path on the wall hasn't been updated since it was drawn. The founder says 'it's still basically right.'",
+          "question": "What should worry you about this, and what would you recommend?",
+          "modelAnswer": "What should worry you: 'basically right' without a formal reassessment is a verbal reassurance, not evidence. After three milestones, a lot of assumptions have been tested — some will have been confirmed, others invalidated. The founder may be correct that the path is mostly intact, but the only way to know is to walk the four reassessment questions explicitly with the team. Not doing so has two risks: (1) the team is executing against assumptions that are outdated but no one has flagged it, and (2) the culture around the path erodes — if reassessment is skippable, so is the path itself. Recommendation: schedule a 90-minute session this week. Walk each remaining milestone against current knowledge. Likely outcome: mostly confirmation, one or two surgical revisions, perhaps a new item surfaced. Document the result. Then establish a standing post-milestone review so it doesn't happen again.",
+          "rubric": [
+            "Identifies 'basically right' as verbal, not evidence",
+            "Names the two risks (stale execution + cultural erosion)",
+            "Prescribes a specific reassessment session with scope",
+            "Predicts the realistic outcome (mostly confirmation, surgical changes)",
+            "Recommends institutionalizing the cadence going forward"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch05-reassess-after-milestone-sc2",
+          "setup": "A team redraws their Critical Path every two weeks regardless of milestones. They say this keeps the plan 'current.' The engineering lead complains that they can't build anything because the target keeps moving.",
+          "question": "Is this good discipline? Why or why not? What's the right cadence?",
+          "modelAnswer": "No — it's over-redraw, which is its own failure mode. Redrawing without new information isn't updating; it's vibes-driven thrash. The engineering lead is correct: if the target moves every two weeks independent of what's been learned, the team can't finish anything, and nothing compounds. The principle: *the path updates when you learn something, not on a fixed clock.* Milestone completion is the natural trigger because hitting a milestone is when real information arrives. Between milestones, the path should be stable — weekly standing reviews exist to catch emergencies, not to rewrite the plan. Correct cadence: (a) quick weekly corroboration ('does anyone have new information that would meaningfully change our next step?'), (b) formal reassessment after each milestone is hit, (c) emergency redraw only when a genuine external shock invalidates the plan (a channel shuts down, a key assumption collapses). Constant redrawing at arbitrary intervals is worse than not redrawing — it has the same effect as not having a path at all.",
+          "rubric": [
+            "Identifies over-redraw as a failure mode",
+            "Sides with the engineering lead's complaint",
+            "States the principle: learning-triggered, not clock-triggered",
+            "Gives the three-tier cadence (weekly light, post-milestone deep, emergency)",
+            "Notes that constant redraw is as bad as never redrawing"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach the reassessment discipline to a teammate. Cover (1) why the initial Critical Path is a guess, not a fixed plan, (2) the trigger for formal reassessment, (3) the four questions to walk through, and (4) the difference between healthy reassessment and unhealthy over-redraw.",
+        "rubric": [
+          "Articulates the initial path as a guess given current info",
+          "States milestone completion as the formal trigger",
+          "Names the four reassessment questions",
+          "Distinguishes healthy (learning-triggered) from unhealthy (clock-triggered) redraw",
+          "Mentions the cadence structure (weekly check + post-milestone deep dive)",
+          "Uses at least one concrete example"
+        ]
+      }
+    },
+    {
+      "id": "ch05-sub-critical-paths",
+      "chapterId": "ch05",
+      "title": "Sub-Paths: Departments and Individuals",
+      "isLandmark": false,
+      "order": 6,
+      "pretest": {
+        "prompt": "You have a company-level Critical Path to 500 customers. Your engineering team, your marketing team, and each individual engineer need to know what to work on today. Before reading: how would you translate the company path into individual-level plans without losing the discipline of the framework?",
+        "modelAnswer": "The translation has to preserve two properties: (a) individual work must trace back to the company goal — no one should be working on something that doesn't plausibly advance the company Critical Path, and (b) individuals still need specific, actionable work — 'help hit 500 customers' is useless at the IC level. The answer is *nested* critical paths: the company path defines milestones, each team owns certain milestones and derives its own path to them (with the team's goal being the milestone), and each individual derives a personal path to their piece of the team's path. The sum of individual paths should equal the company path — if it doesn't, someone is working on something off-path. The on-path test and reassessment rules apply at every level. The risk without this structure: individuals build beautifully but their work doesn't compose."
+      },
+      "lesson": {
+        "markdown": "## The fractal structure\n\nEverything in Critical Path applies at every level of the company. The company has a Critical Path. Each department has a Critical Path. Each team has one. Each individual has one. And critically: **the sum of the department paths is the company path; the sum of individual paths is the department path.**\n\nThis isn't metaphorical. If you add up what each person is working on this week and it doesn't reconstruct the company Critical Path, something is wrong — either someone is working off-path, or the company path has gaps no one is covering.\n\n## Why sub-paths exist\n\nCompany-level milestones are too abstract to act on as an individual. 'Ship self-serve onboarding' is a milestone; it's also six people's worth of work over eight weeks. Each of those people needs to know what to work on *today*. So the milestone gets broken into team-level work, and team-level work gets broken into individual-level work — and at each level, the same Critical Path discipline applies.\n\nConcretely, from the book's DuckDuckGo example: \n\n- **Company path:** reach 1% of the search market.\n- **Engineering department path:** ship features that keep mainstream users retained (images, auto-suggest).\n- **iOS team path:** deliver an iOS 7 refresh that matches desktop quality.\n- **Individual designer path:** finalize the design mockups for that refresh.\n\nEach level is a Critical Path. Each is traceable up the chain. Each is narrow enough to act on at that level.\n\n## The unlocking rule\n\nWhen a department commits to a milestone that requires picking a sub-approach, all the sub-framework machinery applies fractally. Most visibly: Bullseye itself becomes a sub-process inside a team's Critical Path. DuckDuckGo's mobile team had a sub-goal of 1 million app users, ran Bullseye inside that sub-scope, concluded getting featured in the iOS App Store was the marketing milestone, and *promptly stopped working on ads, press outreach, and other app traction strategies that weren't on the sub-path.* The on-path discipline is identical at the sub-level — the only thing that changes is the scope of 'goal.'\n\n## The management cadence\n\nThis is why the reassessment cadence from the previous concept matters for management, not just planning. Management at every level is continuously working to **refine the Critical Path based on market feedback**. DuckDuckGo's practice:\n\n- Weekly 1:1s with a standing agenda item to corroborate the individual's current path.\n- Company-wide meetings with the same agenda item for the company path.\n- After a milestone is achieved at any level, a longer strategic discussion — and the revised sub-path gets communicated up and down.\n\nThis structure ensures that when the company path changes, sub-paths get updated; and when a sub-path encounters a blocker that implies a company-path revision, it propagates upward. The alternative — individuals following a path that's been implicitly invalidated by an upstream change — is common and silently expensive.\n\n## The governance benefit\n\nSub-paths also solve a team-management problem: how do you tell whether someone is working on the right thing? The question becomes objective. 'Is your current work on your personal path?' 'Is your path aligned with the team's path?' 'Is the team's path aligned with the company's?' Three yes answers means the person is rowing in the same direction. Any no means there's a concrete, named gap to discuss. Subjective evaluations ('are they doing good work?') give way to objective checks ('are they on the path?'), which is a materially different and more productive conversation.\n\n## The recursion has a floor\n\nYou don't draw a Critical Path for every hour of every day — that would be absurd. The useful floor is usually the individual *quarter* or *sprint*: what's the shortest sequence of deliverables from me that completes my part of the team's current milestone? Below that, daily prioritization is execution, not planning. The framework scales down, but only so far.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Theo's FleetPing has 7 people: Theo (CEO), 2 engineers (Priya, Ben), a product designer (Jun), an SDR who just joined, and a part-time support person, plus the soon-to-be-hired AE. Company Critical Path is the one from the previous concepts. Theo needs to cascade it.",
+        "walkthrough": "**Company path (unchanged):**\n1. [DONE] Commit to channel (targeting blogs)\n2. Self-serve onboarding with ELD\n3. Hire AE by month 6\n4. Reach 95% month-1 retention\n\n**Engineering sub-path (owners: Priya, Ben, Jun):** their goal is milestone 2 (self-serve onboarding with ELD) delivered by week 10.\n- Sub-milestones:\n  (a) Hardware installer integration via licensed third-party — week 3\n  (b) In-product walkthrough + ELD compliance flow — week 6\n  (c) Alpha with 5 pilot fleets; fix issues — week 8\n  (d) GA — week 10\n\n**Individual path (Priya, senior engineer — owns (a) and (b)):**\n  - Week 1: Spec the licensed installer integration; verify API coverage matches fleet-setup needs.\n  - Week 2: Ship integration to staging; run with two internal test fleets.\n  - Week 3: Integration live in alpha; hand off to Ben for product-side wiring.\n  - Weeks 4–6: Build ELD compliance flow (this is on Priya because she's done ELD work before; Ben hasn't).\n  - Week 6: ELD flow in alpha.\n\n**Individual path (Jun, designer — owns walkthrough UX):**\n  - Weeks 1–2: Research existing walkthrough patterns in comparable self-serve tools; sketch FleetPing-specific flow.\n  - Weeks 3–4: High-fidelity mocks for walkthrough; handoff to Ben.\n  - Week 5: Iteration based on Ben's build questions.\n  - Week 6: Onboarding visuals locked.\n\n**Marketing sub-path (owners: Theo + SDR + incoming AE):** their goal is to keep the channel producing ≥30 fleets/month through the onboarding transition (channel already committed, company milestone 1).\n  - SDR's individual path: source 40 AE candidates in month 1; run initial screens; hand top 10 to Theo for final interviews by month 2 (this ladders to company milestone 3).\n  - Theo's individual path for the quarter: close AE hire by month 6, continue being escalation path for 5–10 high-signal prospect conversations per week (stays in customer loop without going off-path).\n\n**Check the fractal property:** do the sum of individual paths reconstruct the company path?\n- Milestone 1 [done]: no active work; channel running.\n- Milestone 2 (onboarding+ELD): Priya + Ben + Jun covered. Yes.\n- Milestone 3 (AE hire): SDR + Theo covered. Yes.\n- Milestone 4 (retention): implicitly owned by engineering + Theo via the onboarding work; becomes actively owned post-GA with a retention-metrics sub-milestone. Mark this — it's a small gap in the current sub-path.\n\nThe gap check is valuable. Without the fractal view, retention might have been 'everyone's responsibility,' which is usually no one's. With the check, Theo can assign retention-metric ownership explicitly — probably to Priya as an extension of her onboarding work, with a specific post-GA measurement plan.\n\n**Cadence:** weekly 1:1s with a standing first question — 'is your current work on your personal path, and is it still the right path?' Monthly cross-team sync to corroborate the company path. After milestone 2 ships (~week 10), a formal company-level reassessment.\n\n**The test the framework passes:** if you ask Priya on any given day what she's working on and why, the answer should be traceable through three levels — individual task, team milestone, company milestone, company traction goal. That traceability is the evidence that the paths are real and not ornamental."
+      },
+      "contrast": {
+        "neighborConceptId": "ch05-on-path-test",
+        "explanation": "The on-path test operates at every level, but 'the path' it refers to depends on which level you're working at. An engineer asking 'is this on path?' is asking about their *individual* Critical Path, which rolls up to the team's, which rolls up to the company's. It's possible for a piece of work to be on the company path but off the engineer's current path (someone else owns it) — in which case the engineer should still not do it, even though it's broadly 'on-path.' The concepts are linked: the on-path test provides the binary filter; sub-paths provide the correct scope for that filter at each level."
+      },
+      "flashcards": [
+        {
+          "id": "ch05-sub-critical-paths-fc1",
+          "type": "recall",
+          "front": "What's the structural relationship between company, department, and individual Critical Paths?",
+          "back": "They're nested and additive. The sum of individual paths equals the department path; the sum of department paths equals the company path. Each level owns specific milestones of the level above it; individuals work on specific pieces of their team's milestones."
+        },
+        {
+          "id": "ch05-sub-critical-paths-fc2",
+          "type": "recognition",
+          "front": "DuckDuckGo's cascade: company wants 1% search market → engineering wants ____ → iOS team wants ____ → individual designer wants ____.",
+          "back": "engineering: ship retention-driving features (images, auto-suggest) → iOS team: deliver an iOS 7 refresh matching desktop quality → individual designer: finalize mockups for that refresh. Each level is a Critical Path; each traces up the chain."
+        },
+        {
+          "id": "ch05-sub-critical-paths-fc3",
+          "type": "cloze",
+          "front": "Sub-paths turn team management from 'is this person doing good work?' (subjective) into 'is this person ______?' (objective).",
+          "back": "on their path — which is aligned with their team's path, which is aligned with the company's path. Three yes answers = rowing in the same direction. Any no = a specific, named gap."
+        },
+        {
+          "id": "ch05-sub-critical-paths-fc4",
+          "type": "recall",
+          "front": "What recursion does Critical Path apply fractally, and what happens at each level?",
+          "back": "Critical Path's discipline (goal → milestones → shortest path → on-path test → reassess after milestones) applies at company, department, team, and individual levels. Bullseye also nests inside — a team with a channel sub-goal runs Bullseye at team scope. The mechanics are identical; only the scope of 'goal' changes."
+        },
+        {
+          "id": "ch05-sub-critical-paths-fc5",
+          "type": "recall",
+          "front": "How far down should Critical Path be formally drawn?",
+          "back": "Usually to the individual quarter or sprint. Below that is execution, not planning — drawing a Critical Path for every hour would be absurd. The framework scales down, but only to the level where 'what's the shortest sequence of my deliverables that completes my part of the team's milestone?' is still a useful question."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch05-sub-critical-paths-sc1",
+          "setup": "A CEO draws a clean company Critical Path but doesn't cascade it to teams or individuals. Engineers are 'working on what they think is important.' Results after one quarter: milestones have slipped, and in retrospect each engineer was working on something defensible but no two were aligned.",
+          "question": "What's the failure mode, and how would you fix it?",
+          "modelAnswer": "The failure: a company path without sub-paths is a document, not an operating model. Without cascade, individuals substitute their own judgment for what's important — which, even when individually reasonable, doesn't compose. The symptoms here (defensible individual work but no aggregate progress) are the signature. Fix: cascade explicitly. Start with departments — each department owns specific company milestones and owes a department-level path to them. Then teams within departments. Then individuals. Test the result by summing individual paths and checking it reconstructs the company path; if not, either someone is off-path or the company path has a gap. Institute the weekly cadence (1:1 with 'is your work on your path?' as a standing item) and the post-milestone reassessment. The underlying principle: the company path only functions if it's decomposed to the level where people actually make daily decisions.",
+          "rubric": [
+            "Names the failure mode: document without operating model",
+            "Identifies individual substitution of judgment as the mechanism",
+            "Prescribes explicit cascade through levels",
+            "Prescribes the sum-check (sub-paths reconstruct company path)",
+            "Prescribes the weekly cadence and post-milestone reassessment",
+            "States the principle (path must decompose to daily-decision level)"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch05-sub-critical-paths-sc2",
+          "setup": "A team lead reports: 'My engineer is working on something that's clearly valuable for the company — it's on the company Critical Path (it's actually part of another team's milestone). But it's not on *his* individual path or *our* team's path.'",
+          "question": "Should the engineer continue? What principle applies?",
+          "modelAnswer": "No, at least not without a formal path revision. Principle: the on-path test applies at the engineer's *individual* path, which must be part of his team's path. Work that's on the company path but outside the team's scope isn't his team's responsibility — it's the other team's. If he keeps doing it, two things go wrong: (1) his team's actual milestones slip (he's not working on them), and (2) ownership gets muddled — two teams implicitly working on the same milestone is how accountability breaks down. Correct moves, in order: (a) ask why — is the other team under-resourced, is the engineer procrastinating his own work, is there a real skills gap only he can fill? (b) If there's a real resourcing problem, raise it to management to decide whether to formally move ownership (redrawing a department path) or whether to lend the engineer temporarily with an explicit time box. (c) If there's no real problem, have the engineer stop and return to his path. The off-ramp isn't personal criticism; it's structural clarity.",
+          "rubric": [
+            "Identifies individual path as the correct scope for the test",
+            "Explains why 'on company path' isn't sufficient",
+            "Names the two failure modes (team slippage + muddled ownership)",
+            "Prescribes diagnostic questions before action",
+            "Prescribes formal redraw if resourcing is the real issue",
+            "Frames the fix as structural, not personal"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain sub-critical paths to a new manager at a startup. Cover (1) the fractal structure (company → department → team → individual), (2) the sum-check property, (3) how Bullseye can nest inside a team's Critical Path, and (4) how sub-paths turn subjective performance judgments into objective 'on-path?' questions.",
+        "rubric": [
+          "Describes the nested structure with at least three levels",
+          "States the sum-check (individual paths reconstruct higher paths)",
+          "Notes that Bullseye nests as a sub-tool inside a team's path",
+          "Articulates the subjective-to-objective shift in performance evaluation",
+          "Identifies a reasonable floor for the recursion (individual sprint/quarter)",
+          "Gives a concrete example spanning at least two levels"
+        ]
+      }
+    }
+  ]
+}

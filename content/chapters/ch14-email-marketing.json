@@ -1,0 +1,627 @@
+{
+  "id": "ch14",
+  "number": 14,
+  "slug": "email-marketing",
+  "title": "Email Marketing",
+  "summary": "Email marketing is the traction channel where you build and nurture a permission-based list as an owned, durable asset — reaching subscribers repeatedly through lifecycle sequences and broadcasts.",
+  "concepts": [
+    {
+      "id": "ch14-email-definition",
+      "chapterId": "ch14",
+      "title": "Email as an Owned Durable Asset",
+      "isLandmark": true,
+      "order": 1,
+      "pretest": {
+        "prompt": "Most marketing channels 'rent' attention from a platform that can disappear overnight (algorithm change, account ban, CPM hike). Before reading: what property does email marketing have that makes it fundamentally different from a social-media following? And why does that matter for a startup's long-term economics?",
+        "modelAnswer": "Email lets you reach each subscriber directly in their inbox, without any intermediary platform choosing whether to show your message. Your list is yours — you can export it, migrate ESPs, change brands. No third party can throttle your reach, change the rules, or ban your account out from under you. This makes email a durable, owned asset rather than a rented one. Economically, that means (a) the cost of list-building compounds — every subscriber you add today can be reached for years — and (b) the channel is insulated from platform risk that eventually degrades every social or paid channel. A 10,000-person email list with 40% open rates is more valuable in dollar terms than a 100,000-follower Twitter account, because you actually own the distribution."
+      },
+      "lesson": {
+        "markdown": "## The definition\n\nEmail marketing is the traction channel where you **build a permission-based list of subscribers and reach them repeatedly** through an email service provider (ESP) you control. Three qualifiers are load-bearing in that sentence.\n\n- **Permission-based.** Subscribers opted in — they asked to hear from you. This distinguishes email marketing from cold outbound (covered under Sales in Ch 18), which targets people who never asked.\n- **List you build.** Your asset is a list of email addresses with consent — not a list you bought, not a list you scraped. Bought lists degrade the channel permanently (we'll get to why in the pitfalls concept).\n- **Through an ESP you control.** Mailchimp, ConvertKit, Customer.io, Klaviyo, SendGrid, Postmark — any tool where you are the account holder and can migrate away. This is the mechanical underpinning of 'you own it.'\n\n## Why email is structurally different\n\nEvery other distribution channel is *rented*. SEO depends on Google's ranking decisions. Social depends on platform algorithms. Paid ads depend on auction dynamics and platform policies. Content marketing depends on someone else's blog picking you up. In each case, a third party stands between you and your audience, and that third party can change the rules at any time.\n\nEmail is the exception. Once a subscriber opts in, the channel from you to them is *direct*. The ESP delivers the bytes, but the relationship — the email address, the consent, the attention — is yours. You can leave Mailchimp and take your list to ConvertKit without losing a single subscriber. Try doing that with your Instagram followers.\n\nThis single property — **no intermediary owns the relationship** — is where email's long-term economics come from.\n\n## Distinct from two lookalikes\n\nFounders often conflate three things that sit on email infrastructure but are *not* email marketing as a traction channel:\n\n1. **Cold outbound.** Emailing people who never opted in. Lives in the Sales chapter. Different legal regime, different unit economics, different playbook.\n2. **Transactional email.** Password resets, receipts, shipping notifications. Necessary, but not a traction channel — it's product infrastructure.\n3. **Lifecycle / marketing email.** What this chapter covers. Welcome sequences, nurture, re-engagement, broadcasts, product announcements to your opted-in list.\n\nKeep these separate. Mixing them — e.g., adding cold-purchased leads to your marketing list — destroys the durability that makes email valuable in the first place.\n\n## What you're actually building\n\nThink of the email list as a **capital asset**, not a campaign. Each subscriber added is a unit of distribution you can draw down on for years. The work of list-building is best evaluated on an asset-accumulation basis: how much per subscriber, what their projected reachable LTV is, and how fast the list is growing net of churn.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Devon runs Stackpile, a $49/mo developer-tools startup. After 6 months he has two acquisition channels: a Twitter account with 8,400 followers (grew organically), and an email newsletter with 1,900 subscribers (from a lead magnet + blog CTA).",
+        "walkthrough": "Comparing the two assets:\n\n- **Twitter (rented):** A single tweet reaches ~12% of followers organically — about 1,000 impressions. Signup conversion rate from a promotional tweet is ~0.3%. Expected signups per tweet: ~3. Twitter could deprioritize his category tomorrow; he'd have no recourse.\n- **Email list (owned):** A broadcast to 1,900 subscribers hits an inbox-delivered rate of ~95% (1,805 reach the inbox). Open rate 42% (757 open). Click-through rate on a relevant promotion is 6% of opens = 45 clicks. Signup conversion rate on the landing page is 8% = ~4 signups.\n\nComparable signups per send on much smaller list. But the real difference is durability:\n\n- In 12 months at current growth, his Twitter might have 14,000 followers — but the organic reach-per-tweet may have dropped (algorithmic fatigue). Expected signups per tweet: maybe still ~3-4.\n- In 12 months at current subscriber growth, the email list might have 6,000 subscribers with similar engagement rates. Expected signups per broadcast: ~12-15. Four times the Twitter output, on an asset he can migrate, segment, and automate.\n\nThe list is also *asynchronous*: new subscribers enter a 4-email welcome sequence that converts ~10% of them to paid within 14 days, running 24/7 with no tweet-writing required. Devon has been building a compounding distribution asset on the side of his Twitter presence, and it's quietly becoming the bigger channel."
+      },
+      "contrast": {
+        "neighborConceptId": "ch13-audience-flywheel",
+        "explanation": "Email marketing and content marketing both build owned audience assets — but they differ in the primary asset. Content marketing's asset is *content* (articles, podcasts, videos) that pulls new readers in via search and sharing; the audience is a side-effect. Email marketing's asset is the *list itself* — the addresses and consent. Content marketing grows through distribution; email grows through capture. The two combine beautifully: great content attracts readers, a well-designed capture turns readers into subscribers, and the list gives you a durable way to reach them beyond their first visit."
+      },
+      "flashcards": [
+        {
+          "id": "ch14-email-definition-fc1",
+          "type": "recall",
+          "front": "What are the three load-bearing qualifiers in the definition of email marketing as a traction channel?",
+          "back": "(1) Permission-based — subscribers opted in. (2) List you build — not bought, not scraped. (3) Through an ESP you control — you can migrate away without losing subscribers."
+        },
+        {
+          "id": "ch14-email-definition-fc2",
+          "type": "recognition",
+          "front": "What single structural property makes email fundamentally different from every other distribution channel?",
+          "back": "No intermediary owns the relationship between you and the subscriber. Once they opt in, the channel is direct — you can change ESPs without losing anyone, and no platform can throttle your reach."
+        },
+        {
+          "id": "ch14-email-definition-fc3",
+          "type": "cloze",
+          "front": "Every other distribution channel is ______ ; email is the exception because you ______ the list.",
+          "back": "rented ; own — the asset is portable, and no third party sits between you and the subscriber."
+        },
+        {
+          "id": "ch14-email-definition-fc4",
+          "type": "recall",
+          "front": "Name three uses of email infrastructure that are NOT email marketing as a traction channel.",
+          "back": "(1) Cold outbound — unopted-in recipients, part of Sales. (2) Transactional email — receipts, password resets, product infrastructure. (3) Any list you bought or scraped — that destroys deliverability and isn't a real list."
+        },
+        {
+          "id": "ch14-email-definition-fc5",
+          "type": "recall",
+          "front": "Why is an email list better modeled as a capital asset than as a campaign?",
+          "back": "Each subscriber added is a unit of distribution you can draw down on for years. List-building cost is evaluated on asset-accumulation terms (cost per subscriber × projected reachable LTV × growth net of churn), not on short-run conversion."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch14-email-definition-sc1",
+          "setup": "A founder tells you: 'We have 50,000 Instagram followers and a 3,000-person email list. I think we should stop sending newsletters and just focus on Instagram — 17x the audience.'",
+          "question": "What's the problem with this framing? Quantify the comparison more rigorously.",
+          "modelAnswer": "The founder is comparing raw audience size, not actual reachable distribution. On Instagram, organic reach for brand accounts is typically 3–10% of followers — so 50,000 followers might reach 2,500–5,000 real viewers per post. On email, inbox-delivered rate is ~95% and open rate for a well-engaged list is 30–45%, so 3,000 subscribers reach ~950–1,300 opens per broadcast. The raw opens look smaller, but two things flip the comparison: (1) email subscribers are higher-intent (they explicitly opted in for updates from you, vs. Instagram followers who may have followed once and forgotten); (2) the Instagram audience is rented — a single algorithm change can cut reach in half overnight, and nobody exports Instagram followers to a competing ESP. 'Focus on Instagram' is optimizing for a vanity number while defocusing from the durable asset.",
+          "rubric": [
+            "Distinguishes raw audience from reachable audience (open rates vs organic reach)",
+            "Quantifies the comparison with approximate percentages",
+            "Names intent asymmetry (opted-in vs passive follow)",
+            "Names platform risk (algorithm changes are unilateral)",
+            "Reframes the decision as 'durable asset vs rented audience'"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch14-email-definition-sc2",
+          "setup": "A startup founder says: 'We bought a list of 20,000 enterprise CTOs. We're going to start sending our product newsletter to them next week.'",
+          "question": "Why is this a dangerous move, and what should they do instead?",
+          "modelAnswer": "Dangerous on three fronts. (1) Legal: in most jurisdictions (GDPR, CASL, CAN-SPAM has stricter provisions than people realize) sending marketing email to non-consented recipients carries fines. (2) Deliverability: bought lists have high bounce rates, spam-trap hits, and complaint rates. One broadcast to a bought list can land the sending domain on blocklists, destroying deliverability to the legitimate opted-in list as well. The damage is often permanent or takes months to recover. (3) Channel identity: the definition of email marketing requires permission. This isn't email marketing — it's cold outbound, which belongs to the Sales chapter and uses a different (often separate-domain) sending infrastructure. The fix: do not send the bought list through the marketing ESP. If they want to do outbound, use a separate domain/subdomain and a tool designed for cold email (with rigorous bounce and complaint handling), and treat it as Sales, not email marketing. The main email list should be grown only through opt-in.",
+          "rubric": [
+            "Identifies the legal risk (GDPR/CASL/CAN-SPAM)",
+            "Identifies the deliverability risk — blocklisting damage to the legitimate list",
+            "Identifies the channel-category error (cold outbound is a different channel)",
+            "Prescribes separating domains/infrastructure",
+            "States that marketing lists must be grown only through opt-in"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch14-email-definition-sc3",
+          "setup": "An early-stage SaaS startup has a blog producing 10k monthly organic visits, a Twitter account with 3k followers, and no email capture anywhere on the site.",
+          "question": "Frame what's being lost every month, and what the minimum-viable capture setup would look like.",
+          "modelAnswer": "What's being lost: of 10,000 monthly visits, even a conservative 1–2% email-capture rate would produce 100–200 new subscribers per month — roughly 1,200–2,400 per year. At current pace, none of this is accruing. The blog is a content asset without a capture mechanism; readers leave without becoming a durable relationship. Minimum-viable capture: (a) Exit-intent or scroll-based lightbox on the blog with a specific, concrete lead magnet (not 'subscribe to our newsletter' — something like 'Get the 12-page playbook we built for X'). (b) Inline CTA embedded mid-article after high-traffic posts. (c) A simple welcome sequence of 3–4 emails that delivers the lead magnet and sets expectations for what subscribers get. (d) A capture page for direct traffic (e.g., /newsletter). Expected result: within 3 months, 200–600 subscribers captured, plus a working pipeline the blog can feed indefinitely. The highest-leverage missing piece is not more traffic — it's the capture layer.",
+          "rubric": [
+            "Quantifies subscribers being lost at realistic capture rates",
+            "Names the blog as a content asset without a capture mechanism",
+            "Prescribes multiple capture surfaces (exit-intent, inline CTA, dedicated page)",
+            "Insists on a specific lead magnet, not a generic 'newsletter'",
+            "Mentions a welcome sequence as the immediate onboarding payoff",
+            "Identifies capture (not more traffic) as the highest-leverage missing piece"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain to a Twitter-native founder why email is worth building alongside (not instead of) their social presence. Cover: (1) the owned-vs-rented property, (2) the capital-asset framing, (3) why mixing cold outbound and marketing lists is dangerous, and (4) one concrete example of an email list outperforming a larger social following.",
+        "rubric": [
+          "States the owned-vs-rented structural property clearly",
+          "Frames the list as a capital asset whose cost is evaluated on accumulation terms",
+          "Explains the deliverability and legal risks of mixing cold outbound with opt-in marketing",
+          "Gives a concrete numeric comparison (e.g., 2k email subs outperforming 20k social followers)",
+          "Does not overclaim — acknowledges email is additive to social, not a replacement",
+          "Uses causal language (not 'email is better because experts say so')"
+        ]
+      }
+    },
+    {
+      "id": "ch14-lifecycle-flywheel",
+      "chapterId": "ch14",
+      "title": "The Lifecycle Flywheel + Deliverability Mechanics",
+      "isLandmark": true,
+      "order": 2,
+      "pretest": {
+        "prompt": "Email marketing stops working the moment your messages land in spam folders instead of inboxes. Before reading: name the three things you think email providers (Gmail, Outlook, Apple Mail) actually *look at* to decide whether to deliver your email to the inbox vs. bury it. What does that imply about how you should run the channel?",
+        "modelAnswer": "Three categories of signal: (1) Authentication — does the email pass SPF, DKIM, and DMARC? These prove the sending domain is legitimately you, not a spoofer. (2) Sender reputation — how the recipient domain has historically engaged with your sending domain/IP: complaint rate (below 0.1% is healthy), bounce rate (below 2%), spam-trap hits (zero is the only acceptable number). (3) Engagement signals — whether recipients open, click, reply, and mark-as-not-spam your messages. Gmail explicitly uses engagement as a ranking signal. Implication: you should only send to engaged subscribers, prune dead ones aggressively, set up authentication from day one, and treat subject-line opens and reply rates as system-health indicators, not just marketing metrics."
+      },
+      "lesson": {
+        "markdown": "## The lifecycle as a flywheel\n\nEmail marketing works as a five-stage loop, repeated per subscriber:\n\n1. **Capture.** A visitor becomes a subscriber — they give you their email in exchange for something (a lead magnet, updates, access).\n2. **Welcome.** A short automated sequence (3–6 emails over 7–14 days) delivers the lead magnet, introduces the brand, and sets expectations. The goal is first-value and engagement-signal generation.\n3. **Nurture.** Ongoing broadcasts and evergreen sequences that deepen the relationship — teaching, storytelling, product demos, case studies. Most subscribers spend most of their time here.\n4. **Activate.** Specific sequences triggered by intent signals (link clicks, page visits, lead-score thresholds) that convert the engaged subscriber into a paying customer.\n5. **Retain.** Post-purchase sequences, reactivation campaigns for dormant subscribers, and a systematic approach to churn and resubscription.\n\nEach stage produces engagement that improves the next stage. A subscriber who completes the welcome sequence is 3–5× more likely to convert in the activate stage. A subscriber who converts is easier to reach in the retain stage. The flywheel compounds because engagement is both an outcome and an input — it determines inbox placement for everything you send next.\n\n## Why deliverability is the whole game\n\nNone of the stages work if your email doesn't land in the inbox. Deliverability is gated by three things:\n\n**Authentication** — SPF, DKIM, and DMARC records on your sending domain. SPF says 'emails from this domain are only legitimate if sent from these IPs.' DKIM cryptographically signs the email. DMARC tells receivers what to do if auth fails. Missing any of these and modern providers (Gmail especially, since early 2024) will either reject your mail or bury it.\n\n**Sender reputation** — the receiving provider (Gmail, Outlook, etc.) tracks your domain's behavior: complaint rate, bounce rate, spam-trap hits. Good reputation takes months to build and a single bad broadcast to destroy.\n\n**Engagement signals** — opens, clicks, replies, and 'mark as not spam' lift placement; 'mark as spam,' deletes-without-opening, and auto-archives sink it. Gmail in particular uses engagement as a ranking signal: if most of your sends don't get opened, the ones that would have been opened get filtered anyway.\n\n## The implication for how you run the channel\n\nBecause engagement drives deliverability, **the worst thing you can do is send to disengaged subscribers.** Every dead subscriber on your list is a drag on everyone else. This is counterintuitive to founders who instinctively want to reach as many people as possible — the math runs the other direction. A 3,000-person list with 50% open rates outperforms a 30,000-person list with 8% open rates, because the big list's placement for the engaged core is actively harmed by the dead weight.\n\nWhich is why serious email operators prune ruthlessly, segment by recent engagement, and run re-engagement campaigns with the explicit goal of *removing* unresponsive subscribers — counterintuitive but necessary.\n\n## Apple MPP and the end of trusted open rates\n\nSince 2021, Apple Mail Privacy Protection pre-fetches email images for users, which registers as an 'open' whether the user actually opened or not. This inflates open rates — often doubling them — and makes the metric nearly useless as a behavior signal. For segmentation and engagement-based deliverability, modern operators rely on **clicks, replies, conversion events, and visits tied to email**, not opens. Don't make reactivation decisions based on open rates.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Sari runs Daylight, a $29/mo journaling app. She has 4,200 subscribers: 1,800 are from the last 30 days (high engagement), 1,500 are 2–12 months old (mixed engagement), and 900 are 12+ months old (haven't clicked anything in 6 months). She's about to launch a new feature and wants maximum reach.",
+        "walkthrough": "Her instinct: broadcast to all 4,200 to maximize eyeballs. The math says the opposite.\n\n**If she sends to all 4,200:**\n- 1,800 active: open rate 45%, click rate 8% — ~810 opens, ~144 clicks. Healthy engagement.\n- 1,500 mixed: open rate 20%, click rate 2% — ~300 opens, ~30 clicks.\n- 900 dormant: open rate 3%, click rate 0.2% — ~27 opens, ~2 clicks.\n- Total: 1,137 opens on 4,200 sends = 27% blended open rate. This looks fine, but from Gmail's perspective, the 900 dormant subscribers generated 873 'non-engagements' — a strong negative signal that taints the reputation for the *next* broadcast to the active segment.\n\n**Better approach:**\n- Send to 1,800 active + 1,500 mixed. Expected: ~1,110 opens out of 3,300 sends = 34% open rate, cleaner reputation signal.\n- Simultaneously, run a dedicated *re-engagement sequence* to the 900 dormant subscribers: a 3-email sequence asking them to click if they want to stay subscribed. After the sequence, remove anyone who didn't click. Result: the list shrinks by ~750, to 3,450.\n- Next broadcast's deliverability is measurably better because the list now only contains subscribers who've signaled engagement in the last 12 months.\n\nThe pruning feels wrong (she's 'losing' 18% of her list) but it strengthens the channel's long-term output. A 3,450-person list with 34% open rates reaches more actual humans than a 4,200-person list with 27% open rates *and* has better placement for future sends."
+      },
+      "contrast": {
+        "neighborConceptId": "ch14-email-definition",
+        "explanation": "The definition concept establishes email as an owned asset. The lifecycle + deliverability concept is about *the mechanics that keep the asset functional*. An owned list that can't reach the inbox has no value. Deliverability is what separates operators who nominally have an email list from those who have a working email channel. Every other email-marketing concept is downstream of deliverability being intact."
+      },
+      "flashcards": [
+        {
+          "id": "ch14-lifecycle-flywheel-fc1",
+          "type": "recall",
+          "front": "List the five stages of the email lifecycle flywheel in order.",
+          "back": "Capture → Welcome → Nurture → Activate → Retain. Each stage produces engagement that improves the next stage (and preserves deliverability for everyone)."
+        },
+        {
+          "id": "ch14-lifecycle-flywheel-fc2",
+          "type": "recall",
+          "front": "Name the three email authentication records and what each proves.",
+          "back": "SPF — emails from this domain are only legitimate if sent from approved IPs. DKIM — cryptographic signature proving the message wasn't tampered with. DMARC — tells receivers what to do if SPF/DKIM fails and where to send reports. Modern providers require all three."
+        },
+        {
+          "id": "ch14-lifecycle-flywheel-fc3",
+          "type": "recognition",
+          "front": "Why does Gmail use engagement as a deliverability ranking signal?",
+          "back": "Because engagement is the best predictor of whether future emails from the same sender are wanted. High opens/clicks/replies = probably wanted; deletes-without-opening = probably unwanted. This means disengaged subscribers harm placement for the engaged ones on your list."
+        },
+        {
+          "id": "ch14-lifecycle-flywheel-fc4",
+          "type": "cloze",
+          "front": "Since 2021, Apple MPP inflates ______ rates by pre-fetching images. For reliable engagement signals, operators now rely on ______ and ______ instead.",
+          "back": "open ; clicks ; replies (or conversions) — open rates are no longer trustworthy for engagement-based decisions"
+        },
+        {
+          "id": "ch14-lifecycle-flywheel-fc5",
+          "type": "recall",
+          "front": "Why does pruning dead subscribers *improve* outcomes rather than hurt them?",
+          "back": "Disengaged subscribers generate non-engagement signals that harm your sender reputation. Gmail uses those signals to decide inbox placement for everyone on the list. A smaller, more engaged list delivers better to the engaged core than a larger list diluted with dead weight."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch14-lifecycle-flywheel-sc1",
+          "setup": "A founder says: 'Our email open rate dropped from 38% to 22% last month. We didn't change anything about our content. What's happening?'",
+          "question": "What are the three most likely causes, and what should they investigate first?",
+          "modelAnswer": "Three likely causes in order of probability: (1) Deliverability regression — something changed in authentication or reputation. Maybe SPF/DKIM/DMARC broke (domain migration, DNS change, ESP switch), or a recent broadcast hit a spam trap, or they added a bought list. Investigate first: check domain authentication records + recent complaint and bounce rates in ESP, and send a test to a Gmail/Outlook/Yahoo inbox to see which provider is filtering. (2) List aging — no fresh subscribers entering while old ones go dormant. Investigate: plot active subscribers by signup cohort over the last 90 days. (3) Apple MPP fluctuation — their iOS/iPadOS user mix may have shifted, changing the artificial open-rate contribution. This is less urgent because it doesn't affect deliverability. First move: check authentication and recent bounce/complaint rates. Deliverability issues explain the steepest drops fastest and are easiest to fix.",
+          "rubric": [
+            "Names deliverability regression as top candidate",
+            "Lists SPF/DKIM/DMARC as specific things to check",
+            "Recognizes list-aging as a slower-moving cause",
+            "Mentions Apple MPP as a lower-urgency explanation",
+            "Prescribes a specific first investigation step (not 'do everything')",
+            "Distinguishes deliverability issues (affect placement) from MPP noise (doesn't)"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch14-lifecycle-flywheel-sc2",
+          "setup": "A founder runs a clean 5,000-subscriber list with 35% open rates. They just acquired a 3,000-subscriber list from an acqui-hired competitor. The list is a year old and hasn't been emailed in 6 months. The founder plans to merge both lists and announce the acquisition in one broadcast.",
+          "question": "Why is this plan dangerous? What's a safer integration path?",
+          "modelAnswer": "Dangerous because merging a cold (unengaged for 6 months) 3k list with an active 5k list and emailing the combined 8k produces roughly 3,000 non-engagements in a single send — a massive negative signal that can drop the sender-domain reputation and harm placement for the healthy 5k core. The worst case is that future broadcasts to the engaged core start landing in Promotions or Spam. Safer path: (1) *Don't merge yet.* Treat the acquired list as a separate segment. (2) Send a *re-engagement sequence* (3 emails over 10 days) to the 3k, asking them to confirm they want to keep receiving updates under the new brand, with a clear unsubscribe link. Emphasize the 'click to stay subscribed' call to action. (3) After the sequence, only merge into the main list those who clicked — realistically 10–25% of the acquired list, so ~300–750 subscribers. The rest get suppressed. (4) Once merged, the combined list's engagement profile stays healthy. Yes, this means discarding the majority of the acquired list. That's correct. Bad subscribers don't just fail to convert — they actively harm the good ones.",
+          "rubric": [
+            "Identifies the reputation risk of mass non-engagement",
+            "Prescribes segmenting the acquired list rather than merging immediately",
+            "Designs a re-engagement sequence with a 'click to stay' CTA",
+            "Accepts that most of the acquired list will (correctly) be discarded",
+            "Articulates the principle that dead subscribers harm live ones",
+            "Sequences the steps (re-engage → merge survivors → resume normal sending)"
+          ],
+          "difficulty": 3
+        },
+        {
+          "id": "ch14-lifecycle-flywheel-sc3",
+          "setup": "An early-stage founder is about to send their first broadcast to a brand-new 600-person list they built via a pre-launch page. They've heard about deliverability. What's the minimum they should do before the send?",
+          "question": "List the pre-send checklist in priority order.",
+          "modelAnswer": "In priority order: (1) Set up SPF, DKIM, and DMARC on the sending domain. Most ESPs will tell you exactly what DNS records to add; without these, Gmail and Outlook will bury the message. (2) Warm the sending domain — send a few small messages (50–100 recipients at a time) over a few days before the big broadcast, to build some reputation history. (3) Verify the list has no obvious problems — no bounces from initial capture, no syntax errors, no spam traps (use an email-verification service on the whole list if you're unsure). (4) Write a clean broadcast with one clear call to action, no spam-trigger phrases (excessive caps, multiple exclamation marks, 'free!!!' energy), and a plain-text version. (5) Include a visible unsubscribe link and a plain-text footer with physical address (CAN-SPAM requirement). (6) Send to yourself and a handful of testers on Gmail, Outlook, and Apple Mail first to confirm inbox placement. Only then broadcast. Everything above costs at most a few hours and prevents the worst-case outcome (blocklisted sending domain, list effectively dead).",
+          "rubric": [
+            "Authentication (SPF/DKIM/DMARC) listed first",
+            "Domain warming mentioned",
+            "List verification mentioned",
+            "Content hygiene (spam-trigger phrases, plain text version)",
+            "Compliance (unsubscribe link, physical address footer)",
+            "Inbox-placement test before broadcasting"
+          ],
+          "difficulty": 1
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the email flywheel and why deliverability is the hidden infrastructure it rests on. Cover: (1) the five lifecycle stages and what each produces, (2) the three deliverability gates (authentication, reputation, engagement), (3) why pruning disengaged subscribers improves outcomes, and (4) why open rates can no longer be trusted for engagement decisions.",
+        "rubric": [
+          "Names all five lifecycle stages in order with their function",
+          "Lists SPF / DKIM / DMARC and what each proves",
+          "Explains sender reputation and engagement-based ranking",
+          "Articulates the 'dead subscribers harm live ones' principle",
+          "Names Apple MPP as the reason opens are unreliable since 2021",
+          "Prescribes clicks / replies / conversions as trustworthy alternatives"
+        ]
+      }
+    },
+    {
+      "id": "ch14-email-fit",
+      "chapterId": "ch14",
+      "title": "When Email Marketing Fits — and When It Doesn't",
+      "isLandmark": false,
+      "order": 3,
+      "pretest": {
+        "prompt": "Not every business benefits from a marketing email list. Before reading: what properties must a business have for email to be worth investing in? And what kind of businesses should *not* spend time on email marketing?",
+        "modelAnswer": "Email fits when (a) you have something worth receiving repeatedly — content, updates, offers, new product drops — so subscribers have a reason to stay opted in, (b) the typical customer relationship is long enough that nurturing pays back (most subscriptions, SaaS, ecommerce with repeat purchase, DTC, media, education), and (c) there's a hook to incentivize initial opt-in. Email does NOT fit for (a) purely one-off transactions with no repeat purchase and no adjacent-product upsell, (b) highly regulated industries where the compliance cost of maintaining an opt-in list outweighs the gain, (c) businesses that have no content, update, or offer cadence to sustain a list — silence kills engagement, and an unengaged list isn't an asset."
+      },
+      "lesson": {
+        "markdown": "## The three fit signals\n\nEmail marketing pays back when three conditions are met:\n\n1. **You have something worth receiving.** A real cadence of content, offers, product updates, or community communication. Subscribers opt in expecting to get *something* from being on the list. If you have nothing to send, you shouldn't have a list.\n2. **Customer relationships have depth.** Email nurture pays back when the typical customer has repeat purchase, subscription, or upsell potential. A $50 CAC on a $30 one-time purchase doesn't work; the same CAC on a $30/mo subscription or a DTC brand with 2.5 annual repeat rate does.\n3. **Email is where your audience actually reads.** For most consumer and B2B segments this is obvious. For some (Gen Z consumer, Discord-native communities, certain enterprise verticals that live in Slack or Microsoft Teams), email is a secondary channel and investment should reflect that.\n\n## When email doesn't fit\n\nThe negative space is as important as the positive:\n\n- **Pure one-off transactions.** If you sell wedding dresses one time per customer and there's no adjacent product, the ROI on email marketing is structurally weak. A single-purchase receipt is enough.\n- **Heavy-regulation verticals.** Healthcare (HIPAA), financial services (broker-dealer rules), certain government contracting — the compliance overhead on an opt-in marketing list can outweigh the channel's contribution. Email isn't impossible, but it stops being a fast-cheap-Bullseye test.\n- **No content or offer cadence.** Email requires ongoing something-to-say. If you don't produce content, don't run sales, and don't have product updates, your list will decay into dormancy within 6 months. Dormant lists damage deliverability — so having one can be worse than having none.\n- **Audience already captive on another primary channel.** A consumer app where users live in the app itself might get more from in-app messaging and push notifications than from email. Email is additive, not primary, in that case.\n\n## A diagnostic founders can run\n\nBefore investing in email marketing, answer: 'What would I send next month?' If the answer is specific and compelling (new content, a launch, a seasonal promo, a case study), email fits. If the answer is vague or empty, email doesn't fit *yet* — you either need a content engine or a product that produces natural update-worthy events first. Don't build a capture funnel ahead of having something to say.\n\n## When fit shifts\n\nA startup can move from 'email doesn't fit' to 'email fits' as the business evolves. A pure-transactional DTC brand that adds a subscription tier creates fit. A consulting firm that starts publishing a weekly insight creates fit. A consumer app that adds a content hub creates fit. Re-evaluate fit periodically — the channel's readiness for you often arrives before you notice.",
+        "readingTimeMin": 2
+      },
+      "workedExample": {
+        "setup": "Three different founders ask whether they should build an email list:\n- Priya, founder of Folsom, a one-time $299 in-home repair service (no subscriptions, no upsells).\n- Jin, founder of Barnacle, a $19/mo productivity app with a weekly blog producing 8k visits/month.\n- Maria, founder of Haven, a HIPAA-regulated telehealth platform for chronic conditions.",
+        "walkthrough": "**Priya (Folsom):** Email doesn't fit *as a traction channel*. A one-time service with no repeat purchase has no reason to maintain a list. A receipt email is all she needs. If she later adds an annual maintenance-check upsell or a referral program, fit changes.\n\n**Jin (Barnacle):** Email fits cleanly. He has a content engine (8k monthly visits, weekly cadence), a subscription product where nurture pays back, and a specific thing to send every week (new blog post). Minimum-viable setup: a lead magnet tied to his blog's best-performing post, exit-intent capture, a 4-email welcome sequence introducing the product, and a weekly newsletter with his newest post + a short 'what I'm thinking' intro. Within 6 months he'd expect a 2,000–4,000 subscriber list at current traffic, with measurable signup-to-trial conversion.\n\n**Maria (Haven):** Fit is ambiguous and needs investigation. HIPAA adds real cost — marketing emails to patients can't contain PHI (protected health information), and list management requires HIPAA-compliant infrastructure for any data tied to medical conditions. This rules out most common ESPs. Options: (1) separate marketing list with *no* patient-condition data, treating it like any other consumer email list, safe to run with standard tooling; (2) patient-communication via HIPAA-compliant infrastructure but limited to transactional/clinical content (no marketing). Marketing email probably isn't her best Bullseye test this cycle — the compliance overhead and content restrictions make other channels (content marketing, partnerships with clinics) faster to test. Revisit when she has a general consumer-education content stream that doesn't touch individual medical data."
+      },
+      "contrast": {
+        "neighborConceptId": "ch13-content-fit",
+        "explanation": "Content marketing fit and email marketing fit overlap but aren't identical. Content marketing requires topic depth and a willingness to publish for 6–12 months before the compounding kicks in. Email marketing requires ongoing content-or-offer cadence but the payoff is faster (a welcome sequence converts on week 1). Many businesses fit email but not content (e.g., a DTC brand with monthly product drops — nothing to publish, plenty to email). Many fit content but don't need email urgently (an enterprise sales motion where content fuels SDR outreach, not a subscriber list). Evaluate each independently."
+      },
+      "flashcards": [
+        {
+          "id": "ch14-email-fit-fc1",
+          "type": "recall",
+          "front": "Name the three fit signals for email marketing as a traction channel.",
+          "back": "(1) You have something worth receiving regularly. (2) Customer relationships have repeat/subscription/upsell depth. (3) Email is where your audience actually reads."
+        },
+        {
+          "id": "ch14-email-fit-fc2",
+          "type": "recognition",
+          "front": "What's the single diagnostic question to run before investing in email?",
+          "back": "'What would I send next month?' If the answer is specific and compelling, email fits. If vague or empty, it doesn't fit yet — build content or product-update cadence first."
+        },
+        {
+          "id": "ch14-email-fit-fc3",
+          "type": "recall",
+          "front": "Why can a dormant email list be worse than having none?",
+          "back": "Dormant subscribers generate non-engagement signals that damage your sender reputation when you eventually do send. A list that sits idle for 6 months is often better to abandon than to revive from scratch."
+        },
+        {
+          "id": "ch14-email-fit-fc4",
+          "type": "cloze",
+          "front": "Email fit can ______ over time — a pure-transactional DTC brand that adds a subscription tier, or a consulting firm that starts publishing, ______ new fit.",
+          "back": "shift (or change) ; creates — re-evaluate periodically; the channel's readiness often arrives before founders notice."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch14-email-fit-sc1",
+          "setup": "A founder runs a seasonal services company: $800 deep-cleaning jobs for vacation rentals, booked once or twice per year per client. She has 300 past customers and wants to know if an email list is worth maintaining.",
+          "question": "Does email fit? What should she do with the 300 existing contacts?",
+          "modelAnswer": "Email has narrow fit here. Core service is low-frequency and transactional, so a nurture list produces weak ROI. However, there's a plausible use case: a seasonal reminder list (2–4 emails per year) timed to when vacation rental owners prep for peak season — a 'book early' reminder that captures repeat bookings she'd otherwise lose to competitors. That's a minimum-viable email presence, not a marketing-heavy one. For the 300 existing: segment by recency. Past customers from the last 12 months get a soft opt-in email asking them to confirm they want seasonal reminders. Older contacts: either let go or send one explicit re-opt-in. Don't build out a welcome sequence or a weekly newsletter — the content debt wouldn't have a business case. Revisit if she adds adjacent services (maintenance subscriptions, referral program, whole-property management) where list depth would pay back.",
+          "rubric": [
+            "Identifies the transactional/low-frequency mismatch with full-blown email",
+            "Proposes a narrow seasonal-reminder use instead",
+            "Prescribes opt-in confirmation for existing contacts",
+            "Rejects overbuilt sequences for this business shape",
+            "Notes that fit may change if adjacent services are added"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch14-email-fit-sc2",
+          "setup": "A Gen-Z consumer app founder says: 'Our users are 16–22 year olds who don't check email. Should we skip email marketing entirely?'",
+          "question": "Is this the right conclusion?",
+          "modelAnswer": "Partially. The fit signal about 'where your audience reads' is real — if users are Discord/TikTok-native and genuinely don't check personal email, treating email as a primary channel misallocates effort. However, 'don't check email' is usually overstated; Gen Z still checks email for school/work/purchases, just not socially. A more accurate read is: email is not the *primary* engagement channel, but can still be useful for (a) account-recovery and transactional email (non-negotiable), (b) purchase-trigger and receipt flows (high-engagement, always opened), (c) parental or adult decision-maker communications if the product has a gifting or parental-approval element. Verdict: don't build a content-heavy newsletter and expect great engagement; do invest in transactional/lifecycle email done well. Primary engagement investment should go where the audience is — in-app, push, TikTok, Discord.",
+          "rubric": [
+            "Accepts the 'not primary channel' part of the claim",
+            "Corrects the overstatement ('don't check email at all')",
+            "Distinguishes marketing newsletter from transactional email",
+            "Names transactional/purchase emails as still-important",
+            "Recommends primary investment in where the audience actually is"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain to a non-technical founder how to decide whether email marketing is worth investing in for their business. Cover: (1) the three fit signals, (2) the 'what would I send next month?' diagnostic, (3) at least two business shapes where email does NOT fit, and (4) how fit can shift as a business evolves.",
+        "rubric": [
+          "Names all three fit signals",
+          "Uses the diagnostic question as a practical filter",
+          "Gives at least two concrete no-fit cases (one-off transactions, heavy regulation, no cadence)",
+          "Explains that fit changes as business adds subscription / content / adjacent services",
+          "Distinguishes 'not yet' from 'never'"
+        ]
+      }
+    },
+    {
+      "id": "ch14-core-tactics",
+      "chapterId": "ch14",
+      "title": "Core Tactics: Capture, Sequences, Segmentation, and the Subject Line",
+      "isLandmark": false,
+      "order": 4,
+      "pretest": {
+        "prompt": "You've decided email fits your business. Given the lifecycle flywheel (capture → welcome → nurture → activate → retain), what specific mechanisms produce the best outputs at each stage? What's one high-leverage thing at each stage that founders typically get wrong?",
+        "modelAnswer": "Capture: a specific lead magnet or compelling reason to subscribe, offered at high-intent moments — not a generic 'subscribe to our newsletter' on the footer. Founders usually gate nothing or gate boringly. Welcome: a 3–6 email automated sequence that delivers immediate value and sets expectations — not a single 'welcome!' message. Founders usually skip this entirely. Nurture: regular broadcasts + evergreen sequences that teach and earn trust — not just promotional. Founders usually go too promotional too fast. Activate: intent-triggered sequences based on behavior (link clicks, page visits, score thresholds). Founders usually treat everyone identically. Retain: post-purchase onboarding and reactivation — not letting dormant customers quietly churn. Founders usually don't instrument the post-purchase moment. Across all stages, segmentation is the force multiplier — sending the right message to the right segment beats sending more messages to everyone."
+      },
+      "lesson": {
+        "markdown": "## Capture: the lead magnet and the moment\n\nEvery email list starts at capture. Two decisions matter most:\n\n**What you offer.** The strongest capture is a specific, valuable lead magnet — a playbook, a template, a mini-course, a free tool output. 'Subscribe to our newsletter' converts at 0.5–1% of traffic. 'Get the 12-page pricing playbook we built for B2B SaaS founders' can hit 3–8%. Specificity beats generality every time.\n\n**When you offer.** Capture fires at high-intent moments: exit-intent on content pages, scroll-depth triggers on articles, end-of-article CTAs after high-value posts, and dedicated landing pages. Homepage footer signup forms capture almost nothing; they exist mostly out of habit.\n\n## Welcome: the first sequence\n\nThe welcome sequence is email marketing's highest-ROI artifact. Four to six emails over 7–14 days, fully automated, running forever.\n\n- Email 1 (immediate): deliver the lead magnet + set expectations (what they'll get from you, how often).\n- Email 2 (day 2–3): your origin story or foundational belief. Builds connection.\n- Email 3 (day 5–7): a specific, useful piece of content that demonstrates your value.\n- Email 4 (day 10–14): a soft product introduction — here's what we do, here's how to try it if interested.\n- Optional Email 5–6: case study + second product touch.\n\nDone well, a welcome sequence converts 5–15% of new subscribers to first purchase or trial — often the single biggest conversion moment in the whole email program.\n\n## Nurture: the ongoing relationship\n\nBroadcasts (manually-sent, timely) and evergreen sequences (automated, based on tags) make up the bulk of nurture. The operating principle: **most messages should teach, not sell**. A 4:1 or 5:1 value-to-promo ratio keeps unsubscribe rates manageable and engagement high.\n\n## Activate: behavior-triggered sequences\n\nOnce a subscriber shows intent — visits pricing, clicks a specific link, downloads a second lead magnet — a triggered sequence can convert them on the behavior. Activate sequences are short (2–4 emails), narrowly scoped to the trigger, and often highly tactical (discount, limited-time offer, one-on-one call offer, case study).\n\n## Segmentation: the force multiplier\n\nSegmentation lets you send differentiated messages to different slices of the list based on attributes (plan, company size, industry) or behaviors (last opened, clicked X, visited pricing). A segmented broadcast to the 'clicked pricing in last 14 days' slice will out-convert the same broadcast to the whole list by 5–10×. Start with three segments — new subscribers (<30 days), engaged (opened in last 60 days), and dormant (no engagement in 6+ months) — and expand as patterns emerge.\n\n## Subject line craft\n\nOne specific tactic worth isolating: the subject line decides whether the email is opened at all. Rules that consistently hold:\n\n- **Under 50 characters** (mobile truncation is brutal).\n- **Specific beats clever.** 'How we got our first 100 customers' beats 'You won't believe what we did.'\n- **Curiosity gap, not clickbait** — promise something the email delivers, don't bait-and-switch.\n- **Lowercase sometimes out-performs titlecase** in high-trust lists — mimics a personal email.\n- **Test ruthlessly.** Most ESPs support A/B subject-line tests; the winners often surprise you.\n\n## One last thing: the plain-text discipline\n\nHighly designed HTML emails can outperform plain text for certain audiences (ecommerce, lifestyle), but plain-text emails deliver better, feel more personal, and forward more readily. When in doubt, lean plain-text. A well-written plain-text message often outperforms a beautifully designed HTML message — especially for B2B.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Theo has launched a capture funnel for Mapmaker, a $39/mo SaaS for UX researchers. Goal: move from 0 to 500 subscribers in 60 days and convert 10%+ to paying customers through email alone.",
+        "walkthrough": "**Capture setup (week 1):**\n- Lead magnet: 'The 9 UX Research Interview Scripts That Saved Our Team 40 Hours a Quarter' — a 22-page PDF.\n- Deployment: exit-intent popup on his 4 highest-traffic blog posts (conversion: ~4.8%); end-of-article inline CTA (conversion: ~2.1%); dedicated /playbook landing page (conversion: ~12% on direct traffic).\n- Week 1 result: 84 subscribers at blended 3.4% capture rate.\n\n**Welcome sequence (live week 2):**\n- E1 (immediate): PDF delivery + expectations ('You'll get one email every other Tuesday with research tactics and product updates').\n- E2 (day 2): Theo's story — why he built Mapmaker, what UX research problem it solves.\n- E3 (day 5): 'The 2-minute interview prep checklist' — a specific tactic, fully delivered in the email, no gate.\n- E4 (day 9): Soft product intro — 'If you liked the checklist, you might like Mapmaker, our tool for organizing research interviews end-to-end. Try free for 14 days.' Links to pricing.\n- E5 (day 14): A customer case study — 3 paragraphs, real numbers, clear CTA.\n- Welcome sequence conversion: 12% trial-signup rate by day 14, 7% paid-conversion rate by day 28.\n\n**Nurture (ongoing):**\n- Bi-weekly newsletter with one in-depth tactic + a short note about a product improvement.\n- Every 6th newsletter is a case study or customer interview.\n- Value-to-promo ratio running at 5:1.\n\n**Activate triggers (week 3):**\n- Triggered sequence if subscriber visits pricing page twice in 7 days: 3-email sequence over 5 days with objection-handling content + 1:1 call offer. Converts ~18% of triggered subscribers.\n\n**60-day result:**\n- 520 subscribers captured. 57 converted to paid (10.9% subscriber→paid rate). Welcome sequence + activate trigger together account for 72% of conversions. Bi-weekly newsletter drove 14% of conversions. Direct broadcasts drove 14%. \n- The welcome sequence alone, built once and running on autopilot, produces more paying customers per subscriber than every other email he sends combined."
+      },
+      "contrast": {
+        "neighborConceptId": "ch14-lifecycle-flywheel",
+        "explanation": "The lifecycle concept describes the *shape* of email marketing as a five-stage loop and the mechanics (deliverability, engagement) that keep it functional. Core tactics is *what you actually build* at each stage — lead magnets, welcome sequences, segmentation, subject lines. Operators who understand the lifecycle but haven't built the tactics have a theory of email; operators with the tactics but no lifecycle understanding ship broken campaigns. Both are needed."
+      },
+      "flashcards": [
+        {
+          "id": "ch14-core-tactics-fc1",
+          "type": "recognition",
+          "front": "What converts better: 'Subscribe to our newsletter' or a specific lead magnet?",
+          "back": "A specific lead magnet — typically 3–5× better. 'Subscribe to our newsletter' converts at 0.5–1% of traffic; a specific playbook or tool can hit 3–8%. Specificity beats generality every time."
+        },
+        {
+          "id": "ch14-core-tactics-fc2",
+          "type": "recall",
+          "front": "Describe the structure of a high-ROI welcome sequence.",
+          "back": "4–6 emails over 7–14 days, automated: E1 deliver lead magnet + set expectations, E2 origin story, E3 specific useful content, E4 soft product intro with CTA, optional E5–6 case study + second product touch. Typical conversion: 5–15% of new subscribers to trial or purchase."
+        },
+        {
+          "id": "ch14-core-tactics-fc3",
+          "type": "recall",
+          "front": "What's the recommended value-to-promotion ratio in nurture broadcasts and why?",
+          "back": "4:1 or 5:1 — four or five teach/value emails for every one promotional. Keeps unsubscribe rates manageable and engagement high, which protects deliverability for the occasional high-intent promotional message."
+        },
+        {
+          "id": "ch14-core-tactics-fc4",
+          "type": "cloze",
+          "front": "Segmentation is the ______ of email marketing — a broadcast to the 'clicked pricing in last 14 days' slice will out-convert the same broadcast to the whole list by ______.",
+          "back": "force multiplier ; 5–10× — right message to the right segment beats more messages to everyone."
+        },
+        {
+          "id": "ch14-core-tactics-fc5",
+          "type": "recall",
+          "front": "Name three subject-line rules that consistently hold.",
+          "back": "(1) Under 50 characters (mobile truncation). (2) Specific beats clever — 'How we got our first 100 customers' beats 'You won't believe this.' (3) Curiosity gap, not clickbait — promise something the email delivers. (4) Lowercase sometimes wins on high-trust lists. (5) A/B test — winners often surprise you."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch14-core-tactics-sc1",
+          "setup": "A founder has 2,800 subscribers, a single auto-responder that sends the lead magnet, and a monthly broadcast. Conversion from subscriber to paid is ~1.2% over a full year. She thinks the content is strong.",
+          "question": "What's the highest-leverage change? Why?",
+          "modelAnswer": "Build a proper welcome sequence. A single auto-responder delivers the magnet and stops — it doesn't convert, build connection, or introduce the product. A 4–5 email welcome sequence in the first 14 days typically triples or quadruples subscriber→paid conversion. Her 1.2% annual conversion rate is roughly what you'd expect from a broadcast-only program with no first-touch sequence; a welcome sequence could push that to 5–10% within the same year. The monthly broadcast is too infrequent to do much activation work, and the subscribers who convert are mostly doing so from content strength rather than a designed conversion path. Specific build: E1 (magnet + expectations), E2 (origin/belief), E3 (actionable content), E4 (soft product intro with trial CTA), E5 (case study + urgency). Expected impact: ~3× her current conversion within 60 days of deployment.",
+          "rubric": [
+            "Identifies the missing welcome sequence as highest leverage",
+            "Explains why a single auto-responder underperforms",
+            "Estimates the conversion lift (3–4×, 5–10% target)",
+            "Prescribes the specific 4–5 email structure",
+            "Notes that monthly broadcasts alone can't do activation work",
+            "Gives a rough timeline to impact (30–60 days)"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch14-core-tactics-sc2",
+          "setup": "A founder writes every email to the entire list and uses one CTA per send: 'Book a demo.' Unsubscribe rates are running at 1.8% per broadcast — ~3× the healthy range. Paid conversions are weak.",
+          "question": "Diagnose the two most likely problems and propose fixes.",
+          "modelAnswer": "Two problems: (1) Value-to-promo ratio is broken. 'Book a demo' every email is 100% promo, 0% value. Subscribers opted in for value, they're getting pitch — they unsubscribe. Fix: shift to 4:1 or 5:1 teach-to-sell. Most emails should deliver a useful tactic, framework, or insight; occasional emails can have the demo CTA. (2) No segmentation. Pitching 'book a demo' to new subscribers who haven't been nurtured is low-conversion and high-unsubscribe. Someone who opened yesterday's content and clicked a pricing link is ready for that CTA; someone who joined 3 days ago isn't. Fix: segment into at least new (<30 days, welcome sequence), engaged (clicked/opened recently, can get demo CTAs), and broad nurture (everyone else, mostly value content). Net effect of both fixes: unsubscribe rate should drop to 0.4–0.6% range within 2–3 broadcasts, and demo-booking rate should rise because you're pitching to the ready-segment.",
+          "rubric": [
+            "Identifies broken value-to-promo ratio as primary cause",
+            "Prescribes 4:1 or 5:1 teach-to-sell rebalance",
+            "Identifies missing segmentation as secondary cause",
+            "Prescribes segment structure (new / engaged / broad)",
+            "Predicts directional outcomes (unsubscribes down, conversion up)",
+            "Connects the fix to subscriber psychology (they opted in for value, not pitches)"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Walk through the high-leverage tactical builds across the email lifecycle — what to capture, how to structure a welcome sequence, what makes a nurture program healthy, and how segmentation changes outcomes. End with one tactic per stage that founders most commonly get wrong.",
+        "rubric": [
+          "Covers capture (specific lead magnet, high-intent moments)",
+          "Covers welcome sequence (4–6 emails, conversion benchmarks)",
+          "Covers nurture (value-to-promo ratio)",
+          "Covers segmentation (force multiplier, 5–10× improvement)",
+          "Covers subject lines (rules + A/B testing)",
+          "Names at least 3 common founder mistakes with fixes",
+          "Uses causal language ('this works because…')"
+        ]
+      }
+    },
+    {
+      "id": "ch14-testing-email",
+      "chapterId": "ch14",
+      "title": "Testing Email Cheaply: The Minimum-Viable List",
+      "isLandmark": false,
+      "order": 5,
+      "pretest": {
+        "prompt": "Bullseye's Step 4 (cheap testing) prescribes small, fast experiments with pre-defined success thresholds. Email marketing has a structural wrinkle: you need to build the list before you can test it. Before reading: what does a *cheap* test of email marketing look like, and what metrics should it target?",
+        "modelAnswer": "A cheap email test builds a minimum-viable list (a few hundred engaged subscribers) in 3–6 weeks using the same infrastructure you'd scale, then evaluates: (1) cost-per-subscriber — what are you paying in traffic-acquisition and conversion effort per opt-in? (2) welcome-sequence conversion — what % of new subscribers convert to trial or purchase in the first 14 days? (3) ongoing engagement — click-through rates on nurture broadcasts after the first month? (4) revenue per subscriber over 60–90 days. Pre-defined thresholds might be: cost-per-subscriber under $5, welcome-sequence conversion above 5%, 90-day revenue per subscriber above 2× cost-per-subscriber. If those numbers hit, email is a promising channel to scale. If they miss, either the fit isn't there, the welcome sequence is broken, or the list-building mechanism isn't producing the right people."
+      },
+      "lesson": {
+        "markdown": "## Why email testing doesn't fit the standard Bullseye test\n\nBullseye Step 4 is built around cheap, fast tests — a week of Facebook ads tells you if the channel has a heartbeat. Email is slower because you need to *build the list before you can see anything*. A 1-week email test is almost always meaningless: by week 1 you have 50 subscribers and your data is noise.\n\nThe cheap-test discipline still applies — small budget, pre-defined thresholds, explicit kill criteria — but the timeline is 3–8 weeks, not 1–2. This is a channel-specific adjustment, not an exemption from the principle.\n\n## The minimum-viable list\n\nThe smallest meaningful test: a few hundred subscribers (300–500) acquired over 3–6 weeks through your intended list-building mechanism. Low budget ($0–$2,000). Requirements:\n\n- **Real capture surface.** A lead magnet + capture mechanism (exit-intent, inline CTA, dedicated landing page). Don't fake it with a bought list — the test result wouldn't generalize.\n- **Real welcome sequence.** A 4–5 email automated sequence. The welcome sequence is the single highest-conversion moment in email; skipping it to 'just test the broadcast' measures the wrong thing.\n- **Real measurement.** UTMs on every email link, revenue-attribution tied to subscriber IDs, cohort analysis by signup week.\n\nIf you build all three and get 300+ subscribers, you can read signal.\n\n## The four questions to answer\n\n1. **Cost-per-subscriber.** What are you paying in ad-spend, content-creation effort, or traffic time per opt-in? Below $5 is healthy for most B2B SaaS; consumer can go lower; higher is fine if LTV is high.\n2. **Welcome-sequence conversion.** What percentage of new subscribers convert to trial or paid within 14 days of joining? Below 2% suggests either poor fit or a broken sequence; 5–15% is healthy.\n3. **Sustained engagement.** After the welcome sequence ends, what's click-through rate on nurture broadcasts over the next 30–60 days? Below 2% CTR suggests the list is already cooling; above 5% is healthy for most segments.\n4. **Revenue per subscriber.** Over 60–90 days, what's the average revenue each subscriber produced? Compared against cost-per-subscriber, is the ratio compatible with your overall unit economics?\n\n## Pre-defined thresholds\n\nBefore launching the test, write down the specific numbers that mean 'pass.' Example for a $49/mo B2B SaaS:\n\n- Cost-per-subscriber under $5.\n- Welcome-sequence conversion above 6% in 14 days.\n- Sustained nurture CTR above 4%.\n- 90-day revenue-per-subscriber above $10 ($5 CAC × 2).\n\nIf all four hit, scale. If two miss, investigate — but don't relax the thresholds after the fact. Post-hoc threshold adjustment is how founders talk themselves into scaling channels that aren't working.\n\n## What kills the test\n\nCommon reasons a legitimate email test fails cleanly:\n\n- **Wrong lead magnet.** The magnet pulls the wrong audience — people who want the magnet but not the product. Symptom: high capture rate, low welcome-sequence conversion.\n- **Weak welcome sequence.** The sequence delivers the magnet but doesn't do conversion work. Symptom: good open rates, low conversion.\n- **List-building mechanism doesn't scale.** Capture works at low volume but breaks when scaled. Symptom: first 100 subscribers convert well, next 400 don't.\n- **Fit gap.** The business fundamentally doesn't need a nurtured list. Symptom: everything works mechanically but revenue-per-subscriber is persistently weak.\n\nDiagnosing which is which is the Step 5 work. The test itself just tells you whether to commit.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Noor runs a $79/mo data-visualization SaaS. She wants to test whether email marketing is her next focus channel via a minimum-viable Bullseye test over 6 weeks with a $1,500 budget.",
+        "walkthrough": "**Pre-defined thresholds:**\n- Cost-per-subscriber: under $4.\n- Welcome-sequence conversion: above 7% to trial in 14 days.\n- Nurture CTR (weeks 5–6): above 4%.\n- 60-day revenue-per-subscriber: above $8.\n\n**Week 1–2 — Setup:**\n- Lead magnet: 'The 30-chart visualization template pack for analysts' — 1 week of design effort.\n- Capture surfaces: exit-intent popup on her 6 highest-traffic blog posts + dedicated /templates landing page.\n- Traffic: $800 in LinkedIn ads targeting 'data analyst' roles at companies 50–500 employees, pointing at the /templates landing page.\n- 4-email welcome sequence.\n\n**Weeks 3–4 — Active capture:**\n- 320 subscribers captured. Ad spend: $820. Blog capture: 60 subscribers (free, but some time investment).\n- Cost-per-subscriber: $820 / 380 paid + 60 organic = ~$2.20 if counting only paid, $2.16 blended. **Pass.**\n\n**Weeks 3–6 — Welcome + nurture:**\n- Welcome sequence: 34 of 380 paid-acquired subscribers converted to trial within 14 days. 14 converted to paid within 28 days. Welcome conversion: 34/380 = 8.9% trial, 3.7% paid at day 28. **Pass (trial), borderline (paid).**\n- Nurture CTR in weeks 5–6: 5.2% — new subscribers still engaging. **Pass.**\n\n**Week 8 — 60-day revenue read:**\n- 48 total paid conversions attributable to email. At $79/mo × 1 month avg before the 60-day mark: ~$3,800 recognized revenue. Per subscriber: $3,800 / 440 subscribers = $8.63. **Pass.**\n\n**Decision:** All four thresholds met. Email becomes a Focus candidate for her next Bullseye cycle. Unit economics: ~$2.20 CPS vs ~$8.60 RPS-at-60d = ~4× gross payback within 60 days. She scales the capture mechanism (more ad spend, more capture surfaces), invests in a longer nurture program, and instruments an activate sequence for pricing-page visitors.\n\n**Counterfactual — what would a failed test look like?** If welcome conversion had been 2.5% and nurture CTR had been 1.8%, she'd know the mechanism works (cost-per-sub is fine) but the fit or the sequence is broken. Step 5 diagnostic would be whether the template-pack subscribers are the right ICP for her tool — maybe the magnet pulls 'I want free templates' people, not 'I want a dataviz SaaS' people. She'd change the magnet before scaling."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-cheap-testing",
+        "explanation": "Bullseye's cheap-testing principle holds — small budget, pre-defined thresholds, explicit kill criteria. The *timeline* is different: email can't be usefully tested in 1 week because the list needs weeks to exist. The principle isn't being violated; it's being applied to a channel with slower signal. Common founder mistake: declaring email 'failed' after 10 days, or conversely using the slow timeline as an excuse to keep spending past the point of clear signal."
+      },
+      "flashcards": [
+        {
+          "id": "ch14-testing-email-fc1",
+          "type": "recall",
+          "front": "Why can't you test email marketing in 1 week the way you can test paid ads?",
+          "back": "You need to build the list before you can see signal. A meaningful email test requires 300–500 subscribers acquired through the real mechanism plus a working welcome sequence — this takes 3–8 weeks, not 1–2."
+        },
+        {
+          "id": "ch14-testing-email-fc2",
+          "type": "recall",
+          "front": "What four metrics should an email test target, and what healthy range for each?",
+          "back": "(1) Cost-per-subscriber (CPS) — under $5 for most B2B SaaS. (2) Welcome-sequence conversion — 5–15% trial/paid in 14 days. (3) Sustained nurture CTR after welcome ends — above 4–5%. (4) 60–90-day revenue per subscriber — above 2× CPS as a minimum payback."
+        },
+        {
+          "id": "ch14-testing-email-fc3",
+          "type": "recognition",
+          "front": "Why must pre-defined thresholds be set BEFORE the test starts?",
+          "back": "Post-hoc threshold adjustment is motivated reasoning. Thresholds set in advance protect against the sunk-cost pressure to scale a channel that isn't actually working. If two of four thresholds miss, you investigate — you don't relax the thresholds."
+        },
+        {
+          "id": "ch14-testing-email-fc4",
+          "type": "cloze",
+          "front": "A ______ lead magnet pulls the wrong audience — people who want the magnet but not the product. Symptom: high ______ rate, low ______ conversion.",
+          "back": "wrong (or poorly-matched) ; capture ; welcome-sequence — this is one of the four common test-failure patterns."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch14-testing-email-sc1",
+          "setup": "A founder is 4 weeks into an email test. They have 280 subscribers, cost-per-sub of $2.80, welcome conversion of 9%, but nurture CTR is still unmeasured (welcome sequence only just ended for early subscribers). They ask: 'Can we scale now?'",
+          "question": "Give a specific answer and rationale.",
+          "modelAnswer": "Not yet. They've cleared two of four thresholds (CPS and welcome conversion), but the 60-day data doesn't exist and nurture CTR can't be read until week 6–8 for most subscribers. Scaling prematurely risks 2× or 3× spend on a channel where the full unit economics are still unknown. The right move: (a) hold current capture spend steady for another 2–3 weeks, (b) measure nurture CTR as it comes in, (c) wait for at least one cohort to hit 60-day revenue read. If all four thresholds hit by week 6–8, scale aggressively. The cost of waiting 2–3 weeks is small; the cost of scaling a channel whose back-half unit economics turn out to be broken is much larger.",
+          "rubric": [
+            "Refuses the premature scale request",
+            "Names which thresholds still need data (nurture CTR, 60-day RPS)",
+            "Quantifies the cost of waiting vs. scaling on partial data",
+            "Prescribes holding spend steady until full read",
+            "Distinguishes 'working so far' from 'passed the full test'"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch14-testing-email-sc2",
+          "setup": "A founder's email test: CPS $2.30 (pass), welcome conversion 4% (fail, target 6%), nurture CTR 5.8% (pass), 60-day RPS $4 (fail, target $8). Subscribers are engaged but don't buy.",
+          "question": "What's the diagnosis, and what should they try next?",
+          "modelAnswer": "Engagement is healthy; conversion is broken. That pattern points at one of two causes: (1) the welcome sequence isn't doing conversion work — it delivers value but doesn't introduce the product, handle objections, or make a strong trial/purchase case. Or (2) the lead magnet is attracting the wrong ICP — people who love the free content but don't have the need or budget for the product. Next actions: first, audit the welcome sequence — does it have a clear product introduction and CTA? Does it handle the top 2 objections? If the sequence is weak, rewrite it and re-test with a new cohort of 200 subscribers. Second, inspect subscriber characteristics — are they matching your ICP (role, company size, industry)? If not, adjust the lead magnet toward ICP-native pain. They are NOT yet allowed to declare email a failed channel; they've identified a fixable problem in the test mechanism, not a fundamental channel-fit problem.",
+          "rubric": [
+            "Diagnoses engagement-OK-conversion-broken specifically",
+            "Names the two likely causes (weak sequence vs. wrong-ICP magnet)",
+            "Prescribes sequence audit and ICP inspection",
+            "Recommends re-testing on a new cohort after fixes",
+            "Explicitly rejects premature 'email doesn't work' conclusion",
+            "Connects the diagnosis back to test-mechanism failures, not channel-fit failures"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Design a 6-week cheap test of email marketing for a $39/mo B2B SaaS. Cover: (1) pre-defined success thresholds, (2) the specific capture, sequence, and measurement setup you'll build, (3) the four metrics you'll read, and (4) what each failure pattern (engagement-bad, engagement-OK-conversion-bad, etc.) would point to as the next step.",
+        "rubric": [
+          "Sets specific numeric thresholds for all four metrics",
+          "Specifies a real capture mechanism (lead magnet + surface + traffic)",
+          "Specifies a 4–5 email welcome sequence",
+          "Lists measurement infrastructure (UTMs, subscriber-revenue attribution)",
+          "Articulates the timeline (3–8 weeks) and why it's longer than paid-ad tests",
+          "Distinguishes test-mechanism failures from channel-fit failures",
+          "Doesn't relax thresholds post-hoc"
+        ]
+      }
+    },
+    {
+      "id": "ch14-email-pitfalls",
+      "chapterId": "ch14",
+      "title": "Pitfalls: How Email Programs Quietly Die",
+      "isLandmark": false,
+      "order": 6,
+      "pretest": {
+        "prompt": "Most email programs fail in one of a small number of ways. Before reading: list the three most common failure modes you've either seen or can imagine for a founder running email marketing. For each, describe what makes it especially dangerous or hard to detect.",
+        "modelAnswer": "Three common modes: (1) Bought or scraped lists — quick 'list size' boost, but non-consented subscribers complain or mark as spam, destroying deliverability for the legitimate subscribers. Hard to detect because the damage shows up as 'our emails are going to spam' a month later, and the cause isn't obvious. (2) Over-sending — founder sees email works and pushes cadence from weekly to daily, driving unsubscribes and engagement crashes. Hard to detect because short-term metrics (revenue-this-month) can look fine even as the underlying list is decaying. (3) Vanity-metric driving — optimizing for open rates (post-Apple MPP, mostly noise) instead of clicks, replies, and conversions. Hard to detect because the metrics 'look good' while revenue lags. A fourth worth naming: neglect — once the welcome sequence works, the founder moves on, and the list slowly dies from inactivity, becoming an albatross rather than an asset."
+      },
+      "lesson": {
+        "markdown": "## The five ways email programs die\n\n### 1. Bought or scraped lists\n\nThe fastest way to destroy an email channel is to add non-consented recipients. A single broadcast to a bought list produces high bounce rates and spam complaints that damage the sending domain's reputation — often for months, sometimes permanently. Blocklists like SpamHaus, Barracuda, and the internal reputation systems at Gmail/Outlook respond to this pattern quickly and forgive slowly.\n\nThe damage isn't limited to the bought segment. The entire sending domain's reputation drops, which means legitimate opt-in subscribers start seeing your emails in Promotions or Spam too. You pay for a shortcut and poison the well.\n\n### 2. Over-sending\n\nFounders who see email work often conclude 'if one email a week works, let's send three a week.' Three a week from brands with nothing new to say burns out engaged subscribers fast. Unsubscribe rates rise, engagement signals drop, and the deliverability flywheel reverses.\n\nThe right cadence is dictated by how much you have to say, not by how much you want to send. When in doubt, send less. A well-written bi-weekly newsletter outperforms a mediocre weekly one; a twice-a-month thoughtful broadcast outperforms thrice-a-week fluff.\n\n### 3. Ignoring deliverability mechanics\n\nNot setting up SPF/DKIM/DMARC. Not monitoring bounce rates. Not pruning dormant subscribers. Not checking inbox placement across providers. Any one of these is enough to drop open rates 20–40% silently. Collectively they can render a list mechanically nonfunctional within 6 months of neglect. This failure mode is particularly insidious because the list 'still exists' — it's just quietly not reaching the inbox anymore.\n\n### 4. Vanity-metric driving\n\nOptimizing for open rates without realizing Apple MPP makes them noisy. Celebrating 'list growth' while ignoring whether subscribers engage. Running ad campaigns optimized for opt-ins without tracking whether those opt-ins convert. Each of these is an optimization against the wrong metric, and each leads to confident scaling of something that isn't actually producing business.\n\nThe correction: tie every email metric to a downstream business metric (revenue, trial, activation). An open rate is only as valuable as its correlation with something that moves the business.\n\n### 5. Neglect\n\nThe silent killer. Founder builds welcome sequence, gets initial wins, moves on to other work. The list sits for months. Engagement rates fall because the list cools. Deliverability erodes because dormant subscribers generate non-engagement signals. When the founder eventually returns to email, the list is effectively dead and requires a reset.\n\nEmail is not a build-once asset — it's a build-and-tend asset. Once established, it needs at least a maintenance cadence: regular broadcasts, periodic re-engagement campaigns, segmentation reviews. The 'autopilot' property of email is overstated; the welcome sequence runs on autopilot, but the broader program decays without ongoing attention.\n\n## How to not die from these\n\nFor each pitfall, a specific preventive:\n\n- **Don't buy or merge non-consented lists.** Ever. Any short-term gain is exceeded by the long-term deliverability cost.\n- **Set cadence from what you have to say**, not from a fixed schedule. Skip a week rather than send filler.\n- **Treat deliverability as infrastructure.** Quarterly check on auth records, bounce rates, complaint rates, and inbox placement tests.\n- **Tie every metric to revenue.** Open rates are a diagnostic signal, not a target.\n- **Set a minimum email cadence** (e.g., one broadcast every 2 weeks) even during busy periods. Silence is what kills lists.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Emma's Daylight-app email program (from the lifecycle example): 4,200 subscribers. She's been running it for 14 months and notices: open rates dropped from 42% to 27%, revenue-per-broadcast dropped 35%, and her unsubscribe rate is creeping up. What's happening?",
+        "walkthrough": "Diagnosis through the pitfalls list:\n\n1. **Bought lists?** No — she has only used organic opt-in.\n2. **Over-sending?** She increased from bi-weekly to weekly 4 months ago, coinciding with the engagement drop. Plausible culprit.\n3. **Deliverability?** Quick check: auth records intact (still SPF/DKIM/DMARC). Bounce rate slightly elevated (2.8%, up from 1.1%). Some subscribers going to Promotions in Gmail.\n4. **Vanity metrics?** Some. She'd been watching opens closely; realizing post-MPP they were half noise changed her picture.\n5. **Neglect / list aging?** 14-month-old list has significant dormant population. ~900 subscribers haven't engaged in 6+ months.\n\nCombined diagnosis: over-sending + dormant-subscriber drag + elevated bounce rate. Three compounding problems, none individually catastrophic.\n\n**Intervention sequence:**\n- Week 1: Clean bounces (remove 120 soft-bounces and 40 hard-bounces, manually).\n- Week 2: Return to bi-weekly cadence. Explicitly announce the change to the list ('Now bi-weekly, longer and more valuable'). Unsubscribes spike briefly, then stabilize.\n- Weeks 3–4: Re-engagement campaign to the 900 dormant subscribers — 3 emails, 'click to stay subscribed.' ~180 click; 720 get removed.\n- Week 5: List is now 3,300 subscribers, but the population is dramatically more engaged.\n- Weeks 6–8: Open rates recover to 38% (near-original), CTR rises, revenue-per-broadcast climbs back above the 14-month-ago baseline.\n\nTotal time to recover: 8 weeks. Total lost subscribers: ~880. Net impact: revenue-per-send now HIGHER than before, on a healthier list. The intervention felt painful (shrinking a list by 20% in a month is counterintuitive) but restored the channel.\n\nKey lesson: three pitfalls compounded quietly. Any one alone was manageable; together, they nearly killed the channel. Regular health checks (quarterly) would have caught this before it required a major intervention."
+      },
+      "contrast": {
+        "neighborConceptId": "ch14-lifecycle-flywheel",
+        "explanation": "The lifecycle flywheel is how email works *when things go right*. The pitfalls are how the flywheel reverses. The two concepts mirror each other: each stage of the flywheel has a corresponding failure mode (broken welcome sequence, over-sending in nurture, vanity-metric optimization, no retention hygiene). Understanding the failure modes gives you a diagnostic checklist for a declining channel — you can usually map a symptom back to a specific stage where the mechanism broke."
+      },
+      "flashcards": [
+        {
+          "id": "ch14-email-pitfalls-fc1",
+          "type": "recall",
+          "front": "Name the five common ways email programs die.",
+          "back": "(1) Bought/scraped lists — destroys deliverability. (2) Over-sending — burns out subscribers. (3) Ignoring deliverability mechanics (auth, bounces, prune). (4) Vanity-metric optimization — especially post-MPP open rates. (5) Neglect — list cools, decays."
+        },
+        {
+          "id": "ch14-email-pitfalls-fc2",
+          "type": "recognition",
+          "front": "Why does a single bought-list broadcast cause long-lasting damage?",
+          "back": "The resulting spam complaints and bounces damage the sending domain's reputation at Gmail/Outlook and trigger blocklist entries. The damage isn't limited to the bought segment — all future email to legitimate opt-in subscribers also lands in Promotions or Spam until reputation slowly recovers."
+        },
+        {
+          "id": "ch14-email-pitfalls-fc3",
+          "type": "recall",
+          "front": "What's the right principle for setting email cadence?",
+          "back": "Cadence should be set from how much you have to say, not from a fixed schedule. A thoughtful bi-weekly beats mediocre weekly. When in doubt, send less — skipping a week beats sending filler."
+        },
+        {
+          "id": "ch14-email-pitfalls-fc4",
+          "type": "cloze",
+          "front": "Email is not a build-once asset — it's a ______ asset. Once established it needs a ______ cadence of broadcasts, re-engagement, and segmentation review.",
+          "back": "build-and-tend ; maintenance — without ongoing attention the list cools, engagement drops, and deliverability erodes."
+        },
+        {
+          "id": "ch14-email-pitfalls-fc5",
+          "type": "recall",
+          "front": "Why is 'vanity-metric driving' particularly dangerous after Apple MPP?",
+          "back": "Apple MPP pre-fetches images and registers opens whether or not the user opened the email, inflating open rates ~2×. Founders optimizing for opens are optimizing for noise. The correct metrics are clicks, replies, and downstream conversions — each tied to real business outcomes."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch14-email-pitfalls-sc1",
+          "setup": "A founder tells you: 'I grew my email list from 2,000 to 12,000 in three months. Revenue from email is flat, though. Something's off.'",
+          "question": "What's the most likely explanation, and what do you look at first?",
+          "modelAnswer": "Most likely explanation: growth came through a low-intent capture mechanism (a sweepstakes, a generic 'free ebook,' a viral quiz) that brought in 10,000 people who aren't real prospects. List size went up, engaged audience did not. Revenue from email is flat because the added subscribers don't convert — they may not even open. First investigation: segment the list by signup source and date. Compare welcome-sequence conversion rate for the 'last 3 months' cohort vs. the 'pre-growth' cohort. If the new cohort converts at 0.5% vs. pre-growth at 6%, the magnet pulled the wrong audience. Secondary concern: those 10,000 low-intent subscribers are now dead weight harming deliverability for the engaged 2,000. Fix: re-segment and run a re-engagement campaign on the new 10,000; remove non-clickers. Treat 'list size' as a vanity metric — what matters is engaged subscribers who are likely to buy.",
+          "rubric": [
+            "Identifies wrong-audience capture as most likely cause",
+            "Prescribes cohort-comparison on welcome conversion",
+            "Names the deliverability drag from low-intent mass-signup",
+            "Recommends re-engagement + prune of the new cohort",
+            "Reframes 'list size' as a vanity metric",
+            "Connects symptom (flat revenue despite size growth) to cause"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch14-email-pitfalls-sc2",
+          "setup": "A founder noticed open rates dropping from 45% to 30% over 4 months. They also notice that most new subscribers now have @icloud.com or @apple-relay.com addresses.",
+          "question": "What's going on, and what metrics should they pivot to?",
+          "modelAnswer": "Open rate drop is partly deliverability (worth investigating), but the @apple-relay.com addresses tell a specific story: Apple's Hide My Email service is generating privacy-preserving relay addresses for iCloud+ subscribers. These addresses often don't produce reliable open signals because Apple MPP also pre-fetches and masks opens. The rise in iCloud-family addresses mechanically depresses measured open rates even without any real engagement change. Pivot: stop using open rate as a primary engagement metric. Switch to (1) click-through rate on broadcasts, (2) reply rate on broadcasts, (3) downstream conversion (trial signups, purchases, key-action rates). Set engagement-based segmentation on these metrics, not opens. Separately, do a standard deliverability health check (auth, bounces, complaint rates) to rule out real reputation issues. If those are clean, the 'drop' is partly measurement artifact.",
+          "rubric": [
+            "Identifies Apple Hide My Email + MPP as the proximate cause",
+            "Distinguishes artifact-of-measurement from real engagement drop",
+            "Prescribes CTR/reply/conversion as replacement metrics",
+            "Recommends parallel deliverability health check",
+            "Notes that 'segmentation by opens' is now unreliable",
+            "Doesn't overclaim — some of the drop may be real"
+          ],
+          "difficulty": 3
+        },
+        {
+          "id": "ch14-email-pitfalls-sc3",
+          "setup": "A founder set up their email list 18 months ago. The welcome sequence still works great, but they've only sent 4 broadcasts total in the last 12 months. They want to send a big product launch announcement next week.",
+          "question": "What's the risk and what should they do first?",
+          "modelAnswer": "High risk: the list has been effectively dormant for 12 months. Engagement signals from the few broadcasts they did send are weak; the subscribers likely don't remember them. A big launch announcement to this cold list will produce low opens, high 'mark as spam' rates, and likely some complaint-driven deliverability damage. Before the launch: (1) Send a warm-up/reintroduction email 1–2 weeks before the launch — acknowledge the silence, explain what they've been building, tease the launch. This re-anchors the relationship. (2) Segment into engaged (opened/clicked anything in last 6 months) and dormant. Send the launch to the engaged segment first. (3) For the dormant segment, run a short re-engagement sequence ('click if you want to stay subscribed') before or after the launch; suppress non-clickers from the main launch send. Only then run the full launch. This adds 1–2 weeks but prevents deliverability damage that could harm future sends for months.",
+          "rubric": [
+            "Identifies the 12-month silence as the primary risk",
+            "Predicts low opens, spam complaints, deliverability damage",
+            "Prescribes warm-up email before the launch",
+            "Prescribes segmenting engaged vs. dormant",
+            "Recommends re-engagement campaign for dormant before inclusion",
+            "Accepts the 1–2 week delay as worth the deliverability protection"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the five common ways email programs die and, for each, the specific preventive a disciplined operator should build in. Include: (1) why bought lists damage more than the bought segment, (2) why cadence should follow 'what you have to say' not a fixed schedule, (3) what a deliverability-as-infrastructure mindset looks like in practice, (4) why vanity-metric driving is especially dangerous post-MPP, and (5) why email needs ongoing tending even after setup.",
+        "rubric": [
+          "Names all five failure modes",
+          "Explains deliverability damage from bought lists in mechanism terms",
+          "Prescribes cadence principle with justification",
+          "Defines a deliverability-as-infrastructure routine (auth, bounces, pruning, inbox checks)",
+          "Post-MPP metric pivot is specific (clicks, replies, conversions)",
+          "Articulates 'build-and-tend' vs 'build-once' distinction",
+          "Each failure mode paired with a specific preventive action"
+        ]
+      }
+    }
+  ]
+}

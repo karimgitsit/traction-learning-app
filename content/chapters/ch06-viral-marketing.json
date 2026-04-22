@@ -1,0 +1,701 @@
+{
+  "id": "ch06",
+  "number": 6,
+  "slug": "viral-marketing",
+  "title": "Viral Marketing",
+  "summary": "Viral marketing is the traction channel where existing users bring in new users through the product itself. This chapter teaches the viral loop, the k-factor math that determines whether a loop sustains or dies, the specific conditions under which viral can work for your business, and how to test the channel cheaply without fooling yourself.",
+  "concepts": [
+    {
+      "id": "ch06-viral-definition",
+      "chapterId": "ch06",
+      "title": "What Viral Marketing Actually Is",
+      "isLandmark": true,
+      "order": 1,
+      "pretest": {
+        "prompt": "A founder tells you their product is 'going viral' because their launch tweet got 40,000 impressions and signups jumped 10x that week. Before reading on — is that viral marketing in the channel sense? If not, what's the distinction, and what would change your answer?",
+        "modelAnswer": "That's a PR or social-media spike, not viral marketing as a traction channel. Viral marketing in the Traction sense is a *structural* property of the product: existing users bring in new users as a direct consequence of using the product, and those new users do the same. A tweet that drives a one-time traffic surge has no loop — once the tweet fades, acquisition stops. The test is: if we stopped all external marketing today, does each existing user still generate more than zero new users via normal product use? If yes, you have a viral loop. If no, you have a press hit. What would change the answer: evidence of a self-replicating mechanism — e.g., each new user invites 2 friends on average, and 1 of them signs up, and those signups repeat the pattern."
+      },
+      "lesson": {
+        "markdown": "## The definition\n\nViral marketing is the traction channel where **your existing users bring in new users as a byproduct of using the product**. Each new user then brings in more new users, and so on. When it works, customer acquisition compounds — growth isn't something you buy or schedule, it's something the product does to itself.\n\nThe load-bearing word is *byproduct*. Viral marketing is not a tweet that went wide, a launch that got press coverage, or a Super Bowl ad that produced a traffic spike. Those are one-shot events with no loop. Real viral growth is structural: the act of using your product, for the value the user came for, produces exposure to new users. Sending a Hotmail email in 1996 signed you up in the footer of every recipient's inbox. Opening a Skype account forces you to invite the friends you want to call. Dropping a Dropbox file into a shared folder delivers a Dropbox invitation to the collaborator. Use creates exposure; exposure creates use.\n\n## Why this channel is different from the other eighteen\n\nMost channels have a linear cost structure: every new customer requires a new ad, a new sales call, a new blog post. Cost scales roughly with volume. Viral marketing is the one channel where **cost per acquired user can approach zero** while volume compounds, because the users themselves are the acquisition mechanism. That's why founders are drawn to it — and why they so often pursue it incorrectly.\n\nThe mirror-image fact: when viral doesn't work, it *really* doesn't work. A sales channel with a 1% close rate still produces customers. A viral loop below threshold produces essentially nothing on its own. The channel is bimodal in a way that paid, SEO, or content marketing are not.\n\n## The two flavors: pure word-of-mouth vs. engineered loops\n\nThere's an older, weaker form of virality — **pure word of mouth** — where the product is remarkable enough that users spontaneously tell friends. This drove Facebook's early college-dorm growth before any explicit invite mechanics existed, and it drives many books, films, and diets. Word of mouth is real but not reliably engineerable: you can't set a weekly target for it.\n\nThe stronger, engineerable form is **built-in viral loops** — invite mechanics, shareable artifacts, referral incentives, default email signatures, embed codes. These are the tools this chapter treats as the channel proper. Word-of-mouth is a tailwind you hope for; a designed loop is a system you measure, test, and optimize.\n\n## The super-platforms point\n\nOne reason viral marketing has become viable faster than ever: email, Facebook, iOS, Android, and similar platforms aggregate billions of users into a handful of distribution surfaces. A viral loop that taps one of those surfaces (Hotmail → email, Zynga → Facebook, Instagram → iOS contacts) can reach tens of millions within months. That's why the canonical viral growth stories (Dropbox, Instagram, Pinterest, WhatsApp) cluster into a specific era: the one where the platforms were mature enough to distribute the loop for you.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Liam is building DrawPass, a $0 consumer drawing app for iPad ($0 to start, $4.99/mo for pro features). His first marketing hire, Sam, tells him: 'We need to go viral. Let's add a big share button and post a funny launch video on TikTok.' Liam isn't sure that's what 'viral' actually means.",
+        "walkthrough": "Apply the definition. Viral marketing is a structural property — existing users generate new users as a byproduct of normal use. Test Sam's plan against that:\n\n**The share button.** A share button is a necessary component of a viral loop, but it's not a loop. A loop requires (a) something users *want* to share as part of getting their own value, (b) recipients who actually open and act on the share, and (c) those recipients doing the same thing themselves. A bare share button attached to a solo drawing app doesn't trigger any of those. If Liam sits down to sketch in peace, he has no incentive to press Share and no friend on the other end expecting a drawing from him. The button will get 0.1% usage and produce nothing.\n\n**The TikTok launch video.** A funny video that hits the algorithm is a *PR spike*, not a viral channel. It may drive 50,000 installs in a week. If none of those users then generate more users through the product, the curve spikes and decays. Two months later, Liam is back where he started.\n\nThe better question: *what about using DrawPass creates natural exposure to non-users?* Options: collaborative canvases where two people draw together (inherent virality — you can't collaborate without inviting someone); exported drawings with a 'Made with DrawPass' watermark (embedded virality — every shared drawing is an ad); gifted pro subscriptions ('give a month, get a month' — incentivized virality). Each of those is a loop candidate with a structural reason users trigger it.\n\nLiam's conclusion: the channel isn't 'add a share button and make a launch video.' It's designing one or more of those loops into the product and then measuring whether they actually produce compounding signups."
+      },
+      "contrast": {
+        "neighborConceptId": "ch01-19-channels",
+        "explanation": "Viral marketing is one of the nineteen traction channels — not a universal strategy, not a synonym for 'growth.' Founders often use 'going viral' to mean anything from a press hit to strong word-of-mouth to actual engineered loops. The channel-level definition is much narrower: a structural mechanism in the product where users generate users. If your growth is coming from ads, PR, or sales, you're working a different channel, regardless of how enthusiastic the resulting users are."
+      },
+      "flashcards": [
+        {
+          "id": "ch06-viral-definition-fc1",
+          "type": "recall",
+          "front": "Define viral marketing as a traction channel.",
+          "back": "The traction channel in which your existing users bring in new users as a byproduct of using the product — and those new users do the same — creating compounding, self-propagating acquisition."
+        },
+        {
+          "id": "ch06-viral-definition-fc2",
+          "type": "recognition",
+          "front": "Which of these is actual viral marketing? (a) A tweet gets 40k impressions and drives a signup spike. (b) Each new Dropbox user invites collaborators to shared folders, and those collaborators become Dropbox users. (c) A Super Bowl ad drives 100k app installs.",
+          "back": "(b) only. (a) and (c) are one-shot external events with no loop — once the impression fades, acquisition stops. (b) is a structural loop inside the product: use triggers exposure, exposure triggers use."
+        },
+        {
+          "id": "ch06-viral-definition-fc3",
+          "type": "cloze",
+          "front": "The load-bearing word in the viral definition is ______ — existing users bring in new users as a ______ of using the product, not as a result of a one-time external campaign.",
+          "back": "byproduct ; byproduct — the mechanism is structural (built into normal use), not episodic (a launch, a tweet, a press hit)."
+        },
+        {
+          "id": "ch06-viral-definition-fc4",
+          "type": "recall",
+          "front": "What's the distinction between 'word of mouth' and 'engineered viral loop'?",
+          "back": "Word of mouth: users spontaneously tell friends because the product is remarkable. Real but unreliable — you can't set a weekly target for it. Engineered loop: an explicit mechanic built into the product (invites, shareable artifacts, incentives, embedded branding) that you can measure, test, and optimize."
+        },
+        {
+          "id": "ch06-viral-definition-fc5",
+          "type": "recall",
+          "front": "Why is the viral channel described as bimodal?",
+          "back": "Because unlike paid, sales, or SEO — which produce some customers even when weak — a viral loop below threshold produces essentially zero customers on its own. It either compounds or it doesn't. The downside of a failing viral loop is much more complete than the downside of a weak ad campaign."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch06-viral-definition-sc1",
+          "setup": "A founder of a single-player crossword app says: 'Our retention is great, users love us, so word-of-mouth will take care of growth. We don't need to do any paid marketing.'",
+          "question": "Evaluate this plan using the distinction between word-of-mouth and engineered viral loops.",
+          "modelAnswer": "This is the classic 'we'll just go viral' trap. The founder is conflating product quality and a viral channel. Word-of-mouth is real but unpredictable and slow — you cannot schedule it, set weekly targets for it, or optimize it in a disciplined way. For a single-player crossword app, there's also no structural reason a satisfied user produces exposure to non-users: doing the crossword is a solo experience with no artifact to share and no collaborator to invite. To actually run viral marketing as a channel, the founder would need to design a loop: a daily-puzzle leaderboard friends join, a 'challenge a friend to beat my time' share, a 'sent by X' branded completion screenshot, a referral free month, etc. Without one of those, 'word of mouth' is code for 'we're hoping growth happens' — not a plan. The right reframe: either build an explicit loop and measure it, or acknowledge viral is not their channel and run Bullseye to find one that is.",
+          "rubric": [
+            "Identifies word-of-mouth as real but unreliable/unoptimizable",
+            "Notes the structural absence of a loop in a solo-player app",
+            "Suggests specific loop mechanics that could be designed in",
+            "Frames the alternative: drop viral as a channel and find a real one",
+            "Flags 'we'll just go viral' as a hope, not a plan"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch06-viral-definition-sc2",
+          "setup": "A B2B SaaS startup selling $500/mo expense-reporting software to CFOs says: 'We're going to add a 'Share this savings report with your team!' button and drive viral growth.'",
+          "question": "Does viral marketing plausibly work as a primary channel here? Why or why not?",
+          "modelAnswer": "Probably not as a primary channel, for two reasons. First, viral mechanics work best when the receiving audience overlaps with the buying audience — sending a savings report to 'your team' reaches internal employees, not other CFOs at other companies (which is the ICP). Second, high-price B2B products with a small buyer universe are a bad structural fit: each user's natural network contains very few additional buyers, and the decision process is long, multi-stakeholder, and not triggered by receiving a shared file. Viral marketing tends to work for consumer or prosumer products where users' natural networks are dense with look-alike users (Skype, WhatsApp, Dropbox early on). A share button bolted on doesn't overcome these structural issues. The founder's better channels are likely outbound sales, targeting blogs in finance/accounting, and SEO for long-tail CFO-pain queries. Viral could still play a supporting role (team-invite flows within a customer account, referral credits), but not as the lead channel.",
+          "rubric": [
+            "Identifies network/ICP mismatch (team members aren't the buyers)",
+            "Flags high-price B2B as structurally poor viral fit",
+            "Contrasts with consumer/prosumer products with dense user networks",
+            "Doesn't ban viral entirely — allows it as a secondary/supporting mechanic",
+            "Names more plausible primary channels"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain, in 60 seconds, what viral marketing is as a traction channel and what it isn't. Cover: (1) the definition, (2) why it's different from the other channels, (3) the word-of-mouth vs. engineered-loop distinction, and (4) at least one thing commonly mistaken for viral marketing.",
+        "rubric": [
+          "States the byproduct-of-use definition precisely",
+          "Names the compounding / zero-marginal-cost property that makes it unique",
+          "Distinguishes word-of-mouth from engineered loops with a reason each exists",
+          "Names at least one false-positive (launch spike, PR hit, one-viral-tweet, bare share button)",
+          "Explanation is causal — the 'why' of the distinction is clear, not just the list"
+        ]
+      }
+    },
+    {
+      "id": "ch06-viral-loop",
+      "chapterId": "ch06",
+      "title": "The Viral Loop and Its Seven Shapes",
+      "isLandmark": true,
+      "order": 2,
+      "pretest": {
+        "prompt": "Before reading on — sketch the simplest possible viral loop in three steps. What has to be true about the product, the user, and the recipient at each step for the loop to close? What's the most common point where real-world loops break?",
+        "modelAnswer": "The skeleton: (1) a user is exposed to the product and gets value from it, (2) that user exposes one or more non-users to the product (via an invite, share, artifact, or communication), (3) some fraction of those non-users become users themselves and repeat step 2. For the loop to close, each step needs a *reason*: the user must want the thing that triggers sharing (value); the recipient must be someone who could plausibly want the product (network fit); the recipient must encounter the product at a moment when signing up is low-friction (entry experience). Most real loops break at step 3 — invitations go out, but recipient conversion is too low for the multiplication to close (or at step 2, where users see the share mechanic but have no reason to use it)."
+      },
+      "lesson": {
+        "markdown": "## The basic structure\n\nEvery viral loop, across every company that has ever built one, reduces to three steps:\n\n1. **A user is exposed to your product** and gets some value from it.\n2. **That user exposes a set of non-users to the product** — through an invite, a share, an artifact, or a communication.\n3. **Some fraction of those non-users become users themselves**, and the cycle starts again.\n\nIt's called a loop because step 3 feeds step 1 for the next generation. The math of whether the loop sustains comes from the k-factor (next concept); what this concept covers is the *shape* — the concrete product mechanics that turn those three abstract steps into something users actually do.\n\n## Seven shapes you can combine\n\nThere's no single correct loop. In practice, successful products combine two or three of these patterns; the patterns interlock rather than compete.\n\n### 1. Pure word-of-mouth\nThe product is remarkable enough that users spontaneously tell friends. No explicit in-product mechanic. Drove early Facebook, many movies and books. Real but unreliable; can't be set as a target.\n\n### 2. Inherent virality\nThe product has *no value* unless you invite others. Skype alone is useless; you need contacts. WhatsApp, Snapchat, and every multiplayer game share this property. The invite isn't a feature — it's the reason the user shows up. This is the strongest shape because user self-interest does the work.\n\n### 3. Collaborative virality\nThe product is valuable alone but *more valuable* when others use it too. Google Docs, Figma, Dropbox, Notion, Miro. The user doesn't *have* to invite others, but they often want to because collaboration is the main unlock. Loops here spread more slowly than inherent but scale further because the solo experience acquires users who haven't invited anyone yet.\n\n### 4. Communicative / embedded virality\nEvery message or artifact the product sends includes a built-in invitation. Hotmail's 'PS: I love you. Get your free email at Hotmail' footer is the canonical example — every email sent signed up in the footer. Apple's 'sent from my iPhone.' MailChimp/Weebly/Desk all add free-tier branding to outgoing content. The user isn't inviting anyone; the product is, invisibly, on every message.\n\n### 5. Incentivized virality\nThe product pays users to invite: Dropbox's extra storage per friend, PayPal's $10-for-$10, Airbnb credits, Uber rides, Gilt credits. Incentives convert latent sharing intent into actual sharing. Risk: they attract mercenary users whose friends don't convert, which can kill your k-factor even as your invite volume rises.\n\n### 6. Embedded buttons and widgets\nThe product lives outside itself. YouTube embed codes, Reddit widgets, Facebook Like buttons, Twitter share buttons. Every embed is a distribution surface. The key: the embed has to look, feel, and be branded as the source product, or it's free labor without the return.\n\n### 7. Social-broadcast virality\nThe product hooks into an existing social platform's activity feed: Spotify songs appearing in friends' Facebook feeds, Strava runs broadcasting to followers, Pinterest pins propagating. Each user's activity is passively visible to their network, which seeds the loop without explicit invitation.\n\n## Why the classification matters\n\nFounders tend to jump to 'we'll add incentives' or 'we'll add share buttons.' Those are the easiest loops to bolt on — and among the weakest when the underlying product has no structural reason to be shared. Inherent and collaborative loops require product decisions (what is this thing, and who is it for?) made at design time, not bolted on post-launch. The choice of loop shape is a product decision as much as a marketing one.\n\n## Copy, then customize\n\nAndrew Chen's advice to beginners: copy a viral loop that already works for a comparable product, down to the text, button placement, and flow. Viral performance is determined by small details — the word on the invite button, the number of form fields on the landing page, the time between signup and first invite prompt. Starting from a proven template is far better than inventing a novel loop and hoping.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Noor is building Kompose, a $0 consumer app for creating short music loops on mobile ($4.99/mo pro). Early users love it but growth is flat. She's deciding which viral loop shape(s) to build in. Her ICP: hobbyist musicians aged 18–30.",
+        "walkthrough": "Noor walks through the seven shapes:\n\n**Pure word-of-mouth.** Possible; users love it. But she can't target it or set a goal against it. Don't count on it alone.\n\n**Inherent virality.** Does Kompose have zero value solo? No — a user can compose alone and get full value. So pure inherent virality doesn't fit. She could *create* an inherent mode (e.g., 'collab loops' where two users each contribute 8 bars and the track only exists when both have composed), which would become inherently viral. Product-design-level decision.\n\n**Collaborative virality.** Strong fit. Shared projects where musicians build together, remix each other's loops, etc. Users don't *have* to collaborate but many will want to. Requires real backend work (shared state, versioning, permissions).\n\n**Communicative / embedded.** Every exported loop could include 'Made with Kompose' watermark audio tag or shareable video card with the logo. Low effort, high distribution. Every shared track becomes an ad.\n\n**Incentivized.** Free pro month per friend who signs up. Easy to add, but by itself a weak loop for Kompose — musicians share tracks because they're proud of the music, not to earn pro credits.\n\n**Embedded buttons/widgets.** Embed code for a Kompose loop on any blog or site. Plausibly useful for music-blog readers.\n\n**Social-broadcast.** Shares to TikTok, Instagram, YouTube Shorts with auto-generated visuals. Huge reach surface for music content.\n\nNoor picks a stack: (a) embedded watermark on every exported loop + (b) first-class TikTok/IG export flow (social-broadcast) + (c) collaborative projects as a v2 product feature. Those three interlock — social-broadcast drives reach, watermark drives attribution, collaborative drives retention among acquired users. She explicitly decides *not* to start with incentivized referrals — they'd mask whether the loop actually works before she has clear data.\n\nCopy-then-customize: before building, she studies how Splice, BandLab, and Soundtrap handle exports and sharing. She matches their default formats down to aspect ratio and watermark position, then measures before tweaking."
+      },
+      "contrast": {
+        "neighborConceptId": "ch06-viral-definition",
+        "explanation": "The viral-marketing *definition* is the channel-level claim: existing users bring in new users as a byproduct of use. The viral *loop shapes* are the concrete mechanics that instantiate the claim. The definition is one sentence; the loop shapes are a menu. Founders who've internalized the definition but haven't chosen a shape end up with 'we should be viral' as a slogan with no product-level implementation."
+      },
+      "flashcards": [
+        {
+          "id": "ch06-viral-loop-fc1",
+          "type": "recall",
+          "front": "List the three steps of the basic viral loop.",
+          "back": "(1) A user is exposed to the product and gets value. (2) That user exposes a set of non-users to the product (invite, share, artifact, communication). (3) Some fraction of those non-users become users and the cycle repeats."
+        },
+        {
+          "id": "ch06-viral-loop-fc2",
+          "type": "recall",
+          "front": "Name the seven viral loop shapes the chapter distinguishes.",
+          "back": "Word-of-mouth, inherent virality, collaborative virality, communicative/embedded virality, incentivized virality, embedded buttons/widgets, and social-broadcast virality. Successful products usually combine 2–3 of these."
+        },
+        {
+          "id": "ch06-viral-loop-fc3",
+          "type": "recognition",
+          "front": "Skype has no value unless your friends also have Skype. Which viral loop shape is this?",
+          "back": "Inherent virality — the product is useless solo, so inviting others is the reason the user shows up, not an extra feature. This is the strongest shape because user self-interest drives the loop."
+        },
+        {
+          "id": "ch06-viral-loop-fc4",
+          "type": "cloze",
+          "front": "Hotmail's 'Get a free email account at Hotmail.com' signature in every outgoing email is the classic example of ______ virality.",
+          "back": "communicative / embedded virality — every message the user sends carries an invitation without the user actively inviting anyone."
+        },
+        {
+          "id": "ch06-viral-loop-fc5",
+          "type": "recall",
+          "front": "What's Andrew Chen's recommended starting point for beginners building a viral loop?",
+          "back": "Copy a loop that already works for a comparable product — down to the text, button placement, and flow. Viral performance lives in small details; starting from a proven template beats inventing a novel loop and hoping."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch06-viral-loop-sc1",
+          "setup": "A founder of a solo productivity journal app says: 'We're going to bolt on a referral program — users get a free month for each friend who signs up — and that'll be our viral loop.'",
+          "question": "Why is this likely to underperform, and what shape of loop would you suggest instead?",
+          "modelAnswer": "Incentivized virality as the *sole* loop tends to underperform when the underlying product has no structural reason for users to share. A solo productivity journal is a private, personal tool — users don't naturally encounter contexts where talking about it creates value for them. A referral incentive alone will either (a) be ignored (users don't think about the app enough to invite anyone) or (b) attract mercenary referrers whose friends don't convert, dragging the k-factor down. Better suggestions: (1) communicative/embedded — weekly 'journaling streak' shareable card the user can post to social, carrying the product's brand; (2) collaborative — optional shared journals with partner/therapist/coach; (3) social-broadcast — integration with existing fitness/mindfulness platforms. Only *after* one of those structural loops is producing organic signal should the founder layer incentives on top — at that point, incentives amplify a real loop rather than substituting for one.",
+          "rubric": [
+            "Identifies that incentives alone cannot substitute for a structural loop",
+            "Names the specific failure mode (mercenary referrers OR ignored offers)",
+            "Suggests at least two alternative loop shapes with reasoning",
+            "Correctly sequences: structural loop first, incentives as amplifier second",
+            "Connects to the 'solo-use = no structural sharing context' problem"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch06-viral-loop-sc2",
+          "setup": "Two startups use embedded/communicative virality. Product A is a free email client and adds 'Sent from [A]' to every outgoing email. Product B is a B2B analytics dashboard and auto-CCs 'noreply@b.com' on every email a user sends — with 'Powered by B' in the signature.",
+          "question": "Which one will work better as a viral loop, and why? Use the loop steps (exposure → invite → conversion) to diagnose.",
+          "modelAnswer": "Product A works far better. Walk the loop: (1) exposure — A's users send personal emails to friends, family, coworkers; recipients are a broad consumer audience with email needs, so exposure lands in a *compatible* audience. (2) invite — the 'Sent from A' signature is contextually coherent (it's an email client, the recipient got an email). (3) conversion — a meaningful fraction of recipients are in-market for a better email client and can sign up with one click.\n\nProduct B breaks at every step. (1) Exposure is corrupted — the auto-CC is a silent behavior the user didn't opt into, so the 'loop' is an abuse of trust that will hurt retention. (2) The signature context is incoherent — why does a B2B analytics tool appear in my accountant's invoice emails? (3) Conversion is near zero because the recipient isn't in-market and the signature carries no explanation of the product. The loop shape exists structurally but the audience match and context make each step's conversion near zero — so the loop dies on the math even though mechanically it fires.\n\nKey lesson: loop shape is necessary but not sufficient. The audience reached by the loop has to overlap with the ICP, and the context in which the invitation appears has to be coherent with the product's value.",
+          "rubric": [
+            "Correctly ranks A > B",
+            "Walks all three loop steps for at least one product",
+            "Identifies audience-overlap as the key difference (consumer email vs. mixed B2B recipients)",
+            "Flags the auto-CC as a trust/retention issue, not just a channel issue",
+            "Articulates that loop shape without audience fit fails the math"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach the viral loop and its shapes to a founder who's heard of 'going viral' but has never broken it down. Cover: (1) the three-step loop, (2) at least four distinct loop shapes with one concrete example each, (3) why loop shape is a product decision, not a marketing decision, and (4) what 'copy, then customize' means and why it's the right starting move.",
+        "rubric": [
+          "States all three loop steps in order",
+          "Names at least four distinct shapes with an example each",
+          "Explains why inherent/collaborative shapes are stronger than bolt-on incentives",
+          "Articulates that loop shape is determined by product design, not marketing tactics",
+          "Explains Chen's copy-then-customize rationale (viral perf is in small details)"
+        ]
+      }
+    },
+    {
+      "id": "ch06-k-factor",
+      "chapterId": "ch06",
+      "title": "Viral Math: The K-Factor and Cycle Time",
+      "isLandmark": true,
+      "order": 3,
+      "pretest": {
+        "prompt": "Your product has a viral loop. Each new user sends an average of 4 invites. 25% of invitees sign up. The invite-to-signup cycle takes about 5 days. Before reading on — compute whatever viral math you can from these numbers, decide whether this loop will sustain itself, and sketch roughly what 100 seed users turn into after three full cycle times.",
+          "modelAnswer": "Viral coefficient k = invites × conversion rate = 4 × 0.25 = 1.0. A k of exactly 1 means each user replaces themselves one-for-one: the loop neither decays nor explodes, it holds steady. For exponential growth you need k > 1; below 1, growth damps out without external seeding. Starting with 100 seed users, after one 5-day cycle you get ~100 new users. After two cycles (~10 days), another ~100. Growth is linear, not exponential — the *total* grows, but by a roughly constant amount each cycle, not a compounding one. To actually go viral, this product would need to push either invites per user (above 4) or conversion rate (above 25%) to get k comfortably above 1 — and would want to shorten the 5-day cycle time to increase the number of generations per month."
+      },
+      "lesson": {
+        "markdown": "## Why math, and why so little of it\n\nFounders talk about virality in adjectives — *great loop*, *strong sharing*, *we're going viral*. The math replaces the adjectives with two numbers: **k** (the viral coefficient) and **cycle time**. These two numbers determine whether the loop is actually a loop or merely a trickle with nice design. You can't evaluate this channel without them.\n\nThe good news: the math is trivial. The bad news: most founders who say 'we're going viral' haven't computed it, and if they did, they'd discover they aren't.\n\n## The k-factor formula\n\nThe viral coefficient, k, is the average number of *new users* each existing user generates through the loop:\n\n**k = i × c**\n\nwhere **i** is the average number of invites (or exposures) each user sends, and **c** is the conversion rate from invite to new user.\n\nExample: if each user sends 3 invites, and 2 of every 3 invitees sign up (c = 0.67), then k = 3 × 0.67 = 2.0. That means each user produces 2 new users, each of whom produces 2 more, and so on.\n\n## Interpreting k\n\n- **k > 1**: true exponential growth. Each generation is larger than the last. This is rare and hard to sustain.\n- **k = 1**: break-even — each user replaces themselves. The loop doesn't die, but it doesn't compound. Growth is linear in seed volume.\n- **0.5 < k < 1**: sub-viral but still useful. The loop doesn't sustain on its own, but it meaningfully *amplifies* other channels. 100 seeded users become roughly 100 / (1 − k) total users over time. At k = 0.5, that's 200 total — a 2× amplifier. At k = 0.8, it's 500 — a 5× amplifier on whatever you seeded. This is why the book says k > 0.5 is still worth chasing.\n- **k < 0.5**: the loop exists but adds little. Seeds decay fast. Usually means the loop mechanic is too weak to bother with.\n\nThe takeaway: you don't need k > 1 to get value from viral mechanics. A loop with k = 0.7 layered on top of SEO, paid, or sales will meaningfully amplify those channels. But you *do* need to know your k, because without it, you can't tell the difference between a 2× amplifier and a rounding error.\n\n## Decomposing k to find the bottleneck\n\nThe formula k = i × c hides a critical debugging move: in most products, conversion rate has sub-steps. For a standard web signup:\n\n**k = i × click-through% × signup%**\n\nBreaking it apart tells you where to focus. If your invites send well (i = 3), your click-through is strong (40%), but only 10% of clickers finish signup — then 3 × 0.40 × 0.10 = 0.12, and the bottleneck is obviously the signup flow, not the invite mechanism. Working on the invite copy would be malpractice; the fix is cutting signup fields. This decomposition is how real optimization happens — you attack the weakest sub-step, not whichever one you have a hunch about.\n\n## Cycle time: the hidden accelerant\n\nTwo loops with the *same* k can produce wildly different growth if their cycle times differ. **Cycle time** is the average time from when a user joins to when their invitees have joined and started inviting their own invitees — one full generation.\n\nAt k = 2, 100 seed users become:\n- Cycle time 2 days → after 30 days (15 cycles): 100 × 2^15 ≈ 3.3M users\n- Cycle time 10 days → after 30 days (3 cycles): 100 × 2^3 = 800 users\n\nSame k, two decimal orders of magnitude difference in 30-day outcome. This is why YouTube (cycle time measured in minutes — click video, copy link, send to friend) grew faster than products with the same k but slower propagation.\n\nShortening cycle time is usually the *highest-leverage* first optimization: simpler signup, fewer form fields, urgency or incentives to trigger the invite earlier in the user's lifetime. YouTube's embed code exists specifically to compress cycle time — the friction of 'copy link, open email, paste, send' versus 'click embed' is the difference between a 10-minute cycle and a 2-minute one.\n\n## What to measure from day one\n\nIf you're pursuing viral as a traction channel, instrument from the first release:\n1. Average invites per user (i)\n2. Invite → click-through rate\n3. Click → signup rate\n4. Median cycle time\n\nThese are your k and its decomposition, over time. Without them, you can't distinguish a loop that's getting better from one that's just getting more users from other channels.",
+        "readingTimeMin": 5
+      },
+      "workedExample": {
+        "setup": "Priya is running viral-loop optimization for Snapform, a $0 consumer poll-creation tool (with $7.99/mo pro). Baseline month-one numbers: users send an average of 2 shares of their poll; poll links get a 30% click-through; of clickers, 20% create their own account and make their own poll; average time from a share to a recipient creating their own poll is 4 days. Seed users this month: 500.",
+        "walkthrough": "**Step 1 — Compute k.**\n\ni = 2 shares per user\nconversion rate = click-through × signup = 0.30 × 0.20 = 0.06\nk = 2 × 0.06 = **0.12**\n\nInterpretation: k = 0.12 is far below viral threshold and below even the 'useful amplifier' range (0.5+). Right now the loop is effectively a rounding error — 500 seeds produce an additional ~500 / (1 − 0.12) − 500 ≈ 68 users over all future cycles. Not a channel yet.\n\n**Step 2 — Decompose to find the bottleneck.**\n\n- Invites per user (i): 2 — decent but not high.\n- Click-through: 30% — strong, invite copy is working.\n- Signup conversion: 20% — this is the killer. Of people who clicked, 80% bounced.\n\nThe bottleneck is signup conversion, not invites or clicks. Optimizing invite copy would move i from 2 to maybe 2.5, taking k from 0.12 to 0.15 — barely meaningful. Optimizing signup to 50% (from 20%) would take k from 0.12 to 2 × 0.30 × 0.50 = 0.30 — a 2.5× improvement. If signup could be lifted to 60%, k goes to 0.36. If invites *also* improved to 4 in parallel, k goes to 4 × 0.30 × 0.60 = **0.72** — in the useful-amplifier range.\n\n**Step 3 — Cycle time.**\n\nCurrent cycle: 4 days. In a 30-day month, that's 30/4 = 7.5 cycles. At k = 0.72, seeding 500 over the month would compound to roughly 500 × (1 + 0.72 + 0.72² + ... + 0.72^7.5) ≈ 500 × 3.5 = ~1,750 total users. Reducing cycle time to 2 days would roughly double the cycle count, though with k < 1 the total converges to the same steady-state (500 / (1 − 0.72) ≈ 1,785) — cycle time matters less when you're amplifying than when k > 1. Still useful because shorter cycles get you closer to steady-state faster.\n\n**Step 4 — Priya's priorities.**\n\nIn order: (1) fix signup flow — cut form fields, add social sign-on, preload invite context on the landing page. Target: lift signup from 20% → 50%+. (2) Then push invites per user from 2 → 4: add 'share to multiple platforms' flow, remind at the post-publish moment, social-broadcast to Twitter/TikTok. (3) Only after those, shorten cycle time. (4) Re-measure k weekly; if after 8 weeks k is still stuck below 0.5, demote viral from Priya's Inner Circle and retest once the loop mechanics are stronger.\n\nThe key move: Priya did not guess. She decomposed her k and let the weakest sub-step tell her what to work on. Without the math, she'd probably have spent two months rewriting invite copy and moved the needle by 0.03."
+      },
+      "contrast": {
+        "neighborConceptId": "ch06-viral-loop",
+        "explanation": "The viral loop is the *structure* — the three steps and the seven shapes. The k-factor is the *scoreboard* — does the structure you built actually compound, break even, or decay? A good loop design can still have a bad k if any of the sub-steps (invites, click-through, signup) are weak. Founders often design a loop and celebrate; the k-factor exists to force the question 'does it work?' onto a number."
+      },
+      "flashcards": [
+        {
+          "id": "ch06-k-factor-fc1",
+          "type": "recall",
+          "front": "State the viral coefficient formula.",
+          "back": "k = i × c, where i is the average number of invites (or exposures) each user sends, and c is the conversion rate from invite to new user. When conversion has sub-steps (e.g., click-through then signup), decompose: k = i × click-through% × signup%."
+        },
+        {
+          "id": "ch06-k-factor-fc2",
+          "type": "recall",
+          "front": "What do k > 1, k = 1, 0.5 < k < 1, and k < 0.5 each mean?",
+          "back": "k > 1: true exponential growth; k = 1: break-even, linear growth; 0.5 < k < 1: sub-viral but a useful amplifier (100 seeds → ~100 / (1 − k) total); k < 0.5: loop exists but is too weak to matter as a channel."
+        },
+        {
+          "id": "ch06-k-factor-fc3",
+          "type": "cloze",
+          "front": "Two loops with the same viral coefficient but different ______ times produce dramatically different outcomes: the shorter this time, the more ______ you get through in the same calendar window.",
+          "back": "cycle ; generations — cycle time determines how many generations of the loop fire per month; YouTube's fast cycle (minutes) is a key reason its viral growth outran products with similar k."
+        },
+        {
+          "id": "ch06-k-factor-fc4",
+          "type": "recognition",
+          "front": "A user sends 5 invites, 40% of recipients click, and 25% of clickers sign up. What's k?",
+          "back": "k = 5 × 0.40 × 0.25 = 0.5. Exactly at the threshold where the loop becomes a meaningful amplifier for other channels — but not self-sustaining. 100 seeds would compound to ~200 total users."
+        },
+        {
+          "id": "ch06-k-factor-fc5",
+          "type": "recall",
+          "front": "Why should you decompose k into sub-steps (invites × click-through × signup) rather than treating it as a single number?",
+          "back": "Because optimization targets the weakest sub-step, and without decomposition you can't see which it is. A product with strong invites and click-throughs but a weak signup flow is bottlenecked at signup — working on invite copy is wasted effort. Decomposition turns 'improve the loop' into a specific, measurable action."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch06-k-factor-sc0",
+          "setup": "A product's average user sends 4 invites. 25% of invitees sign up. What is k, and what does that number mean for the loop's behavior?",
+          "question": "Compute k and state in one sentence what happens to 100 seed users over successive cycles at this k.",
+          "modelAnswer": "k = i × c = 4 × 0.25 = 1.0. At exactly k = 1, each user replaces themselves one-for-one: the loop neither decays nor explodes. 100 seeded users produce another ~100 new users per cycle forever (absent saturation), so total users grow linearly — not exponentially. You'd need k > 1 for true compounding, or k between 0.5 and 1.0 to still have a meaningfully useful amplifier on other channels.",
+          "rubric": [
+            "Correctly computes k = 1.0",
+            "Identifies k = 1 as break-even (not exponential, not decaying)",
+            "Describes linear (not compounding) growth of seeded users",
+            "Optionally notes that k > 1 is required for exponential growth"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch06-k-factor-sc1",
+          "setup": "A founder reports: 'Each user invites 3 friends on average, and 50% of invited friends sign up. We're going viral!'",
+          "question": "Compute the k-factor. Is the founder right? What would a thoughtful advisor push back on before celebrating?",
+          "modelAnswer": "k = 3 × 0.50 = 1.5. Above the viral threshold — exponential growth territory on paper. But a thoughtful advisor asks several follow-ups before celebrating. (1) How is 'invite' being counted? If 'invite' means 'user clicked share' rather than 'recipient received a message,' the 3 may be inflated. (2) Is the 50% conversion sustained or a small-sample figure from power users? Early-adopter loops often show high k's that collapse as the user base broadens — power users invite close friends who are high-conversion; later waves invite cooler contacts who convert worse. (3) What's the cycle time? A k of 1.5 with a 60-day cycle time grows more slowly than a k of 1.2 with a 5-day cycle. (4) Are the new users *retaining*? A viral loop that produces churning signups inflates k temporarily but collapses when those users don't stick around to invite the next wave. (5) Is there an audience ceiling? Exponential math breaks against real-world finite networks; at some point saturation caps growth. The right advice: celebrate cautiously, instrument the decomposition (clicks vs. signups, per-cohort k), watch for decay across cohorts, and assume the number will drift downward as scale hits.",
+          "rubric": [
+            "Correctly computes k = 1.5",
+            "Names at least three of: definition ambiguity, cohort decay, cycle time, retention confound, audience ceiling",
+            "Distinguishes headline k from sustained k",
+            "Doesn't dismiss the result but calibrates it",
+            "Recommends decomposition and per-cohort tracking"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch06-k-factor-sc2",
+          "setup": "A team has been working on viral optimization for a consumer app for 3 months. Starting k = 0.15. Current k = 0.25. They're discouraged — 'we're still nowhere near 1.'",
+          "question": "Reframe the result for them using the correct interpretation of k. What would you advise they do next?",
+          "modelAnswer": "Reframe: at k = 0.25, the loop is a ~1.33× amplifier on other channels (100 seeded → ~133 total). At k = 0.15, it's a 1.18× amplifier. The movement from 0.15 → 0.25 looks small but represents a meaningful shift in the amplifier ratio. Still, k = 0.25 is below the 0.5 threshold where the channel is worth pursuing as a meaningful growth engine. Two questions to drive what they do next. (1) Decompose: are they hitting a structural ceiling in one sub-step (e.g., signup is already at 80%, invites already at 5, so there's no room) — or is there an obvious weak sub-step they haven't attacked yet? (2) Is the product-market fit for viral sharing actually there — or is the product not structurally shareable (e.g., private/solo use case)? If (1) has room left, 3 more months of focused work may push k to 0.5+ and make viral a real amplifier channel. If (2) reveals that the product isn't structurally shareable, demote viral from the Inner Circle and reallocate to channels better matched to the product (e.g., SEO, paid, sales). Don't keep optimizing a loop that can't reach threshold.",
+          "rubric": [
+            "Correctly interprets k = 0.15 → 0.25 as a shift in amplifier ratio, not failure",
+            "States the 0.5 threshold for 'worth pursuing as main engine'",
+            "Recommends decomposition to find remaining headroom",
+            "Recommends considering structural product-fit for virality",
+            "Offers a clear 'continue / pivot channel' decision rule"
+          ],
+          "difficulty": 3
+        },
+        {
+          "id": "ch06-k-factor-sc3",
+          "setup": "A product has k = 1.2 and a cycle time of 7 days. A competitor has k = 1.0 and a cycle time of 1 day.",
+          "question": "Over 30 days, starting from 100 seed users each, who grows more? Why does cycle time matter so much when both products are above break-even?",
+          "modelAnswer": "Product A (k = 1.2, cycle 7d): ~30/7 ≈ 4 full cycles in 30 days. 100 × 1.2^4 ≈ 207 users total from that cohort's multiplication (plus intermediate generations, roughly 700–800 cumulative).\n\nProduct B (k = 1.0, cycle 1d): 30 cycles. At k = 1.0, each cycle adds exactly as many new users as existed. Starting from 100, each cycle adds another 100: after 30 cycles, roughly 100 × 30 = 3,000 new users added (plus the original 100). Even at break-even k, fast cycle time produces much larger volume because each generation contributes another full cohort.\n\nWhy cycle time matters: the exponent in the growth formula is number of generations, and number of generations = calendar window / cycle time. A k just above 1 with a fast cycle produces more value in the window that actually matters (before funding runs out) than a k well above 1 with a slow cycle. This is why YouTube's minutes-long cycle beat competitors with higher k but slower propagation. It's also why shortening cycle time is usually the highest-leverage first optimization: it multiplies the effect of every other improvement you make.",
+          "rubric": [
+            "Correctly estimates that Product B outgrows Product A in the 30-day window",
+            "Demonstrates that the number of generations is the key multiplier",
+            "Names the formula structure: generations = window / cycle time",
+            "Notes that cycle time multiplies the effect of any k improvement",
+            "Uses YouTube or an analogous example to illustrate"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach the viral math to a technical founder who knows the words 'k-factor' but has never computed one. Cover: (1) the formula and what each variable means, (2) how to interpret k values across the four regimes (>1, =1, 0.5–1, <0.5), (3) why you decompose k into sub-steps, and (4) why cycle time matters — with a concrete example showing two products with the same k diverging.",
+        "rubric": [
+          "States k = i × c formula clearly; extends to include sub-step decomposition",
+          "Gives correct interpretation of each of the four k regimes",
+          "Explains the use of decomposition to find the bottleneck (not just describe it)",
+          "Explains cycle time's role via generations-per-window, with a concrete example",
+          "Mentions that cycle time multiplies the leverage of any other k improvement"
+        ]
+      }
+    },
+    {
+      "id": "ch06-viral-product-fit",
+      "chapterId": "ch06",
+      "title": "Does Viral Fit Your Product? Signals and Anti-Signals",
+      "isLandmark": false,
+      "order": 4,
+      "pretest": {
+        "prompt": "Think of two products you've used in the last month. For each, ask: 'If I love this product, is there a natural moment during normal use where I'd expose a friend to it?' What product-level properties separate the ones where the answer is yes from the ones where the answer is no?",
+        "modelAnswer": "The 'yes' products share three properties: (1) the user's network contains many look-alikes (people with the same need), (2) the product creates artifacts, communications, or collaboration moments that naturally reach those look-alikes, and (3) the act of exposure is coherent with how the user gets their own value — it isn't a favor to the company, it's a byproduct of use. The 'no' products usually fail one or more: solo use cases with no artifacts, buyer audiences unlike the user's social network (e.g., a CFO tool marketed to a consumer's friend circle), or products where sharing feels socially awkward or irrelevant. Viral fit is a property of the product and its audience, not something you can add with a share button."
+      },
+      "lesson": {
+        "markdown": "## The fit question\n\nNot every product can be viral. Viral marketing is one of nineteen channels, and like every other channel it fits some products and fails others. Deciding whether viral can work for *your* product before investing months of engineering and optimization is a short analysis that saves a lot of wasted work.\n\nThree structural questions determine fit.\n\n## 1. Is your user's network dense with look-alike users?\n\nThe viral loop spreads through users' existing networks. For it to convert, the people in those networks must plausibly want the product too.\n\n**High fit:** A consumer messaging app. Every user's contact list is rich with other people who need messaging. A photo-sharing app — friends want to see photos from friends and likely want to share their own. A design tool for designers — designers know designers.\n\n**Low fit:** A B2B tool whose buyers are CFOs. A given CFO's network has few other CFOs in close contact. Even if a share mechanic fires, recipients are mostly not in-market. A tool for a rare specialty (e.g., vineyard-management software) — each user knows few other users. A product whose ICP is an organizational role isolated from peer-network interaction.\n\nRule of thumb: if fewer than ~10% of an average user's personal or professional network are plausible users, the loop's conversion rate will be crushed no matter how good the mechanic. You're trying to hit a sparse target.\n\n## 2. Does normal use create natural exposure moments?\n\nThe strongest viral loops aren't invites users send to be polite — they're exposures that happen *because the user is getting their own value*. Sending a Hotmail email exposes Hotmail because that's what sending email is. Inviting Skype contacts exposes Skype because that's what calling is. Sharing a Dropbox folder exposes Dropbox because that's what collaboration is.\n\nProducts with weak natural-exposure moments require users to go out of their way to share — which they rarely do. A solo journaling app, a private finance tracker, a single-player puzzle game — none have normal-use moments that expose non-users. You can bolt on share buttons, but usage will be near zero because there's no *reason*, embedded in the product's value proposition, to press them.\n\nDiagnostic: walk through your product's 'aha moment' and ask, at each step, 'does this step, in its natural form, put the product in front of a non-user?' If the answer is no at every step, you don't have a viral channel without product-level changes.\n\n## 3. Can the recipient act on the exposure immediately and cheaply?\n\nViral loops die on friction at the recipient's end. A Hotmail signature is one click to 'get your own account' — conversion can be double digits. A B2B share that lands on a page demanding a corporate demo request is two weeks of conversion friction. Even a strong invite volume and a dense network can produce k ≈ 0 if the path from exposure to signup is too long or requires budget authority, procurement, or training.\n\n**High fit:** free or freemium consumer products with instant signup. **Low fit:** enterprise products with approval chains, six-figure annual contracts, or complex installation.\n\nThis is why almost every canonical viral success story is a free consumer product or a freemium prosumer product — their onboarding path is milliseconds of friction. It isn't impossible for B2B to have viral elements (Slack's team-invite loop is a partial example), but the friction has to be managed very carefully, and the loop usually plays a supporting role rather than the lead channel.\n\n## The honest check\n\nAfter walking these three questions for your product, one of three outcomes is likely:\n\n- **All three green:** viral is a plausible primary channel. Worth a Bullseye test. Canonical shape: consumer or prosumer freemium with shareable artifacts.\n- **Two of three green:** viral is plausible as a secondary amplifier on another channel. Pursue but don't bet the company on it.\n- **One or zero green:** viral is not your channel. Add it to Column C. Put your effort into channels that match your product's structural shape (paid, SEO, sales, content, partnerships).\n\nThe honest check costs an hour and saves months.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Three founders run the three-question fit check on their products. (A) Marco, building a consumer recipe-sharing app ($0 with $3.99/mo pro). (B) Dana, building a $15k/year compliance-management tool for mid-market healthcare companies. (C) Hiro, building a $29/mo personal finance budgeting tool.",
+        "walkthrough": "**Marco — recipes.**\n- *Network density:* High. Users are home cooks; their friends are also home cooks. Most personal networks contain plenty of look-alike users.\n- *Natural exposure moments:* High. Cooking a recipe → tagging the source → 'Made from @marco-app' auto-watermark on the food photo shared to Instagram. Also recipe collections can be shared collaboratively.\n- *Recipient friction:* Low. Free download, email-only signup.\n- All three green. Viral is a plausible primary channel. Design around the share-photo and shared-collection loops. Inner Circle candidate.\n\n**Dana — healthcare compliance.**\n- *Network density:* Very low. A compliance officer at a mid-market hospital knows perhaps 5–10 peers in the exact role across all their personal and professional networks. The vast majority of 'shares' would land on non-buyers.\n- *Natural exposure moments:* Low. Using a compliance tool is a solo-internal activity. No artifact naturally reaches external peers.\n- *Recipient friction:* Extremely high. Even if a peer is interested, $15k/year requires budget approval and procurement — 60–180 day cycles.\n- Zero or one of three green. Viral is not Dana's channel. Add to Column C. Her likely Inner Circle: targeting industry publications, sales (outbound to compliance officers), and possibly trade shows.\n\n**Hiro — personal budgeting.**\n- *Network density:* Moderate. Most adults could use a budgeting tool, but adult users rarely share financial tools with friends — it's a slightly taboo topic.\n- *Natural exposure moments:* Low to moderate. Solo private use. Could imagine 'shared savings goals with partner' as a collaborative mechanic, but only a subset of users would use it.\n- *Recipient friction:* Low. $29/mo with a free trial.\n- Two of three partially green. Viral as a primary channel is unlikely but as a supporting amplifier (partner-mode collaborative feature + referral credits) it could add ~20–30% to whatever other channels deliver. Primary channel should be something structural like SEO for budgeting-keyword intent or targeting blogs in the personal-finance space.\n\nThe diagnostic doesn't tell each founder what to *do* — it tells them whether *viral* belongs as their primary channel. Marco: yes. Dana: no. Hiro: as a supporting amplifier only."
+      },
+      "contrast": {
+        "neighborConceptId": "ch06-viral-loop",
+        "explanation": "Knowing the seven viral loop shapes (previous concept) is not the same as knowing whether any shape fits your product (this concept). Many founders pick a shape — incentivized referrals, say — and build it, without first checking whether their product's network density, exposure moments, and recipient friction would allow *any* loop to reach threshold. Fit is the prior question; shape is the downstream choice."
+      },
+      "flashcards": [
+        {
+          "id": "ch06-viral-product-fit-fc1",
+          "type": "recall",
+          "front": "What are the three structural questions that determine whether viral fits your product?",
+          "back": "(1) Is your user's network dense with look-alike users? (2) Does normal use create natural exposure moments? (3) Can the recipient act on the exposure immediately and cheaply (low friction signup)? Two-plus greens = plausible primary channel. One or zero greens = viral isn't your channel."
+        },
+        {
+          "id": "ch06-viral-product-fit-fc2",
+          "type": "recognition",
+          "front": "Which of these is most likely a poor structural fit for viral marketing? (a) consumer photo-sharing app, (b) $25k/year enterprise compliance tool, (c) $9/mo freemium drawing app.",
+          "back": "(b) — low network density (few CFOs/compliance officers in any one user's network), weak natural exposure (solo internal use), high recipient friction (procurement cycle). (a) and (c) both score high on all three fit questions."
+        },
+        {
+          "id": "ch06-viral-product-fit-fc3",
+          "type": "recall",
+          "front": "Why does 'user's network must be dense with look-alike users' matter for viral conversion?",
+          "back": "Because loop conversion rate depends on invitees being plausible users. If a given user's network contains mostly non-target people, even a perfectly designed loop will have a near-zero conversion rate — you're firing the loop into a sparse target."
+        },
+        {
+          "id": "ch06-viral-product-fit-fc4",
+          "type": "cloze",
+          "front": "Viral loops tend to fail in enterprise products because of three structural issues: low network ______, weak natural ______ moments, and high recipient ______ at signup.",
+          "back": "density ; exposure ; friction — any one of these crushes the loop's conversion math; enterprise products often fail all three simultaneously."
+        },
+        {
+          "id": "ch06-viral-product-fit-fc5",
+          "type": "recall",
+          "front": "If viral fails the fit check for your product, what should you do?",
+          "back": "Add it to Column C (Long-shot) in Bullseye and pursue channels better matched to your product's structural shape — paid, SEO, sales, content, partnerships, etc. You can still add a light referral program as a secondary amplifier later, but don't bet the company on viral as the primary channel."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch06-viral-product-fit-sc1",
+          "setup": "A founder building a subscription legal-document tool ($49/mo, ICP: solo-practice attorneys) insists viral will be their channel because 'lawyers all know other lawyers.' They plan to invest 4 months building a referral-based viral system.",
+          "question": "Walk the three fit questions for this product. Is viral plausible as a primary channel?",
+          "modelAnswer": "(1) Network density: the founder is right that lawyers know lawyers — but a solo-practice attorney's close professional network is often mostly attorneys at *larger firms* (from law school, bar associations, former colleagues), not other solo practitioners who share their workflow. Density is moderate, not the high density the founder assumes. (2) Natural exposure moments: using a legal-document tool is solo internal work. Drafting a contract doesn't inherently expose the tool to peers. Outputs (finished contracts) go to clients, not to other lawyers. Exposure moments are weak. (3) Recipient friction: $49/mo and a free trial is reasonable, so friction is moderate-to-low. Net: 1 moderate, 1 weak, 1 low friction = mixed. Viral is not a plausible *primary* channel — 4 months on referral mechanics is an expensive bet. Better plan: primary channels are likely SEO (solo attorneys search for specific doc types), targeting blogs (solo-practice newsletters and bar publications), and direct sales via state-bar lists. Add a light referral program (incentivized virality) as a secondary amplifier after a real channel is working — not as the centerpiece.",
+          "rubric": [
+            "Walks all three fit questions explicitly",
+            "Pushes back on the 'lawyers know lawyers' assumption with the solo-vs-firm nuance",
+            "Identifies weak exposure moments in legal-document work",
+            "Recommends demoting viral to secondary amplifier",
+            "Proposes concrete alternative primary channels"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch06-viral-product-fit-sc2",
+          "setup": "A team debates: 'We have two of three fit criteria strongly. Natural exposure is weak. Should we still make viral our primary channel because our other signals are so strong?'",
+          "question": "What should they do, and why is 'two out of three' specifically the edge case to be careful about?",
+          "modelAnswer": "Don't make viral the primary channel. Two-of-three — especially when the missing one is natural exposure — means the loop won't fire reliably regardless of how strong the other two components are. High network density and low recipient friction do you no good if the product doesn't produce the exposure in the first place. The absence of natural exposure is a multiplicative zero in the loop math: k = i × c, and if i (invites per user) is structurally near zero, then c and friction don't matter. The right call is (a) pursue viral as a secondary amplifier — add light sharing features, see if any produce a surprise — while running a Bullseye cycle to find a primary channel that fits the product's actual structural shape; and (b) revisit viral as primary if future product changes create real exposure moments (new collaborative features, new artifact types, etc.). Don't commit primary investment against a known structural weakness.",
+          "rubric": [
+            "Prescribes not making viral primary",
+            "Identifies 'invites per user' (i) as near-zero without natural exposure",
+            "Applies k = i × c mentally to show multiplicative zero",
+            "Prescribes secondary/amplifier treatment + Bullseye for primary",
+            "Notes that future product changes could re-qualify viral"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach a founder how to quickly decide if viral marketing is plausible for their product. Cover: (1) the three fit questions, (2) why each matters mechanically (tie back to k-factor math), (3) the decision rule for how many greens triggers which choice, and (4) an example where a product fails the check and what it should do instead.",
+        "rubric": [
+          "Names all three fit questions",
+          "Connects each question to a mechanism in the k-factor math",
+          "States the all-three / two / one-or-zero decision rule",
+          "Gives a concrete failing-example with alternative channel recommendations",
+          "Notes that viral-as-amplifier is a separate, legitimate option"
+        ]
+      }
+    },
+    {
+      "id": "ch06-loop-design",
+      "chapterId": "ch06",
+      "title": "Designing the Loop: Invitations, Conversion Pages, and What to Test",
+      "isLandmark": false,
+      "order": 5,
+      "pretest": {
+        "prompt": "Your k-factor is 0.3 and you want to get it to 0.8. Before reading on, list five specific things you could test *inside* the loop to move k up. For each, which sub-step of k = i × click% × signup% does it target, and which is likely to have the biggest effect?",
+        "modelAnswer": "Five candidate tests: (1) Reduce signup form from 6 fields to 2 (targets signup% — often the highest-leverage fix). (2) Add social sign-on (Google/Apple) — targets signup%. (3) Shorten and personalize the invite subject line ('Ana wants you to try X' vs. generic) — targets click%. (4) Add a personal message slot the inviter can fill in — targets click%. (5) Prompt the invite at the moment of 'aha' rather than during onboarding — targets i (invites per user). Biggest effect depends on which sub-step is currently the bottleneck. If signup% is 10%, fixing it to 40% is 4×; if it's already 70%, ceiling is low. The principled move: decompose k first, then attack the lowest sub-step."
+      },
+      "lesson": {
+        "markdown": "## Where optimization lives\n\nOnce a loop exists and you have a baseline k, the chapter's operational half is about turning that k upward. The method is disciplined experimentation: many small A/B tests, targeting whichever sub-step of k is weakest, running constantly. Two product elements carry most of the weight: the **invitation** and the **conversion page**.\n\n## The invitation\n\nThe invitation is the moment of first exposure. Most of what determines its click-through rate is how it looks in an inbox, a DM, or a feed before the recipient has decided whether to engage at all.\n\nWhat works, in the order the chapter emphasizes:\n\n- **Short and succinct.** Every extra line of copy decreases click-through. The best invites are a line or two, not a paragraph.\n- **Personal hooks.** 'Sarah invited you to join...' outperforms 'You've been invited to join...' — the inviter's name attached to a real relationship is the most load-bearing phrase in the entire loop.\n- **Low-ambiguity ask.** The recipient should understand in three seconds what they're being invited to and why. A photo of the product, a one-line value statement, one button.\n- **Recognizable sender.** If the invite lands in email, it should be from a sender the recipient plausibly knows — the inviter's name, ideally their email address. Invites from `noreply@yourproduct.com` get filtered out or ignored.\n\nMechanic: try things. Test button copy ('Join me' vs. 'See what Sarah shared'), test whether images help, test subject lines, test whether the invite is sent as an email vs. in-app message vs. SMS vs. platform-native (e.g., Facebook Messenger, iMessage). Small details compound because the loop fires thousands of times.\n\n## The conversion page\n\nThe conversion page is what the recipient sees after clicking. This is usually the single highest-leverage page in a viral loop — a click that doesn't convert is wasted. A few principles:\n\n- **Match the invite.** The messaging on the conversion page should echo the invite language. If the invite says 'Sarah shared a playlist with you,' the landing page should say 'Sarah's playlist' at the top, not 'Welcome to Product X.' Continuity tells the recipient they arrived where they expected.\n- **Reduce friction ruthlessly.** Every form field is a cliff. Ask only what's required to give value. If you can sign up with email only, do. If social auth exists, default to it. Eight-field signup forms turn 50% click-throughs into 5% completions.\n- **Show social proof of the inviter.** 'Sarah and 12 of your friends are on X' is dramatically more convincing than a generic testimonial. The inviter's trust is already earned; lean on it.\n- **Let them try before signup if possible.** Quora's classic move — let visitors read content without creating an account — dramatically lifts eventual signup because the recipient sees the value first.\n\n## What to test\n\nThe chapter enumerates a long list of testable elements. A few that tend to have outsized effects:\n\n- Number of form fields (almost always too many)\n- Social sign-on (Google / Apple / Facebook)\n- Button copy, color, and placement\n- Headlines and subheads on the landing page\n- Presence vs. absence of images\n- Page-load speed (mobile especially)\n- Length of the signup flow (steps, not just fields)\n- 'Sent from' personalization on the invite\n- Whether the invite is triggered automatically at an 'aha' moment or requires manual click\n\n## The 5-10x rule, then polish\n\nA useful sequencing rule: first run tests that, if they worked, would produce a 5–10× improvement in a key metric. A new signup flow, a redesigned landing page, a new invite moment. These are expensive but high-leverage. Only after those are locked down do you start polishing small things — one-word headline changes, button colors. In a compounding loop, a 1% improvement does matter over the long term — but running hundreds of 1% tests before the 5× tests means you're polishing a broken funnel.\n\n## The measurement discipline\n\nNone of this works without measurement. Baseline k before any optimization. Re-measure per cohort (new users who entered the loop after a specific change) rather than for the aggregate — aggregate k is a lagging average that obscures whether the last change helped. A simple dashboard with invites-sent, click-through, signup, and median cycle time per week is sufficient; without it, every optimization is guesswork.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Priya (from the k-factor concept) has decomposed her Snapform loop: i = 2, click-through = 30%, signup = 20%, k = 0.12. Signup is clearly the bottleneck. She has one month to run optimization sprints.",
+        "walkthrough": "Priya uses the 5-10x rule to pick her first swing, then iterates.\n\n**Week 1 — Rebuild the signup page (5-10x candidate).**\n- Cut signup form from 6 fields (name, email, password, org, use case, how-did-you-hear) to 2 (email + password).\n- Add Google and Apple social sign-on at the top.\n- Match landing-page copy to the invite: if Sarah shared a poll, the page says 'Vote on Sarah's poll' and offers to create an account to save results.\n- Let recipients *vote first*, account-create second.\n\nResult after 1 week, new cohort: signup rises from 20% to 58%. Huge — the 5–10x target nearly hit. New k = 2 × 0.30 × 0.58 = **0.35**.\n\n**Week 2 — Attack click-through (next-biggest lever).**\n- Test two invite copy variants: (A) 'Check out my poll on Snapform' vs. (B) 'Sarah wants you to vote on her poll.'\n- Add a thumbnail of the poll to the invite.\n- Test inviter name in the 'from' field.\n\nResult: click-through rises from 30% to 45% in the B cohort. New k = 2 × 0.45 × 0.58 = **0.52**. Now in the useful-amplifier range.\n\n**Week 3 — Push invites per user.**\n- Prompt sharing at poll-publish moment rather than in generic onboarding.\n- Offer one-tap share to multiple platforms at once (iMessage + Twitter + email).\n- Add a 'share with a group' shortcut that sends 5 invites in one action.\n\nResult: i rises from 2 to 3.3. New k = 3.3 × 0.45 × 0.58 = **0.86**. Close to threshold.\n\n**Week 4 — Shorten cycle time.**\n- Median cycle was 4 days. Add an immediate email to the recipient, a push notification when they haven't acted within 24 hours, and a preview of the poll directly in the invite so they can vote without an app install.\n- Median cycle drops to 2 days.\n\nEnd-of-month result: k = 0.86 (up from 0.12), cycle time halved. In a single 30-day window, her loop went from rounding error to meaningful amplifier. Three of her four major swings were 5x-scale (signup rebuild, invite redesign, share-moment change), and only one was small-scale polish. She re-measured per weekly cohort the entire time."
+      },
+      "contrast": {
+        "neighborConceptId": "ch06-k-factor",
+        "explanation": "The k-factor math tells you *what* to improve (which sub-step is lagging). Loop design is *how* you improve it (the specific invite copy, signup flow, and page elements). Mixing them produces a common mistake: founders who know their signup is weak but who optimize invite copy because 'that's what they thought of.' The math should drive the design choice; the design is downstream of the decomposition."
+      },
+      "flashcards": [
+        {
+          "id": "ch06-loop-design-fc1",
+          "type": "recall",
+          "front": "What are the two product elements that carry most of the weight in viral loop optimization?",
+          "back": "The invitation (first exposure that determines click-through) and the conversion page (recipient's first landing experience that determines signup). Together they account for most of the click% × signup% product in the k formula."
+        },
+        {
+          "id": "ch06-loop-design-fc2",
+          "type": "recall",
+          "front": "What's the 5-10x rule for optimization sequencing?",
+          "back": "First run tests that, if they worked, would produce a 5-10× improvement in a key metric (new signup flow, landing redesign, new invite moment). Only after those land do you polish smaller things like button colors and one-word headlines. Polishing before the big swings means optimizing a broken funnel."
+        },
+        {
+          "id": "ch06-loop-design-fc3",
+          "type": "recognition",
+          "front": "Which invite likely performs better? (a) 'You've been invited to try Product X,' (b) 'Sarah shared a photo album with you on Product X.'",
+          "back": "(b). The inviter's name + the specific artifact shared is the single most load-bearing phrase in the loop. Generic 'you've been invited' misses the personal relationship and the concrete thing being shared — both drop click-through significantly."
+        },
+        {
+          "id": "ch06-loop-design-fc4",
+          "type": "cloze",
+          "front": "The conversion page should ______ the messaging of the invitation — if the invite says 'Sarah shared a playlist with you,' the landing page should say '______' at the top, not 'Welcome to Product X.'",
+          "back": "match (or echo) ; Sarah's playlist — continuity tells the recipient they arrived where they expected and dramatically improves signup."
+        },
+        {
+          "id": "ch06-loop-design-fc5",
+          "type": "recall",
+          "front": "Why is per-cohort measurement critical when optimizing a loop?",
+          "back": "Because aggregate k is a lagging average that blends users from before and after a change. It obscures whether the last change helped. Measuring k per weekly cohort (users who entered the loop after a specific change) lets you attribute improvements to specific experiments."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch06-loop-design-sc1",
+          "setup": "A team has been A/B testing button colors, headline word choices, and font sizes on their viral loop for 6 weeks. K has moved from 0.18 to 0.22. They've done 30+ tests.",
+          "question": "What's the likely problem, and what would you do instead?",
+          "modelAnswer": "They're doing polish tests before running 5-10x tests. 30 small-scale A/B tests of cosmetic elements are unlikely to move the needle significantly on a loop that's structurally at 0.18. The likely problem: the real bottleneck is either a structural sub-step (too many signup fields, wrong invite moment, no social auth, mismatched conversion page) or a product-fit issue — not cosmetic. Prescription: (1) Stop small-tests. (2) Decompose k into i, click%, signup% — find the weakest sub-step. (3) Run one big-swing test per week: a redesigned signup page, a new invite moment at 'aha,' a new social auth default, a conversion-page rewrite that echoes the invite. (4) Per-cohort measure. If after 4 big swings the loop is still below 0.5, reconsider whether the product passes the fit check at all. Cosmetic optimization after structural swings is fine; cosmetic optimization instead of structural swings is burning weeks.",
+          "rubric": [
+            "Identifies the problem as polish-before-structure",
+            "Prescribes decomposition + big-swing tests",
+            "Names specific structural swings (signup fields, social auth, invite moment, page match)",
+            "Mentions the fit-check fallback if big swings don't move the number",
+            "Contrasts cosmetic and structural test leverage"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch06-loop-design-sc2",
+          "setup": "A founder reports that her invites have a 45% click-through (strong) but only 8% of clickers complete signup. She plans to spend the next month rewriting invite copy because 'that's what users see first.'",
+          "question": "Is she working on the right thing? What's a better plan?",
+          "modelAnswer": "No — she's about to optimize the sub-step that's already working. Click-through at 45% is strong; pushing it to 55% only improves k by ~22%. Signup at 8% is weak; lifting it to 40% is a 5× improvement on that sub-step. The entire month should be spent on the signup page and flow, not the invite. Better plan: (1) Audit the conversion page — is the messaging matched to the invite? How many fields? Social auth available? Page speed? (2) Rebuild the signup as a 5-10x candidate: match the invite language at the top, cut fields to email + one necessary field, add Google/Apple sign-on, let the recipient experience value before account-creation if possible. (3) Per-cohort measure: expect a large lift in the first week, then polish. (4) After signup is at 40%+, then circle back to invite copy for incremental gains. The principle: the math tells you which sub-step is the bottleneck, and optimization time belongs to the bottleneck — not to the sub-step you have a hunch about.",
+          "rubric": [
+            "Identifies that 45% click-through is already strong",
+            "Identifies 8% signup as the real bottleneck",
+            "Computes or explains the math of lift-per-sub-step",
+            "Prescribes specific signup-page fixes (fields, auth, match, speed)",
+            "Defers invite optimization to after signup is fixed"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain how to run viral-loop optimization in practice. Cover: (1) the two highest-leverage elements (invite + conversion page) and what makes each work, (2) the 5-10x rule for ordering tests, (3) why measurement must be per-cohort, not aggregate, and (4) the discipline that ties tactical work back to the k-factor decomposition.",
+        "rubric": [
+          "Identifies invitation and conversion page as load-bearing",
+          "Names specific winning patterns for each (personal hook, matching message, social auth, reduced fields)",
+          "States the 5-10x sequencing rule with reason",
+          "Explains per-cohort measurement and what aggregate-k obscures",
+          "Ties every design choice back to a sub-step of the k decomposition"
+        ]
+      }
+    },
+    {
+      "id": "ch06-testing-viral",
+      "chapterId": "ch06",
+      "title": "Testing Viral Cheaply Without Fooling Yourself",
+      "isLandmark": false,
+      "order": 6,
+      "pretest": {
+        "prompt": "You're running Bullseye and viral is one of your three inner-ring channels to test. How do you design a cheap Bullseye-style test of viral specifically? What's different about testing viral vs. testing (say) paid ads, and what's the biggest way a viral test can mislead you?",
+        "modelAnswer": "Testing paid ads is comparatively simple — spend a small amount, watch cost-per-acquisition, get an answer within days. Viral is harder for three reasons: (1) the loop has to be built before you can measure it, and building takes engineering time; (2) the signal depends on user volume, because k is an average over the user base, and a tiny base produces noisy k estimates; (3) early cohorts often have artificially inflated k because early adopters are denser in the target audience than later cohorts. A cheap viral test therefore usually means: build the minimal viable loop (often a single shape — e.g., just a watermarked share or a one-flow invite), seed a few hundred users from another channel, measure k and cycle time per cohort for 4-8 weeks, and judge against a threshold set in advance (e.g., k > 0.3 in the first real cohort is a pass). The biggest misleading pattern is early-adopter inflated k that decays when you scale — you have to see k hold or improve across multiple cohorts, not just one."
+      },
+      "lesson": {
+        "markdown": "## Why viral is harder to test than most channels\n\nBullseye's general testing philosophy (speed over scale, cheap before expensive, pre-set thresholds) applies to viral — but viral has three traps that make a naive test misleading.\n\n**Trap 1: the loop has to be built before you can measure it.** You can spend $500 on Google Ads in an afternoon; you can't test a viral loop without engineering a share flow, an invite mechanism, and a measurable instrumentation pipeline. This means 'cheap' is partially about minimizing the build, not just minimizing the spend.\n\n**Trap 2: k is noisy at small volume.** k is an average over the users you have. If you measure k from 40 users, you're estimating a population mean from a tiny sample — one power-user who invites 20 friends can double the visible k. You need hundreds of users in the loop before the k estimate is trustworthy.\n\n**Trap 3: early cohorts overstate k.** Your first few hundred users, typically drawn from friends, product-hunt readers, or tight community channels, are denser in the target audience and more enthusiastic than later users will be. Their k is higher than the steady-state k. If you test only on them, you'll project growth that doesn't materialize when you scale.\n\n## A cheap viral test that respects these traps\n\n- **Minimum viable loop.** Pick *one* loop shape — the one best matched to your product per the fit check. Build only that shape. If you can do it in two weeks of engineering rather than eight, do. Resist the urge to build a menu of loops before you know any of them works.\n- **Seed from another channel.** The loop needs users to fire. During testing, seed several hundred users from SEO, a paid campaign, or a community push. These seeds aren't the point; they're test subjects.\n- **Pre-set threshold.** Write down what 'pass' means before you run the test. Example: 'By week 4, cohort-measured k > 0.3 and rising or stable across three consecutive weekly cohorts.' Not 'we'll see what happens' — ambiguity at test stage is a 'no' (from ch02).\n- **Per-cohort measurement, not aggregate.** Track k weekly for each cohort of new users independently. If k_wk1 is 0.6 and k_wk4 is 0.2, that's a decaying loop, not a strong one — your early-adopter inflation is showing.\n- **Time-bounded.** 4-8 weeks. Viral can take longer to stabilize than paid, so 4 weeks is a hard minimum; 8 is the outer edge before you're drifting into Focus-level investment.\n- **Cost ceiling.** $2k-10k combined engineering cost + seeding spend. If your test requires 3 months of engineering and $50k, you're no longer testing — you're committing without evidence.\n\n## What a 'pass' actually looks like\n\nA pass is: per-cohort k above your pre-set threshold, stable or rising across multiple cohorts, with identifiable headroom in the decomposition (e.g., 'signup is at 30%, we can plausibly get to 60% with known tactics'). You're not proving the loop is perfect — you're proving it has a pulse and room to grow.\n\nA fail is: k below threshold, or k decaying across cohorts. Ambiguous — k hovering right at threshold with no clear direction — is a 'no for now.' Log the loop data, move viral to Column B, commit the Focus cycle to a channel that clearly passed.\n\n## What this test tells you that you didn't already know\n\nThe honest output of a viral test is a go/no-go on viral as your *current-stage* primary channel. It doesn't tell you: whether viral could work after six months of product evolution; whether a different loop shape would work; whether incentives on top would push k higher. Those are future-cycle questions. Test answers the single question: 'right now, with a minimum viable loop, does this channel produce compounding growth?'\n\n## Seeding and its hazards\n\nSeeding — bringing users into the loop from another channel — is the normal state for sub-viral loops. Most successful loops never reach k > 1; they amplify seed traffic by 2-5×. This is fine and even expected, but it creates a subtle hazard during testing: you can produce growth that looks viral but is actually seed × small amplifier. Watch for this by computing k *cleanly* (excluding the seeds themselves from the numerator — new users *caused by the loop*, not from the seeding channel). If you don't separate them, you'll credit viral for growth that the seeding channel produced.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Mira (from the ch02 worked examples) is scaling her PT-scheduling tool and wants to run a Bullseye cycle. Viral is in her Inner Circle along with paid search and content marketing. She has $7k test budget and 8 weeks.",
+        "walkthrough": "Mira first runs the fit check on viral for her PT-scheduling product.\n- Network density: moderate — PTs know other PTs, but a solo-practice PT may know 5-20 other solo PTs, not hundreds.\n- Natural exposure: weak — using scheduling software is private internal work. But she identifies a plausible mechanic: a 'Book with me via [Mira-app]' booking link the PT puts in their own marketing materials. Patients see the branded link. Other PTs occasionally see the branded link too.\n- Recipient friction: moderate — PTs are willing to try tools but the product requires setup; patients aren't the target audience of virality, they're incidental exposure.\n\nFit is 2/3 partially green — worth a cheap test, but not a primary-channel bet.\n\nHer minimum viable loop: the branded booking link. 1.5 weeks of engineering to build it and add tracking.\n\n**Test design:**\n- Seed: 40 PTs acquired via a targeted-blog sponsorship (she already did this in the ch02 worked example).\n- Pre-set threshold: 'By week 6, at least 8 net-new PT signups attributable to the branded booking link, with per-cohort k > 0.15.' Below that, viral is not her channel this cycle.\n- Instrumentation: every branded link carries a source PT ID. Any new signup that arrives via a branded link counts toward viral attribution. New signups via other channels (paid, organic) are excluded from the viral numerator.\n- Weekly cohort tracking for 8 weeks.\n\n**Result after 8 weeks:**\n- Week 2: 1 new PT signup via the link.\n- Week 4: 2 more.\n- Week 6: 1 more. Total: 4. Per-cohort k ≈ 0.1.\n- Week 8: 1 more. k still below 0.15.\n\nBelow threshold. Viral fails the test for this cycle. She commits the Focus cycle to targeting blogs (her clear winner across tests), logs the viral instrumentation as-is, and moves viral to Column B. If in a future cycle her user base is 10× larger and includes a denser network of peer PTs, she can rerun the test with a stronger loop (e.g., a 'refer a colleague, get a month free' layer).\n\nNote what she didn't do: she didn't let a single power-PT who invited five friends inflate her visible k. She didn't spend 8 weeks of engineering on three loop variants. She didn't extend the test to 16 weeks hoping numbers would improve. She set a threshold, ran the test, accepted the answer."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-cheap-testing",
+        "explanation": "Ch2's cheap-testing principles (speed > scale, pre-set thresholds, small spend) apply to every channel. What's specific about testing *viral* is the three traps — build cost, small-sample k noise, early-adopter inflation — that require adaptations: minimum-viable loop, per-cohort measurement, multi-week timelines (not multi-day). Applying the Ch2 rules literally to viral produces tests that are too short and too small to give real signal."
+      },
+      "flashcards": [
+        {
+          "id": "ch06-testing-viral-fc1",
+          "type": "recall",
+          "front": "Name the three traps that make viral harder to test than paid or sales.",
+          "back": "(1) The loop has to be built before you can measure it (engineering cost, not just spend). (2) k is noisy at small user volumes — you need hundreds of users in the loop for trustworthy estimates. (3) Early cohorts (friends, power users, community) have inflated k that decays as you scale."
+        },
+        {
+          "id": "ch06-testing-viral-fc2",
+          "type": "recall",
+          "front": "What's the correct way to measure k during a viral test — aggregate or per-cohort — and why?",
+          "back": "Per-cohort (new users grouped by the week they entered the loop, measured separately). Aggregate blends early-adopter inflation with later steady-state, hiding decay. If k_wk1 = 0.6 and k_wk6 = 0.2, the aggregate still looks okay while the loop is actually decaying — per-cohort measurement reveals that."
+        },
+        {
+          "id": "ch06-testing-viral-fc3",
+          "type": "cloze",
+          "front": "In a viral test, 'seeding' means bringing users into the loop from ______. When computing k for the test, you must exclude the seeds themselves from the ______ so you're measuring growth caused by the loop, not the seeding channel.",
+          "back": "another channel (SEO, paid, community, outbound) ; numerator — otherwise you'll credit viral for traffic your seeding channel actually produced."
+        },
+        {
+          "id": "ch06-testing-viral-fc4",
+          "type": "recognition",
+          "front": "A 2-week viral test shows k = 0.8 on a cohort of 30 users. Is viral your channel?",
+          "back": "Inconclusive at best, misleading at worst. 30 users is too small a sample for k to be trustworthy — one power user inviting 15 friends could drive the number. 2 weeks is too short to see cohort decay. Treat as early signal worth pursuing into a longer, larger test, not a 'pass.'"
+        },
+        {
+          "id": "ch06-testing-viral-fc5",
+          "type": "recall",
+          "front": "How long should a cheap viral test typically run?",
+          "back": "4-8 weeks. 4 weeks is a hard minimum because viral stabilizes more slowly than paid; 8 weeks is the outer edge before you're drifting into Focus-level investment. Shorter tests produce early-adopter inflation; longer tests start becoming commitments."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch06-testing-viral-sc1",
+          "setup": "A team runs a 10-day viral test. They build a minimal share flow, drive 60 users to it via Product Hunt, see k = 0.7 in the first week, and declare viral a winner. They plan to commit their Focus cycle to it.",
+          "question": "What concerns should the team address before committing?",
+          "modelAnswer": "Multiple concerns. (1) Sample size — 60 users is far too small for k to be trustworthy; normal variance could easily produce k = 0.3 or k = 1.1 from the same underlying loop. (2) Early-adopter inflation — Product Hunt traffic skews heavily toward power users, tech enthusiasts, and people who over-index on sharing new products; their k is not representative of steady-state k when the product hits a broader audience. (3) Timeline — 10 days is too short to see cohort decay; week 1 k almost always overstates the sustained number. (4) Seeding attribution — if they're counting Product Hunt arrivals as viral-attributable, the 0.7 is partly credit for Product Hunt's work. Before committing the Focus cycle, they should extend the test to at least 6 weeks, seed from a more representative channel (e.g., targeted paid ads against their real ICP), measure per-cohort, and exclude seeds from the viral numerator. If k holds at 0.5+ across multiple cohorts, then commit. Otherwise, they'd be betting Focus resources on a number that won't survive scale.",
+          "rubric": [
+            "Flags 60 users as too small for reliable k",
+            "Names Product Hunt as an unrepresentative seeding source / early-adopter inflation",
+            "Flags 10 days as too short to see cohort behavior",
+            "Flags possible seeding-attribution confound",
+            "Recommends extending test before committing Focus"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch06-testing-viral-sc2",
+          "setup": "A founder wants to test viral but estimates the engineering cost of even a minimum viable loop at 10 weeks of work for their one developer. The Bullseye test cycle is supposed to be 3-4 weeks.",
+          "question": "What does this situation indicate, and what are their options?",
+          "modelAnswer": "This is exactly the 'build cost' trap. A viral test that requires 10 weeks of engineering has already drifted from testing into early-stage building — before any evidence. Options: (1) Drastically cut the loop scope to something that can be built in 2 weeks even if it's crude — e.g., a simple branded watermark on exported artifacts, without referral tracking, incentive flows, or social-broadcast. Measure whatever k you can from the crude version. (2) Defer viral to a later Bullseye cycle after other channels produce revenue that funds real engineering. (3) Move viral to Column B and test other channels first; rerun Bullseye for viral in cycle 2 when there's both more user volume (so k is measurable) and more engineering capacity. The worst option is to spend 10 weeks building a 'proper' loop before knowing whether viral fits — that's committing a quarter of runway before having any evidence. Bullseye's principle 'speed over scale' maps here to 'crudeness over completeness' — build the minimum that produces a k signal and nothing more.",
+          "rubric": [
+            "Identifies the situation as the build-cost trap",
+            "Offers crude-minimum-viable-loop as primary option",
+            "Offers defer-to-later-cycle as a legitimate alternative",
+            "Rejects building a 10-week 'proper' loop pre-evidence",
+            "Names the 'speed over scale → crudeness over completeness' adaptation"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach a founder how to design a cheap, honest Bullseye-style test of the viral channel. Cover: (1) the three traps that make viral harder to test than paid, (2) the adaptations in test design (minimum viable loop, per-cohort measurement, timeline, seed attribution), (3) what a 'pass' vs. a 'fail' looks like, and (4) what the test does and does not tell you.",
+        "rubric": [
+          "Names all three traps with reason each causes misleading results",
+          "Describes per-cohort measurement and why it beats aggregate",
+          "States the 4-8 week window and justifies it",
+          "Identifies seed-exclusion from numerator",
+          "Clarifies what test outputs apply to (current stage) vs. what it doesn't settle"
+        ]
+      }
+    },
+    {
+      "id": "ch06-viral-pitfalls",
+      "chapterId": "ch06",
+      "title": "Common Viral Pitfalls and How to Avoid Them",
+      "isLandmark": false,
+      "order": 7,
+      "pretest": {
+        "prompt": "Think of two products in the last two years that tried to go viral and failed. What patterns did the failed attempts share? List at least three distinct failure modes — not 'they had a bad product,' but specific viral-channel mistakes that are common enough to name.",
+        "modelAnswer": "Common viral failure modes: (1) bolting viral features onto a product whose structural use isn't shareable — solo productivity apps that add share buttons no one presses; (2) treating virality as a tactic rather than a product-design decision — adding incentives or widgets after shipping, when the product was not designed to expose non-users during normal use; (3) copying 'best practices' (Facebook Like button, referral program) without understanding why they worked for the original — wrong channel shape for your product; (4) under-testing — too few experiments, too little instrumentation, k estimated once and never decomposed; (5) scaling a loop whose k was inflated by early adopters, then watching it collapse. Each of these is a distinct, named mistake that disciplined founders can check themselves against."
+      },
+      "lesson": {
+        "markdown": "## The predictable mistakes\n\nAndrew Chen — founder of Muzy, one of the most cited viral-growth practitioners — has a short list of mistakes he sees over and over. Every founder pursuing viral should read this list, then check themselves against it before committing.\n\n### 1. Bolting viral features onto a product that isn't structurally shareable\n\nThe single most common mistake. A product is built with a solo or private use case. Growth is slow. The team adds share buttons, referral programs, and invite widgets — and is puzzled when nothing changes. Structural fit (previous concept) has to come first. Bolt-ons don't create a loop where the product's use doesn't produce natural exposure.\n\nHow to avoid it: run the fit check before investing. If the product fails the fit check, don't spend engineering time on viral features — either change the product, or accept viral isn't your channel this cycle.\n\n### 2. Trying to make a bad product go viral\n\nViral amplifies whatever is true about the product. If users aren't retaining, viral produces churning signups at zero value. If the product doesn't deliver on its promise, every viral exposure produces a bad review or a 'my friend sent me this junk' reaction, which costs more than it gains.\n\nAndrew's version: 'Bad products that aren't adding value trying to go viral.' The viral channel is a multiplier — it multiplies zero by large numbers and gets zero. Fix retention before scaling a loop.\n\n### 3. Not running enough A/B tests\n\nViral optimization is a numbers game. Assume 1-3 of every 10 tests will produce positive results; the rest will be null or negative. A team running two tests per month will see almost nothing; a team running five tests per week will find real wins in weeks.\n\nThis requires instrumentation, experimentation infrastructure, and the cultural discipline to actually look at results and act on them. Most teams don't do enough volume.\n\n### 4. Copying 'best practices' without understanding context\n\n'Add Facebook Like buttons!' 'Add a referral program!' These are tactics that worked for specific products with specific user behaviors. Dropped onto the wrong product, they produce nothing. A Like button on a solo productivity app gets clicked by nobody; a referral program on a product users don't talk about attracts mercenary referrers whose friends don't convert.\n\nThe right move: understand how your users are already communicating and sharing (if at all), then design loops that fit that behavior. As Andrew puts it: 'You just want to help people do what they already want to do.' Copy loops from products where the underlying sharing behavior matches yours — not from the nearest famous example.\n\n### 5. Not getting advice from people who've done it\n\nViral is a specialist skill. Reading a chapter on it is not the same as having built a working loop for a similar product. Early in your viral work, finding someone who has built a loop in an adjacent space (same product shape, same ICP) is worth more than almost any other input. Advice from someone whose loop worked on a consumer photo app transfers poorly to a B2B workflow tool, and vice versa.\n\n### 6. Thinking about virality as a tactic rather than a product strategy\n\nThe deepest mistake on Andrew's list. Viral is not a growth tactic you layer on top of a product — it's a consequence of product decisions made from day one. Skype's inherent virality is Skype's product. Dropbox's collaborative virality is Dropbox's product. Teams that treat viral as a marketing initiative to be added during a 'growth sprint' after shipping rarely get it to work.\n\nThe fix: decide at product design whether viral is your intended channel, and if so, design the product's core interactions around the loop. Retrofitting is much harder than designing in.\n\n## Viral pockets\n\nEven in loops that don't reach threshold globally, sub-populations can be viral. These are **viral pockets** — segments (a country, an age group, a profession, a use case) where your k is meaningfully higher. If you have 500 users and your overall k is 0.2, but k among Brazilian users under 25 is 0.9, you've found a pocket.\n\nPockets matter because (a) they tell you which conditions make your loop work, and (b) they're actionable — you can localize, translate, target marketing spend, and double down specifically within the pocket while designing the core product. Many global viral successes started as pocket successes that were then widened.\n\nHow to find pockets: compute k by subsegment — country, age, signup source, use-case cluster, device. Anywhere k is well above average, investigate why. Those reasons usually point at what you'd need to replicate to expand the pocket.\n\n## The bottom line\n\nViral marketing is unusually bimodal (from ch06-viral-definition) — when it works, it's the highest-leverage channel in the book; when it doesn't, effort produces near-zero. The pitfalls in this concept are the predictable ways founders end up on the wrong side of that bimodal distribution. Most of them are avoidable with disciplined fit-checking, honest measurement, and the humility to copy before inventing.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "A consumer app (Snapform, from the k-factor example) has reached k = 0.86 after a month of optimization. The team's plan for month 2: double engineering investment in viral, add a referral incentive on top, bolt a Facebook Like button onto the poll pages, and hire a growth marketer to 'really push virality.' They also haven't looked at subsegments.",
+        "walkthrough": "Priya catches several of the pitfalls before they commit.\n\n**Pitfall 4 check — Facebook Like buttons.** Why add them? The team's answer is 'because Buzzfeed uses them.' Buzzfeed is an editorial site with passive content; Snapform is an active poll-creation tool. Different sharing behavior. Facebook Like buttons on poll pages don't match how Snapform users currently share (they DM poll links to specific friends). Remove from the plan.\n\n**Pitfall 1 check — any bolting?** The existing loop is structurally grounded (share the poll = get the value of crowd-sourced votes). Good — they're not bolting onto a non-viral product. Keep going.\n\n**Pitfall 2 check — is the product actually good?** Priya checks retention. Week-2 retention on recipients who signed up is 40%, compared to 55% for users who signed up organically. Viral-acquired users are retaining worse — which means pushing viral harder will produce more churning signups. This is an amber flag. Before doubling investment, she decides to investigate: why are viral recipients retaining worse? Likely answer: they came to vote on someone else's poll, not to create polls themselves. She adds a 'create your first poll' onboarding flow specifically for recipient-origin signups.\n\n**Pitfall 3 check — enough tests?** Month 1 ran four major swings and ~15 smaller tests. She's on track, but should continue at five+ tests per week.\n\n**Viral pockets analysis.** She segments k by source country, device, and referral-relationship type. Finds that k = 1.4 (!) among university students who share in group chats, compared to 0.6 among professional users. That's a pocket. She allocates 20% of engineering time to a 'group-chat share' flow optimized for student use: built-in multi-share to Discord, WhatsApp, and iMessage with group-friendly framing ('ask your group to vote in under 60 seconds').\n\n**Pitfall 5 check — expert input.** Priya reaches out to someone who built the loop at a similar poll/quiz product. Learns that recipient-to-creator conversion is a known weak spot in this category and that a 'create your own poll' prompt on the result screen (right after voting) lifts it 3× — a fix she hadn't considered.\n\n**Pitfall 6 check — tactic vs. strategy.** Priya pushes back on the 'hire a growth marketer to push virality' framing. Virality is already a core product strategy at Snapform — the loop is the product. She reframes the hire as 'product engineer focused on loop optimization,' not 'marketer adding features.'\n\nAt the end of the review, the team's month 2 plan is tighter, more evidence-driven, and avoids the predictable pitfalls. Next month's k target: 1.1, driven primarily by the student pocket and the recipient-to-creator flow, not by bolted-on widgets."
+      },
+      "contrast": {
+        "neighborConceptId": "ch06-viral-product-fit",
+        "explanation": "Fit-check (concept 4) is the prior question — does viral even make sense for this product? Pitfalls (this concept) are the mistakes even product-fit teams make *while* running viral. A team can pass the fit check and still fail by bolting on irrelevant widgets, running too few tests, or scaling an inflated k. Fit avoids the bigger mistake (wrong channel); pitfalls are the operational traps inside the right channel."
+      },
+      "flashcards": [
+        {
+          "id": "ch06-viral-pitfalls-fc1",
+          "type": "recall",
+          "front": "Name Andrew Chen's six most common viral mistakes.",
+          "back": "(1) Bolting viral features onto non-structurally-shareable products. (2) Trying to make a bad (non-retaining) product go viral. (3) Not running enough A/B tests. (4) Copying 'best practices' without context. (5) Not getting coaching from people who've built a similar loop. (6) Treating virality as a tactic rather than a product strategy."
+        },
+        {
+          "id": "ch06-viral-pitfalls-fc2",
+          "type": "recognition",
+          "front": "Why does trying to make a product with low retention go viral typically fail?",
+          "back": "Because viral is a multiplier — it amplifies whatever is true about the product. A non-retaining product produces churning signups at scale, which costs more (in exposure, support, reputation) than it gains in retained users. The fix is always: fix retention first, then amplify."
+        },
+        {
+          "id": "ch06-viral-pitfalls-fc3",
+          "type": "recall",
+          "front": "What's a 'viral pocket' and how do you find one?",
+          "back": "A subsegment of your users (country, age group, device, referral-relationship type, use case) where k is meaningfully higher than the overall average. You find pockets by computing k per subsegment and investigating any segment well above the global k. Pockets are actionable — you can localize, target, and double down within them."
+        },
+        {
+          "id": "ch06-viral-pitfalls-fc4",
+          "type": "cloze",
+          "front": "Treating virality as a ______ rather than a deep ______ decision is the most structural viral mistake — it leads teams to bolt on growth features post-launch instead of designing the product around the loop from day one.",
+          "back": "tactic ; product-strategy (or product) — Skype, Dropbox, Hotmail are viral because they were designed viral; retrofits rarely produce the same result."
+        },
+        {
+          "id": "ch06-viral-pitfalls-fc5",
+          "type": "recall",
+          "front": "What rough rate of A/B test wins should you expect, and what does this imply about test volume?",
+          "back": "Expect roughly 1-3 out of every 10 tests to produce positive results; the rest are null or negative. This implies you need volume — two tests per month produces ~0 wins; five tests per week produces several meaningful wins per month. Viral optimization is a numbers game, and low test volume is a predictable failure mode."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch06-viral-pitfalls-sc1",
+          "setup": "A startup with k = 0.4 and flat growth says: 'We've decided to triple down on viral. We're going to hire a growth-hacker contractor for $15k/month to optimize everything, add a referral program with a $20 incentive, and launch a TikTok campaign to push virality.'",
+          "question": "Which pitfalls are they walking into? What's the better plan?",
+          "modelAnswer": "Several. (1) Adding a referral incentive before understanding why k is stuck at 0.4 — if the loop is bottlenecked at signup (friction) or invites (no natural moment), a $20 incentive won't fix the bottleneck; it'll just attract mercenary referrers whose friends don't convert. This is pitfall 1/4 (bolting + copying best practices without context). (2) A TikTok campaign is not viral — it's a PR push that will drive external traffic. They're conflating a one-shot external spike with a viral loop (pitfall 6: tactic vs. strategy). (3) The $15k/month growth-hacker hire before understanding the decomposition is buying effort instead of insight — they don't know what to work on yet. Better plan: (a) decompose k into i × click% × signup%, identify the weakest sub-step, (b) run 5-10x structural tests on that sub-step in-house before adding any contractor, (c) compute per-segment k to find viral pockets — a pocket might be the real opportunity, (d) fix retention first if it's not strong — amplifying a leaky bucket wastes money, (e) only after the above, consider incentives and external campaigns as amplifiers. The immediate triple-down move is a classic example of buying activity instead of evidence.",
+          "rubric": [
+            "Identifies at least three distinct pitfalls from Chen's list",
+            "Flags the TikTok-campaign-as-viral confusion",
+            "Prescribes decomposition before adding budget",
+            "Recommends viral pocket analysis",
+            "Addresses retention as prerequisite"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch06-viral-pitfalls-sc2",
+          "setup": "Two founders debate. Founder A: 'Virality is just a growth tactic — we can add it anytime; our focus now is on building the product.' Founder B: 'Virality has to be a core part of the product from the start.' Both cannot be right.",
+          "question": "Who's right, and what's the concrete implication for how their team should work?",
+          "modelAnswer": "Founder B is correct in the strong sense, though with a nuance. Pitfall 6 on Chen's list is exactly this mistake — treating virality as a tactic layered on top rather than as a product-strategy decision. The products that famously went viral (Skype, Dropbox, Hotmail, WhatsApp, Instagram) had their viral mechanics baked into the core use case: the *reason users show up* is inseparable from the *reason they expose others*. Retrofitting that after the product exists is dramatically harder. Implication for the team: if viral is the intended primary channel, product design meetings should include 'what's the loop?' as a first-class question alongside 'what's the value prop?' Engineering priorities for the first MVP should include the minimum viable loop, not just the feature set. Conversely, if viral is not the intended channel (fit check fails), the team should actively *not* spend engineering time on share buttons and referral programs — those are low-ROI distractions for non-viral products. The nuance on Founder A: not every product should be viral, and forcing viral into a product where it doesn't fit is its own mistake. But 'we'll add it later' almost never produces a working loop.",
+          "rubric": [
+            "Sides with Founder B with Pitfall 6 as justification",
+            "Gives concrete examples where viral is product-integral (Skype/Dropbox/Hotmail)",
+            "Prescribes including 'what's the loop?' in product design, not marketing",
+            "Names the retrofit difficulty",
+            "Acknowledges the nuance — not every product should be viral"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach a founder the most common ways viral initiatives fail. Cover: (1) at least four named pitfalls from Chen's list, (2) why bolt-ons typically fail even when the mechanic 'looks right,' (3) what viral pockets are and how to find them, and (4) the tactic-vs-strategy distinction.",
+        "rubric": [
+          "Names at least four of Chen's six pitfalls with brief why for each",
+          "Explains bolt-on failure in terms of structural fit (ties to concept 4)",
+          "Defines viral pockets and the per-segment k method",
+          "Articulates tactic-vs-strategy distinction with a concrete example",
+          "Connects the pitfalls back to retention, fit, and k-decomposition"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,598 @@
+{
+  "id": "ch02",
+  "number": 2,
+  "slug": "bullseye-framework",
+  "title": "The Bullseye Framework",
+  "summary": "A repeatable five-step process — brainstorm, rank, prioritize, test, focus — for finding the single traction channel that will unlock your next growth stage.",
+  "concepts": [
+    {
+      "id": "ch02-bullseye-overview",
+      "chapterId": "ch02",
+      "title": "What Bullseye Is (and Why It Exists)",
+      "isLandmark": true,
+      "order": 1,
+      "pretest": {
+        "prompt": "You have nineteen possible marketing channels, a small team, and six months of runway. Before reading anything, describe how you'd decide which channel to pour your resources into. What's the main risk with whatever approach you just described?",
+        "modelAnswer": "Most founders either (a) pick the channel they personally know best (familiarity bias — misses the channel that actually fits), (b) try a little of everything at once (spray-and-pray — no channel gets real investment, all signals are noisy), or (c) follow a competitor blindly (assumes the same stage and product). All three fail because at any given stage of a startup, *one* channel typically dominates customer acquisition, and which one it is can't be guessed in advance — only discovered through cheap, parallel tests. The right approach is a structured funnel that forces you to consider every channel, converge on the most promising few, test them in parallel at low cost, and then commit hard to the winner."
+      },
+      "lesson": {
+        "markdown": "## The problem Bullseye solves\n\nAt any stage of a startup, **one traction channel tends to dominate customer acquisition**. Peter Thiel's blunt version: most businesses get zero channels to work; if you get one working, you have a great business; if you try several and never nail one, you're done. So channel selection isn't a minor tactical decision — it's often *the* decision.\n\nBut three forces make channel selection hard:\n\n1. **Familiarity bias.** Founders default to the channels they know. A developer-founder reaches for SEO and content marketing; a salesperson-founder reaches for outbound. Whatever you reach for first is almost certainly not your optimal channel — because your optimal channel was chosen for your business, not for your comfort.\n2. **Unpredictability.** You cannot reason your way to the right channel. Even experienced operators guess wrong. The channel that works is only knowable through evidence.\n3. **Moving target.** The channel that gets you from 0 to 10,000 users is rarely the same one that gets you from 10,000 to 1,000,000. Today's answer expires.\n\n## The loop\n\nBullseye is a five-step process you run repeatedly:\n\n1. **Brainstorm** — generate at least one plausible idea for every one of the 19 channels.\n2. **Rank** — sort channels into three concentric rings: Inner, Potential, Long-shot.\n3. **Prioritize** — pick the 3 inner-ring channels to actually test.\n4. **Test** — run cheap, fast experiments on all 3 in parallel to get real data on cost, volume, and customer quality.\n5. **Focus** — when one wins, pour everything into it until it saturates, then rerun the loop.\n\n## Why it's shaped this way\n\nEach step of Bullseye counteracts a specific failure mode. Brainstorming forces you past familiarity bias by making you consider *all* channels. Ranking and prioritizing force you to converge — without them, you'd either chase too many or too few. Testing in parallel respects unpredictability (you can't pre-guess the winner) while respecting limited attention (three, not nineteen). Focusing respects the one-channel-dominates insight. And the outer loop respects the fact that winners eventually max out.\n\nThe mental image is a dartboard: cast wide enough to consider every possibility, then drive your focus progressively toward the center until you're spending almost all your effort on a single bullseye.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Gina is six weeks into building Ledgerly, a B2B invoicing SaaS for solo accountants ($29/mo). She has $40k left, one marketing hire, and wants 500 paying customers within four months. She's a former accountant and keeps wanting to 'go do sales calls because that's what I know.'",
+        "walkthrough": "Applying Bullseye rather than following her instinct:\n\n1. **Brainstorm** — Gina lists at least one idea for each of the 19 channels. Sales has one entry (not nineteen). She also writes out ideas for SEO (ranking for 'invoicing for accountants'), targeting blogs (sponsoring niche accounting newsletters), community building (an 'accountants who run solo' Slack), viral marketing (invoice templates with a 'Made with Ledgerly' footer), etc.\n2. **Rank** — Inner ring: targeting blogs (niche audience, cheap reach), SEO (long-tail intent matches perfectly), sales (her instinct, still plausible). Potential: content marketing, email, community. Long-shot: offline ads, trade shows, viral.\n3. **Prioritize** — She picks the three inner-ring channels. Notice sales made it in not because of bias but because it survived the ranking check.\n4. **Test** — In parallel over 3 weeks: sponsors one $400 newsletter slot; writes three SEO-targeted articles; books 20 discovery calls. Costs stay under $1,500 total.\n5. **Focus** — Results: newsletter converts at 4% to trial; SEO produces no signups yet (slow); sales calls convert 25% but cost her 6 hours each. She picks targeting blogs, scales to sponsor five more newsletters, and drops the other two. Later, when blog sponsorships saturate at 300 customers, she reruns Bullseye.\n\nWithout Bullseye, Gina would have spent four months on sales calls and ended with ~80 customers. The framework both included her instinct *and* pressure-tested it."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-three-rings",
+        "explanation": "The Bullseye overview is the whole 5-step loop; the three rings (Inner / Potential / Long-shot) are step 2 of that loop — a ranking device. Don't collapse them. Saying 'we're doing Bullseye' means you're running the full loop. Saying 'put this channel in the inner ring' is a statement about the rank step only."
+      },
+      "flashcards": [
+        {
+          "id": "ch02-bullseye-overview-fc1",
+          "type": "recall",
+          "front": "List the five steps of the Bullseye Framework in order.",
+          "back": "Brainstorm → Rank → Prioritize → Test → Focus. Then repeat."
+        },
+        {
+          "id": "ch02-bullseye-overview-fc2",
+          "type": "recall",
+          "front": "Why is Bullseye a repeatable loop rather than a one-shot process?",
+          "back": "Because at any given stage one channel dominates, but that winning channel eventually saturates. When growth from it stalls, you rerun the loop to find the next dominant channel for the new stage."
+        },
+        {
+          "id": "ch02-bullseye-overview-fc3",
+          "type": "cloze",
+          "front": "At any given stage of a startup, ______ traction channel(s) typically dominate(s) customer acquisition.",
+          "back": "one — Peter Thiel's insight: most businesses get zero channels working; if you get one working, you have a great business."
+        },
+        {
+          "id": "ch02-bullseye-overview-fc4",
+          "type": "recognition",
+          "front": "Which failure mode does the *brainstorm* step specifically counteract?",
+          "back": "Familiarity bias — the tendency to default to channels you already know. By forcing at least one idea per channel, brainstorming exposes options you'd otherwise skip."
+        },
+        {
+          "id": "ch02-bullseye-overview-fc5",
+          "type": "recall",
+          "front": "What's the key reason you can't just reason your way to the right traction channel?",
+          "back": "Channel success is unpredictable — even experienced operators guess wrong. The winning channel can only be identified through cheap tests that produce real data."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch02-bullseye-overview-sc1",
+          "setup": "A two-person startup selling a $99/mo SEO tool to small agencies has just closed a small pre-seed round. The CEO (ex-agency owner) wants to 'double down on LinkedIn since that's where all my contacts are.' The CTO suggests 'we should try six channels at once to see what sticks.'",
+          "question": "Evaluate both proposals through a Bullseye lens. What would you recommend instead, and why?",
+          "modelAnswer": "Neither is right. The CEO's proposal is familiarity bias — LinkedIn might still be correct, but only if it survives brainstorming + ranking. Picking it pre-analysis skips the whole point of the framework. The CTO's proposal is spray-and-pray — six simultaneous tests dilute attention, create noisy data, and burn cash without giving any one channel a fair shot. Recommend: run a proper Bullseye loop. Brainstorm ideas across all 19 channels (a one-hour exercise), rank them into the three rings, pick exactly 3 inner-ring channels for parallel tests over ~3 weeks with a clear budget ceiling, then commit to the winner. LinkedIn may well end up in the inner three — but it earns that spot by surviving the process, not by being the founder's default.",
+          "rubric": [
+            "Identifies CEO's choice as familiarity bias",
+            "Identifies CTO's choice as spray-and-pray (too many parallel = lack of focus)",
+            "Recommends the full 5-step loop",
+            "Specifies ~3 channels in parallel (not 1, not 6+)",
+            "Notes that LinkedIn isn't banned — it just has to earn the inner ring"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch02-bullseye-overview-sc2",
+          "setup": "A founder says: 'We ran Bullseye eighteen months ago. Viral loops won. We've been scaling them since and growth has been great — up until last quarter, where weekly signups stopped growing despite more spend.'",
+          "question": "What does Bullseye say this founder should do next, and what's the principle behind it?",
+          "modelAnswer": "They should rerun the Bullseye loop. The principle: one channel dominates at any given stage, but that dominant channel changes as the company grows. Viral loops likely saturated — the early adopter pool exhausted, or network density hit a ceiling. That's the signal to rerun brainstorm → rank → prioritize → test → focus on channels that fit the new stage (often something different, e.g. paid or SEO once there's search demand). The old winner becoming stale isn't a failure of Bullseye — it's exactly why the framework is a loop.",
+          "rubric": [
+            "Correctly recommends rerunning the full loop (not tweaking within viral)",
+            "Identifies channel saturation as the trigger",
+            "Articulates the 'one channel dominates per stage' principle",
+            "Notes that the next winning channel is usually different, not just more of the same"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch02-bullseye-overview-sc3",
+          "setup": "You're reviewing a startup's growth plan. They have a detailed 20-page brainstorm covering all 19 channels. They've ranked everything into three rings. Their inner circle has eleven channels. They plan to test all eleven in parallel next quarter with $200k of budget.",
+          "question": "What specific step are they violating, what's the failure mode they'll hit, and what's your fix?",
+          "modelAnswer": "They're violating Step 3 (Prioritize). The inner circle is meant to contain three channels, not eleven. The failure mode: lack of focus — 11 simultaneous tests means none will get enough attention to run well, data will be noisy and slow, and $200k will be spread too thin to get statistically meaningful results in any channel. Fix: collapse the inner circle to three. Look at the ranking and identify the obvious drop-off in excitement (usually around the third channel). The other eight go into 'Potential' — they're not dead, they're just queued for the next cycle if none of the inner three work out.",
+          "rubric": [
+            "Identifies Step 3 (Prioritize) as the violated step",
+            "Names 'lack of focus' / 'noisy data' / 'resource dilution' as the failure mode",
+            "Prescribes cutting to three",
+            "Mentions the 'drop-off in excitement' heuristic",
+            "Notes that demoted channels aren't dead — just queued"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "In 60 seconds (written or spoken), explain the Bullseye Framework to a technical co-founder who has never heard of it. You must cover: (1) why channel selection is hard in the first place, (2) the five steps, (3) why it's a loop, and (4) one concrete failure mode it protects against.",
+        "rubric": [
+          "Names the three forces making channel selection hard (familiarity bias, unpredictability, moving target)",
+          "Lists all 5 steps in order",
+          "Explains *why* it loops — one channel dominates per stage; stages change",
+          "Gives at least one concrete failure mode (familiarity bias OR spray-and-pray OR scaling a saturated channel)",
+          "Explanation is causal, not just a list — the *why* of each step is clear",
+          "Uses a concrete example or metaphor (dartboard, or an applied scenario)"
+        ]
+      }
+    },
+    {
+      "id": "ch02-three-rings",
+      "chapterId": "ch02",
+      "title": "The Three Rings: Inner, Potential, Long-Shot",
+      "isLandmark": true,
+      "order": 2,
+      "pretest": {
+        "prompt": "You have 19 traction-channel ideas after a brainstorm. Before reading further — design a way to sort them that would force you to make real decisions about where to invest. What information does each 'bucket' you create need to carry?",
+        "modelAnswer": "A good sorting scheme needs to (a) force ranking (no ties — every channel ends up in exactly one bucket), (b) be small enough to be useful (2–3 buckets, not 10), and (c) encode both 'likelihood of working' and 'should I invest now vs. later.' Bullseye's answer is three concentric rings: Inner (most promising now — these get tested), Potential (plausible but not top-three — queued for next cycle), Long-shot (seems unlikely given current info — revisited only if inner/potential all fail). Each bucket implicitly carries 'how much evidence do I have' and 'when should I act.'"
+      },
+      "lesson": {
+        "markdown": "## The ranking device\n\nAfter brainstorming, you'll have dozens of ideas across all 19 channels. If you stop there, you have a list, not a plan. The three-rings sort is what turns the list into a plan.\n\nEvery channel — not every *idea*, every *channel* — lands in exactly one of three columns:\n\n- **Column A — Inner Circle.** Channels that seem most promising *right now*. The ideas you had for these channels felt particularly compelling.\n- **Column B — Potential.** Channels that could plausibly work, but nothing you brainstormed felt like an obvious winner.\n- **Column C — Long-shot.** Channels that seem unlikely to fit your business right now. Your ideas for them were a stretch.\n\n## Three rings, not two or five\n\nThree is a deliberate choice:\n\n- **Two buckets** (yes/no) hides too much signal. You lose the 'plausible but not urgent' middle ring, which is where your next cycle's candidates live.\n- **Five buckets** gives false precision. You don't actually have enough evidence pre-testing to distinguish 'somewhat promising' from 'moderately promising.' All you reliably know is: worth testing now / worth revisiting later / currently a stretch.\n\n## What goes in each ring\n\nYour research and brainstorm ideas drive the placement. A few ideas usually stand out as particularly exciting — those channels go in A. Channels where the ideas are reasonable but uninspiring go in B. Channels where you had to stretch to think of anything plausible go in C.\n\nImportantly: **a channel is not the same as an idea.** You might have a brilliant idea for offline ads (column A-worthy) but the overall fit for your business is still weak, so the channel lands in B or C. The ring placement is about the channel *plus* your best idea for it *plus* fit for your current stage.\n\n## The rings are not permanent\n\nA long-shot channel today can become an inner-ring channel in six months. Your product changes, your ICP sharpens, you get better at research. The three rings reflect what you know *right now*, not an eternal verdict. That's why you re-run Bullseye: each new cycle gets a fresh ranking.\n\n## Why this works\n\nRanking forces commitment. Unranked lists let you avoid hard calls — every channel feels equally possible because no channel is explicitly *de*-prioritized. The ring assignment is a forcing function: by putting something in Long-shot, you are saying 'not this cycle, probably' — and that decision, made explicitly, frees focus for the Inner Circle.",
+        "readingTimeMin": 2
+      },
+      "workedExample": {
+        "setup": "Mira runs a two-person startup selling a $199/mo scheduling tool for physical-therapy clinics. Post-brainstorm, she has ideas for all 19 channels. She's about to start ranking.",
+        "walkthrough": "Her ring assignments (with reasoning):\n\n**Column A — Inner Circle:**\n- *Targeting Blogs*: PT-specific blogs and newsletters exist and have small but devoted audiences. Sponsoring one is cheap and highly targeted. Exciting idea.\n- *Sales*: Clinic owners make decisions personally; a phone call has a plausibly high close rate at this price point. Mira is a former PT — credibility built-in. Exciting.\n- *SEO*: 'PT scheduling software' has real search volume with high commercial intent. Feasible to rank for long-tail.\n\n**Column B — Potential:**\n- *Content marketing*: Blog posts on PT practice management could work, but slow and unclear whether clinic owners read blogs.\n- *Email marketing*: Possible once she has a list, but she has no list yet.\n- *Community building*: Plausible long-term but too slow for the current cycle.\n\n**Column C — Long-shot:**\n- *Offline ads (TV/radio)*: Budget way too small; audience way too diffuse.\n- *Trade shows*: Next big PT conference is eight months away.\n- *Viral marketing*: Scheduling tools have no natural viral loop.\n- *Affiliate programs*: Too early — no proof yet that the product converts.\n\nMira didn't banish channels to C because she disliked them — each has a reason. Offline ads fail on budget. Trade shows fail on timing. Viral fails on product fit. Affiliates fail on readiness. Each of those reasons could change in a future cycle, and then those channels would move up."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-prioritize-step",
+        "explanation": "The three rings (ranking, Step 2) and prioritization (Step 3) are often confused. Ranking answers 'where does each channel belong?' — usually you'll have more than three in column A. Prioritization then picks *exactly three* of those column-A channels to actually test. Ranking is diagnostic; prioritization is decisive."
+      },
+      "flashcards": [
+        {
+          "id": "ch02-three-rings-fc1",
+          "type": "recall",
+          "front": "Name the three rings and what each one means.",
+          "back": "Inner Circle (column A) — most promising right now, worth testing. Potential (column B) — plausible but not top-tier. Long-shot (column C) — seems unlikely given current info, revisit later."
+        },
+        {
+          "id": "ch02-three-rings-fc2",
+          "type": "recognition",
+          "front": "Why three rings rather than two or five?",
+          "back": "Two hides the 'plausible but not urgent' middle (your next-cycle candidates). Five gives false precision — pre-testing, you can't reliably distinguish shades of 'maybe'."
+        },
+        {
+          "id": "ch02-three-rings-fc3",
+          "type": "cloze",
+          "front": "In Bullseye's ranking step, every traction channel lands in exactly one of three columns: ______, ______, or ______.",
+          "back": "Inner Circle (A), Potential (B), Long-shot (C)"
+        },
+        {
+          "id": "ch02-three-rings-fc4",
+          "type": "recall",
+          "front": "A brilliant idea for offline ads isn't enough to put offline ads in your Inner Circle. Why not?",
+          "back": "Ring placement is about the channel + your best idea for it + overall fit for your current stage. A great idea with bad stage-fit (e.g., wrong budget, wrong audience density) still belongs in Potential or Long-shot."
+        },
+        {
+          "id": "ch02-three-rings-fc5",
+          "type": "recall",
+          "front": "Are ring assignments permanent?",
+          "back": "No. They reflect what you know right now. Each time you rerun Bullseye (e.g., after a channel saturates), you re-rank with updated information; long-shots can graduate to inner-ring."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch02-three-rings-sc1",
+          "setup": "A founder completes ranking. Their column A has 8 channels. They're pleased — 'we have lots of options!' — and want to move on.",
+          "question": "Is 8 channels in the Inner Circle a problem? If so, why, and what should they do about it?",
+          "modelAnswer": "Yes, it's a problem. The Inner Circle isn't 'everything that seems promising'; it's the subset they plan to *test in the current cycle*. Eight parallel tests overwhelms a small team and dilutes budget. The fix isn't to declare 8 is fine — it's to continue to Step 3 (Prioritize), which cuts the Inner Circle to exactly 3 by finding the drop-off in excitement. The other 5 don't disappear; they move to Potential (column B) and become candidates for the next cycle. 'We have lots of options' is a symptom of failing to make a call — that's what ranking + prioritization force.",
+          "rubric": [
+            "Identifies 8 as too many for actual testing",
+            "Distinguishes ranking (Step 2) from prioritizing (Step 3)",
+            "Prescribes cutting to exactly 3",
+            "Notes the demoted channels move to column B, not into oblivion",
+            "Catches the 'lots of options' framing as avoidance"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch02-three-rings-sc2",
+          "setup": "During ranking, a founder argues: 'Let's skip column C entirely — if a channel is a long-shot, why bother listing it? We should just focus on A and B.'",
+          "question": "What's the case for keeping column C, even for channels that obviously won't work this cycle?",
+          "modelAnswer": "Three reasons. First, *auditability*: writing C explicitly forces you to give a reason ('budget too small', 'wrong stage', 'no viral fit'), and those reasons are the exact conditions under which the channel could promote later. Skipping C hides that reasoning. Second, *bias defense*: if you don't list long-shots, familiar channels quietly get promoted to A without ever being compared to the alternatives. Third, *future cycles*: C is the starting point for future re-rankings — you'll rerun Bullseye in 3–6 months, and having a populated C with rationale saves rediscovery time.",
+          "rubric": [
+            "Auditability / explicit reasoning argument",
+            "Bias-defense argument (unlisted channels get quietly skipped)",
+            "Future-cycle / reuse argument",
+            "Shows understanding that C isn't 'bad channels' but 'not this cycle, probably'"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the three-rings ranking step to a teammate. Cover: (1) what each ring means, (2) why there are three rings specifically, (3) the distinction between a channel and an idea for a channel, and (4) why rings aren't permanent.",
+        "rubric": [
+          "Names all three rings with correct meaning",
+          "Explains why three (not two, not five) — gives the trade-off",
+          "Distinguishes channel-placement from idea-quality",
+          "Notes that rings can shift across cycles",
+          "Gives at least one concrete example of a channel and why it goes where it goes"
+        ]
+      }
+    },
+    {
+      "id": "ch02-brainstorm-step",
+      "chapterId": "ch02",
+      "title": "Step 1 — Brainstorm: Bias-Busting by Forced Coverage",
+      "isLandmark": false,
+      "order": 3,
+      "pretest": {
+        "prompt": "If the goal of the brainstorm step is to *counteract your biases*, what rule would you set for yourself to force yourself past them?",
+        "modelAnswer": "The simplest rule that forces coverage: produce at least one plausible idea for every single channel, including ones you're tempted to dismiss. You can have many ideas per channel, but you cannot have zero. This creates a floor that makes bias visible — if you're struggling to think of anything for, say, 'offline events,' that's interesting data, not a reason to skip the channel."
+      },
+      "lesson": {
+        "markdown": "## What brainstorming is actually for\n\nThe brainstorm step isn't about being creative. It's about **forced coverage** — making sure every one of the 19 channels gets considered at least once, on its merits, for *your* specific business.\n\nThe rule: generate *at least one* reasonable idea for how you might use each channel. You can have many ideas per channel, but you cannot have zero. This seemingly trivial constraint is the entire point. Left alone, every founder dismisses 12–15 channels as obviously wrong before ever thinking about them. Forced coverage makes that dismissal explicit and therefore reviewable.\n\n## Research that feeds the brainstorm\n\nThe book is a starting point, but your brainstorm is only as good as your research. Things worth knowing before brainstorming:\n\n- **What worked for similar companies.** How did your closest analog get their first 1,000, 10,000, 100,000 customers? What channels did they abandon?\n- **What *failed* for similar companies.** Failure stories are often more informative — they tell you which channels don't work for your shape of business.\n- **Industry-specific channels.** Some industries have quirky channels (dev tools: HackerNews launches; B2B SaaS: partner marketplaces; consumer: TikTok trends). Only industry research surfaces these.\n\n## The spreadsheet\n\nA simple spreadsheet is the ideal tool. Columns per idea:\n\n- **Probability (1–5)** — how likely does this idea seem to work?\n- **Expected CAC** — rough customer-acquisition cost?\n- **Customers available before saturation** — how big is this channel for us?\n- **Time to test** — how long from 'we start' to 'we have data'?\n\nYou will guess wrong on most of these numbers. That's fine — the point isn't accuracy, it's to make your guesses *explicit* so (a) you can compare channels on the same dimensions, and (b) when testing replaces guesses with real numbers later, you'll know which of your intuitions were off.\n\n## What the brainstorm produces\n\nA worked brainstorm isn't a deck of ideas — it's a ranked-ready dataset. You emerge with a sheet containing ≥19 ideas (one per channel minimum), each with best-guess metrics. That dataset is what the Rank and Prioritize steps operate on.",
+        "readingTimeMin": 2
+      },
+      "workedExample": {
+        "setup": "Same founder as before: Mira, two-person startup, PT-clinic scheduling tool, $199/mo. She sits down for a two-hour brainstorm session.",
+        "walkthrough": "Her process:\n\n1. **30 min of research first.** She reads a case study on how Jane (a competing PT-EMR) got its first 500 customers (answer: PT-specific podcasts + targeted Facebook groups). She reads two 'why we shut down' posts from failed PT-tool startups — both died on paid ads, both said 'we should have done sales earlier.' She notes this.\n2. **Opens a spreadsheet.** 19 rows, one per channel, plus columns for Idea, Probability (1-5), CAC, Volume, Test Time.\n3. **Goes channel by channel.** For each, writes at least one idea — even for channels she's skeptical about. For *offline events*: 'PT state-board conferences — there are 50 per year'. For *trade shows*: 'APTA conference, though next one is 8 months out'. For *engineering as marketing*: 'free PT billing-code lookup tool, ungated, to build a list'. She notices two channels she hadn't considered at all — engineering-as-marketing and targeting blogs — now have real entries.\n4. **Fills probability/CAC/volume guesses for each.** Guesses are often crude ('CAC: ~$40? ~$400?') but she writes them down anyway.\n5. **Two hours in, she has 19 rows with ideas and guesses.** Two rows (offline ads, affiliates) have the lowest probability scores. She leaves them in — she'll downgrade them in ranking, not now.\n\nWhat she got: a dataset where *every* channel has been considered against her specific business, with numbers attached. If she'd started at ranking, she'd have quietly skipped half the channels."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-three-rings",
+        "explanation": "Brainstorming and ranking are back-to-back but different. Brainstorming is *generative* — you're trying to produce ideas, not judge them. Ranking is *evaluative* — you're comparing channels head-to-head. Mixing them (judging mid-brainstorm) is the classic mistake: it cuts off ideas for channels you have early biases against, which defeats the whole point."
+      },
+      "flashcards": [
+        {
+          "id": "ch02-brainstorm-step-fc1",
+          "type": "recall",
+          "front": "What's the minimum-rule for the brainstorm step?",
+          "back": "At least one plausible idea per channel. You can have many ideas per channel, but you cannot have zero — this forces you past familiarity bias."
+        },
+        {
+          "id": "ch02-brainstorm-step-fc2",
+          "type": "recall",
+          "front": "Name the four spreadsheet columns Bullseye suggests per idea, and why each one matters.",
+          "back": "Probability (1-5) — how likely this idea works. Expected CAC — what acquisition will cost. Customers available before saturation — ceiling on channel size. Time to test — how fast we'll get data. Together they let you compare channels on the same dimensions."
+        },
+        {
+          "id": "ch02-brainstorm-step-fc3",
+          "type": "cloze",
+          "front": "The goal of research during brainstorming is to learn how ______ companies acquired customers AND how ______ companies wasted their marketing dollars.",
+          "back": "successful ; unsuccessful — both are informative; failure stories often point at which channels don't fit your shape of business."
+        },
+        {
+          "id": "ch02-brainstorm-step-fc4",
+          "type": "recognition",
+          "front": "Why is it a mistake to judge ideas during the brainstorm step?",
+          "back": "Judgment during brainstorming cuts off ideas for channels you have early biases against — exactly the biases the step is designed to defeat. Keep generation and evaluation separate: brainstorm first, rank second."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch02-brainstorm-step-sc1",
+          "setup": "A founder runs a 30-minute brainstorm and produces a spreadsheet with 6 channels listed. He argues the other 13 are 'obviously not applicable' to his enterprise security SaaS and not worth writing down.",
+          "question": "What's wrong with this, and what would a better brainstorm look like?",
+          "modelAnswer": "Writing down only 6 channels is the failure mode brainstorming specifically protects against. 'Obviously not applicable' usually means 'I don't know this channel well.' Enterprise security founders often skip community building, engineering-as-marketing, and content marketing — all of which have produced huge wins in that space (e.g., Cloudflare via content and technical blog posts; Have-I-Been-Pwned via engineering-as-marketing). Better approach: force one idea for each of the 19 channels, even if the idea is 'sponsor an industry podcast we've never heard of' or 'publish one OSS security tool that drives inbound.' Two hours of forced coverage surfaces channels skipped-by-default — which is where the real wins hide.",
+          "rubric": [
+            "Identifies that 6-of-19 is the bias failure brainstorming defends against",
+            "Gives a concrete example of a skipped channel that has worked in that space",
+            "Prescribes forced coverage (≥1 idea per channel)",
+            "Notes that 'obviously not applicable' is usually 'not familiar'"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch02-brainstorm-step-sc2",
+          "setup": "A founder fills out her brainstorm spreadsheet but guesses CAC, volume, and test time for every channel. She's worried the numbers are mostly wrong.",
+          "question": "Is guessing OK here? Why or why not? What's the purpose of those numbers at the brainstorm stage?",
+          "modelAnswer": "Yes — guessing is explicitly fine at this stage. The purpose of the numbers isn't accuracy; it's to make her intuitions explicit and comparable. Three benefits: (1) it forces her to think structurally about each channel (you can't guess 'CAC for offline ads' without imagining the mechanics), (2) it lets her rank channels on a common grid, (3) when testing later replaces guesses with real data, she'll know which intuitions were off — that itself is a useful calibration loop for future cycles. The alternative — not guessing — hides the thinking and makes ranking arbitrary.",
+          "rubric": [
+            "Confirms guessing is fine / expected at this stage",
+            "Explains the purpose: making intuition explicit and comparable",
+            "Notes that test data later calibrates the guesses",
+            "Notes that refusing to guess would make ranking arbitrary"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Describe the brainstorm step of Bullseye to a co-founder, as if you're onboarding them to the process. Be specific about (1) the forced-coverage rule, (2) what research should precede it, (3) how to capture output, and (4) the single most common mistake to avoid.",
+        "rubric": [
+          "States the ≥1-idea-per-channel rule clearly",
+          "Names at least 2 types of pre-brainstorm research (analogs, failures, industry-specific)",
+          "Mentions the spreadsheet + the four columns (probability, CAC, volume, test time)",
+          "Identifies the most common mistake (mixing generation with judgment / skipping channels)",
+          "Gives a concrete example"
+        ]
+      }
+    },
+    {
+      "id": "ch02-prioritize-step",
+      "chapterId": "ch02",
+      "title": "Step 3 — Prioritize: Why Exactly Three",
+      "isLandmark": false,
+      "order": 4,
+      "pretest": {
+        "prompt": "Given unpredictability (you can't pre-guess the winning channel) and limited focus (too many parallel tests cause errors), what's the optimal number of channels to test at once? Justify your answer from first principles before reading on.",
+        "modelAnswer": "The answer falls out of two competing pressures. Testing only one channel at a time wastes calendar time — each test takes weeks to run, so sequential testing of many channels costs months. Testing many channels in parallel (say 8+) spreads attention too thin; test design suffers, results get noisy, and the team can't debug problems fast enough. The compromise the book lands on is three: small enough to keep focused attention on each test, large enough to respect the fact that any single test has a high prior probability of failing (so we need multiple shots on goal in the same cycle)."
+      },
+      "lesson": {
+        "markdown": "## The sharpest step in Bullseye\n\nStep 3 — Prioritize — is where you commit. You take the Inner Circle from ranking (usually several candidates) and cut it to **exactly three** channels to test in the current cycle.\n\nWhy this is uncomfortable: ranking lets you keep options open. Prioritizing forces you to kill some. Most founders resist.\n\n## Why three?\n\nThree is the product of two pressures:\n\n- **Sequential testing wastes calendar time.** Each channel test takes ~2–4 weeks to set up and produce data. Running 19 channels sequentially would take a year. You don't have a year; you need multiple shots on goal in the same cycle.\n- **Parallel testing has a focus limit.** Running 8+ experiments at once means no experiment gets real attention. Tests are designed badly, bugs go unnoticed, results are noisy, and the team can't respond to incoming data fast enough to learn.\n\nThree lives at the sweet spot: enough parallelism to absorb expected failures, few enough that each test gets careful design and attention.\n\n## The 'drop-off' heuristic\n\nOften you'll have 5–8 channels in the Inner Circle post-ranking. How do you cut to 3?\n\nLook at your ranked list and find the **obvious drop-off in excitement**. Usually there are a few channels that feel genuinely thrilling, and then a noticeable step down to 'yeah, also plausible.' That drop-off is the cut line — often it falls right around the third channel.\n\nIf the drop-off isn't obvious, you're probably being generous. Force yourself: if you could only test 3, which 3? The answer is usually right there, you just didn't want to say it.\n\n## What happens to the demoted channels?\n\nThey don't disappear. They move from Inner Circle to Potential (Column B), where they sit queued for the next cycle. If none of the Inner-3 pan out in testing, Column B is where you pull from for the rerun. This is why ranking matters — it keeps your backlog organized.\n\n## Why not one?\n\nA small team might think: let's be extra-focused and only test one channel. Bad idea. You can't pre-guess the winner; any single channel has a high probability of failing. Testing one means a 4-week failure costs you a full cycle with no useful comparative data. Testing three means when (say) two fail and one succeeds, you have comparative data that informs why, and your cycle still ended in forward motion.",
+        "readingTimeMin": 2
+      },
+      "workedExample": {
+        "setup": "Mira finishes ranking with 5 channels in her Inner Circle: targeting blogs, SEO, sales, content marketing, engineering-as-marketing.",
+        "walkthrough": "She applies the drop-off heuristic:\n\n1. Ranks the Inner Circle by excitement: (1) targeting blogs — PT newsletters are extremely well-targeted, cheap, and Mira has a specific list. (2) sales — her background makes 30-min demos highly plausible. (3) SEO — clear search intent, but slow. (4) content marketing — plausible but uncertain audience. (5) engineering-as-marketing — interesting idea (free billing-code lookup) but requires engineering effort she can't afford this cycle.\n\n2. Finds the drop-off: there's a clear step-down between #3 (SEO) and #4 (content marketing). The first three feel like 'worth testing now'; #4 and #5 feel like 'worth considering next cycle.'\n\n3. Commits to her three: targeting blogs, sales, SEO. Content marketing and engineering-as-marketing move to Column B.\n\n4. Defines rough test budget and timelines for each (feeds into Step 4):\n   - Targeting blogs: $1,500 over 3 weeks (sponsor 3 niche newsletters)\n   - Sales: 20 outbound calls over 2 weeks (her own time)\n   - SEO: 3 articles + basic technical setup over 4 weeks\n\nNote: she didn't agonize over the cut. The drop-off was real; she trusted it. If she'd forced herself to keep five, she'd have produced five half-run tests instead of three well-run ones."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-cheap-testing",
+        "explanation": "Prioritize (Step 3) picks *which three channels* to test. Test (Step 4) is the execution — how to design each test cheaply and quickly. Founders sometimes try to prioritize and design the tests simultaneously; separating them is cleaner. Finish Step 3 ('we will test A, B, C'), then move to Step 4 ('here's how we'll test each one')."
+      },
+      "flashcards": [
+        {
+          "id": "ch02-prioritize-step-fc1",
+          "type": "recall",
+          "front": "How many channels belong in the Inner Circle for actual testing?",
+          "back": "Exactly three. Fewer wastes calendar time on single-channel failures; more dilutes focus and produces noisy tests."
+        },
+        {
+          "id": "ch02-prioritize-step-fc2",
+          "type": "recall",
+          "front": "What heuristic does Bullseye suggest for cutting the Inner Circle down to three?",
+          "back": "Find the obvious drop-off in excitement. Rank your Inner Circle candidates; there's usually a visible step-down between the top few and the rest — that step is the cut line. Often falls around the third channel."
+        },
+        {
+          "id": "ch02-prioritize-step-fc3",
+          "type": "cloze",
+          "front": "Bullseye recommends testing exactly ______ channels in parallel because sequential testing wastes ______, while too many parallel tests dilutes ______.",
+          "back": "three ; calendar time ; focus / attention"
+        },
+        {
+          "id": "ch02-prioritize-step-fc4",
+          "type": "recall",
+          "front": "What happens to channels that are demoted from the Inner Circle during prioritization?",
+          "back": "They move to Potential (Column B). They're not killed — they're queued. If none of the Inner-3 pan out in testing, Column B is the first place to pull from for the next cycle."
+        },
+        {
+          "id": "ch02-prioritize-step-fc5",
+          "type": "recognition",
+          "front": "Why isn't it better to focus on only one channel at a time?",
+          "back": "Any single channel has a high probability of failing. One-channel testing means a 4-week failure costs a full cycle with no comparative data. Three channels absorbs expected failures and produces comparative insight even when two fail."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch02-prioritize-step-sc1",
+          "setup": "A founder's ranking produced an Inner Circle of exactly three channels. She says 'Great, skip Step 3 — I'm already at three.' Is she right?",
+          "question": "Can you skip prioritization if ranking coincidentally produces three? What might you lose?",
+          "modelAnswer": "Technically she has three, but she should still do Step 3 explicitly. Ranking and prioritizing are different cognitive tasks: ranking answers 'where does each channel belong?' Prioritization forces a commitment check — 'are these really the three I want to *bet on this cycle?'. Skipping it means she might have three channels that are plausible but that she wouldn't actually bet equally on. The Step 3 question she should still ask: 'If I could only test three, which three?' and confirm her answer matches the ranking. Also, she should use Step 3 to start sketching rough test plans (budget, timeline) per channel — which feeds Step 4.",
+          "rubric": [
+            "Recognizes ranking and prioritizing are distinct tasks",
+            "Articulates the 'would I bet on these?' check",
+            "Notes that Step 3 also starts test-plan sketching",
+            "Doesn't wave the step off as redundant"
+          ],
+          "difficulty": 3
+        },
+        {
+          "id": "ch02-prioritize-step-sc2",
+          "setup": "A founder's ranking produced 7 channels in the Inner Circle. He tries to find the drop-off but says all 7 feel 'equally exciting.' He proposes testing all 7.",
+          "question": "What's likely going on, and how would you push back?",
+          "modelAnswer": "Two possibilities. (1) He's being generous to avoid hard cuts — a common symptom of 'equally exciting' when really 2–3 are distinctly more exciting but he doesn't want to kill the others. Push: 'If you had to test only three tomorrow, which three?' The answer usually comes instantly. (2) His ranking is under-researched — he can't discriminate because he lacks evidence. Push: do more research on the top candidates before forcing a cut. Either way, testing 7 in parallel is not an option — he'll get noisy results and lose focus. Best move: force the cut via the 'if you had to pick 3' question, then use the freed attention to design high-quality tests.",
+          "rubric": [
+            "Identifies 'equally exciting' as likely avoidance OR under-research",
+            "Suggests the 'if you had to pick 3' forcing question",
+            "Rejects 'test 7 in parallel' outright",
+            "Explains why the cut produces better tests even if it feels worse"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the Prioritize step of Bullseye, including (1) why the number three specifically, (2) the drop-off heuristic, (3) what happens to demoted channels, and (4) how Prioritize is different from the Rank step before it.",
+        "rubric": [
+          "Justifies three with both pressures (sequential waste, parallel dilution)",
+          "Describes drop-off heuristic in their own words",
+          "States that demoted channels move to Column B, not oblivion",
+          "Distinguishes ranking (where does each channel belong) from prioritizing (which three do we actually bet on)"
+        ]
+      }
+    },
+    {
+      "id": "ch02-cheap-testing",
+      "chapterId": "ch02",
+      "title": "Step 4 — Test: Speed Over Scale",
+      "isLandmark": false,
+      "order": 5,
+      "pretest": {
+        "prompt": "When you test a traction channel, what are you actually trying to learn? Is it the same thing as 'getting traction' from the channel?",
+        "modelAnswer": "No — testing and getting traction are different goals. In testing, you're answering three questions about the channel: (1) What will customers cost to acquire here? (2) How many customers are available through this channel? (3) Are those customers the right ones for us right now? The answers determine whether the channel is worth *committing to*, which is a separate step (Focus, Step 5). Treating the test phase as 'we need to scale this channel' is a common mistake — it leads to big upfront spends on channels that might turn out to be wrong."
+      },
+      "lesson": {
+        "markdown": "## The three questions each test must answer\n\nTesting a channel answers three questions, in order:\n\n1. **Cost:** roughly what will it cost to acquire a customer through this channel?\n2. **Volume:** how many customers can we plausibly get through this channel before saturation?\n3. **Fit:** are the customers we're getting the ones we want *right now* (not 'eventually')?\n\nNotice what's missing: 'did we hit our growth goal?' is *not* a test-stage question. That belongs to Step 5 (Focus), after you've picked a winner.\n\n## Speed over scale\n\nIn testing, your enemy is time-to-data, not cost-per-acquisition. Design tests that give you directional answers *fast*, even if the absolute numbers are imprecise.\n\nConcrete rule: **run four Facebook ads, not forty.** A few hundred dollars and a week should tell you if a channel has a heartbeat. If after that the signal is ambiguous, it's a 'no' for now — ambiguous results at test stage are themselves a signal (the channel isn't obviously a fit).\n\nCost ceiling for the whole cycle: usually a few thousand dollars across all three tests combined. If you're spending tens of thousands, you've drifted from testing into early-stage scaling.\n\n## Why speed wins\n\nSpeed matters because:\n\n- **Unpredictability + opportunity cost.** Every week spent on a failing test is a week not spent on the winning channel. Fast failure = more cycles per quarter.\n- **Cheap tests don't need to be *convincing*, they need to be *differentiating*.** You're not proving that the channel can deliver 10,000 customers — you're proving it can deliver *any* at reasonable cost and quality. Cheap tests are plenty for that bar.\n- **Expensive tests create sunk-cost pressure.** If you spent $30k on a channel test, you'll want to declare it a winner even if the data is marginal. Cheap tests are easier to kill honestly.\n\n## What 'test design' looks like in practice\n\nThere's no single formula — every channel has its own shape. But across channels, a good test usually:\n\n- Has a clear success threshold defined *before* running it (e.g., 'CAC under $50 and at least 20 signups').\n- Uses the smallest sample that can cross that threshold with reasonable signal (budget ceiling).\n- Runs in parallel with the other two channels in the Inner Circle — not sequentially.\n- Ends on a specific date, not 'when the data looks good.'\n\nChannel-specific tactics — how to test SEO vs. sales vs. viral specifically — are covered in later chapters. What's universal is the *mindset*: learn fast, spend little, decide honestly.",
+        "readingTimeMin": 2
+      },
+      "workedExample": {
+        "setup": "Mira commits to test three channels: targeting blogs, sales, SEO. She has $3,000 total test budget and 3 weeks.",
+        "walkthrough": "**Targeting Blogs:** Sponsors three PT-specific newsletters at $400–$600 each. Clear success threshold set in advance: ≥15 trial signups across the three sponsorships at a blended CAC under $80. Ends in 3 weeks when all three newsletters have run. Total spend: $1,400.\n\n**Sales:** Mira uses her own time (no cash cost) to book 20 demo calls with clinic owners pulled from a directory. Success threshold: ≥4 paid conversions (20% close rate). 2 weeks. Cost: $0 cash, ~30 hours of her time.\n\n**SEO:** Publishes 3 articles on specific long-tail queries ('PT note templates by state'). Technical SEO basics already in place. Success threshold: ≥100 organic visits in 4 weeks + ≥3 trial signups. Small content cost: $600.\n\nAll three tests run in parallel. Total cycle cost: $2,000 cash + Mira's time. After 3 weeks:\n\n- Targeting blogs: 22 signups at ~$64 CAC. **Pass.**\n- Sales: 5 conversions from 18 completed calls (28% close rate), but each call takes 90 min. **Pass on quality, question on scalability.**\n- SEO: 40 organic visits, 1 signup. **Fail** — too slow to prove out in this cycle window, but the signal isn't 'broken,' just 'not-yet.' Parked for potential later-cycle retest.\n\nNote two things: Mira *didn't* spend $10k trying to 'prove' any channel. And she set her thresholds *before* running, so she can evaluate honestly without the sunk-cost temptation to call SEO a winner because 'it was trending up.'"
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-focus-and-repeat",
+        "explanation": "Testing (Step 4) and Focusing (Step 5) have different goals and call for different budgets. Testing is cheap, fast, and comparative — you're finding which channel *could* work. Focusing is deep and resourced — you're exploiting the winning channel to its limit. Mixing the two (testing at scale) is where most founders overspend; spending at Focus budget levels on three channels in parallel at the test stage drains the runway without producing decision-quality data."
+      },
+      "flashcards": [
+        {
+          "id": "ch02-cheap-testing-fc1",
+          "type": "recall",
+          "front": "What are the three questions each channel test must answer?",
+          "back": "(1) Cost — what will a customer cost to acquire here? (2) Volume — how many customers are available? (3) Fit — are these the right customers right now?"
+        },
+        {
+          "id": "ch02-cheap-testing-fc2",
+          "type": "recall",
+          "front": "What's the guideline for test scale? Use the Facebook-ads example.",
+          "back": "Run four Facebook ads, not forty. Small-scale tests with a few hundred dollars and a week. The goal is speed to data and differentiation between channels, not proving absolute scale."
+        },
+        {
+          "id": "ch02-cheap-testing-fc3",
+          "type": "cloze",
+          "front": "A test-stage success threshold should be defined ______ running the test, not after.",
+          "back": "before — defining thresholds in advance protects against sunk-cost pressure to declare marginal results a success."
+        },
+        {
+          "id": "ch02-cheap-testing-fc4",
+          "type": "recognition",
+          "front": "Why are cheap tests easier to kill honestly than expensive ones?",
+          "back": "Expensive tests create sunk-cost pressure: after spending $30k, you'll want to declare success even if data is marginal. Cheap tests don't have that psychological pull, so you evaluate more honestly."
+        },
+        {
+          "id": "ch02-cheap-testing-fc5",
+          "type": "recall",
+          "front": "An ambiguous test result is a...?",
+          "back": "...a no for now. Ambiguous signal at test stage means the channel isn't obviously a fit. You don't commit resources to 'maybes' — you commit to clear winners. The channel stays in Column B for a later cycle if conditions change."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch02-cheap-testing-sc1",
+          "setup": "A founder tests paid search by spending $25,000 on Google Ads over four weeks and hires a PPC consultant for $3,000 to 'run it properly.' After four weeks, CAC is $180 (target was under $100). The founder says 'we need another month and more budget to really know.'",
+          "question": "What went wrong, and what should the founder do?",
+          "modelAnswer": "The founder violated the 'speed over scale' rule at the test stage. $25k + a consultant is a Focus-level investment, not a test. Now sunk-cost bias is kicking in — 'we need more budget to know' is the predictable psychological response to having already spent a lot. What should have happened: $500–2,000 and a week, with a clear success threshold (CAC <$100). With the data that's already there, the honest call is: paid search does not meet the threshold. Kill it, move on to the next channel cycle. If she wants to retest paid search later with different creative or targeting, that's fine — but not as an extension of this bloated test.",
+          "rubric": [
+            "Identifies the test as over-scaled (Focus budget, not test budget)",
+            "Names sunk-cost bias as the reason for the 'more budget' reaction",
+            "Prescribes an honest kill based on existing data",
+            "Notes the threshold (CAC <$100) should have been pre-defined and is the deciding factor",
+            "Doesn't rule out retesting paid search later under different conditions"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch02-cheap-testing-sc2",
+          "setup": "A founder tests content marketing by publishing two blog posts over two weeks. She gets 40 pageviews and zero signups. She concludes content marketing doesn't work for her startup.",
+          "question": "Is this a valid test? What's the critique, and what's a better test design?",
+          "modelAnswer": "Not a valid test — wrong shape for the channel. Content marketing has long lead times (SEO and repeat-reader loops take months), so a 2-week test design is structurally incapable of producing signal. The 'speed over scale' principle still applies, but 'speed' is channel-relative — for paid ads, 1 week is fine; for content/SEO, a meaningful cheap test might be 6–8 weeks with explicit leading-indicator thresholds (e.g., 'by week 6: 1,000 organic visits and first recurring traffic source'). Better design: 4–6 posts over 8 weeks, leading-indicator success threshold, retire if leading indicators miss. Alternative: if 8-week cycles don't fit her current Bullseye cadence, content should drop from the Inner Circle to Column B and be retested in a future cycle that can accommodate its timeline.",
+          "rubric": [
+            "Identifies the test timeline as structurally too short for the channel",
+            "Distinguishes channel-relative 'speed' (not all channels produce signal in the same window)",
+            "Prescribes leading-indicator thresholds for slow channels",
+            "Offers the alternative: demote to Column B if cycle cadence doesn't fit",
+            "Avoids the overcorrection 'spend more on content' — the fix is test design, not budget"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain how to test a traction channel cheaply and correctly. Cover: (1) the three questions each test answers, (2) why speed beats scale at this stage, (3) the role of pre-defined success thresholds, and (4) at least one channel-specific nuance (e.g., SEO or content tests need different timelines than paid-ads tests).",
+        "rubric": [
+          "Names all 3 questions (cost, volume, fit)",
+          "Explains speed > scale with at least one reason (opportunity cost OR sunk-cost pressure)",
+          "Justifies pre-defined thresholds as protection against motivated reasoning",
+          "Notes that test timelines are channel-relative",
+          "Distinguishes testing (Step 4) from focusing (Step 5) in terms of budget and goals"
+        ]
+      }
+    },
+    {
+      "id": "ch02-focus-and-repeat",
+      "chapterId": "ch02",
+      "title": "Step 5 — Focus, Then Rerun",
+      "isLandmark": true,
+      "order": 6,
+      "pretest": {
+        "prompt": "You ran parallel tests on three channels. One produced strong results, one produced mixed results, one failed. What do you do next? How do you know when to stop and start the Bullseye loop over?",
+        "modelAnswer": "Commit hard to the winner. Drop the other two — even the mixed one, at least for this cycle. 'One channel dominates at any given stage' means splitting focus between a strong channel and a mixed one is worse than doubling down on the strong one. You stay on the winner as long as scaling it keeps producing growth. The trigger to rerun Bullseye is when the channel *saturates* — growth flattens despite more spend or effort, signaling you've exhausted the addressable audience or the channel's unit economics at your current stage. Then rerun the loop with updated information; the next winning channel will likely be different."
+      },
+      "lesson": {
+        "markdown": "## The commitment\n\nAfter testing, one channel usually stands out. Not two, not three — one. Step 5 is simple to state and hard to do: **pour all your traction effort and resources into that one channel**, and keep pouring until it saturates.\n\nThe reason flows from the one-channel-dominates principle: at any given stage of a startup, one channel is producing the bulk of your customer acquisition. Splitting attention across channels at this stage is a pure loss — you'd be underinvesting in the winner *and* investing in channels you already know are weaker.\n\n## What 'focus' looks like\n\nFocus doesn't mean running one campaign and moving on. It means becoming a genuine expert on the channel — continuously testing new tactics inside it to wring out every drop of traction. A few examples of what that looks like:\n\n- If targeting blogs is the winner: test different blogs, different post formats, different CTAs, different timing, different audience cohorts, different pricing on your landing page.\n- If sales is the winner: test different scripts, objection-handling patterns, list sources, close ratios, time-to-first-touch, pricing anchors, contract length.\n\nFocus is inward zooming. You started with a wide field (19 channels), narrowed to three (Inner Circle), then to one (the winner). Now you zoom *inside* that one channel and do the same thing — many tactics, converge on the best.\n\n## When to rerun Bullseye\n\nThe signal: the channel stops responding to more investment. Signs include:\n\n- Customer-acquisition cost climbing while volume stays flat\n- You've exhausted the obvious audience segments and diminishing returns have set in\n- The channel was perfect for your early stage but no longer reaches your current ICP (e.g., niche-blog readers were your seed customers, but you've now outgrown that niche)\n\nAt saturation, rerun the loop. Brainstorm (with everything you've learned), rerank (your understanding of the business is now much better), pick three new Inner Circle channels (often a different three from last time), test in parallel again, and find the next winner.\n\n## The Mint case\n\nThe book's canonical example: Mint, a personal-finance startup (later acquired by Intuit for $170M). They ran Bullseye with three Inner Circle channels: targeting blogs, PR, SEM. They sponsored niche newsletters, reached out to financial celebrities, and ran small Google Ads experiments. The winner: targeting blogs — specifically sponsoring mid-level finance bloggers + guest posting. They focused on it and got their first 40,000 customers from that channel alone. When blog sponsorships saturated, they reran Bullseye. The new winner: public relations. That channel took them from 40k to 1M users within six months of launch. Same company, different stage, different channel — same framework.\n\n## Why this discipline is rare\n\nMost founders can get to Step 4. Step 5 is where discipline breaks. The mixed-result channel tempts them to 'also scale that a bit.' The failed channel tempts them to 'try once more.' Both are expensive distractions from the one channel actually working. Bullseye's payoff is in Step 5 — but only if you actually follow the rule.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Mira finished her test cycle: targeting blogs passed strongly (22 signups, $64 CAC), sales passed with scalability questions (5 conversions but 90 min per call), SEO failed for now (too-slow signal). What does she do at Step 5?",
+        "walkthrough": "**Commit to targeting blogs.** Reallocate all marketing time and budget toward it.\n\n**Drop sales and SEO for now.** This is hard — sales *worked*. But splitting attention would underinvest in the winner. Log sales and SEO as 'proven or promising, deferred'; they become Column-B candidates for the next cycle.\n\n**Zoom in on targeting blogs:**\n- Expand from 3 newsletters to 10–15 over 8 weeks.\n- Test different newsletter sizes (small/engaged vs. large/broad) — which has better CAC?\n- Test different sponsor-copy angles (pain-point vs. case-study vs. discount).\n- Test different landing pages for newsletter traffic.\n- Build relationships with top-3 newsletters for recurring placements at better rates.\n\n**Watch for saturation signals.** Mira sets a check-in: if by month 3 of focusing, CAC is climbing above $120 and volume is flattening, that's her signal to rerun Bullseye. She doesn't panic — saturation is expected eventually.\n\n**Eventually — Bullseye rerun.** Suppose she reaches 600 paying customers over 4 months and blog sponsorships start saturating (CAC rises to $130, 80% of niche newsletters already sponsored). She reruns the loop. With 600 customers she now has SEO signal she didn't have before; sales data from the prior test tells her sales might scale if she hires a dedicated AE. Those two move into her new Inner Circle — plus a third she hadn't considered, say partnerships with PT-adjacent tools. The next winning channel may well be sales or SEO this time. Different stage, different winner. Same framework."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-cheap-testing",
+        "explanation": "Testing (Step 4) and Focusing (Step 5) are opposite in shape. Testing is broad and cheap (3 channels, small spend, quick). Focusing is narrow and deep (1 channel, whatever spend it takes, sustained over months). Many founders blur them: they treat Step 5 like a bigger Step 4, running multiple 'focused-ish' efforts instead of committing to one. The result is chronic under-investment in the channel that actually works."
+      },
+      "flashcards": [
+        {
+          "id": "ch02-focus-and-repeat-fc1",
+          "type": "recall",
+          "front": "After testing, how many channels do you focus on in Step 5?",
+          "back": "Exactly one — the winner. Committing to one reflects the 'one channel dominates at any given stage' principle. Splitting attention wastes resources on channels you already know are weaker."
+        },
+        {
+          "id": "ch02-focus-and-repeat-fc2",
+          "type": "recall",
+          "front": "What does 'focusing' actually entail beyond picking the channel?",
+          "back": "Becoming a genuine expert on the channel — continuously testing tactics inside it (different audiences, copy, CTAs, list sources, etc.) to wring out every drop of traction until saturation."
+        },
+        {
+          "id": "ch02-focus-and-repeat-fc3",
+          "type": "recall",
+          "front": "What's the signal to rerun the Bullseye loop?",
+          "back": "Channel saturation — growth flattens or CAC climbs despite more spend. You've exhausted the channel's available audience or outgrown its fit for your ICP. That's the trigger to rerun brainstorm → rank → prioritize → test → focus."
+        },
+        {
+          "id": "ch02-focus-and-repeat-fc4",
+          "type": "cloze",
+          "front": "Mint's first winning channel was ______; after it saturated, they reran Bullseye and the new winning channel was ______.",
+          "back": "targeting blogs ; public relations — different stage, different channel, same framework."
+        },
+        {
+          "id": "ch02-focus-and-repeat-fc5",
+          "type": "recognition",
+          "front": "A channel that showed mixed results in testing — do you keep investing in it during the Focus step?",
+          "back": "No. Mixed results are a 'not now' — log them as Column-B candidates for the next cycle. During Focus, you commit fully to the single clear winner to avoid diluting attention."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch02-focus-and-repeat-sc1",
+          "setup": "After testing, a founder has one clear winner (content marketing) and one 'almost winner' (paid ads — not quite at target CAC but close). She proposes doubling down on content AND running paid ads 'a little bit, since it was close.'",
+          "question": "What's your advice, and what principle is in play?",
+          "modelAnswer": "Drop the paid ads for now. The principle: at any given stage, one channel dominates, and splitting attention starves the winner while invest in a channel already known to be weaker. Concretely: every hour and dollar on paid ads is an hour/dollar not making content work harder. 'A little bit' of paid ads rarely produces learning anyway (ambiguous results + small sample). Log paid ads in Column B for the next cycle — when content saturates, paid ads' proximity to threshold makes it a strong candidate for a rerun. In the meantime: commit fully to content, zoom in, exhaust the channel.",
+          "rubric": [
+            "Prescribes dropping paid ads this cycle",
+            "Invokes the 'one channel dominates' principle",
+            "Identifies 'a little bit' as producing ambiguous, non-learning results",
+            "Preserves paid ads as a next-cycle candidate (doesn't kill it permanently)",
+            "Names the opportunity cost to the winner"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch02-focus-and-repeat-sc2",
+          "setup": "A founder has been focused on SEO for 10 months. It got them to 15,000 customers. The last 2 months have been flat despite more posts and spend. He's reluctant to change — 'SEO is what got us here, it's our DNA.'",
+          "question": "Frame this situation in Bullseye terms. What does the framework prescribe, and what's the mindset shift required?",
+          "modelAnswer": "Classic saturation signal. Growth flattened despite more effort — that's the explicit trigger to rerun Bullseye. The framework prescribes: start a new cycle. Don't kill SEO (it still produces customers; it's just not the *next-stage* winner), but stop treating it as the primary growth engine. Brainstorm all channels fresh with the knowledge a 15,000-customer company has that a pre-launch company doesn't. Rank, prioritize, test three new channels in parallel (likely different from the first cycle — at 15k customers, maybe sales, partnerships, and viral). Mindset shift: 'SEO is our DNA' is a trap. Channels aren't identity — they're tools for a stage. The channel that got you here won't get you to the next order of magnitude. Mint went from blogs to PR. The framework explicitly predicts this transition.",
+          "rubric": [
+            "Identifies flat growth + more effort as the saturation signal",
+            "Prescribes rerunning Bullseye",
+            "Notes SEO isn't killed, just demoted from primary engine",
+            "Addresses the 'our DNA' mindset as a trap",
+            "References the stage-specific-channel principle (potentially with Mint example)",
+            "Suggests the new Inner-3 will likely be different from the first cycle"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch02-focus-and-repeat-sc3",
+          "setup": "A startup's test cycle produced three failures — no channel passed its success threshold. The founder is panicking and wants to pick 'the least-bad' and commit to it.",
+          "question": "Evaluate this plan. What does Bullseye actually prescribe?",
+          "modelAnswer": "Rejecting 'least-bad' commitment. Bullseye prescribes rerunning the loop when no channel wins. Committing to 'least-bad' is the inverse of the discipline Step 5 requires — you'd be focusing on a channel you already have evidence doesn't clear the bar. That's the same mistake as 'a little of everything' except with one channel instead of many: guaranteed under-performance. Correct move: treat the failed tests as information (which they are — now you know things that won't work in the current conditions), go back to Step 1 with that knowledge, re-brainstorm (looking especially at why specific channels failed — messaging? targeting? timing?), re-rank, pick three new channels (or the same channels with different tests), and run another cycle. Running Bullseye multiple times is the expected case, not a failure.",
+          "rubric": [
+            "Rejects 'least-bad' commitment",
+            "Explains why — focusing on evidence-failed channel repeats the error",
+            "Prescribes rerunning the loop",
+            "Notes failed tests are information, not wasted effort",
+            "Suggests looking at *why* tests failed in the re-brainstorm",
+            "Normalizes multiple cycles"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain Steps 5 (Focus) and the rerun trigger. Cover: (1) why one channel, not two or three, (2) what 'focus' concretely looks like day-to-day, (3) what signal tells you to rerun Bullseye, and (4) what typically happens on the second or third cycle (use Mint or a parallel example).",
+        "rubric": [
+          "Justifies commitment to one channel via the 'one channel dominates' principle",
+          "Describes focus as inward zooming (many tactics inside one channel)",
+          "Identifies saturation signals (flat growth + more spend, rising CAC)",
+          "Notes later cycles usually produce a different winner",
+          "Uses Mint (blogs → PR) OR a well-constructed analog as the illustration",
+          "Distinguishes Focus from Test in budget and duration"
+        ]
+      }
+    }
+  ]
+}

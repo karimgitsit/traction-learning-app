@@ -1,0 +1,578 @@
+{
+  "id": "ch08",
+  "number": 8,
+  "slug": "unconventional-pr",
+  "title": "Unconventional PR",
+  "summary": "Unconventional PR is the traction channel where you create news rather than pitch it — publicity stunts, viral videos, contests, and systematized customer delight that force press and word-of-mouth to come to you. This chapter covers the attention-arbitrage mechanism that makes stunts work, the business profiles where the channel fits (and the ones where it torches budget), the specific tactics, how to test them cheaply, and the failure modes — brand damage, one-hit-wonder decay, and misread audiences.",
+  "concepts": [
+    {
+      "id": "ch08-create-not-pitch",
+      "chapterId": "ch08",
+      "title": "Unconventional PR: Creating News Instead of Pitching It",
+      "isLandmark": true,
+      "order": 1,
+      "pretest": {
+        "prompt": "A founder emails 200 journalists a well-crafted press release about a new feature and gets three replies, none of which become stories. A competitor dresses their mascot in a bull costume, runs around a conference getting kicked out of the convention center, and ends up in TechCrunch the next morning. Before reading on — what structural difference between those two approaches explains the asymmetric result, and what does that tell you about what 'unconventional PR' actually is?",
+        "modelAnswer": "The press-release founder is *pitching news*: asking a reporter to agree that his feature is interesting enough to write about, competing against hundreds of other pitches for the same slot. The bull-costume founder is *creating news*: producing an event that is itself a story, so reporters cover it the way they'd cover any spectacle — the decision has already been made for them. Unconventional PR is the traction channel where you engineer events, artifacts, or gestures that are independently newsworthy, so coverage happens as a byproduct of the event existing rather than as a favor you have to beg for. The asymmetry isn't about craft — it's about which side of the pitch/create line you're on."
+      },
+      "lesson": {
+        "markdown": "## The definition\n\nUnconventional PR is the traction channel in which you **generate press and word-of-mouth by creating something inherently newsworthy, rather than by persuading a reporter that your existing news is interesting**. Conventional PR (the sister channel in Chapter 7) takes the product as given and works the media relationship — pitches, press releases, exclusives, embargoes. Unconventional PR takes the media relationship as hard-to-move and *changes the product of the news instead*. The output in both cases can be a New York Times write-up; the mechanism for getting there is almost inverted.\n\nThe load-bearing word is *create*. A stunt, a viral video, a contest with a surprising prize, a 600-pound block of ice in front of your competitor's conference — each is a fact in the world before it is a pitch. Reporters don't have to take your word that it's interesting; they can see it is. That removes the largest friction in conventional PR (reporter skepticism) and replaces it with a different problem (coming up with something that is actually interesting), which is a problem you can solve alone, on your own schedule, without a Rolodex.\n\n## Two shapes\n\nThe Traction authors split the channel cleanly in two:\n\n1. **Publicity stunts** — one-shot engineered spectacles designed to generate a burst of media coverage. Half.com paying a small Oregon town to rename itself Half.com. DuckDuckGo buying a billboard in Google's backyard about privacy. WePay dropping a block of ice at PayPal's developer conference labeled 'PayPal freezes your accounts.' These are high-variance, high-ceiling, and episodic.\n2. **Customer appreciation** — small, repeatable, scalable gestures that turn individual customers into evangelists. Hipmunk mailing handwritten notes and luggage tags. Grasshopper sending cookies and Starbucks gift cards. Zappos treating support calls as marketing rather than cost. These are low-variance, lower-ceiling per event, but *compound* because every customer is a potential channel.\n\nThe two shapes are not alternatives — well-run unconventional-PR programs use both. Stunts deliver spikes; appreciation delivers a baseline of positive word-of-mouth that keeps producing while you plan the next stunt.\n\n## Why this counts as a distinct channel\n\nYou might object that stunts are just a creative tactic inside PR. The reason Weinberg and Mares call it a separate channel: the *skill set*, the *cost structure*, and the *decision-makers* differ. Conventional PR rewards relationships and crisp pitches. Unconventional PR rewards a different muscle — noticing what would be genuinely surprising in your market, taking the reputational risk to execute it, and having an internal team that can build a block of ice, film a launch video, or hire a stuntman in a bull costume. David Hauser hired two full-time employees at Grasshopper specifically to run unconventional PR; you don't staff a 'stunts team' unless you've accepted this is its own discipline.\n\n## The crowding argument\n\nThere's a second reason this is worth treating as its own channel. Conventional PR is crowded — every company pitches. Unconventional PR is far less crowded because stunts are scarier, harder to justify to a board, and require creative taste most teams don't think of themselves as having. That scarcity is the arbitrage: fewer competitors for a scarce resource (journalist attention), higher returns per dollar spent when you execute well.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Priya runs a 6-person consumer app called Thrifter that finds secondhand furniture nearby. She has $20k of marketing budget and wants a press moment at launch. Her head of marketing proposes the standard playbook: a polished press release, 30 targeted pitches to tech reporters, a Product Hunt launch, and a paid promo budget behind the coverage. Priya is asking whether she should instead be thinking about unconventional PR.",
+        "walkthrough": "Apply the create-vs-pitch distinction to each plan.\n\n**The press-release plan is pitching.** The news is 'we launched an app.' Every reporter has seen ten of those this week. Thrifter's press release is competing with thirty other identical pitches for the same dozen slots. Best case: 2–3 small write-ups, most of which never drive meaningful signups.\n\n**What a create move would look like.** Priya's team brainstorms: what could they do that would be independently newsworthy and consistent with Thrifter's brand? Candidates: (a) rent a U-Haul and drive around a single Brooklyn neighborhood for a weekend giving away every piece of furniture on their own platform, covering the 'last-mile' for free; (b) set up a pop-up 'free furniture museum' in an NYC storefront where the entire inventory is Thrifter listings and everything is free if you pick it up; (c) commission an oversized, absurd piece of furniture (a 20-foot couch) and park it outside IKEA.\n\nEach of these is a *fact* — once it exists, reporters cover it because it's a story, not because Priya convinced them it is. (a) also creates organic social content (videos of people receiving free furniture). (b) creates a physical place reporters can visit. (c) creates visuals every local news station will run.\n\n**The budget flips.** The press release plan spent $5k on a PR agency plus $5k on a Product Hunt promo. The stunt plan spends $3k on the U-Haul weekend, $1k on giveaway inventory Thrifter is covering from existing listings, and $2k on a photographer/videographer to capture assets. Remaining budget goes to amplification *after* the stunt works, not to begging for the first piece of coverage.\n\n**The appreciation baseline.** Alongside the stunt, Priya assigns one person to mail a handwritten thank-you card plus a $10 Starbucks card to the first 500 users who complete a pickup. This is the customer-appreciation side of the same channel — it won't generate a spike, but it will seed the kind of tweets and word-of-mouth that reporters notice when deciding which app to cover next.\n\nPriya's conclusion: swap the default pitch-driven plan for a create-driven one, reserving conventional PR as the amplifier that kicks in *after* the stunt has produced something reporters want to write about anyway."
+      },
+      "contrast": {
+        "neighborConceptId": "ch06-viral-definition",
+        "explanation": "Viral marketing and unconventional PR both produce free exposure, but the mechanism is different. Viral marketing is a *structural property of the product*: users generate users through use. Unconventional PR is an *event or gesture you produce* to earn press and word-of-mouth. A viral loop doesn't need a reporter or a journalist's attention; a publicity stunt does. Many companies confuse the two because a viral video (Dollar Shave Club, Will It Blend?) can live in either camp — the test is whether the next user comes from *using the product* (viral) or from *watching content about the product* (unconventional PR). Dollar Shave Club's launch video is unconventional PR that fed paid and organic signup flows, not a product-level viral loop."
+      },
+      "flashcards": [
+        {
+          "id": "ch08-create-not-pitch-fc1",
+          "type": "recall",
+          "front": "What is the one-sentence definition of unconventional PR as a traction channel?",
+          "back": "The channel in which you generate press and word-of-mouth by creating something inherently newsworthy — stunts, spectacles, gestures — rather than by pitching reporters on news you already have."
+        },
+        {
+          "id": "ch08-create-not-pitch-fc2",
+          "type": "cloze",
+          "front": "Conventional PR ______ news; unconventional PR ______ news.",
+          "back": "pitches ; creates — conventional PR asks a reporter to cover a story you already have; unconventional PR engineers an event that is itself a story."
+        },
+        {
+          "id": "ch08-create-not-pitch-fc3",
+          "type": "recall",
+          "front": "Name the two shapes of unconventional PR the chapter distinguishes, and give the defining trait of each.",
+          "back": "(1) Publicity stunts — one-shot engineered spectacles designed to spike media coverage; high-variance, episodic. (2) Customer appreciation — small, scalable, repeatable gestures that turn customers into evangelists; low-variance, compounding."
+        },
+        {
+          "id": "ch08-create-not-pitch-fc4",
+          "type": "recognition",
+          "front": "Which of these is unconventional PR and which is conventional PR? (a) Sending a carefully targeted pitch to a TechCrunch reporter about a product milestone. (b) Mailing chocolate-covered grasshoppers to 5,000 influential people with a video about entrepreneurship.",
+          "back": "(a) is conventional PR — persuading a reporter to cover existing news. (b) is unconventional PR (Grasshopper's 5000 campaign) — creating a physical, surprising artifact that is itself the story reporters then cover."
+        },
+        {
+          "id": "ch08-create-not-pitch-fc5",
+          "type": "recall",
+          "front": "Why do Weinberg and Mares treat unconventional PR as a separate channel rather than a tactic inside conventional PR?",
+          "back": "Because the skill set (creative stunt design vs. relationship pitching), the cost structure (production-led vs. outreach-led), and the in-house team required (stunts can justify full-time hires — Grasshopper had two) are distinct. The crowding is also different: conventional PR is saturated; unconventional PR is relatively uncrowded, which is where the return comes from."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch08-create-not-pitch-sc1",
+          "setup": "A seed-stage founder says: 'We just did unconventional PR — we sent out a really well-crafted press release with a punchy headline and got picked up by three blogs.'",
+          "question": "Is this unconventional PR? Why or why not?",
+          "modelAnswer": "No — this is conventional PR with good copywriting. A 'punchy' press release is still a pitch: you are asking a reporter to agree that your existing news is worth covering, and the reporter is deciding whether to oblige. Unconventional PR requires you to create an event, artifact, or gesture that is independently newsworthy before the reporter encounters it. The test: if every reporter in the world ignored you, would the thing you did still exist as a story people talk about? A press release fails that test (nothing exists without a reporter's agreement). A billboard in Google's backyard, a block of ice at a competitor's conference, or a town renamed Half.com passes it. The founder is mislabeling the channel, which matters because the failure modes and the right next moves are different for each.",
+          "rubric": [
+            "Identifies the activity as conventional PR, not unconventional",
+            "Names the create-vs-pitch distinction",
+            "Applies a clean test (does the thing exist as a story without the reporter?)",
+            "Explains why mislabeling the channel matters (different failure modes, different next moves)"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch08-create-not-pitch-sc2",
+          "setup": "A founder of a prosumer video editing tool has $15k and six weeks before a competitor's product launch. She wants a press moment that lands during her competitor's launch week, partly to steal oxygen.",
+          "question": "Design a create-driven move (not a pitch-driven one) that fits this budget and timing. Name at least one concrete idea, and explain why it creates news rather than pitching news.",
+          "modelAnswer": "A defensible create move: on the morning of the competitor's launch, publish a fully produced side-by-side 'speedrun' video in which the founder edits an identical 60-second clip in her tool and in the competitor's tool simultaneously, on a split screen, showing final times and final quality. Post raw assets (project files, footage) so anyone can replicate. Invite a well-known editor to narrate. Budget: $6k for the editor, $3k for the video production, $3k for a micro-influencer seeding push, $3k reserve. Why it's create-driven: the video is an object that exists as a story regardless of whether any reporter picks it up — YouTube, Twitter, and editing communities will circulate it on its own. Reporters who do cover it are covering something they can watch, not something they have to take on faith. It also hijacks the competitor's news day without pitching against them directly. Alternative ideas: a 'one-cut challenge' contest during launch week with a cash prize for the best edit done in her tool; a storefront 'edit bay' in the competitor's city where any passerby can get a reel edited for free. Both share the same property: the event exists first; press coverage follows.",
+          "rubric": [
+            "Proposes a concrete, executable create-move within budget",
+            "Names why the idea exists as a story without a reporter's blessing",
+            "Shows the timing/steal-oxygen logic of landing during the competitor's launch",
+            "Keeps the plan inside the $15k budget with a specific breakdown",
+            "Avoids collapsing back into a pitch-driven plan (press release + outreach)"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "In 60 seconds, teach a first-time founder what unconventional PR is. Cover (1) the one-sentence definition, (2) the create-vs-pitch distinction and why that distinction matters, (3) the two shapes (stunts and customer appreciation), and (4) why this is treated as a separate channel rather than a tactic inside conventional PR.",
+        "rubric": [
+          "States the definition precisely (creating newsworthy events, not pitching existing news)",
+          "Names the create-vs-pitch distinction and gives at least one consequence of it",
+          "Distinguishes the two shapes with one example each",
+          "Explains the crowding / skill-set argument for treating it as a separate channel",
+          "Explanation is causal, not a list — the 'why' of each part is clear"
+        ]
+      }
+    },
+    {
+      "id": "ch08-attention-arbitrage",
+      "chapterId": "ch08",
+      "title": "The Attention-Arbitrage Mechanism",
+      "isLandmark": true,
+      "order": 2,
+      "pretest": {
+        "prompt": "Half.com spent $70k to rename a town and got 40 million impressions. A competitor spent $70k on a well-run PR agency pitching the same launch and got three small write-ups. Before reading on — what general mechanism explains the 100x-plus difference in output per dollar, and under what conditions would you expect the gap to narrow or flip?",
+        "modelAnswer": "The mechanism is attention arbitrage: journalists' attention is a scarce resource, and the 'normal pitch' market for it is extremely crowded (hundreds of pitches per reporter per week), so the marginal return on another well-crafted pitch is low. A genuinely unusual event faces almost no competition — there is exactly one company renaming a town this year — so it sits in a much less crowded market for the same scarce resource, yielding a much higher conversion of dollars to attention. The gap narrows or flips when: (a) too many companies copy the same stunt format (crowding in the unconventional market), (b) the stunt is unusual but not *relevant* to the reporter's beat or audience (no conversion), or (c) the founder's audience ignores press entirely (e.g., deep enterprise B2B buyers who buy from peer referrals, not news)."
+      },
+      "lesson": {
+        "markdown": "## What's actually being traded\n\nThe mechanism underneath unconventional PR is an arbitrage on **journalist attention** — and, downstream, on reader attention. Both are scarce. Reporters at major outlets receive hundreds of pitches a week, almost all structured the same way: 'Here is our news, here is a quote, here is why your readers care.' A well-crafted pitch is one of many identical offers for the same slot, which is why conventional PR is high-effort for modest yield.\n\nA stunt does not compete in that market. When Half.com renamed Halfway, Oregon, no other startup was offering a town-rename story that day. When WePay dropped a block of ice at PayPal's conference, the reporter wasn't choosing between WePay's ice and ten other ice blocks. The stunt sits in a nearly empty market for the same attention — a classic arbitrage condition: abundant buyers (reporters and readers who want unusual stories), scarce sellers (companies willing to do something genuinely unusual).\n\n## Why the arbitrage persists\n\nYou might expect the gap to close as founders notice it. It doesn't, for structural reasons:\n\n1. **Stunts feel risky to approve.** A board that greenlights a $20k PR retainer will balk at a $20k block-of-ice idea even when the expected value is higher, because the stunt has a larger downside if it flops (looking silly in public) and no template to point to. The career incentives inside most companies push toward conventional options.\n2. **Stunts require creative taste.** Coming up with something that is surprising *and* on-brand *and* legal *and* appropriate for your audience is a real skill. Most marketing teams don't feel like they have it, so they default to what they can execute confidently.\n3. **Stunts are embarrassing when they fail publicly.** An unread press release is invisible; a failed stunt is a story of its own kind. The asymmetry of embarrassment keeps many founders out of the market even when the math favors entry.\n\nThese frictions are *why the arbitrage exists at all*. If stunts were as safe and systematizable as press releases, every company would do both, and the returns per dollar would equalize.\n\n## The conversion half of the mechanism\n\nCoverage is necessary but not sufficient. The second half of the mechanism is whether coverage converts to signups, customers, or brand recall. Half.com's 40 million impressions produced a large customer base partly because the story naturally communicated *what Half.com was* (a cheaper alternative, hence 'half'). DuckDuckGo's Google-backyard billboard converted because the stunt's payload was the *positioning itself* — privacy — and reporters who covered it couldn't help explaining DuckDuckGo's differentiator in the same breath.\n\nThe best stunts carry the message inside the spectacle. A stunt that gets attention without communicating what the product is produces impressions without lift — the one-hit-wonder trap covered later in the chapter.\n\n## The ceiling\n\nArbitrages close when everyone notices them. The reason unconventional PR remains durable is that the frictions above are *structural*, not informational — founders know stunts work; they still don't do them. But within specific formats, the arbitrage does close. Everyone can now produce a launch video, so 'film a funny launch video' is no longer scarce. The durable play is always one level up: look for formats that are still unusual in your specific market, because the arbitrage lives in scarcity, and scarcity is local.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Marco runs a Series-A logistics-software company for trucking fleets. His competitor just raised $40M and got a big TechCrunch write-up. Marco wants to respond with something that punches above his budget. His CMO suggests spending $50k on a PR agency to pitch 'our CEO's response.' Marco is skeptical.",
+        "walkthrough": "Walk through the arbitrage frame.\n\n**The CMO's plan lives in the crowded market.** Reporters who just covered the competitor are not looking for 'rival CEO weighs in' follow-ups — that's one of twenty pitches they're getting this week. Marco's $50k buys relationships and crisp copy, but the underlying good is oversupplied. Expected outcome: one or two small write-ups, minimal lift.\n\n**What does the empty market look like in trucking software?** A stunt needs to be surprising to *this* audience — dispatchers, fleet owners, owner-operators. The empty market here is not a 20-foot couch or a block of ice; those are surprising to tech reporters but not to truckers. The empty market is something like: Marco's team rents a truck, drives it cross-country with a live dashboard projected on the trailer showing real-time fuel savings using their software, stopping at truck stops to buy meals for drivers who sign up. Alternatively: a public challenge where Marco's company reimburses any trucking firm that can prove his competitor's software saved them more on a standardized route.\n\n**Why this arbitrages.** Trucking-industry journalists get almost no stunts on their beat. A single execution would plausibly dominate trade publications for weeks. Marco's $50k goes much further in that empty market than in the saturated tech-reporter market.\n\n**The stunt has to carry the message.** 'Fuel savings' is Marco's differentiator. The cross-country truck with the live dashboard *is* the message — reporters who cover it cannot avoid explaining the savings pitch. This is the payload-inside-the-spectacle principle; without it, even a successful stunt converts poorly.\n\n**Why approval is hard.** Marco's board will ask why he's 'playing games' instead of running standard PR. The honest answer is the arbitrage: the standard market is crowded, the stunt market is nearly empty in trucking, and the expected value per dollar is several-fold higher even accounting for flop risk. That's a real argument, but not every board buys it, which is exactly why the arbitrage persists."
+      },
+      "contrast": {
+        "neighborConceptId": "ch08-create-not-pitch",
+        "explanation": "The create-vs-pitch distinction (prior concept) is the channel's *definition*. The attention-arbitrage mechanism is *why* that distinction produces disproportionate results per dollar. The definition tells you what unconventional PR is; the mechanism tells you why it's not redundant with conventional PR. A founder can know the definition and still underinvest if they don't see the arbitrage — they'll treat stunts as 'fun but unserious' rather than as the higher-expected-value option when the conventional market is crowded."
+      },
+      "flashcards": [
+        {
+          "id": "ch08-attention-arbitrage-fc1",
+          "type": "recall",
+          "front": "What scarce resource does unconventional PR arbitrage, and what makes it an arbitrage?",
+          "back": "Journalist (and reader) attention. It's an arbitrage because the 'normal pitch' market for that attention is crowded while the 'unusual event' market is nearly empty — same scarce good, different competition levels, so dollars convert at very different rates."
+        },
+        {
+          "id": "ch08-attention-arbitrage-fc2",
+          "type": "recall",
+          "front": "Name three structural reasons the attention arbitrage persists rather than closing.",
+          "back": "(1) Stunts are risky to approve inside companies (career incentives favor safer conventional PR). (2) Stunts require creative taste that most marketing teams don't believe they have. (3) Failed stunts are publicly embarrassing in a way unread press releases aren't, so the downside-asymmetry keeps entrants out."
+        },
+        {
+          "id": "ch08-attention-arbitrage-fc3",
+          "type": "cloze",
+          "front": "A stunt that grabs attention without communicating what the product actually is produces ______ without ______ — the one-hit-wonder trap.",
+          "back": "impressions ; lift — coverage doesn't convert because the spectacle didn't carry the message payload inside it."
+        },
+        {
+          "id": "ch08-attention-arbitrage-fc4",
+          "type": "recognition",
+          "front": "Why is 'film a funny launch video' no longer a reliable unconventional-PR play in 2026, even though Dollar Shave Club's 2012 launch video worked?",
+          "back": "Because the arbitrage closes as formats crowd. Funny launch videos are now common, so the 'empty market' in that format is gone. The durable move is always one level up — find a format still unusual in your specific market, because scarcity is local and arbitrages close when copied."
+        },
+        {
+          "id": "ch08-attention-arbitrage-fc5",
+          "type": "recall",
+          "front": "What's the 'payload inside the spectacle' principle?",
+          "back": "The best stunts embed the product's actual message or differentiator inside the spectacle itself, so reporters who cover the stunt cannot avoid explaining the product. Half.com's rename told you it was half-priced; DuckDuckGo's Google-backyard billboard told you it was private. Without the payload, coverage produces impressions but not conversion."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch08-attention-arbitrage-sc1",
+          "setup": "A founder proposes: 'Let's do a big, weird stunt at CES — we'll have someone in a gorilla suit hand out flyers. It worked for Chargify's bull costume at SXSW.'",
+          "question": "Using the attention-arbitrage frame, diagnose whether this is likely to work. What specifically should the founder check before executing?",
+          "modelAnswer": "The arbitrage depends on scarcity, and CES is the opposite of a scarce-stunt market — mascots, costumes, and gimmicks are standard operating procedure, so a gorilla suit sits in a crowded market for the same reporter attention. Chargify's bull worked at SXSW in 2010 partly because SXSW then had fewer coordinated brand stunts than CES does today. The founder should check: (1) how many costumed mascots/stunts were on the floor at CES last year? If the answer is 'dozens,' the arbitrage is gone in this venue and format; (2) does the gorilla suit carry any payload — does it communicate what the product is? If it's just a gorilla, even successful coverage won't convert; (3) is there an empty-market format they could substitute — a stunt at a different venue, a different format entirely (e.g., taking out full-page ads in the CES daily newspaper the attendees actually read), or a format CES bans, which sometimes creates more coverage than the stunt itself. The lesson is: don't copy the *format* of a successful stunt; copy the *empty-market reasoning* that made it work.",
+          "rubric": [
+            "Identifies CES as a crowded stunt market (arbitrage largely closed)",
+            "Notes the gorilla suit carries no product payload",
+            "Distinguishes copying format vs. copying empty-market reasoning",
+            "Suggests at least one alternative that genuinely exploits an empty market",
+            "Explains why context/timing (SXSW 2010 vs. CES 2026) matters for the arbitrage"
+          ],
+          "difficulty": 3
+        },
+        {
+          "id": "ch08-attention-arbitrage-sc2",
+          "setup": "A founder got great coverage for a clever launch stunt. Three months later he runs an almost-identical stunt expecting the same coverage. Almost no press covers it.",
+          "question": "What does the arbitrage frame predict here, and what's the right move for the next stunt?",
+          "modelAnswer": "The frame predicts exactly this. The first stunt's coverage came from scarcity — no one else was doing that thing. The second stunt is the same thing in the same empty market, except now it's no longer empty: the market's own prior coverage closed the arbitrage, because reporters don't cover the same trick twice. The right move for the next stunt is to find a *new* empty-market position: change the format, change the venue, or change the axis of surprise. What stays constant between stunts is the payload (what the product is about) and the brand voice; what must change is the specific scarcity being exploited. This is why the Traction authors warn that unconventional PR success is unpredictable — each stunt has to rediscover its own empty market.",
+          "rubric": [
+            "Explains that the first stunt's own coverage closes that specific arbitrage",
+            "Articulates that reporters don't cover the same trick twice",
+            "Prescribes changing format/venue/axis while keeping payload and voice constant",
+            "Connects to the unpredictability takeaway in the chapter",
+            "Doesn't conclude 'stunts don't work' — correctly scopes the problem to format reuse"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach the attention-arbitrage mechanism to a skeptical CFO who thinks stunts are 'unserious.' Cover: (1) what scarce resource is being arbitraged, (2) why the conventional market is crowded and the unconventional market isn't, (3) why the gap doesn't close (three structural frictions), and (4) what the 'payload inside the spectacle' principle implies for which stunts actually convert.",
+        "rubric": [
+          "Names journalist/reader attention as the scarce good",
+          "Explains the crowded-vs-empty market framing explicitly",
+          "Gives all three structural frictions that keep the arbitrage open",
+          "Explains payload-inside-spectacle with at least one concrete example",
+          "Argument is delivered as financial logic (expected value, per-dollar return), suitable for a CFO"
+        ]
+      }
+    },
+    {
+      "id": "ch08-fit-signals",
+      "chapterId": "ch08",
+      "title": "Who Unconventional PR Fits (and Who It Torches)",
+      "isLandmark": false,
+      "order": 3,
+      "pretest": {
+        "prompt": "Two companies are deciding whether to invest in unconventional PR. Company A sells a consumer travel-booking app to adults 25–45. Company B sells a compliance workflow tool to risk officers at regulated banks. Before reading — for which one is unconventional PR more likely to work, and what are the two or three specific attributes of the business (not the tactic) that actually drive the answer?",
+        "modelAnswer": "Company A is much more likely to get a positive return. The attributes that drive the answer are: (1) the buyer's tolerance for novelty and brand-voice stunts (consumer adults tolerate and often enjoy playful stunts; risk officers at regulated banks are actively trained to distrust anything that looks non-serious); (2) the breadth of the buying audience — consumer audiences are huge, so even modest spectacle-driven coverage reaches plausible buyers, while B's buyers number in the hundreds globally and are not reached through mass press; (3) the procurement path — A's users self-sign-up, so press-driven curiosity converts quickly, while B's sales require trust-building across legal, compliance, and security teams, for whom a stunt is a *negative* signal. Unconventional PR fits brand-adjacent, consumer-facing, novelty-tolerant companies; it actively damages regulated-B2B / high-trust-procurement companies."
+      },
+      "lesson": {
+        "markdown": "## The fit question is not optional\n\nThe attention-arbitrage mechanism says stunts can produce huge coverage per dollar. That is not the same as saying stunts produce *customers* per dollar for every business. The channel has a real fit profile, and for some companies the math actively runs backward — coverage you didn't want, from audiences you can't sell to, with brand damage among the audience you can.\n\n## Where unconventional PR fits well\n\nThree attributes, roughly in order of importance:\n\n1. **The buyer tolerates (or rewards) novelty.** Consumer, prosumer, and brand-adjacent businesses live in markets where a memorable story is an asset. Virgin, Hipmunk, Half.com, Dollar Shave Club, Blendtec all sell to audiences who enjoy or forgive playful brand voice. A stunt that makes them laugh compounds affection.\n2. **The buying audience is large and mass-addressable.** Stunts produce impressions at scale; impressions matter when a plausible customer is one in ten of the people who see the story. A consumer app with a TAM of tens of millions benefits from a 40-million-impression spike. A niche tool with 3,000 possible buyers globally barely notices it.\n3. **The purchase is low-friction.** Press-driven curiosity converts best when the user can try the product in minutes. Sign up, install, free tier — stunts and click-through-to-signup have compatible time horizons. When conversion requires a months-long procurement cycle, the press moment fades before the deal closes.\n\nSecondary positive signals: a visual or demonstrable product (Will It Blend? only works because you can watch the blender); a brand that already has some voice (not a blank generic identity); a team with creative-execution capacity in-house.\n\n## Where unconventional PR torches budget\n\nThe same three attributes, inverted, produce the anti-fit:\n\n1. **Regulated industries and high-trust procurement.** Healthcare, finance, defense, enterprise security, legal. Buyers in these markets are *negatively* selected for risk tolerance — their job is to not get burned. A stunt signals that you are not a serious vendor, which is a procurement-killing signal even if the stunt was genuinely clever. The ROI is not low; it's negative.\n2. **Narrow, named buyers.** If your total addressable market is under a few thousand named accounts and each has a specific buyer, mass press is the wrong instrument. You don't need 40 million impressions; you need 500 correct meetings. Unconventional PR can still *support* named-account selling (the stunt gives your salespeople something to open a call with), but it can't lead.\n3. **Long, multi-stakeholder purchase cycles.** When procurement involves security review, legal review, vendor onboarding, and multi-quarter pilots, the press moment has decayed before anyone signs. The coverage feeds neither the pipeline (wrong lead type) nor the close (decision-makers aren't press-driven).\n\n## Ambiguous middle: prosumer and SMB\n\nMany businesses sit in a middle band — prosumer tools, SMB SaaS, small-agency software. Here the answer is 'test carefully.' A small stunt ($1–5k, see next concept on testing) can reveal whether the audience converts from press-driven exposure without committing a full campaign's budget.\n\n## The brand-voice gate\n\nOne more gate: does your brand voice *support* a stunt? A $5,000 'we're fun!' stunt grafted onto a sober, professional brand reads as desperate rather than playful. Before doing any unconventional PR, founders should be able to answer: 'If a customer saw this stunt and then visited our website, would it feel like the same company?' If no, either fix the brand first or stay out of the channel.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "You're advising three founders who all saw the Grasshopper chocolate-grasshopper story and want to do something similar. (A) Ravi runs a $29/mo consumer habit tracker. (B) Lena runs a $50k/yr enterprise compliance platform for banks. (C) Marcus runs a $299/mo prosumer video-editing tool.",
+        "walkthrough": "Apply the fit attributes to each.\n\n**Ravi (consumer habit tracker).** Strong fit on all three. Consumers tolerate novelty, TAM is broad (tens of millions of adults setting habits), purchase is a two-click signup. A stunt like 'we'll mail you a free one-year physical habit journal, signed by the founder, to the first 500 people who install the app' sits inside his budget and drives signups directly. Unconventional PR is a plausible inner-ring channel for Ravi.\n\n**Lena (enterprise compliance for banks).** Anti-fit on all three. Her buyers are compliance officers whose job is to be boring and cautious. A stunt signals unseriousness — her prospects will use it as a reason *not* to buy. Her TAM is a few hundred named banks; mass press can't find them and may alienate the ones that read it. Her sales cycle is 9–18 months with legal, security, and procurement gates. Recommendation: unconventional PR does not belong even in her Potential ring. Customer-appreciation gestures (a thoughtful onboarding concierge, handwritten thank-you notes to existing customers) are the one piece of this channel that safely applies, because they don't involve public spectacle.\n\n**Marcus (prosumer video editing).** Ambiguous middle. Prosumers — freelancers, YouTubers, small agencies — tolerate novelty but make considered purchases. A small test makes sense: produce one video-editing challenge with a $2k prize, seed it to ten micro-influencers, measure signups over 30 days. Depending on the result, Marcus either invests further or deprioritizes. The right move for ambiguous-middle cases is not 'skip the channel' but 'buy the cheap experiment before committing.'\n\nThe general pattern: the fit answer is rarely 'yes to stunts, no to appreciation' or vice versa. Customer-appreciation gestures apply almost universally (including to Lena's compliance platform). It's the publicity-stunt half of the channel that has sharp fit constraints."
+      },
+      "contrast": {
+        "neighborConceptId": "ch06-viral-product-fit",
+        "explanation": "Chapter 6's product-fit concept for viral marketing asks whether the product's structural mechanics can sustain a viral loop. This concept asks whether the business's *audience and purchase context* will convert press-driven exposure. A product can have great viral fit and bad unconventional-PR fit (a free collaboration tool that spreads by invite inside companies but whose buyers ignore press), or vice versa (a consumer brand with no structural viral loop but big reach from a single stunt). Fit is channel-specific; don't infer one from the other."
+      },
+      "flashcards": [
+        {
+          "id": "ch08-fit-signals-fc1",
+          "type": "recall",
+          "front": "Name the three positive fit attributes for unconventional PR.",
+          "back": "(1) Buyer tolerates or rewards novelty. (2) Buying audience is large and mass-addressable. (3) Purchase is low-friction — signup, free tier, fast conversion. Consumer / prosumer / brand-adjacent businesses typically hit all three."
+        },
+        {
+          "id": "ch08-fit-signals-fc2",
+          "type": "recall",
+          "front": "Name three anti-fit conditions under which unconventional PR torches budget (or worse).",
+          "back": "(1) Regulated industries / high-trust procurement — stunts signal unseriousness and actively hurt sales. (2) Narrow, named-account TAM — mass press reaches the wrong audience. (3) Long, multi-stakeholder purchase cycles — the press moment decays before the deal closes."
+        },
+        {
+          "id": "ch08-fit-signals-fc3",
+          "type": "cloze",
+          "front": "For regulated-industry B2B buyers (finance, healthcare, defense), unconventional PR often produces a ______ ROI, not merely a low one — the stunt is read as a signal of ______.",
+          "back": "negative ; unseriousness — risk-trained buyers use a stunt as a reason to disqualify you."
+        },
+        {
+          "id": "ch08-fit-signals-fc4",
+          "type": "recognition",
+          "front": "Which half of unconventional PR can safely apply even to a regulated enterprise B2B company? (a) Publicity stunts. (b) Customer appreciation gestures. (c) Both. (d) Neither.",
+          "back": "(b). Handwritten notes, thank-you gifts, concierge onboarding, surprise credits — these compound goodwill without triggering the unseriousness signal. Publicity stunts, by contrast, actively damage trust with regulated buyers."
+        },
+        {
+          "id": "ch08-fit-signals-fc5",
+          "type": "recall",
+          "front": "What's the 'brand-voice gate' and why does it matter?",
+          "back": "The test: if a customer saw your stunt and then visited your website, would it feel like the same company? If not, the stunt reads as desperate rather than playful. Brand voice is a gate because a mismatched stunt damages the brand even when the stunt gets coverage — impressions without compatibility produce negative lift."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch08-fit-signals-sc1",
+          "setup": "A founder of a $200k/yr cybersecurity platform selling to CISOs at Fortune 500 companies says: 'I want to do unconventional PR. I'm thinking a billboard in Silicon Valley that roasts our biggest competitor's recent breach.'",
+          "question": "Evaluate the fit and the specific idea. Recommend what to do instead if you disagree.",
+          "modelAnswer": "Both the channel fit and the specific idea are wrong for this business. Channel fit: cybersecurity sales to Fortune 500 CISOs is the archetypal anti-fit — regulated buyers, small named-account TAM (a few thousand companies globally), 9–18 month procurement cycles with security and legal gates. Stunts signal unseriousness to exactly the buyer profile who has to justify vendor choice to a board after a breach. Specific-idea problems: (a) roasting a competitor's breach weaponizes a tragedy their buyers also fear — it reads as schadenfreude, not confidence; (b) CISOs talk to each other and will remember the billboard against this vendor later; (c) the Silicon Valley location targets peers and press, not actual buyers who are at Fortune 500 HQs nationwide. Recommended substitutes: (1) publish serious, well-resourced original research on breach patterns — this is conventional PR + content, not unconventional, but it's the right channel for this audience; (2) invest the customer-appreciation half of unconventional PR — executive briefings, thoughtful gifts to CISO champions, post-sale concierge onboarding. These don't trigger the unseriousness signal and compound over long sales cycles.",
+          "rubric": [
+            "Identifies regulated B2B / named-account as anti-fit",
+            "Flags specific risks in the billboard idea (schadenfreude read, geographic mismatch, memory among CISOs)",
+            "Recommends keeping customer-appreciation gestures (safe half of the channel)",
+            "Suggests a better primary channel for this audience (content / conventional PR with research)",
+            "Does not dismiss unconventional PR in general — correctly scopes the 'not for you' to this specific business"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch08-fit-signals-sc2",
+          "setup": "A founder runs a consumer meditation app ($12/mo). She says: 'Unconventional PR obviously fits us — we're consumer, big TAM, low-friction signup. We should go all-in on stunts.'",
+          "question": "Is 'go all-in on stunts' the correct read of the fit? What nuances is she missing?",
+          "modelAnswer": "She's right that the fit attributes are positive, but 'go all-in' is the wrong conclusion for two reasons. First, the brand-voice gate matters especially for meditation: a loud, wacky stunt may clash with a calm, trustworthy brand promise, producing impressions at the cost of brand integrity. The stunt has to be *quiet-weird* — novel in a way consistent with the product (e.g., opening a free pop-up silence room in Times Square) rather than loud-weird (e.g., a stuntman in a costume). Second, Bullseye still applies: fit unlocks the channel as a candidate, not as a commitment. She should pick 1–2 cheap stunt tests alongside customer-appreciation gestures, measure conversion, and decide whether unconventional PR earns inner-ring status versus other candidates (viral loops, content/SEO, paid). 'Go all-in' skips the testing step and concentrates budget before there's evidence the specific stunts she'd run actually convert her specific audience.",
+          "rubric": [
+            "Agrees fit is positive but catches the 'go all-in' overreach",
+            "Applies the brand-voice gate to meditation specifically",
+            "Distinguishes 'channel fits us' from 'this particular stunt will work'",
+            "Reconnects to the Bullseye testing discipline — fit unlocks testing, not commitment",
+            "Suggests the customer-appreciation side as a complementary lower-risk investment"
+          ],
+          "difficulty": 1
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach the fit profile for unconventional PR to a founder who just read the Half.com story and wants to do something similar. Cover: (1) the three positive fit attributes, (2) the three anti-fit conditions, (3) why customer-appreciation gestures have much broader fit than publicity stunts, and (4) the brand-voice gate.",
+        "rubric": [
+          "Names all three positive fit attributes",
+          "Names all three anti-fit conditions with reasoning for each",
+          "Explains why customer-appreciation applies broadly while stunts have sharp constraints",
+          "Explains the brand-voice gate and applies it to a concrete example",
+          "Tone suitable for a founder excited about stunts — directs enthusiasm without killing it"
+        ]
+      }
+    },
+    {
+      "id": "ch08-core-tactics",
+      "chapterId": "ch08",
+      "title": "The Core Tactics: Stunts, Videos, Contests, Appreciation",
+      "isLandmark": true,
+      "order": 4,
+      "pretest": {
+        "prompt": "Make a list, from memory, of five specific unconventional-PR plays you could run tomorrow with a $10k budget. For each, write one sentence on what's being arbitraged (what attention or goodwill pool the play draws from) and one on the biggest risk.",
+        "modelAnswer": "Reasonable answers: (1) competitive stunt at a rival's event — arbitrages the rival's already-assembled audience; risk = legal/trademark blowback. (2) Branded viral video demonstrating the product in an extreme way — arbitrages YouTube/TikTok discovery; risk = tone clash and no conversion payload. (3) Contest with a notable prize aligned with target-user aspirations — arbitrages participants' social sharing; risk = mercenary entrants who don't convert. (4) Handwritten notes + small gifts to the first 500 customers — arbitrages rarity of physical mail; risk = scale limits and fulfillment cost. (5) Customer-referred-to-press program — arbitrages reporters' hunger for real user stories; risk = losing narrative control. Self-assessment: if your list came out mostly stunts with no appreciation plays, you're missing the compounding half of the channel."
+      },
+      "lesson": {
+        "markdown": "## The play menu\n\nUnconventional PR is an unusual channel in that the 'tactics' list is genuinely a menu — most founders don't come to it with strong priors. Here is the working set.\n\n### Stunts\n\n**Competitive stunts.** Show up at a rival's event or venue with a message that reframes the rival's weakness as your strength. WePay's 600-pound block of ice at PayPal's conference. DuckDuckGo's billboard in Google's backyard. The arbitrage: the rival has already assembled your target audience; you pay a tiny fraction of their cost to get in front of it. Risk: legal/trademark, and a real possibility the audience reads you as punching down.\n\n**Launch-moment stunts.** A large engineered event to create a national-press moment at launch. Half.com renaming Halfway, Oregon. Grasshopper's chocolate-covered grasshoppers to 5,000 influencers with a video about entrepreneurship. The arbitrage: launch moments are scarce windows where a story has an inherent hook; spend the entire stunt budget into that window rather than across the year.\n\n**Viral videos.** Produced content designed to spread on YouTube, TikTok, or social feeds. Blendtec's 'Will It Blend?' series. Dollar Shave Club's launch video (12,000 customers in 48 hours, 8M-plus views over time). The arbitrage is platform discovery algorithms, not traditional press. The conversion payload needs to sit inside the content: Blendtec's videos literally demonstrate blender power, so watching *is* the product pitch.\n\n### Customer appreciation (the compounding half)\n\n**Physical gifts.** Hipmunk's luggage tags and handwritten notes to the first several hundred Twitter mentions. Grasshopper's Skittles, homemade cookies, and Starbucks gift cards. The arbitrage: physical mail is so rare now that any piece of it lands with outsized emotional weight for the cost. Scales to a few hundred per batch, not millions.\n\n**Contests and giveaways.** Shopify's Build-a-Business competition ($3.5M+ in platform sales from 1,900 new customers). Dropbox's Dropquest (half a million participants in year one). Hipmunk's $500 Mother's Day flower giveaway, which produced coverage and long-term brand affection wildly disproportionate to spend. The arbitrage: contests borrow participants' social networks as distribution.\n\n**Referred-customer press.** When reporters come to your company, route them to your customers instead of pitching your own product. Grasshopper does this. The customer gets unexpected press; the customer's loyalty multiplies; you get indirect coverage that reads as credible because a customer is telling it. The arbitrage: you trade a conventional 'company quote' slot (low conversion) for a 'customer story' slot (high conversion) the reporter actually wants.\n\n**Customer-support-as-marketing.** Zappos's policy stance: customer support is a marketing investment, not a cost center. They don't track average-call-time because short calls aren't the goal — resolution quality is. Long calls in which a rep orders a pizza for a stranded customer or helps exchange workout clothes for a deep fryer (real Zappos stories) produce stories customers retell for years. The arbitrage: each call is a chance to create a word-of-mouth asset at marginal cost, not a cost to minimize.\n\n**Customer dinners.** When leadership travels, invite local customers out. Small budget, large relational lift. Doesn't produce press but produces the underlying goodwill that stunts convert against.\n\n## How stunts and appreciation interlock\n\nThe stunts produce spikes; the appreciation produces the baseline. Run only stunts and you get sawtooth growth — a high, then silence, then another high, then silence, with no organic word-of-mouth between events. Run only appreciation and you get steady word-of-mouth but no spikes big enough to move the company's trajectory. The template from Grasshopper: both, simultaneously, with dedicated owners for each.\n\n## Where to start\n\nThe practical order for most founders: start with customer-appreciation (cheap, low-risk, builds the baseline, reveals which customers are likely evangelists). After two or three months of that, attempt a single stunt test sized for your budget (see the next concept). This order front-loads the lower-variance compounding work before betting on the higher-variance spike work.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Dana runs a 10-person prosumer accounting tool for freelancers ($19/mo). She has $15k for unconventional PR over the next quarter and a 2-person marketing team. She's never run anything in this channel. She asks for a concrete 90-day program that uses both halves.",
+        "walkthrough": "A 90-day program covering both halves within the $15k envelope.\n\n**Month 1 — baseline.** Build the appreciation engine first. Spend: ~$1.5k. Actions: (1) every new paying customer receives a handwritten card + a $5 coffee gift card within 72 hours of signup (budgeted for ~200 new customers); (2) identify the 50 most enthusiastic existing customers (NPS 9–10, multiple referrals, or vocal on Twitter) and send each a small branded gift (tax-themed pun socks, e.g., 'Deduct This') with a handwritten note from the founder. Owner: one marketing team member as standing responsibility.\n\n**Month 2 — stunt preparation.** Spend: ~$1k on research, no execution yet. Actions: the team brainstorms 20 stunt ideas, filtered through three gates — (a) is this independently newsworthy to freelance/creative-economy press? (b) does it carry a payload about the product's actual differentiator (simplicity of freelance taxes)? (c) can we execute on $8k? The survivors: a 'freelancer tax-refund lottery' where Dana publicly pays one random freelancer's quarterly estimated taxes for a year ($3–5k prize); a pop-up 'tax amnesty booth' at a freelancer conference where attendees get their last-quarter receipts sorted live; a parody 'IRS form simplified' printable that goes viral on freelance Twitter.\n\n**Month 3 — execute one stunt + continue appreciation.** Stunt budget: ~$8k. Dana picks the tax-refund lottery: $5k prize, $1k production and PR push, $1k user-generated content seeding, $1k reserve. The lottery is announced on a launch day, runs for three weeks of submissions, picks a winner on camera, and the winner's refund payment is publicly posted. Payload inside spectacle: the product's differentiator (freelance-tax simplicity) is explicit in every mention because the prize *is* taxes done.\n\n**Remaining $3.5k reserve.** Holds budget for one follow-up customer-referred-press moment — when the press covers the lottery winner, Dana routes interview requests to the winner and the runners-up, not to herself.\n\n**Why this shape.** The appreciation engine runs continuously because it's what compounds. The stunt is single, well-funded, and carefully payload-tested, because one good stunt outperforms four rushed ones. The ordering (appreciation first, stunt second) means that by the time the stunt runs, Dana has a small cohort of vocal early customers who will amplify it organically — the spike sits on top of a real baseline, not in a silent pond."
+      },
+      "contrast": {
+        "neighborConceptId": "ch08-create-not-pitch",
+        "explanation": "The definition concept tells you what makes something count as unconventional PR (creating news vs. pitching). This concept is the concrete menu of plays that instantiate the definition. Founders can recite the definition correctly and still freeze when asked 'so what do I actually do tomorrow.' The tactics menu closes that gap — and the interlock between stunts (spikes) and appreciation (baseline) is the piece most founders miss when they treat stunts as the entire channel."
+      },
+      "flashcards": [
+        {
+          "id": "ch08-core-tactics-fc1",
+          "type": "recall",
+          "front": "Name the three main stunt sub-types and one example of each.",
+          "back": "Competitive stunts (WePay's block of ice at PayPal's conference; DuckDuckGo's billboard in Google's backyard). Launch-moment stunts (Half.com renaming Halfway, Oregon; Grasshopper chocolate-grasshoppers). Viral videos (Blendtec's 'Will It Blend?'; Dollar Shave Club's launch video)."
+        },
+        {
+          "id": "ch08-core-tactics-fc2",
+          "type": "recall",
+          "front": "Name at least four customer-appreciation tactics from the chapter.",
+          "back": "Physical gifts (Hipmunk's luggage tags, Grasshopper's cookies/gift cards), contests and giveaways (Shopify Build-a-Business, Dropquest, Hipmunk Mother's Day), referred-customer press (routing reporters to customers instead of pitching your own CEO), customer-support-as-marketing (Zappos long calls, untracked call-time), customer dinners when leadership travels."
+        },
+        {
+          "id": "ch08-core-tactics-fc3",
+          "type": "cloze",
+          "front": "Stunts produce ______; appreciation produces ______. Running only stunts produces sawtooth growth; running only appreciation produces a baseline with no moments large enough to move the company's trajectory.",
+          "back": "spikes ; the baseline — the two interlock. Mature programs run both simultaneously with dedicated owners."
+        },
+        {
+          "id": "ch08-core-tactics-fc4",
+          "type": "recognition",
+          "front": "Zappos deliberately does not track average call-time. Which principle of unconventional PR is that a concrete application of?",
+          "back": "Customer-support-as-marketing — framing each support interaction as a word-of-mouth asset rather than a cost to minimize. Short calls optimize cost; long calls optimize stories. The Zappos policies (free return shipping, unscripted support) flow from this reframing."
+        },
+        {
+          "id": "ch08-core-tactics-fc5",
+          "type": "recall",
+          "front": "What's the practical ordering the chapter recommends for a founder new to unconventional PR, and why?",
+          "back": "Start with customer-appreciation (cheap, low-risk, compounding, reveals evangelists), run it continuously for 2–3 months, then attempt a single well-funded stunt test. The ordering front-loads lower-variance work and means the first stunt lands on a real baseline of vocal customers rather than in a silent pond."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch08-core-tactics-sc1",
+          "setup": "A founder says: 'Our unconventional PR program this year is four stunts, one per quarter. That's it. Appreciation is handled by support tickets.'",
+          "question": "What's wrong with this shape, using the stunts-vs-appreciation interlock?",
+          "modelAnswer": "Two things. First, four stunts in one year with no appreciation program produces classic sawtooth growth — a spike, three months of silence, another spike, three months of silence. The organic baseline between stunts is missing, so each stunt starts from near-zero amplification. Second, 'appreciation is handled by support tickets' conflates resolving problems with creating delight. Support ticket resolution avoids negative word-of-mouth; it does not produce positive word-of-mouth. Real appreciation programs (handwritten notes, small gifts, contests, referred-customer press, surprise upgrades) are a separate discipline with its own budget and owner. Fix: keep the four stunts but allocate a second, standing owner and roughly 25–40% of the unconventional-PR budget to a continuous appreciation program that runs between spikes. That way each stunt sits on top of a live baseline of vocal customers, and the company's growth curve stops looking like a sawtooth.",
+          "rubric": [
+            "Identifies the sawtooth pattern as the failure mode",
+            "Distinguishes support-resolution from appreciation-as-delight",
+            "Prescribes a second, standing owner and a budget share for appreciation",
+            "Explains why the stunt's own amplification depends on the appreciation baseline",
+            "Keeps the stunts — doesn't over-correct to 'appreciation only'"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch08-core-tactics-sc2",
+          "setup": "A founder is running an annual Build-a-Business-style contest with a $25k prize. After three years, participation is flat and coverage has shrunk each year.",
+          "question": "What's going on, and what would you change?",
+          "modelAnswer": "This is the format-arbitrage-closing pattern applied to contests. The first year's contest was novel in the founder's market; reporters and participants covered it for the novelty. By year three, the contest itself is predictable — same format, same prize tier, same timing — so the scarcity it exploited is gone. Participation flattens because the audience has already signed up or moved on; coverage shrinks because reporters cover firsts and milestones, not recurrences. Fixes: (a) change the axis of surprise while keeping the brand and payload constant — e.g., same prize value but now delivered in an unexpected form (winner's business gets a cross-country publicity tour instead of cash); (b) raise the stakes meaningfully (a six-figure prize like Shopify runs); (c) rotate the contest theme annually so each year is a fresh news hook; (d) turn the contest into a story program where winners become customer-press assets year-round, not just on announcement day. What *not* to do: run the same contest for a fourth year expecting different results. The contest itself is fine; its scarcity has just been consumed.",
+          "rubric": [
+            "Identifies format-arbitrage closing as the underlying mechanism",
+            "Names at least two distinct fixes (axis of surprise, stakes, theme rotation, year-round story program)",
+            "Correctly rules out 'run the same contest again harder' as a solution",
+            "Keeps the contest format alive rather than killing the whole play",
+            "Connects this to the broader principle that arbitrages close within specific formats"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach the unconventional-PR tactics menu to a founder with $15k and 90 days. Cover: (1) the three main stunt sub-types with an example each, (2) at least three customer-appreciation tactics, (3) the stunts-vs-appreciation interlock and why both matter, and (4) the recommended starting order.",
+        "rubric": [
+          "Lists three stunt sub-types (competitive, launch-moment, viral video) with examples",
+          "Lists at least three appreciation tactics with reasoning",
+          "Explains the spikes-vs-baseline interlock clearly",
+          "Recommends starting with appreciation before stunts and justifies the ordering",
+          "Specifies concrete budget and owner allocation at least at a rough level"
+        ]
+      }
+    },
+    {
+      "id": "ch08-cheap-testing",
+      "chapterId": "ch08",
+      "title": "Testing Unconventional PR Cheaply",
+      "isLandmark": false,
+      "order": 5,
+      "pretest": {
+        "prompt": "A founder tells you: 'You can't really test unconventional PR — it's inherently a big swing. Either you commit to a $50k stunt or you don't do the channel.' Before reading on — is this right? If not, what would a cheap unconventional-PR test actually look like, and what is it measuring?",
+        "modelAnswer": "It's not right. The big-or-nothing frame confuses the ceiling of a single stunt with the cost of testing the channel. A cheap test is a scaled-down version of a candidate stunt (or a tiny appreciation program) sized so that if it flops you've learned something specific for one-digit-percent of a full campaign. What you're measuring: (1) press-worthiness — does anyone external pick up or share the thing unprompted? (2) audience reaction — do the responses look like your ICP? (3) conversion — do signups or inbound interest actually move? A $500 version of a contest, 50 handwritten notes to targeted customers, a single unboosted viral-video attempt, a lightweight localized stunt — all are cheap probes that validate the elements of the eventual full-scale play."
+      },
+      "lesson": {
+        "markdown": "## Why testing is harder here than in other channels\n\nMost traction channels have obvious cheap-test templates. Paid ads have $50 campaigns; SEO has single-page experiments; sales has a batch of 30 outbound emails. Unconventional PR resists that pattern because the stunts that worked (Half.com's town, DuckDuckGo's billboard) were one-off commitments with no natural smaller version. Founders therefore often skip testing and either jump in with a full-budget stunt or skip the channel entirely — both avoidable errors.\n\nThe reframe: what you're testing in unconventional PR is not 'will this exact stunt succeed' but **the elements that determine whether stunts in this shape succeed for this business**. Those elements have cheap tests.\n\n## The five cheap-test patterns\n\n### 1. The press-worthiness self-test\nBefore spending anything, answer a blunt question in writing: *if I read about this stunt on a competitor's blog, would I forward it to someone?* If no, the stunt isn't press-worthy and no budget will fix that. This test costs zero and disqualifies maybe half of the stunt ideas a team generates.\n\nA sharper version: write the headline the stunt would generate, verbatim, before executing. If the imagined headline is bland ('Company X Hosts Giveaway'), the actual headline will be too. If it's specific and surprising ('Startup Pays a Small Oregon Town $70k to Rename Itself'), the underlying stunt has a chance.\n\n### 2. Tiny versions of the full stunt\nRun a scaled-down version to 100 people, one city, or one channel. Hipmunk tested customer-appreciation gifts on 'the first several hundred' Twitter mentioners before scaling the program. You are not trying to capture the full upside; you are asking whether the mechanism fires at all.\n\nFor stunts specifically, a tiny version often means a local or narrow-audience execution — a stunt at one conference, a giveaway in one city, a video seeded to one subreddit — before committing to a national version. If it doesn't move the needle at small scale, it's unlikely to move it at large scale; the dynamic is usually not 'go bigger and it will break through.'\n\n### 3. Single-execution appreciation probes\nSend 50 handwritten notes. Pick 20 customers at random and surprise each with a $10 coffee gift card. Watch what happens: do they mention it publicly? Do they refer anyone? Do they respond at all? At $500 total you learn whether your customer base is the kind that amplifies appreciation, which is the load-bearing question for scaling the appreciation half of the channel.\n\n### 4. Cheap video tests before expensive video production\nDollar Shave Club's $5,000 video is the cautionary *upper* bound — most founders cannot replicate that budget or its comedic taste. The cheap test is to produce a 60-second rough video for $200–500, post it to one platform, and look at shares and completion rate in 72 hours. A video that can't move a small organic audience will not move a big one after you spend $20k polishing it.\n\n### 5. Piggyback tests on existing events\nInstead of engineering your own event, insert a small stunt into an event that already has an audience — a conference, a product launch window (yours or a competitor's), a cultural moment. Chargify's green bull at SXSW for $3k is the template: SXSW assembled the audience; Chargify paid only for the bull. This reduces the 'will anyone show up' risk, leaving only the 'does the stunt work on the audience present' question to test.\n\n## What passes and what fails\n\nA test passes when one or more of: (a) the signal is visibly positive at small scale, (b) you learned a specific, named thing about why the format fit or didn't, or (c) you now have clear hypotheses for the next, slightly larger version. A test fails silently when you spent $500 and learned nothing — usually because you didn't define up front what the probe was supposed to demonstrate. Before any unconventional-PR test, write the single question it's answering. Without that, the test is just a small version of the same leap of faith.\n\n## Budget the loss, not the upside\n\nOne more discipline: size tests by the amount you can afford to lose, not the upside you're hoping for. A good stunt test costs 1–5% of the full-scale campaign budget and asks a specific question. If the test fails, you've lost 1–5% of the budget and disqualified one format. If it succeeds, you invest the remaining 95–99% with much more evidence. This is the same budgeting logic that makes Bullseye's Step 4 cheap parallel tests work — applied to a channel that is culturally resistant to being tested.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "Jasmine runs a consumer pet-nutrition subscription ($40/mo for custom-formulated dog food). She has $3k to test whether unconventional PR is an inner-ring candidate before committing to a full campaign. Her team has three stunt ideas: (A) a 'worst dog food ingredient' investigation video, (B) a contest giving one subscriber a free year and a personalized dog portrait, (C) a physical pop-up 'dog taste-testing station' in a park.",
+        "walkthrough": "Design cheap tests for each idea within the $3k budget.\n\n**Pre-test: the headline test (zero cost).** Jasmine writes the headline each stunt would produce. (A) 'Pet-Food Startup Publishes Investigation of Competitor Ingredients' — specific, but skews combative; might work, might alienate. (B) 'Dog-Food Startup Gives Away Free Year + Custom Portrait' — bland; fails the headline test. (C) 'Dogs Taste-Test New Food in Brooklyn Park, Owners Get Samples' — charming, specific, visual. C and A survive; B is disqualified before spending anything.\n\n**Test A: video probe ($500).** Produce a 90-second rough version of the investigation video using existing footage and a voiceover. Post to one dog-owner subreddit. Measure 72-hour shares, upvotes, and comment tone. What this test is answering: does the tone land with the target audience, or does it read as attack marketing? Budget: $500 for script, voiceover, and a small seeding push.\n\n**Test C: piggyback tiny stunt ($1,500).** Run the pop-up at one single Saturday farmers' market in a specific neighborhood. Budget: $400 for a table and signage, $600 for sample inventory, $400 for a videographer to capture content, $100 miscellaneous. What this test is answering: (a) do dogs and owners engage (the easy yes), (b) does the capture produce organic content worth seeding, and (c) do any of the 200 attendees actually sign up within 48 hours using the tracked discount code.\n\n**Reserve ($1,000).** Held for a follow-up on whichever test produces a positive signal. If the video lands, boost it and produce a longer version. If the pop-up lands, run it in three more cities the following month.\n\n**Expected outcomes.** Jasmine is not expecting any single test to be 'the stunt.' She is testing the elements: does her audience amplify combative content (A); does physical-pop-up content convert organically to signups (C). After the two tests plus the disqualified B, she has a data-backed decision about which full-scale stunt to fund (if any), and she has spent $2k of the $3k doing it. Compare with the alternative of spending the whole $3k on a single un-tested $3k stunt — which would have taught her nothing generalizable if it flopped."
+      },
+      "contrast": {
+        "neighborConceptId": "ch04-inner-circle-tests",
+        "explanation": "Chapter 4's inner-circle-tests concept teaches cheap traction tests as a general discipline across all channels. This concept is the channel-specific application to unconventional PR — which is unusual because most other channels have obvious test templates and unconventional PR doesn't. The channel-level insight is that tests in this channel probe *elements* (headline strength, tone fit, audience amplification, conversion payload) rather than whole stunts, because whole stunts don't have natural small versions. If you try to apply Chapter 4's advice literally without this channel-specific framing, you'll either conclude stunts can't be tested or run tests that cost too much to actually be cheap."
+      },
+      "flashcards": [
+        {
+          "id": "ch08-cheap-testing-fc1",
+          "type": "recall",
+          "front": "What's the 'headline test' for a proposed stunt, and what does it cost?",
+          "back": "Write the headline the stunt would generate, verbatim, before executing. If the imagined headline is bland ('Company X Hosts Giveaway'), the real one will be too; disqualify. If it's specific and surprising, the stunt has a chance. Cost: zero. It disqualifies maybe half of brainstormed stunt ideas before any spend."
+        },
+        {
+          "id": "ch08-cheap-testing-fc2",
+          "type": "cloze",
+          "front": "A good unconventional-PR test costs ______% of the full-campaign budget and answers a single, pre-declared question.",
+          "back": "1–5% — size tests by the amount you can afford to lose, not the upside you're hoping for. If it fails, you've lost a small fraction of budget and disqualified a format. If it succeeds, the remaining budget is deployed with much more evidence."
+        },
+        {
+          "id": "ch08-cheap-testing-fc3",
+          "type": "recall",
+          "front": "Name three of the five cheap-test patterns for unconventional PR.",
+          "back": "Any three of: (1) press-worthiness / headline self-test, (2) tiny version of the full stunt (local, narrow audience), (3) single-execution appreciation probe (50 notes, $10 gift cards), (4) rough $200–500 video test before expensive production, (5) piggyback on existing events rather than engineering your own."
+        },
+        {
+          "id": "ch08-cheap-testing-fc4",
+          "type": "recall",
+          "front": "Why does unconventional PR resist the obvious cheap-test template that other channels have?",
+          "back": "Because successful stunts (Half.com's town rename, DuckDuckGo's billboard) were one-off commitments with no natural smaller version. The fix is a reframe: you're not testing 'will this exact stunt succeed' — you're testing the *elements* (headline strength, tone fit, amplification, payload conversion) that determine whether stunts in this shape work for this business."
+        },
+        {
+          "id": "ch08-cheap-testing-fc5",
+          "type": "recognition",
+          "front": "A test 'fails silently' when…",
+          "back": "…you spent money and learned nothing generalizable — usually because you didn't define up front what the probe was supposed to demonstrate. Silent failure is the real enemy of cheap testing: the spend isn't the loss, the unclaimed learning is."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch08-cheap-testing-sc1",
+          "setup": "A founder says: 'We have $40k earmarked for a launch stunt. We want to go big and spend it all on one shot — that's how Half.com and DuckDuckGo did it.'",
+          "question": "What's wrong with this framing, and what's a better allocation?",
+          "modelAnswer": "The framing confuses the visible examples (single big stunts that worked) with the success base rate (unknown, but certainly not 100%). Half.com and DuckDuckGo are survivorship-biased — the flops don't get written up. The right allocation treats $40k as a campaign budget with a testing phase: spend $1–2k on 1–2 cheap tests (headline test is free; a tiny version of the stunt or a piggyback at an existing event might be $1k each), use the results to pick the format most likely to work, then spend the remaining $38k on that format with much more conviction. If both tests fail, reallocate the budget entirely — don't force a stunt just because the budget exists. The founder should also explicitly size the loss: 'if this test fails, I've lost 3% of the budget and learned which format doesn't fit my audience,' rather than 'if the big stunt fails, I've lost the whole budget and learned nothing specific.'",
+          "rubric": [
+            "Flags survivorship bias in citing Half.com / DuckDuckGo as templates",
+            "Prescribes a 1–5% testing allocation with a specific budget split",
+            "Allows for the test-fails-both outcome (reallocate rather than force)",
+            "Frames the learning payoff, not just the financial loss",
+            "Does not argue against the big stunt itself, only against the pre-commitment without testing"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch08-cheap-testing-sc2",
+          "setup": "A founder ran a $500 appreciation test — handwritten notes plus $10 gift cards to 50 random customers. Nobody mentioned it publicly. She concludes 'appreciation doesn't work for our audience' and moves on.",
+          "question": "Is her conclusion sound? What's the most likely flaw in her test design?",
+          "modelAnswer": "The conclusion is probably premature, and the most likely flaw is under-specification of what 'worked' means. 'Nobody mentioned it publicly' is one possible signal but not the only one — did recipients respond privately? Did their retention or referral rates in the subsequent 30 days differ from a control group? Did repeat purchase rates move? Appreciation often produces private loyalty that shows up in retention and referrals rather than public mentions, especially for non-broadcasting audiences. The test also didn't define up front what 'passes' meant, which is the silent-failure pattern: she spent $500 and can't answer whether the program works because she didn't specify the measurement. Better redesign: define two or three measurable signals (public mention, reply rate, 30-day retention vs. matched control, referral rate) and the threshold for each before running the test. She should also consider whether 50 recipients is enough to detect anything — small absolute numbers mean even real effects can look like noise.",
+          "rubric": [
+            "Identifies the premature conclusion",
+            "Names public mentions as only one of several possible signals",
+            "Suggests private/behavioral signals (retention, referrals, reply rate)",
+            "Flags the absence of pre-declared success criteria (silent-failure pattern)",
+            "Notes sample-size limitations for small probes"
+          ],
+          "difficulty": 1
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach a founder how to test unconventional PR cheaply before committing a full campaign. Cover: (1) why this channel resists the obvious cheap-test pattern, (2) the reframe (test elements, not whole stunts), (3) at least three of the five cheap-test patterns, and (4) the silent-failure trap and how to avoid it.",
+        "rubric": [
+          "Explains why whole stunts don't have natural small versions",
+          "Articulates the element-testing reframe clearly",
+          "Lists at least three cheap-test patterns with examples",
+          "Explains silent failure and the fix (pre-declared single question and success criterion)",
+          "Sizes tests by loss tolerance, not upside hope"
+        ]
+      }
+    },
+    {
+      "id": "ch08-pitfalls",
+      "chapterId": "ch08",
+      "title": "Pitfalls: Brand Damage, One-Hit-Wonders, and Misread Audiences",
+      "isLandmark": false,
+      "order": 6,
+      "pretest": {
+        "prompt": "Before reading — list the three most dangerous ways an unconventional-PR effort can fail, beyond simply 'not getting coverage.' For each, name the specific warning sign a founder should notice early.",
+        "modelAnswer": "Three serious failure modes: (1) Brand damage — the stunt gets coverage, but the coverage's tone or framing is hostile, sarcastic, or mocking. Warning sign: your own customers are among the people sharing the coverage with raised eyebrows, not laughter. (2) One-hit-wonder decay — a successful stunt produces a signup spike that does not seed a baseline. Warning sign: 30 days post-stunt your acquisition curve is lower than it was the week before the stunt. (3) Misread audience — coverage lands in publications whose readers aren't your buyers (a tech stunt covered by tech blogs when your actual customers are small-business owners). Warning sign: the conversion rate from press to signup is an order of magnitude below your usual paid or organic rates, because the coverage reached the wrong people. Less severe but common: legal/trademark blowback on competitive stunts; copying a format whose arbitrage has already closed."
+      },
+      "lesson": {
+        "markdown": "## Why pitfalls get their own concept\n\nUnconventional PR's upside stories (Half.com, Dollar Shave Club, Blendtec) are widely told. The failures are mostly silent — unsuccessful stunts don't get written up, so founders approach the channel with a systematically optimistic picture. Knowing the failure modes in advance is worth roughly as much as knowing the tactics, because the downside of a bad stunt is often greater than simply not running one.\n\n## The three serious pitfalls\n\n### 1. Brand damage\n\nA stunt can get the coverage and simultaneously damage the brand the coverage was supposed to build. This happens when the tone of the stunt clashes with the product's promise (a wacky stunt from a brand that sells seriousness), when the stunt punches down at sympathetic targets (mocking users, customers, or vulnerable groups), or when the stunt touches a sensitive topic the team underestimated (anything near politics, tragedy, identity, or active controversy).\n\nWarning signs: your own customers share the coverage with raised eyebrows, not laughter; the comments on any coverage skew toward 'yikes' or 'not a good look'; employees are visibly uncomfortable defending it.\n\nThe fix is pre-launch: run the stunt by three to five people outside your marketing team — a customer, a junior employee, someone in legal — and ask a specific question: 'what's the worst-case reading of this?' If more than one person volunteers the same worst-case read, the stunt is too risky as designed.\n\n### 2. The one-hit-wonder problem\n\nA stunt succeeds, produces a large acquisition spike, and then… nothing. Thirty days later, acquisition is at or below pre-stunt levels. This is the classic pattern when unconventional PR is run without the appreciation baseline, and without a product or onboarding ready to retain the spike.\n\nTwo distinct mechanisms cause it. First, the signups from press coverage are lower-intent on average than signups from need-driven search or referral — many churn within weeks. Second, the spike burns whatever latent demand the press reached, with nothing seeding a follow-on wave.\n\nThe fix has two halves. Product side: make sure the onboarding for press-driven signups handles their intent curve (they came because a stunt caught their attention, not because they urgently needed your product — design an activation flow that earns attention rather than assuming it). Channel side: run appreciation and secondary stunts continuously, so the stunt is a peak inside a series rather than an isolated event.\n\n### 3. Misread audiences\n\nPress coverage is not generic. A stunt can get New York Times coverage that reaches a liberal-arts readership when your ICP is enterprise IT buyers — impressions happen, conversion doesn't. Or: coverage hits niche tech publications when your customers are small restaurant owners who read Yelp and local papers.\n\nThe warning sign is quantitative: the conversion rate from press exposure to signup is dramatically below your other channels' conversion rates, or qualitative: post-stunt customer interviews reveal the new signups don't match your ICP.\n\nThe fix is pre-launch audience mapping. Before committing to a stunt, list the publications most likely to cover it. Do your actual buyers read those publications? If no, the stunt may still happen (impressions have some residual value), but it shouldn't be counted on for conversion.\n\n## Two lesser but common pitfalls\n\n**Legal and trademark blowback** on competitive stunts. WePay's ice at PayPal's conference worked partly because it was clever enough not to cross legal lines. Many similar attempts do cross those lines and produce cease-and-desist news cycles that overshadow the original stunt.\n\n**Format fatigue.** Copying the specific format of a famous stunt (another launch video, another mascot costume, another town rename) after its arbitrage has closed. The format worked once because it was scarce; by the time you copy it, it isn't. The durable move is to copy the *reasoning* (find an empty market, encode the payload in the spectacle) not the format.\n\n## The unpredictability honest-fact\n\nThe authors are explicit that even well-planned stunts frequently flop. David Hauser's team at Grasshopper ran failed March Madness promotions, dead ticket giveaways, and abandoned dancing-grasshopper videos. This is not a sign the team was bad; it's a structural property of the channel. The right response is not to avoid the channel but to budget for flops and measure outcomes honestly — a 1-in-4 or 1-in-5 hit rate is reasonable, and a team that claims every stunt worked is almost certainly not attempting things risky enough to matter.",
+        "readingTimeMin": 4
+      },
+      "workedExample": {
+        "setup": "A mid-stage fintech startup ran a 'bank-rage' stunt — a video compilation of customers' frustrated voicemails to traditional banks, edited to music, posted publicly with customers' permission. The coverage was large (TechCrunch, The Verge, Bloomberg). Thirty days later, however: (a) three customers have withdrawn permission and one has threatened to sue, (b) the signup spike decayed completely and acquisition is back to baseline, (c) a notable share of comments on the coverage used words like 'tone-deaf' and 'punching down on customer service workers.' The founder wants to know which failure modes are in play and whether to run a follow-up.",
+        "walkthrough": "Walk the three pitfalls against the observed signals.\n\n**Brand damage is in play.** The 'tone-deaf' comments and the customer lawsuit threat are the warning signs: the stunt's tone landed differently from how the team predicted. The likely root cause: the team conceived it as 'bank-rage' (punching up at banks) but the video's execution made customer-service workers the implicit target. The outside-reviewer test probably wasn't run, because any customer service worker shown the draft would have flagged this. Follow-up response: issue a short, non-defensive public note acknowledging the workers-as-target reading and pull the video. Do not 'double down' with a defense — the coverage already exists and will not be re-opened in the founder's favor.\n\n**One-hit-wonder is in play.** Acquisition back to baseline after 30 days is the textbook pattern. Part of this is product-side — press-driven signups are lower-intent, and if onboarding didn't re-engage them, they churned. Part is channel-side — no appreciation program or secondary activity kept the signal warm. Follow-up response: build the baseline. Customer-appreciation program to existing users starts this week; plan a second, lower-variance stunt in Q2; evaluate onboarding conversion specifically for press-driven signups vs. organic.\n\n**Misread audience is partially in play.** TechCrunch/Verge/Bloomberg readers are a mixed audience; some are the fintech's target customers (tech-forward professionals) but many are not. Without channel-tagged tracking it's hard to know what fraction of the spike's signups were ICP-matched. Follow-up response: interview 20 of the signups to see whether they match ICP; use the answer to decide whether future stunts should aim for different publications.\n\n**On running a follow-up.** Not yet. The brand-damage pitfall needs to be closed before another spend, and the team needs a retrospective on the tone mechanism that failed. Running a follow-up stunt into an active brand-damage cycle amplifies the damage. Do two months of customer-appreciation work and internal review, then revisit the stunt question in Q2."
+      },
+      "contrast": {
+        "neighborConceptId": "ch08-attention-arbitrage",
+        "explanation": "The attention-arbitrage concept explains why stunts can produce disproportionate upside per dollar. This concept is the symmetric downside story: when the mechanism misfires, the damage can also be disproportionate. The two concepts together set the expected-value framing correctly — stunts are high-variance bets whose upside is real (arbitrage) but whose downside is also real (brand damage, one-hit-wonders, misread audiences). Founders who internalize the arbitrage without internalizing the pitfalls make reckless stunts; founders who internalize the pitfalls without the arbitrage skip the channel entirely."
+      },
+      "flashcards": [
+        {
+          "id": "ch08-pitfalls-fc1",
+          "type": "recall",
+          "front": "Name the three most serious unconventional-PR pitfalls and the warning sign for each.",
+          "back": "(1) Brand damage — warning sign: customers share coverage with raised eyebrows, comments skew 'yikes,' employees uncomfortable defending. (2) One-hit-wonder — warning sign: 30 days post-stunt, acquisition is at or below pre-stunt baseline. (3) Misread audience — warning sign: press-to-signup conversion an order of magnitude below other channels, or post-stunt customer interviews reveal signups don't match ICP."
+        },
+        {
+          "id": "ch08-pitfalls-fc2",
+          "type": "cloze",
+          "front": "The 'worst-case reading' test: run the stunt by ______ people outside your marketing team and ask each for the worst-case interpretation. If ______ or more give the same worst-case read, the stunt is too risky as designed.",
+          "back": "3–5 ; 2 (more than one) — this is the cheapest pre-launch brand-damage check."
+        },
+        {
+          "id": "ch08-pitfalls-fc3",
+          "type": "recall",
+          "front": "What are the two mechanisms behind the one-hit-wonder problem?",
+          "back": "(1) Press-driven signups are lower-intent on average and churn faster — if onboarding doesn't engage them, the spike decays via attrition. (2) The spike burns through whatever latent demand the press reached, with nothing seeding a follow-on wave. Fix is two-sided: press-specific onboarding + continuous appreciation baseline + planned secondary stunts."
+        },
+        {
+          "id": "ch08-pitfalls-fc4",
+          "type": "recognition",
+          "front": "A founder's launch video becomes a meme and drives 50,000 signups. Two months later, DAU is below pre-launch levels. Which pitfall pattern is this?",
+          "back": "One-hit-wonder. The spike is real; the baseline didn't exist to catch the decay. The fix isn't 'don't do stunts' — it's to run appreciation continuously and design onboarding specifically for the intent curve of press-driven signups (they came for a stunt, not a product need)."
+        },
+        {
+          "id": "ch08-pitfalls-fc5",
+          "type": "recall",
+          "front": "Why should you copy the reasoning of a successful stunt rather than its format?",
+          "back": "Because the format's success was a function of scarcity in that specific market at that specific time. Copying the format after the arbitrage has closed produces format fatigue — same mechanic, no scarcity, shrinking returns. Copying the reasoning (find an empty market, encode payload in the spectacle, match audience to publication) transfers to new formats."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch08-pitfalls-sc1",
+          "setup": "A B2B SaaS startup's CMO proposes a stunt that mocks a class of users ('software developers who still use spreadsheets for project management — here's what we think of them,' with a cartoon). The CMO argues 'it's edgy, and edge gets coverage.'",
+          "question": "Which pitfall is most likely in play here, and how would you test it before committing?",
+          "modelAnswer": "Brand damage is the most likely pitfall. Mocking a class of users — especially one that overlaps with your potential buyers — is textbook punching-down, and the coverage that follows will often have a 'yikes' tone that clings to the brand long after the stunt fades. The cheap pre-launch test is the outside-reviewer exercise: show the concept (including the cartoon) to five people outside the marketing team, specifically including at least one person who fits the mocked profile (a developer who has used spreadsheets for project management), and ask each for the worst-case reading. If two or more volunteer 'this is insulting to developers' unprompted, the stunt is too risky as designed. A less risky rework: keep the edge but target the tool, not the user — 'spreadsheets were never meant to run a sprint' with a demonstration of why, framed as sympathetic to the user stuck using them. This preserves the 'edge gets coverage' logic while removing the punching-down vector.",
+          "rubric": [
+            "Identifies brand damage / punching-down as the specific pitfall",
+            "Prescribes the outside-reviewer worst-case test",
+            "Specifies including a reviewer from the mocked profile",
+            "Offers a concrete rework that keeps the edge but changes the target",
+            "Addresses the CMO's 'edge gets coverage' argument without dismissing it"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch08-pitfalls-sc2",
+          "setup": "A team just ran a successful stunt that got coverage in three national tech publications. Leadership wants to double down: run the same format again quarterly.",
+          "question": "What's the concern, and what's a better follow-up strategy?",
+          "modelAnswer": "The concern is format fatigue — the arbitrage that made the first run successful has now been partially closed by the first run's own coverage. Running the same format quarterly will show diminishing returns per quarter: participation flatter, coverage thinner, audience familiarity climbing. A better follow-up strategy: (a) keep the brand and payload constant, (b) rotate the format axis of surprise each quarter (different venue, different medium, different twist), (c) invest at least 30% of the follow-up budget into customer-appreciation to build the baseline that the original stunt lacked, (d) measure each quarter's incremental coverage and signups independently so you catch the diminishing-returns signal before the fourth run. The goal is to treat the successful format as a proof-of-concept, not a template — what you learned is that your team can execute stunts well, not that this specific format is repeatable.",
+          "rubric": [
+            "Names format fatigue / arbitrage closure as the concern",
+            "Distinguishes keeping brand/payload constant from rotating format",
+            "Allocates meaningful follow-up budget to the appreciation baseline",
+            "Prescribes independent per-quarter measurement to detect decay",
+            "Reframes the success as proof-of-execution-capability, not format repeatability"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Teach an experienced founder the pitfalls of unconventional PR before their first stunt. Cover: (1) why the pitfalls matter as much as the tactics, (2) the three serious pitfalls with a warning sign for each, (3) the 'worst-case reading' pre-launch test, and (4) what a healthy stunt flop rate looks like and why aiming for zero flops is the wrong goal.",
+        "rubric": [
+          "Explains why failures are systematically underreported (survivorship bias in visible stunts)",
+          "Lists all three serious pitfalls with warning signs",
+          "Describes the worst-case-reading test with specifics (3–5 reviewers, outside marketing)",
+          "Normalizes a 1-in-4 / 1-in-5 hit rate and explains why attempting only safe stunts is itself a failure",
+          "Argument is delivered with concrete examples, not abstract warnings"
+        ]
+      }
+    }
+  ]
+}

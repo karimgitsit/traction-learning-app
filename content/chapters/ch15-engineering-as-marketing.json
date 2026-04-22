@@ -1,0 +1,575 @@
+{
+  "id": "ch15",
+  "number": 15,
+  "slug": "engineering-as-marketing",
+  "title": "Engineering as Marketing",
+  "summary": "Engineering as marketing uses engineering capacity to build free tools, calculators, and micro-apps whose primary job is generating qualified leads — not producing subscription revenue.",
+  "concepts": [
+    {
+      "id": "ch15-eng-marketing-definition",
+      "chapterId": "ch15",
+      "title": "Engineering as Marketing — the Definition",
+      "isLandmark": true,
+      "order": 1,
+      "pretest": {
+        "prompt": "Most channels use ad spend, content, or human relationships to generate leads. Engineering as marketing uses something different. Before reading: what's the core shift, and what's the non-obvious competitive advantage startups who use it have over startups who don't?",
+        "modelAnswer": "Engineering as marketing substitutes engineering capacity for ad spend. Instead of paying for clicks or time-gated nurture, you build a small free tool that solves a specific narrow problem and attaches to the searches your target customer is already doing. The non-obvious competitive advantage: most marketing teams can't ship software. So the companies that pair an engineering function with marketing intent create a durable arbitrage — a Website Grader, a business name generator, a CAC calculator — that competitors can't replicate without also having engineers. The leads the tool captures have already self-selected as people with the problem, which means they qualify upstream of any sales or onboarding conversation."
+      },
+      "lesson": {
+        "markdown": "## The definition\n\nEngineering as marketing is the traction channel where you **build a free, narrowly-scoped tool whose primary job is lead generation**, not revenue. The tool lives on your domain, solves one specific problem for your target customer, and funnels its users into your main product.\n\nThe canonical shape: a prospect searches for a solution to a small problem, finds your free tool, uses it, captures some value from it, and in the process either (a) gives you their email, or (b) reveals enough intent that you can invite them into your main product. HubSpot's Website Grader, Moz's Open Site Explorer (precursor to Link Explorer), Shopify's business name generator, and CoSchedule's Headline Analyzer are all the same pattern.\n\n## What makes it different from every other channel\n\nOther channels rent attention (paid ads) or earn it (content, PR, viral). Engineering as marketing **builds a persistent software asset** that attracts attention on its own schedule, 24/7, with zero marginal cost per use. Once the tool exists and ranks for its target queries, it produces leads while you sleep.\n\nThe closest cousin is content marketing: both are owned assets that compound. The difference is that content teaches and has to be re-written for new topics; a tool *performs a task* and can be used infinitely. One well-built tool often outperforms a dozen blog posts on the same topic, because the tool is the thing the searcher actually wanted.\n\n## Three qualifiers worth isolating\n\n1. **Free.** If it costs money, it's a product, not a marketing asset. The decision to spend beats the decision to try, and most of your potential leads bounce.\n2. **Narrowly scoped.** A tool that tries to do everything your main product does is either a free version cannibalizing revenue or a scaled-down main product with no capture value. The right scope is one specific sub-problem in your domain.\n3. **Primary job is lead generation.** If the team builds a tool and then forgets to connect it back to the main product, it's a philanthropic gesture — useful to the world, useless to your business. The bridge from tool to main product is non-negotiable.\n\n## Where the arbitrage comes from\n\nMost marketing teams don't have engineers. Most engineering teams don't think about marketing. Engineering as marketing lives in the overlap, and the overlap is scarce. When a company with both functions builds a free tool that ranks for a high-intent query, it creates a lead-gen asset that's structurally hard for a pure-marketing competitor to copy. That's why the channel produces outsize returns when it works — it's not just a good tactic, it's a category of tactic that a lot of competitors can't execute.\n\n## Engineering-as-marketing is not…\n\n- **Freemium.** Freemium is a pricing strategy for your main product. Engineering-as-marketing tools are *separate from* the main product.\n- **Open source.** Open-sourcing your main product is a distribution strategy (covered elsewhere). Engineering as marketing is a *tool adjacent to* your product.\n- **A weekend side project.** Tools built for engineering-as-marketing should be shipped with marketing intent — ranking strategy, conversion path, capture mechanism — not as hobby projects that someone happens to publish.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Kalin runs Segment.dev, a $99/mo marketing-ops SaaS for B2B teams. She has 2 engineers, blog doing 6k organic visits/month, and struggles to get trial signups at reasonable CAC. Her CTO can spare 3 engineer-weeks.",
+        "walkthrough": "The engineering-as-marketing proposal:\n\n- **Tool choice.** Kalin's customers are marketing ops folks who constantly need to validate tracking implementations. She picks a 'Pixel Health Check' — paste a website URL, the tool scans the site for common tracking pixels (GA4, Meta, LinkedIn, Segment, TikTok, etc.) and reports which are installed correctly, which are broken, and which are missing best-practice events.\n- **Narrow scope.** Not 'full marketing analytics audit' (too big). Not 'generic SEO scan' (not her space). Just pixel health — one specific painful sub-problem her customers have.\n- **Ranking strategy.** Target queries: 'check if GA4 is installed,' 'Meta pixel validator,' 'Segment tracking check,' 'marketing pixel scanner.' Combined monthly searches: ~18,000 in her target market.\n- **Capture mechanism.** Tool runs free without an email gate for the basic scan (frictionless). Detailed report with recommendations is gated behind email — opt-in for the 'fix-it playbook.' Estimated capture rate: 25% of users gate through.\n- **Bridge to main product.** 'Want to detect tracking issues automatically as your site changes?' CTA in the report leads to trial of Segment.dev's main product (which monitors tracking continuously).\n\n**3-week build:**\n- Week 1: Engineer 1 builds the scanner logic; Engineer 2 builds the frontend + report page. Kalin writes copy and sets up SEO landing page.\n- Week 2: Deploys to /pixel-check. Submits to Google Search Console. Writes 3 blog posts linking to the tool from her existing blog. Posts to Product Hunt.\n- Week 3: Ships report + capture + welcome sequence. Monitors traffic.\n\n**Month 3 outcomes:**\n- Ranks page 1 for 4 of the 8 target queries. Organic traffic to /pixel-check: 1,200/month.\n- 300 users run the scan. 75 opt in for the detailed report (25% capture rate).\n- 12 convert to trial of the main product within 30 days (16% trial rate on captured leads).\n- 5 convert to paid at $99/mo. Attributable monthly revenue: $495.\n- CAC: 3 engineer-weeks ($20k opportunity cost) + $0 ongoing traffic cost. Payback: 40 months? But the tool keeps producing leads at zero marginal cost — by month 12, cumulative paid customers might be 30+, and the asset ranks permanently.\n\n**The asymmetry:** a competitor pure-marketing team would need to buy ~$15k of targeted ads to produce equivalent qualified leads. Kalin's engineering cost paid back through a compounding asset no pure-marketing shop can easily replicate."
+      },
+      "contrast": {
+        "neighborConceptId": "ch13-content-definition",
+        "explanation": "Content marketing and engineering as marketing are both owned, compounding assets, and they often live next to each other on a company's blog/tools pages. The difference: content teaches (readers read, learn, and — maybe — subscribe or buy). Engineering as marketing *does a task* (users perform a specific operation and get an output). When prospects search with high intent — 'check if my pixels fire' — they want the task done, not an article about pixels. The tool wins those queries in a way no article can. Many companies should have both: content for teaching queries, tools for do-something queries."
+      },
+      "flashcards": [
+        {
+          "id": "ch15-eng-marketing-definition-fc1",
+          "type": "recall",
+          "front": "What are the three load-bearing qualifiers in the definition of engineering as marketing?",
+          "back": "(1) Free — users don't pay to try it. (2) Narrowly scoped — solves one sub-problem, not everything your main product does. (3) Primary job is lead generation — with a deliberate bridge back to the main product."
+        },
+        {
+          "id": "ch15-eng-marketing-definition-fc2",
+          "type": "recognition",
+          "front": "Where does the competitive arbitrage in engineering as marketing come from?",
+          "back": "Most marketing teams don't have engineers; most engineering teams don't think about marketing. Companies with both functions operating together can build lead-gen assets that pure-marketing competitors can't replicate."
+        },
+        {
+          "id": "ch15-eng-marketing-definition-fc3",
+          "type": "cloze",
+          "front": "Other channels ______ or ______ attention; engineering as marketing builds a persistent software asset that produces leads with ______ marginal cost per use.",
+          "back": "rent ; earn ; zero — the tool runs 24/7 without per-use cost once it exists and ranks."
+        },
+        {
+          "id": "ch15-eng-marketing-definition-fc4",
+          "type": "recall",
+          "front": "Distinguish engineering as marketing from freemium.",
+          "back": "Freemium is a pricing strategy for your main product — the free tier IS the product. Engineering-as-marketing tools are SEPARATE assets adjacent to the main product — a specific sub-problem solved, with a capture path that leads users into the main product."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch15-eng-marketing-definition-sc1",
+          "setup": "A founder says: 'We built a free tool! It's a full mini-version of our paid product — all the features, just without saving projects. Users can do their whole workflow with it. We're getting 500 users/month.'",
+          "question": "What's likely happening with this strategy? Is it engineering-as-marketing?",
+          "modelAnswer": "This isn't engineering as marketing — it's a freemium product with no clear capture or conversion path. Symptoms to look for: (a) users get full value from the free tool and never upgrade (why would they if they can do the whole workflow?); (b) no specific capture gate to collect emails of interested prospects; (c) the tool cannibalizes the paid product rather than funneling to it. Fix: narrow the tool to ONE specific sub-problem (not the whole workflow), and design the experience so users with that problem solved want to graduate into the main product for a broader or ongoing need. If they reshape it into, say, a 'single-session project estimator' rather than 'full project manager,' the tool can qualify leads without substituting for the paid product. As currently structured, it's either a pricing strategy mistake or free labor for competitors.",
+          "rubric": [
+            "Identifies this as freemium / cannibalization, not engineering-as-marketing",
+            "Names the lack of capture gate and conversion path",
+            "Explains why too-broad scope kills the funnel",
+            "Prescribes narrowing scope to a sub-problem",
+            "Articulates the graduation-to-main-product logic",
+            "Distinguishes 'free tool' from 'free separate tool that funnels to paid'"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch15-eng-marketing-definition-sc2",
+          "setup": "A marketing team (no engineering resources of their own) wants to use engineering-as-marketing. Their options: (a) ship a free tool by convincing the product engineering team to build it, (b) ship a free tool by hiring a contractor for $20k one-time, (c) use a no-code tool like Typeform to create a 'calculator' experience.",
+          "question": "Which is most likely to produce a durable channel, and what's the real risk with each option?",
+          "modelAnswer": "Option (a) — convincing product eng — has the best ceiling because the tool will be owned in-house, can be maintained and extended, and aligns engineering with marketing intent. Real risk: product eng has competing priorities; the tool may ship slowly, or maintenance stalls, or changes to the main product break the tool. Option (b) — contractor — can ship faster but creates long-term maintenance debt; tools need bug fixes, browser-compatibility updates, and iterations based on usage data. A contractor-built tool that nobody on staff can update becomes a ticking asset. Option (c) — Typeform or similar — is cheapest and fastest but limited. It works for very light 'quiz + result' mechanics but can't do real computation, API calls, or dynamic data, so the kinds of tools that rank for high-intent queries are hard to build this way. Verdict: (a) is best if you can negotiate eng time; (b) is acceptable with a plan for in-house takeover; (c) works only for narrow use cases and usually doesn't produce a durable SEO asset.",
+          "rubric": [
+            "Ranks in-house eng highest for durability with correct reasoning",
+            "Identifies the maintenance debt risk of contractor-built tools",
+            "Identifies the capability ceiling of no-code tools",
+            "Connects durability to the channel's compounding-asset value",
+            "Prescribes in-house takeover for contractor option",
+            "Does not oversell no-code for complex tool builds"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain engineering as marketing to a marketing lead at a company with engineering capacity. Cover: (1) the definition's three qualifiers, (2) why it's a structurally different channel from paid and content, (3) the source of the competitive advantage, and (4) at least one well-known company whose growth was driven by this channel.",
+        "rubric": [
+          "Names free / narrow / lead-gen-primary as the three qualifiers",
+          "Distinguishes the asset-building nature from rented/earned attention",
+          "Articulates the eng-marketing overlap arbitrage",
+          "Gives a concrete company example (HubSpot, Moz, Shopify, Zapier, etc.)",
+          "Does not confuse it with freemium or open source",
+          "Frames it as a specific marketing asset, not any free feature"
+        ]
+      }
+    },
+    {
+      "id": "ch15-bait-and-hook",
+      "chapterId": "ch15",
+      "title": "The Bait-and-Hook Mechanism",
+      "isLandmark": true,
+      "order": 2,
+      "pretest": {
+        "prompt": "Engineering as marketing works when one mechanism triggers another — the tool is the first step, but the conversion to main product is what produces business value. Before reading: describe the complete bait → hook chain. What does the free tool have to do to 'qualify' a user for the main product? And what properties of the tool itself make the hook likely to fire?",
+        "modelAnswer": "The bait is the tool — a free, specific, narrow task that captures attention by solving an immediate need. The hook is the bridge from the solved-problem moment to the main product. The tool qualifies a user by (a) confirming they have the problem your product solves (or an adjacent one), and (b) delivering value in a way that establishes trust. The hook is likely to fire when the tool's output naturally reveals a bigger problem the main product is better suited for. Examples: Website Grader finds 10 SEO issues on your site; the hook is HubSpot's marketing tools that systematically fix them. Business Name Generator gives you a name; the hook is Shopify's store-building tools for the business that will use the name. Tools whose outputs don't lead anywhere — or lead to generic 'learn more about our product' — produce capture but no conversion."
+      },
+      "lesson": {
+        "markdown": "## The mechanism in one sentence\n\n**Bait and hook** is the sequence: a specific free tool solves one narrow problem immediately (bait), and the solved-problem moment reveals or amplifies the larger problem your main product is designed to solve (hook). Users who engage with the tool self-select as prospects who have the problem, and the moment of highest intent to act on the problem is the moment the tool just delivered value.\n\nIf the bait works but the hook doesn't, you have traffic without conversion. If the hook is forced without bait, you have a landing page nobody visits. Both pieces have to fit.\n\n## What makes a good bait\n\nFour properties consistently matter:\n\n- **Solves one specific problem in one session.** Not 'helps with your whole workflow' — 'gives you the answer to this one question right now.' Website Grader runs in 30 seconds and produces a score. Headline Analyzer takes an input and scores it immediately. Fast in, specific out.\n- **Adjacent to your main product's domain.** A free tool in a completely unrelated domain pulls the wrong audience. The tool should be obviously in the same problem-space as the paid product — not identical, but adjacent.\n- **Shareable output.** Users leave with something: a score, a report, a generated name, a downloadable file. Shareable outputs compound the channel — users send the result to teammates, post it on social, reference it in arguments. Each share is free distribution.\n- **Ranks for high-intent queries.** Ideally the tool targets searches where users have the problem and are in buying mode — 'check if my site is ADA compliant,' 'calculate SaaS CAC,' 'analyze this blog post's SEO.' These queries indicate both immediate need and proximity to a commercial decision.\n\n## What makes a good hook\n\nThree properties:\n\n- **Natural bridge from tool output to main product.** The tool's output should suggest the next step on its own. Website Grader reports 'you have 14 SEO issues' — the hook ('here's the tool that fixes them') is structurally natural. Bad hook: 'you have a good SEO score! by the way, buy our CRM.' The bridge has to connect.\n- **Captured at the moment of solved-problem value.** Users are most willing to take a next step when the tool just delivered on its promise. That's the moment to present the hook. Pre-emptive gating ('give us your email to run the scan') crushes conversion by breaking trust before any value lands.\n- **Low-friction first action.** 'Start free trial' or 'get a playbook by email' converts far better than 'book a demo' or 'contact sales.' The hook must match the commitment level of a user who just met you 90 seconds ago through a free tool.\n\n## Why the pattern compounds\n\nUnlike content (which needs regular new publishing) or ads (which need ongoing spend), a well-built tool keeps converting with no marginal work. If it ranks for its target queries, Google sends traffic daily. If the bait works, traffic becomes leads. If the hook works, leads become customers. Each new article written about the tool by a third party (linking back) strengthens SEO, accelerating traffic. It's the same compounding logic as SEO content — but with a tool as the asset, the intent of the traffic is often higher because the user is already trying to do the thing the tool helps with.\n\n## Common bait-hook mismatches\n\nFour patterns fail predictably:\n\n- **Bait too broad:** pulls curious traffic with no product-fit.\n- **Bait too narrow:** targets queries nobody actually searches.\n- **No hook:** tool exists in isolation; users leave.\n- **Wrong hook:** the bridge to the main product feels forced or disconnected.\n\nTest the chain before scaling. A tool without a clean hook-fire is incomplete — investing in more tool-quality doesn't fix it.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Aaliyah runs Ledgerbook, a $49/mo bookkeeping tool for independent contractors. She has 1 engineer and wants to build an engineering-as-marketing asset. She considers three tool ideas: (a) generic 'self-employment tax estimator,' (b) 'free invoice template generator' (c) 'quarterly tax-payment calculator with deadline tracking.'",
+        "walkthrough": "Evaluating each through bait + hook:\n\n**(a) Self-employment tax estimator.** Bait quality: high — 'how much tax do I owe?' is a painful sub-problem. Hook quality: weak — estimator gives an answer; the main product is bookkeeping, not tax calc. The bridge ('to track this accurately all year, use our bookkeeping tool') is OK but not tight. Middling.\n\n**(b) Free invoice template generator.** Bait quality: medium — lots of searches for invoice templates. But the target user here overlaps with people who'll never use a paid bookkeeping product — they just want an invoice PDF. Hook quality: weak — the act of getting an invoice template doesn't create any natural pull toward bookkeeping software. Low.\n\n**(c) Quarterly tax-payment calculator with deadline tracking.** Bait quality: high — freelancers regularly confuse quarterly deadlines, penalty calculations, and estimated-payment math. The calculator solves it. Hook quality: HIGH — the tool's output reveals the underlying pain (you need to track income and deductions all year to make accurate estimated payments), which is exactly what her main product does. The bridge is natural: 'Want this calculation to be automatic next quarter, pulled from your actual income? Try Ledgerbook free for 30 days.'\n\n**Decision: (c).** Building an estimator with deadline tracking is the strongest bait-hook fit.\n\n**Build outcome (6 weeks):**\n- Tool live at /quarterly-tax-calculator. Ranks in weeks 6–10 for 'how much to pay quarterly estimated taxes,' 'freelance quarterly tax payments,' 'self-employment quarterly deadlines.'\n- Month 3 traffic: 2,400 visits. Scan runs: 1,680. Emails captured (gated on 'save calculations + deadline reminders'): 580 (34% gate conversion).\n- Of the 580, 86 start a Ledgerbook trial within 45 days (15% trial rate).\n- 22 convert to paid at $49/mo. Month-3-attributable MRR: $1,078.\n- Compounding: the tool keeps producing traffic and conversions at zero marginal cost. Month 6 traffic ~4,500/month, paid conversions ~35 cumulative.\n\n**Why (c) worked and (b) wouldn't have:** the invoice template tool would have produced more raw traffic (searches for 'free invoice' are huge) but almost none of it would have converted — wrong audience, no hook. Aaliyah would have optimized a bigger traffic number at the cost of actual business growth. Specific narrow bait beats broad bait when hook-fit is considered."
+      },
+      "contrast": {
+        "neighborConceptId": "ch06-viral-loop",
+        "explanation": "A viral loop and a bait-and-hook both compound, but through different mechanisms. Viral loops produce growth when users invite other users — the compounding is peer-to-peer through sharing. Bait-and-hook compounds through search: the tool ranks, attracts intent-qualified traffic, and converts. A tool with shareable output can have BOTH engines running (bait-hook for search-driven leads, mild viral sharing when users post results on LinkedIn or Twitter), but the primary mechanism is the search-to-conversion chain, not user-to-user invites. Don't confuse the two: a tool without a viral-loop mechanic isn't broken; a tool without a hook is."
+      },
+      "flashcards": [
+        {
+          "id": "ch15-bait-and-hook-fc1",
+          "type": "recall",
+          "front": "Define the bait-and-hook mechanism in one sentence.",
+          "back": "A free tool solves a narrow specific problem immediately (bait), and the solved-problem moment reveals or amplifies the larger problem your main product solves (hook)."
+        },
+        {
+          "id": "ch15-bait-and-hook-fc2",
+          "type": "recall",
+          "front": "Name the four properties of a good bait.",
+          "back": "(1) Solves one specific problem in one session. (2) Adjacent to your main product's domain. (3) Shareable output. (4) Ranks for high-intent queries."
+        },
+        {
+          "id": "ch15-bait-and-hook-fc3",
+          "type": "recall",
+          "front": "Name the three properties of a good hook.",
+          "back": "(1) Natural bridge from tool output to main product. (2) Presented at the moment of solved-problem value. (3) Low-friction first action (trial, playbook — not 'book a demo')."
+        },
+        {
+          "id": "ch15-bait-and-hook-fc4",
+          "type": "cloze",
+          "front": "If the bait works but the hook doesn't, you have ______ without ______; investing in more tool quality doesn't fix it.",
+          "back": "traffic ; conversion — the fix is redesigning the bridge from tool output to main product, not polishing the tool more."
+        },
+        {
+          "id": "ch15-bait-and-hook-fc5",
+          "type": "recognition",
+          "front": "Why does pre-emptive email gating (before the scan runs) crush conversion?",
+          "back": "It asks for commitment before any value has been delivered. Users who don't know whether the tool works abandon at the gate. Better: run the scan free, deliver immediate value, then gate the *detailed report* or *save-for-later* feature on email — at the moment of demonstrated value."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch15-bait-and-hook-sc1",
+          "setup": "A founder built a free tool that ranks #1 for its target query and gets 3,000 users per month. Email capture rate is 40%. But only 1% of captured leads convert to main-product trial. Tool traffic isn't translating to business.",
+          "question": "Diagnose. What's the most likely problem?",
+          "modelAnswer": "This is a classic 'bait works, hook doesn't' failure. High traffic + high capture rate means the tool is delivering value and users are willing to opt in — the bait is working. Low trial conversion means the bridge from tool output to main product is weak or broken. Likely causes: (a) the tool solves a problem that doesn't actually need the main product — users finish the task and leave; (b) the tool's output doesn't reveal the main product's value proposition naturally; (c) the CTA after the tool is wrong (asking for a demo when a trial would work, or vice versa); (d) the welcome sequence after capture doesn't do conversion work. Fix: audit the full user journey — what does the tool actually output? Does that output point at the main product's job? If no, narrow or rebuild the tool so its output creates pull. If yes, examine the post-capture flow: welcome sequence, CTA in the report, landing page after click. Adding more traffic doesn't fix this problem.",
+          "rubric": [
+            "Identifies 'bait works, hook doesn't' specifically",
+            "Explains that high capture + low conversion is diagnostic",
+            "Lists 3+ specific likely hook failures",
+            "Prescribes auditing the tool-output → product bridge",
+            "Warns against 'more traffic' as a non-fix",
+            "Distinguishes sequence work from bridge design"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch15-bait-and-hook-sc2",
+          "setup": "A founder proposes building 'a free project management tool for small teams' as their engineering-as-marketing asset. Their main product is a paid time-tracking SaaS.",
+          "question": "Why is this proposal likely to fail, and what's a better direction?",
+          "modelAnswer": "Two problems. (1) Scope is too broad — a 'free project management tool' is basically a scaled-down product, which means it'll either fail to satisfy real needs (nobody uses it, nobody captures) or cannibalize the paid time-tracking product (users do their whole workflow in the free thing). Either way it's a poor engineering-as-marketing asset. (2) Domain adjacency is off — the bait is in project management, the hook is time tracking. They're related but not tightly linked; users solving project-management problems don't automatically reveal a time-tracking need. Better direction: a narrower tool squarely in the time-tracking domain. Examples: a 'timesheet-to-invoice calculator' (bait: specific painful freelancer sub-problem; hook: automatic tracking would save this manual work every month), a 'team capacity calculator' (bait: quick utilization check; hook: continuous tracking for automated capacity data), or a 'project budget burn-rate tool' (bait: answer one specific question for a project; hook: automate the tracking that fed the calculation). Each is narrower, adjacent to time-tracking, and produces a natural bridge.",
+          "rubric": [
+            "Identifies scope-too-broad as the primary issue",
+            "Identifies domain-adjacency mismatch as secondary",
+            "Explains cannibalization vs weak-hook failure modes",
+            "Proposes at least 2 narrower alternatives in the correct domain",
+            "Articulates how each alternative creates natural hook pull",
+            "Demonstrates the 'one sub-problem, one session, with a bridge' test"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain the bait-and-hook mechanism to a product manager who's been asked to build an engineering-as-marketing asset. Cover: (1) what makes good bait (the four properties), (2) what makes a good hook (the three properties), (3) how the chain compounds, and (4) one specific failure mode and how to diagnose it.",
+        "rubric": [
+          "Defines bait-and-hook as a two-piece mechanism",
+          "Lists all four bait properties with brief justification",
+          "Lists all three hook properties with brief justification",
+          "Explains compounding (search → rank → traffic → conversion, zero marginal cost)",
+          "Identifies at least one failure mode (bait-too-broad, no-hook, etc.) with diagnostic signal",
+          "Uses causal language ('this works because…')"
+        ]
+      }
+    },
+    {
+      "id": "ch15-eng-fit",
+      "chapterId": "ch15",
+      "title": "When Engineering as Marketing Fits",
+      "isLandmark": false,
+      "order": 3,
+      "pretest": {
+        "prompt": "Engineering as marketing requires a rare combination of conditions to work. Before reading: what are the three most important things a company must have for this channel to be a good bet? And name a common type of startup for which it's a bad bet.",
+        "modelAnswer": "Three must-haves: (1) engineering capacity — at least some developer-hours available that aren't fully consumed by the main product. Without this, the channel simply can't be executed. (2) A painful narrow sub-problem adjacent to the main product, with real search demand. The tool must solve something specific that people Google. (3) A connection from tool output to main product — if there's no natural bridge, the tool is philanthropy. A bad bet: very-early pre-PMF startups. They don't have engineering slack (all eng is on product), they don't yet know which sub-problems attract their ICP, and they haven't validated that their main product solves anything worth building a tool funnel into. Engineering-as-marketing tends to shine post-PMF when the ICP and value prop are clear."
+      },
+      "lesson": {
+        "markdown": "## The three must-haves\n\nEngineering as marketing pays back when three conditions are met:\n\n1. **Engineering capacity not fully consumed by the main product.** At minimum a few weeks of engineer-time you can invest in a separate asset. If your engineers can't spare 2–4 weeks, this channel can't be executed no matter how well you'd like it to.\n2. **A narrow sub-problem adjacent to your product, with search demand.** Your customers must have a specific painful mini-task that (a) can be solved by a small tool, (b) gets searched for regularly (think 50–5,000 monthly searches in your target market), and (c) connects back to your main product's value.\n3. **A natural bridge from tool output to main product.** The tool's output has to suggest the next step on its own. Without this bridge, the tool is useful to strangers but invisible to your funnel.\n\nWhen all three are present, engineering as marketing is often the highest-leverage channel available to a startup with engineers. When any one is missing, better to pick another channel and come back.\n\n## Where fit is strong\n\n- **Developer tools.** Engineers trust tools built by other engineers; the bait fires easily, and the audience is comfortable with technical CTAs.\n- **Marketing and sales tech.** HubSpot-style. Marketers search for very specific tools frequently.\n- **Data and analytics.** Free data visualizations, free benchmark generators, free reports — all plausible baits.\n- **Education-adjacent SaaS.** Tools that simulate or demonstrate a concept (e.g., Codecademy's free-tutorial approach, financial calculators).\n- **Vertical SaaS with painful domain sub-problems.** Real estate, law, construction, logistics — verticals where practitioners have specific calculations, validators, or checkers they perform manually.\n\n## Where fit is weak\n\n- **Pre-product-market-fit startups.** You don't yet know your ICP well enough to pick the right sub-problem. Engineering time is also the most scarce resource pre-PMF. Defer.\n- **Very narrow enterprise niches (<500 target companies total).** Search volume is too low for the tool to rank and produce meaningful traffic; channel economics break.\n- **Consumer brands without a technical problem-space.** Toothpaste, apparel, mass-market food. There's no adjacent 'tool' that makes sense. Other channels will serve better.\n- **Heavy-compliance regulated verticals.** If the tool needs to handle patient data, financial data, or regulated operations, the compliance overhead can outweigh the channel.\n- **Services businesses whose differentiation is human expertise.** A free tool substitutes for the billable service; the bridge to 'buy our services' is structurally weak.\n\n## Borderline cases\n\n- **B2B SaaS pre-PMF with engineering to spare and hypotheses about ICP pain.** Risky but can work if you treat the tool as a probe for ICP hypotheses, not a polished channel. A tool that captures 200 emails from your guessed ICP is data even if it doesn't convert to paid.\n- **DTC with a technical aspect.** A skincare brand building a free 'skin type analyzer,' a nutrition brand building a 'macro calculator.' These can work but the bridge to product needs extra care.\n\n## The diagnostic question\n\nBefore committing engineering weeks, answer: 'Can I name a specific search query (with rough monthly volume) whose searcher would both (a) find my tool useful and (b) plausibly become a customer?' If yes — engineering as marketing fits. If you can only name the searcher or the product but not both, fit isn't there yet.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Three founders evaluate engineering-as-marketing fit:\n- Pete runs Stitcher, a $19/mo personal-finance tracker. 18 months post-launch, 2,000 customers, 2 full-time engineers.\n- Ramona runs Clinch, a B2B SaaS for hostage-negotiation training (serves ~400 target companies globally). Pre-PMF, 1 engineer.\n- Hideki runs Tetragon, a developer tool for API schema validation. 1 year post-launch, 1 engineer, blog does 4k visits/month.",
+        "walkthrough": "**Pete (Stitcher):** Strong fit. Personal finance has huge search volume around specific sub-problems: 'how much should I save for retirement,' 'calculate emergency fund,' 'debt payoff calculator,' 'net worth tracker.' His engineers can spare 3 weeks to build one narrow tool (say, a free 'emergency fund calculator' that takes income/expenses and outputs a target number + bridge to his paid tracker for ongoing tracking). Channel likely works. Go.\n\n**Ramona (Clinch):** Weak fit on multiple dimensions. (1) Pre-PMF — engineering time is needed on the core product. (2) Narrow niche — ~400 target companies globally means search volume for any sub-problem is microscopic. Even if she builds a perfect tool, 10 searches/month won't produce channel economics. (3) The training-services domain doesn't lend itself well to self-service tools — the product is expertise, not calculation. Skip engineering as marketing for now. Content marketing, PR, and targeted account-based sales outreach are more likely fits for her shape.\n\n**Hideki (Tetragon):** Strong fit, maybe ideal. Developer tool, eng-built-for-eng audience, large search volume for API-related queries. Examples: 'validate OpenAPI spec,' 'JSON schema validator,' 'check REST API response structure.' His single engineer can spare 2 weeks to build a web-based validator that his main product then automates in a CI pipeline. Channel economics should be strong — developer tool space is comfortable with engineering-as-marketing as a pattern (many of the most successful examples are in this space). Go.\n\n**Verdict:**\n- Pete: ship a narrow personal-finance calculator, 3-week build.\n- Ramona: skip, use other channels.\n- Hideki: ship a developer validator, 2-week build.\n\nSame channel, three different fit profiles based on engineering slack + search demand + bridge quality."
+      },
+      "contrast": {
+        "neighborConceptId": "ch13-content-fit",
+        "explanation": "Content marketing and engineering as marketing have overlapping but distinct fit criteria. Content fits when you have sustained topic depth and patience for 6–12 month payback. Engineering as marketing fits when you have engineering slack + specific searchable sub-problems + a bridge. Some businesses fit both (build a calculator AND publish articles about the topic it solves). Many fit one but not the other: a DTC brand with writers but no engineers does content; an early-stage dev-tool with engineers but no writing capacity does engineering as marketing. Assess each independently — neither is a substitute for the other when only one fits your shape."
+      },
+      "flashcards": [
+        {
+          "id": "ch15-eng-fit-fc1",
+          "type": "recall",
+          "front": "Name the three must-haves for engineering as marketing to fit.",
+          "back": "(1) Engineering capacity not fully consumed by the main product. (2) A narrow sub-problem adjacent to your main product, with real search demand. (3) A natural bridge from tool output to main product."
+        },
+        {
+          "id": "ch15-eng-fit-fc2",
+          "type": "recall",
+          "front": "Name three startup shapes where engineering as marketing is a GOOD fit.",
+          "back": "(1) Developer tools — engineers trust eng-built tools. (2) Marketing / sales / analytics SaaS — marketers search for specific tools often. (3) Vertical SaaS in a domain with painful manual sub-problems (real estate, law, logistics)."
+        },
+        {
+          "id": "ch15-eng-fit-fc3",
+          "type": "recall",
+          "front": "Name three startup shapes where engineering as marketing is a BAD fit.",
+          "back": "(1) Pre-PMF startups — no eng slack, unclear ICP. (2) Very narrow enterprise niches (<500 target companies) — search volume too low. (3) Heavy-compliance regulated verticals where the tool inherits the main product's compliance burden."
+        },
+        {
+          "id": "ch15-eng-fit-fc4",
+          "type": "cloze",
+          "front": "The diagnostic question before committing engineering weeks: 'Can I name a specific ______ (with rough monthly ______) whose searcher would both find my tool useful and plausibly become a ______?'",
+          "back": "search query ; volume ; customer — you need all three (search, volume, purchase plausibility) for fit."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch15-eng-fit-sc1",
+          "setup": "A founder runs a DTC artisanal coffee subscription. 3k customers. Wants to use engineering-as-marketing because their CTO has bandwidth. Proposes building a 'free coffee flavor profile calculator' — quiz that recommends bean types.",
+          "question": "Does this fit? What's your assessment?",
+          "modelAnswer": "Borderline, probably not the best use of engineering time. The sub-problem (what coffee should I try?) is real, but search volume is likely low for the specific queries a calculator would target, and the bridge to 'subscribe to our coffee' is weak — someone searching for flavor guidance might not convert to a subscription. Stronger DTC coffee plays would likely be content marketing (reviews, brewing guides — the subscriber pool is building via reader conversion), targeting niche blogs (sponsoring coffee subreddits or newsletters), or viral/referral. If they still want to try engineering as marketing: consider a different angle — a 'coffee subscription budget calculator' or 'how much coffee you're wasting' tool that ties DIRECTLY to subscription economics. Those have better bridges than a flavor quiz. But overall this would be better executed with content-heavy tactics in their case. The CTO's bandwidth might be better spent improving the subscription experience or supporting a content push.",
+          "rubric": [
+            "Identifies search volume uncertainty as one issue",
+            "Identifies weak bridge (quiz → subscription) as primary issue",
+            "Proposes better-fit alternative channels",
+            "Suggests alternate tool angles with stronger bridges",
+            "Doesn't waste eng time on weak fit",
+            "Opportunity-cost thinking (CTO's time has other better uses)"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch15-eng-fit-sc2",
+          "setup": "A B2B SaaS founder runs a $500/mo compliance-automation tool for healthcare startups. She has 2 engineers and 4 customers. Proposes engineering-as-marketing because she needs traffic.",
+          "question": "Red flags to raise and what you recommend.",
+          "modelAnswer": "Major red flag: pre-PMF. With 4 customers, the core product still needs engineering attention. Pulling 2–4 engineer-weeks for a marketing asset steals from product work that determines whether she has a real business in the first place. Also: healthcare compliance is heavy-regulation — any tool that touches patient data inherits HIPAA obligations, massively expanding scope and risk. The tool would likely need to avoid touching real data (simulated/fake data only) to avoid compliance overhead. Recommendation: (1) Don't do engineering as marketing yet. (2) Focus engineering time on product + customer-success motions to get from 4 to 40 customers. (3) Once post-PMF (40+ customers, clear ICP, validated main product value prop), revisit engineering as marketing with a specific sub-problem-calculator that avoids PHI handling (e.g., 'HIPAA gap-assessment checklist' rather than 'scan your actual data'). The 'need traffic' urgency is better served pre-PMF by founder-led direct outreach to 50 target accounts and a narrowly targeted content push.",
+          "rubric": [
+            "Identifies pre-PMF as major red flag",
+            "Identifies HIPAA compliance risk for data-handling tools",
+            "Recommends deferral of engineering as marketing",
+            "Prescribes better pre-PMF channels (founder-led outreach, targeted content)",
+            "Offers a path back to the channel once post-PMF with a PHI-free angle",
+            "Doesn't enable premature channel scaling"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Describe how a founder should evaluate engineering-as-marketing fit for their company. Cover: (1) the three must-haves, (2) at least two good-fit and two bad-fit shapes with reasoning, (3) the diagnostic question, and (4) how fit can shift over time.",
+        "rubric": [
+          "All three must-haves named",
+          "At least 2 good-fit and 2 bad-fit examples with reasoning",
+          "Diagnostic question articulated",
+          "Articulates fit shifts (pre-PMF vs post-PMF, niche growth, etc.)",
+          "Distinguishes from content marketing and freemium",
+          "Uses causal reasoning, not just categorization"
+        ]
+      }
+    },
+    {
+      "id": "ch15-core-tactics",
+      "chapterId": "ch15",
+      "title": "Picking, Designing, and Distributing the Tool",
+      "isLandmark": false,
+      "order": 4,
+      "pretest": {
+        "prompt": "Even within the bait-and-hook shape, execution choices make or break engineering-as-marketing assets. Before reading: what are the specific design decisions you think determine whether a tool produces leads at scale? Consider: what to build, how to gate it, and how to get it seen.",
+        "modelAnswer": "Key decisions: (1) What to build — pick a tool whose target users match your ICP, whose result is shareable, whose query volume is meaningful, and that you can ship in 2–4 weeks. (2) How to gate — run the tool free without early gating; capture email at the moment of delivered value (download the detailed report, save the result, email me a copy). Early gates crush conversion. (3) How to get it seen — SEO is primary (rank for intent queries), but seed via Product Hunt, HN, niche communities, blog posts linking to it, and existing email list. (4) Conversion path — explicit bridge from tool output to main product, with one clear CTA that matches the commitment level of a free-tool user (trial, playbook — not 'book a demo')."
+      },
+      "lesson": {
+        "markdown": "## Picking the tool\n\nFive filters for tool selection, in order of importance:\n\n1. **Target users = your ICP.** The people who'd search for and use the tool should overlap with who would buy your main product. If the tool attracts a different audience, your lead quality will be wrong no matter how much traffic you get.\n2. **Solvable in one session.** The tool should produce a useful output within 30–120 seconds of the first interaction. Longer and users bounce; shorter and the tool feels trivial.\n3. **Shareable output.** Users leave with something they can send to a coworker, boss, or LinkedIn. Shareable outputs recruit free distribution.\n4. **Real search demand.** Run keyword research. Target queries with 500–5,000 monthly searches — big enough to produce real traffic, small enough to rank against limited competition.\n5. **Fast to build.** 2–4 engineer-weeks is the sweet spot. Longer builds eat into the opportunity cost of engineering time; shorter may lack enough value to feel worth using.\n\n## Frictionless design\n\nGreat bait-and-hook tools share a UX pattern: **zero friction before value, clear bridge after value.**\n\n- **No signup before the tool runs.** Users paste a URL, input a number, pick a category — and the tool works. If they have to create an account first, most leave.\n- **Deliver value immediately.** First output shows within seconds of the first input. Progress bars for slower operations are fine; blank-screen waits aren't.\n- **Gate the *next thing*, not the tool itself.** The free scan runs without email capture. The detailed report, saved-over-time tracking, or extended features capture email at the moment of demonstrated value. This pattern consistently produces 20–40% email-capture rates vs 2–5% for pre-tool gating.\n- **Brand clearly, not loudly.** The tool should feel like a useful utility, not a lead magnet wrapped in a sales pitch. Over-branding kills trust.\n\n## Distribution — getting the tool seen\n\nFour channels feed the tool's initial and ongoing traffic:\n\n1. **SEO (primary).** Rank for the target queries. Ensure the tool page has canonical SEO basics: descriptive title, H1, meta description, solid copy above the tool, internal links from existing content. Expect 2–4 months before you start ranking meaningfully, consistent with SEO timelines in Ch 12.\n2. **Community seeding.** Post the launch to Product Hunt, HN, specific subreddits relevant to your audience, and niche Slack/Discord communities. Don't spam — share genuinely, explain the context, respond to feedback. A good Product Hunt day can produce 500–2,000 targeted visits and real feedback.\n3. **Blog linkage.** Every relevant article on your own blog links to the tool. Guest-post articles on target blogs can link back too. Both build SEO and directly channel traffic.\n4. **Email list.** Announce to your existing subscribers. A welcome-sequence email in the first few weeks post-launch can introduce subscribers to the tool as a value-add. Tools earn goodwill and re-engagement simultaneously.\n\n## The conversion path\n\nOnce a user has used the tool and given you their email, the conversion path typically looks like:\n\n- **In-app/in-report CTA.** The tool's own output ends with a specific bridge: 'Here's the problem we just found; here's the tool that systematically fixes it.' Keep this specific, not generic.\n- **Follow-up sequence.** A 3–5 email sequence over 10–14 days that teaches deeper value on the problem space, offers relevant case studies, and invites to trial or further engagement.\n- **Re-engagement.** For captured leads who didn't convert in the first window, periodic high-value content keeps the list warm.\n\nThe end-to-end funnel: search query → tool page → run tool → see report → gate conversion (email) → welcome sequence → trial CTA → paid customer. Each step has a conversion rate; track them all.\n\n## One counterintuitive rule\n\n**Don't over-invest in the tool's polish.** Engineering-as-marketing tools should feel fast, functional, and trustworthy — not beautifully designed. Once a tool is good enough that users trust its output and share its results, additional polish doesn't move the conversion needle but does eat the next 2 engineer-weeks that could go into a second tool. A portfolio of 3 good-enough tools usually beats 1 polished tool.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Aaliyah (from the previous example with Ledgerbook) now designs and distributes her quarterly tax calculator. Budget: 3 engineer-weeks, $500 for distribution.",
+        "walkthrough": "**Tool design:**\n- URL: /quarterly-tax-calculator (clean, target-query-aligned).\n- UX: one-page form. Inputs: filing status, est. income, est. deductions, state. Click 'Calculate.' Output in 5 seconds: estimated quarterly payment, deadlines for the year, rough penalty exposure if missed.\n- No signup to run. Result displays immediately.\n- Gate: 'Save these calculations + get deadline reminders?' Optional email capture at the bottom of the results. ~34% opt in.\n- Bridge CTA in the report: 'Want these calculations pulled automatically from your actual income? Try Ledgerbook free — we'll update your quarterly estimate as your income evolves.' Trial link.\n\n**Distribution launch:**\n- Week 1 post-launch:\n  - Product Hunt post: 180 upvotes, 540 visits, 45 email captures, 7 trial signups.\n  - HN post: didn't front-page but got ~120 visits from the comments.\n  - Share in 2 freelancer subreddits: 200+ combined visits.\n  - Email to existing 800-subscriber list: 220 visits, 85 tool-runs, 12 captures.\n- Weeks 2–8:\n  - SEO still ramping. Tool ranks page 2–3 for main queries.\n  - Aaliyah writes 2 blog posts linking to the tool: 'Quarterly tax deadlines: 2026 dates for freelancers,' 'Penalty math: what you owe for a missed estimated payment.' Posts cross-link to tool.\n- Weeks 8–12:\n  - Tool starts ranking page 1 for 'quarterly estimated tax calculator freelancer' and 'quarterly self-employment tax deadlines.' Organic traffic: ~1,200 visits/month and climbing.\n\n**Month 4 conversion funnel:**\n- Tool visits (all sources): 1,680.\n- Tool runs: 1,320 (79% run completion).\n- Email captured: 450 (34% of runs).\n- Welcome + bridge sequence: 68 trial starts (15% trial rate).\n- Paid conversions by month 5: 21.\n- MRR attributable to tool: $21 × $49 = $1,029.\n\n**Why the distribution mix worked:** SEO was the long-term engine, but community seeding and blog linkage bought her the first 4–8 weeks of traffic before SEO ramped. Email list share accelerated early adoption. Total $0 spent on distribution — all via owned and community channels.\n\n**What she didn't do:** over-design the tool. It's functional, not beautiful. When she considered adding a second calculator (e.g., annual tax projection), she deferred — she'd rather see the first tool ramp fully before splitting attention. The first tool's compounding effect is still growing; a second would compete for engineering time and SEO authority."
+      },
+      "contrast": {
+        "neighborConceptId": "ch15-bait-and-hook",
+        "explanation": "The bait-and-hook concept describes the mechanism; this concept describes the execution choices that make the mechanism produce results. A perfect bait-hook design still fails if the tool isn't distributed (no traffic), if it gates too early (no capture), or if the bridge is generic (no conversion). Tactics translate the mechanism into a working funnel."
+      },
+      "flashcards": [
+        {
+          "id": "ch15-core-tactics-fc1",
+          "type": "recall",
+          "front": "Name the five tool-selection filters in order of importance.",
+          "back": "(1) Target users = your ICP. (2) Solvable in one session (30–120 seconds). (3) Shareable output. (4) Real search demand (500–5,000 monthly searches). (5) Fast to build (2–4 engineer-weeks)."
+        },
+        {
+          "id": "ch15-core-tactics-fc2",
+          "type": "recognition",
+          "front": "What's the gating principle that consistently produces 20–40% capture rates?",
+          "back": "Gate the NEXT thing, not the tool itself. Run the free scan without signup. Capture email for the detailed report, saved-state, reminders, or extended features — at the moment of demonstrated value."
+        },
+        {
+          "id": "ch15-core-tactics-fc3",
+          "type": "recall",
+          "front": "Name the four distribution channels that feed tool traffic.",
+          "back": "(1) SEO (primary, long-term). (2) Community seeding (Product Hunt, HN, subreddits, niche communities). (3) Blog linkage (internal + guest posts). (4) Email list announcement + welcome sequence."
+        },
+        {
+          "id": "ch15-core-tactics-fc4",
+          "type": "cloze",
+          "front": "Engineering-as-marketing tools should feel ______, ______, and ______ — not beautifully designed. Over-polish eats engineering time that could fund the ______ tool.",
+          "back": "fast ; functional ; trustworthy ; next — a portfolio of 3 good-enough tools usually beats 1 polished tool."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch15-core-tactics-sc1",
+          "setup": "A founder's tool is live. It ranks #3 for its primary query. Traffic is 800/month. Tool runs: 620. Email captures: 18 (2.9%).",
+          "question": "What's broken, and how would you fix it?",
+          "modelAnswer": "The tool and SEO are working — traffic and run rates are healthy. The problem is the capture rate (2.9%, should be 20–40%). Two likely causes: (a) the capture gate is pre-tool (users must enter email before the tool runs), causing most users to abandon the gate; (b) the gate is post-tool but offers something users don't value ('get our newsletter' rather than 'save these calculations + reminders'). Fix: inspect the gate sequence. If pre-tool, move it to post-tool and make it voluntary — tool runs free, results display, and the gate offers a *next thing* of clear value (detailed report, scheduled reminders, saved-over-time tracking). If already post-tool but weakly positioned, rewrite the value prop of what they get for gating. Expected improvement: capture rate should jump 5–10× once gating is optimized. No need to adjust traffic or the tool itself.",
+          "rubric": [
+            "Distinguishes healthy parts (SEO/traffic/runs) from broken part (capture)",
+            "Identifies pre-tool gating as most likely cause",
+            "Alternative diagnosis: weakly positioned post-tool gate",
+            "Prescribes moving/rewriting the gate",
+            "Quantifies expected improvement (5–10× capture)",
+            "Doesn't waste effort on non-problem (SEO, tool quality)"
+          ],
+          "difficulty": 2
+        },
+        {
+          "id": "ch15-core-tactics-sc2",
+          "setup": "A founder's tool has been live 3 months. Zero SEO traffic. 140 total runs, all from a Product Hunt launch in week 1 and their existing email list. They're considering rebuilding the tool with a better design.",
+          "question": "What would you do first instead of rebuilding?",
+          "modelAnswer": "Rebuilding the tool is the wrong first move — it's a design response to a distribution problem. The real issue: no SEO yet. Three months is early for SEO (Ch 12 covers this — 6–12 months is typical for a new page to rank). Plus, the tool page itself may lack SEO basics. Diagnosis steps: (1) verify the tool page has strong on-page SEO (title, H1, meta description, copy explaining the tool, internal links from existing content). (2) check Google Search Console for indexation — is the page indexed? Is it getting impressions at all? (3) check backlinks — does the tool have any? External links accelerate ranking. (4) verify target queries still have real volume. Fixes: strengthen on-page SEO, write 3–5 supporting blog posts linking to the tool with contextual anchor text, earn some external links (guest posts, newsletter mentions). Give it another 2–3 months. If SEO still isn't producing after 6 total months, revisit the tool's fundamental search fit. Do NOT rebuild the tool until you've confirmed the SEO layer is working.",
+          "rubric": [
+            "Rejects 'rebuild' as premature",
+            "Identifies SEO timeline (6–12 months) as context",
+            "Prescribes specific SEO diagnostics (page, indexation, backlinks, queries)",
+            "Recommends supporting blog posts and external links",
+            "Gives a timeline to re-evaluate",
+            "Separates design issues from distribution issues"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Walk through the end-to-end execution of an engineering-as-marketing asset — picking the tool, designing the experience, distributing it, and structuring the conversion path. Cover: (1) tool-selection filters, (2) frictionless design (especially gating), (3) the four distribution channels, and (4) the full funnel from search to paid customer with conversion-rate ranges.",
+        "rubric": [
+          "Lists all five tool-selection filters",
+          "Covers frictionless design and the 'gate the next thing' principle",
+          "All four distribution channels with role (SEO primary, community seeding, blog, email)",
+          "Traces the full funnel with conversion rates",
+          "Notes the over-polish antipattern",
+          "Uses concrete numbers (capture rates, trial rates) where possible"
+        ]
+      }
+    },
+    {
+      "id": "ch15-testing-eng",
+      "chapterId": "ch15",
+      "title": "Testing Engineering as Marketing Cheaply",
+      "isLandmark": false,
+      "order": 5,
+      "pretest": {
+        "prompt": "Engineering-as-marketing has a unique testing problem: the tool takes 2–4 weeks to build, and then SEO takes months to ramp. How do you apply Bullseye's cheap-testing discipline to a channel with a long build and slow signal?",
+        "modelAnswer": "You adjust the test shape. A cheap engineering-as-marketing test is: a smallest-possible tool (1 engineer-week to build), a narrow target query with known volume, and a long enough observation window (8–12 weeks) to see whether the tool captures attention, converts visitors to emails, and emails to trial. Pre-defined thresholds might be: tool page gets any ranking within 12 weeks, 20%+ capture rate from visitors who run the tool, 10%+ trial conversion from captured emails. The principle (cheap, fast-enough, pre-defined thresholds, explicit kill criteria) still holds — but 'fast' is 8–12 weeks, not 2 weeks. You can also test pieces cheaper: a landing page mockup of the tool (not the real tool) can validate search demand and capture rate before building."
+      },
+      "lesson": {
+        "markdown": "## The testing problem\n\nEngineering as marketing breaks Bullseye's week-of-ads testing rhythm. You can't meaningfully evaluate the channel in a week because the tool doesn't exist yet; and even once built, SEO takes months. The cheap-testing principles still apply, but the test shape is different.\n\n## The smallest viable test\n\nThe minimum viable engineering-as-marketing test is a 1-week-engineering-build tool targeting one specific high-intent query, launched with community seeding, and tracked for 8–12 weeks. Budget: $0–$500, primarily opportunity cost of engineer-week.\n\nBefore building, set thresholds:\n\n1. **Capture rate** — at 8 weeks, among users who run the tool, what % opt into the email gate? Target: 20%+.\n2. **Welcome → trial conversion** — at 8 weeks, what % of captured emails convert to main-product trial? Target: 10%+.\n3. **Organic ranking signal** — at 12 weeks, does the tool page rank in the top 30 for any target query? (Ranking top 10 is too much to expect from a first test; top 30 means SEO is working and given more time will likely improve.)\n4. **Qualitative lead quality** — do the captured emails look like your ICP? (Check domains, job titles where available, cohort conversion behavior.)\n\nIf 3 of 4 hit by week 12, the channel is working — scale by building more tools or investing more in the first one's SEO and distribution. If 2+ miss, diagnose which.\n\n## Cheaper tests before building\n\nYou can test pieces of the funnel *without* building the tool:\n\n- **Search demand validation.** Before any code, verify target queries have 500+ monthly searches via keyword tools (ahrefs, semrush, even Google Search Console data if available). If volume isn't there, don't build.\n- **Landing page test.** Build a page that describes the tool's promise without the tool itself. Run small amount of paid traffic ($200 of Google Ads on target keywords) to the page. Measure email-capture rate on a 'notify me when this launches' form. If 15%+ opt in, you've validated capture demand. If 3%, the tool concept isn't resonating.\n- **Manual-Turk tool.** Build a form that emails responses to you; you manually run the calculation; email the result back. This tests whether users want the output enough to wait a day for it. Painful for both sides but proves the demand at near-zero engineering cost.\n\nThese pre-build tests filter weak tool ideas before committing engineer-weeks.\n\n## What kills a test\n\nCommon failure modes and their diagnostic signals:\n\n- **Wrong tool for wrong ICP.** Symptom: tool gets traffic, but captured emails don't look like your customers and don't convert. Fix: rebuild the tool for a different sub-problem.\n- **Good tool, no distribution.** Symptom: tool works but has <100 visits/month after 12 weeks. Fix: distribution, not tool — SEO improvements, community seeding, blog linkage.\n- **Traffic + capture but no conversion.** Symptom: 500 captures, 3 trials. Fix: the hook is weak. Rebuild the bridge from tool output to main product.\n- **Unrankable queries.** Symptom: tool targets queries with big-brand competition (Wikipedia, HubSpot, Moz all rank for the topic). Fix: retarget to longer-tail, less competitive queries.\n\n## Pre-defined kill criteria\n\nBefore building, decide: if by week 12, the tool has <200 visits AND capture rate <10% AND <3 trials, you will kill it and move on to another channel. Don't fall into sunk-cost 'let's just give it another month.' A dead tool at week 12 is usually dead at week 20 unless you materially change distribution or the tool itself — and either of those is effectively starting over.\n\n## When to double down\n\nConversely, if the test clears thresholds, scale aggressively. Two moves pay back:\n\n- **Invest more in the current tool.** Better SEO, more backlinks, broader feature set within the narrow problem, bigger promotional pushes.\n- **Build a second tool.** A portfolio of tools targeting different sub-problems for the same ICP compounds: each tool ranks independently, cross-links amplify SEO, and leads from one tool can be re-targeted by another. Companies like HubSpot run 15+ free tools; each adds marginal lead flow.\n\nDon't split attention until the first tool is clearly working — but once it is, the second tool often pays back even faster than the first.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Pierre runs Blueprint, a $79/mo SaaS for architects. He's testing engineering-as-marketing cheaply. Week 1–2 plan: validate the concept before building.",
+        "walkthrough": "**Week 1 — pre-build validation:**\n- Candidate tools: (a) 'square-footage to cost-per-sf estimator' (b) 'HVAC sizing calculator for residential' (c) 'building-code clearance checker for accessibility.'\n- Keyword research: (a) 5,200 monthly searches (b) 2,100 monthly searches (c) 800 monthly searches.\n- Competition check: (a) dominated by large construction calculators; (b) mostly HVAC-industry sites, surmountable; (c) relatively open.\n- Pierre picks (b) — decent volume, surmountable competition, tight alignment with his architect ICP.\n\n**Week 2 — landing page test:**\n- Builds a single HTML page: 'HVAC Sizing Calculator for Residential — launching soon. Enter your email for early access.' Clean copy explaining what it will do.\n- Runs $150 of Google Ads on 'residential HVAC sizing calculator' → landing page.\n- Results: 86 visits, 18 email captures (21% opt-in rate). Confirms demand.\n- Pre-defined threshold: 15%+ opt-in = go. Passed.\n\n**Weeks 3–4 — build:**\n- 1 engineer, 10 days. Simple form: square footage, ceiling height, climate zone, insulation level, glazing area. Output: BTU requirement + system-size recommendation + a caveat explaining this is a first-pass estimate.\n- Gate: 'Save this estimate + get notified when system changes are needed?' ~30% opt in.\n- Bridge: 'Blueprint's HVAC module updates these numbers automatically as you design. Try it free for 14 days.'\n\n**Weeks 5–12 — observation:**\n- Distribution: announced to 18 pre-launch subscribers; posted on Product Hunt (weak, ~80 visits — architect audience less PH-native); 2 blog posts linking the tool; submitted to 4 architect niche newsletters (2 included it).\n- Traffic trajectory:\n  - Week 5: 120 visits.\n  - Week 8: 380 visits (ranking page 2 for main query).\n  - Week 12: 820 visits (ranking #6 for main query, top 20 for 3 others).\n- Captures: 198 total (32% rate on tool runs).\n- Trial starts: 22 by week 12 (11% rate from captures).\n- Paid conversions: 4 by week 16.\n\n**Threshold scoring at week 12:**\n- Capture rate 32% — PASS.\n- Welcome → trial conversion 11% — PASS.\n- Ranking top 30 for target queries — PASS (top 20 for 3 queries).\n- Lead quality — PASS (most emails are .com domains of architecture firms).\n\n**Decision:** all four thresholds met. Pierre commits to the channel. Moves pay back:\n- More SEO work on the first tool (10 more hours): aim for top 3 by month 6.\n- Second tool: 'building-code clearance checker' — the earlier (c) candidate. Smaller volume but even better ICP fit. Starts week 14.\n- Distribution scale: sponsor 2 architect newsletters at $400 each.\n\n**Counterfactual:** had the test missed thresholds (say, 8% capture + 2% trial + no ranking), Pierre would have killed the tool at week 12, cost: 10 engineer-days + $300 distribution. Cheap for the signal received."
+      },
+      "contrast": {
+        "neighborConceptId": "ch02-cheap-testing",
+        "explanation": "Cheap testing for engineering as marketing differs from paid-ads testing in timeline (weeks, not days) and in the pre-test validation path (you can validate demand before building). The principle — small budget, pre-defined thresholds, explicit kill criteria — is unchanged. Founders often misapply Bullseye's 'one-week test' rule here and either declare the channel failed too early or refuse to test it at all because they can't see signal fast. Neither is correct; the right move is adjusting the test shape to fit the channel's natural signal timeline."
+      },
+      "flashcards": [
+        {
+          "id": "ch15-testing-eng-fc1",
+          "type": "recall",
+          "front": "What's the timeline for a minimum viable engineering-as-marketing test?",
+          "back": "1 engineer-week to build + 8–12 weeks to observe signal. Total ~10–14 weeks. 'Cheap and fast' is channel-relative — paid ads test in days, email in weeks, engineering as marketing in months."
+        },
+        {
+          "id": "ch15-testing-eng-fc2",
+          "type": "recall",
+          "front": "Name three cheaper tests you can run BEFORE building the tool.",
+          "back": "(1) Search demand validation — keyword tools confirm 500+ monthly searches. (2) Landing page test — describe the tool, run $200 of paid traffic, measure opt-in rate on a 'notify me' form. (3) Manual-Turk tool — form emails you, you calculate manually, email back — proves demand at zero engineering cost."
+        },
+        {
+          "id": "ch15-testing-eng-fc3",
+          "type": "cloze",
+          "front": "The four thresholds a minimum viable engineering-as-marketing test targets are: ______ rate, ______ conversion, ______ signal, and ______ quality.",
+          "back": "capture ; trial (or welcome-to-trial) ; organic ranking ; lead — set pre-defined numeric thresholds for each before launching."
+        },
+        {
+          "id": "ch15-testing-eng-fc4",
+          "type": "recognition",
+          "front": "When should you build a SECOND tool vs invest more in the first?",
+          "back": "Don't split attention until the first tool is clearly working (passed thresholds, ranking well, converting consistently). Once the first is producing, a second tool often pays back faster — SEO authority, list-building momentum, and learnings compound. Many mature engineering-as-marketing programs run 10–15+ tools."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch15-testing-eng-sc1",
+          "setup": "A founder ran a landing-page test for a proposed tool: 500 visits from $300 of ads, 3 email captures. They're disappointed but want to go build the tool anyway 'to see if it works with real users.'",
+          "question": "What does the signal say, and what should they do?",
+          "modelAnswer": "Signal: 0.6% capture rate is very weak — for a 'notify me when this launches' form, 15%+ is healthy, 5%+ is marginal, under 3% means the concept isn't resonating. Building the tool anyway is a classic sunk-cost and motivated-reasoning move. If 500 people visited the landing page and only 3 cared enough to enter an email, the problem is upstream: either the concept isn't interesting, the landing page copy didn't communicate value, or the target query doesn't actually match the users they targeted. Going ahead to build would likely burn 2–4 engineer-weeks on a tool that's already shown weak demand signal — that's exactly what cheap testing is supposed to prevent. What to do instead: (a) test a different tool concept for the same ICP; (b) check whether the ad targeting was wrong; (c) rewrite the landing page and re-test. Don't let sunk-cost reasoning push you into the build.",
+          "rubric": [
+            "Identifies 0.6% as a clear failure signal",
+            "Quantifies what healthy capture rates should look like",
+            "Rejects 'build anyway' as sunk-cost reasoning",
+            "Prescribes specific alternatives (new concept, new targeting, rewrite)",
+            "Connects the moment to Bullseye's cheap-testing discipline",
+            "Doesn't enable the motivated-reasoning move"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch15-testing-eng-sc2",
+          "setup": "A founder's tool test is at week 8. Thresholds: capture 25% (pass), trial 14% (pass), but ranking is nowhere — the tool page isn't in the top 100 for target queries. Organic traffic: 40/month. They want to kill the tool.",
+          "question": "Is killing the right move? What else could be going on?",
+          "modelAnswer": "Premature. SEO at 8 weeks is early (Ch 12: typical meaningful ranking takes 3–6 months minimum). Two of three thresholds already pass — capture and trial conversion are in the high range. The bait-and-hook mechanism is working on the users who do reach the tool. The issue is distribution — not enough traffic yet, and SEO hasn't kicked in. What to investigate before killing: (1) is the tool page even indexed? Check Google Search Console. (2) are there any external backlinks? Probably few — write supporting blog posts, get links from niche communities, submit to aggregators. (3) is the on-page SEO correct? Title, H1, meta description, descriptive copy above the tool. Fixes here are 1-week lightweight work. (4) run the observation window to 16 weeks (an extra 8 weeks) and reassess. If at 16 weeks still no ranking AND traffic still nowhere, then kill. But given capture and trial are passing on existing low traffic, the unit economics for scaled traffic look promising — it'd be a mistake to abandon now.",
+          "rubric": [
+            "Rejects premature kill",
+            "Identifies SEO timeline as relevant context",
+            "Notes that 2 of 3 thresholds pass and that's the right signal to interpret",
+            "Prescribes SEO/distribution investigation before killing",
+            "Sets new re-evaluation window (16 weeks)",
+            "Connects passing capture + trial to promising unit economics at scale"
+          ],
+          "difficulty": 3
+        }
+      ],
+      "teachback": {
+        "prompt": "Design a cheap test of engineering-as-marketing for a B2B SaaS company. Cover: (1) pre-build validation options, (2) the four thresholds with specific numeric targets, (3) the observation timeline, (4) what each failure pattern would point to as next step.",
+        "rubric": [
+          "Covers pre-build validation (keyword, landing page, manual-Turk)",
+          "Names all 4 thresholds with reasonable numeric targets",
+          "Timeline: 8–12 weeks observation, acknowledges SEO ramp time",
+          "At least 2 failure patterns with specific fixes",
+          "Distinguishes test-mechanism failures from channel-fit failures",
+          "Predefined kill criteria articulated"
+        ]
+      }
+    },
+    {
+      "id": "ch15-eng-pitfalls",
+      "chapterId": "ch15",
+      "title": "Pitfalls: How Engineering-as-Marketing Tools Fail",
+      "isLandmark": false,
+      "order": 6,
+      "pretest": {
+        "prompt": "Engineering-as-marketing looks clean on paper but fails in predictable ways. Before reading: list the three most common execution failures you think lead companies to burn engineering time without generating leads. What do they each look like from the outside?",
+        "modelAnswer": "Three common failures: (1) building a tool that's too broad — becomes a free version of the main product, cannibalizes rather than funnels. Looks like: decent usage, flat or negative conversion to paid. (2) no bridge from tool to main product — the tool exists in isolation, users leave without discovering the main product. Looks like: high traffic and usage, zero downstream conversion. (3) gating too early — signup wall before the tool does anything, users bounce before seeing value. Looks like: lots of impressions, tiny run-through rates, tiny capture. A fourth: targeting unsearched queries — the tool works but nobody finds it because the sub-problem isn't Googled. Looks like: perfect tool, 30 monthly visits, lots of sadness."
+      },
+      "lesson": {
+        "markdown": "## Five failure modes\n\n### 1. Tool too broad (cannibalization)\n\nThe founder builds a free tool that's essentially a stripped-down version of the main product. Users get 80% of what the paid product offers at no cost, and the conversion-to-paid rate is minuscule because there's no reason to upgrade. Classic symptom: decent usage, flat conversion.\n\nFix: narrow scope. The tool solves ONE painful sub-problem, not a mini-workflow. HubSpot's Website Grader doesn't try to be a full marketing suite; it scores one page on SEO and reports issues. The narrow scope creates the gap that the main product fills.\n\n### 2. No bridge to main product\n\nThe tool is genuinely useful and popular — and disconnected from the main product. Users complete the task, leave with their result, and never encounter the paid offering. Symptom: traffic and usage without downstream conversion. Often caused by a team that builds the tool as a 'value-add to the community' without designing the funnel.\n\nFix: design the bridge before you build the tool. Specifically: (a) the tool's output should naturally suggest the next step; (b) an explicit CTA connects the solved-problem moment to a main-product trial or relevant content; (c) the welcome sequence after email capture is conversion-oriented, not purely educational.\n\n### 3. Gating too early\n\nSignup wall before the tool runs: 'Enter your email to use our free calculator.' Users don't know if the tool works, don't trust an unknown brand, and bounce. Symptom: high page views, very low tool-run rate, very low capture.\n\nFix: zero friction before value. Run the free tool without signup. Capture email at the moment of delivered value — for the detailed report, save-for-later, reminders, etc. Capture rates typically go from 2–5% to 20–40% when the gate moves.\n\n### 4. Targeting unsearched queries\n\nThe tool solves a real problem that nobody actually searches for. The problem is too internal, too jargon-specific, or too abstract to become a Google query. Symptom: tool works fine, produces good output, gets 30 visits a month forever.\n\nFix: keyword research BEFORE building. Confirm target queries have 500+ monthly searches in your target market. If not, either pick a different sub-problem or accept that SEO won't be the primary distribution channel (in which case the tool needs a different growth mechanism — viral output-sharing, in-product integration, etc.).\n\n### 5. Over-investment in polish\n\nThe team spends 3 months perfecting the tool's design, animation, and edge cases when 2 weeks of shipping would have been enough. Perfect becomes the enemy of shipped. By the time it launches, the engineer-month cost is much higher than the channel's returns justify. Symptom: tool ships late, is pretty, produces modest leads, and the team has no bandwidth for a second tool.\n\nFix: ship at 70% polish. Tools should feel fast, functional, and trustworthy — not beautiful. Reserve polish for the small number of surfaces that demonstrably move conversion (the bridge CTA, the tool's core output, the gate). Everything else: ship it and move on.\n\n## Secondary failures worth knowing\n\n- **Tool rots.** Product changes make the tool's output misleading or wrong; nobody updates it. Users lose trust. Fix: ownership and a quarterly health-check cadence.\n- **Maintenance debt.** Contractor-built tools with no in-house takeover become zombies — still live, nobody can fix bugs. Fix: assign in-house ownership from day one.\n- **SEO cannibalization.** A new tool competes with your main product's pages for the same keywords. Fix: keyword strategy that differentiates tool pages from product pages.\n\n## Prevention checklist\n\nBefore shipping, answer:\n\n1. Does the tool solve one narrow sub-problem (not a mini-workflow)?\n2. Is the bridge from tool output to main product specific and natural?\n3. Is there zero gating before the tool delivers value?\n4. Do target queries have 500+ monthly searches?\n5. Is polish within the 70%/shipping-date envelope?\n6. Is there an in-house owner for maintenance?\n\nSix 'yes'es and you've avoided the predictable failure modes. Most missed tools miss on two or three of these.",
+        "readingTimeMin": 3
+      },
+      "workedExample": {
+        "setup": "Aaliyah's quarterly-tax-calculator tool has been live for 9 months. Usage has plateaued at 1,200/month. She's seeing something concerning: conversion from captured emails to trial dropped from 15% at launch to 6% currently. She investigates.",
+        "walkthrough": "Pitfall-checking:\n\n**Tool too broad?** No. The tool still solves only quarterly tax calculation. Clean scope.\n\n**No bridge?** Bridge still exists in the report CTA, but… examining the CTA copy, she notices it was written when Ledgerbook had a simpler onboarding. Since then the main product added more features and the CTA page hasn't been updated — it still describes the earlier, less compelling version of the product. The user journey from 'tax calculation done' to 'want automatic tracking' doesn't communicate the current product's actual value.\n\n**Gating too early?** No. Gate is post-tool, voluntary, working.\n\n**Unsearched queries?** No. Tool still ranks well; traffic is healthy.\n\n**Over-polish?** Not anymore — if anything the tool needs an update to reflect current tax-law changes (2025 brackets aren't loaded).\n\n**Tool rot?** YES. Two issues: (a) the 2025 tax brackets weren't updated — the tool shows 2024 numbers. Some users are catching this in the output copy and losing trust. (b) the CTA points at an outdated product explanation.\n\n**Maintenance debt?** Pierre, the engineer who built it, switched teams 6 months ago. Nobody was assigned to maintain the tool. This is the root cause of both (a) and (b).\n\n**Intervention:**\n- Week 1: assign Maya (new engineer) as the tool's maintenance owner. Update 2025 tax brackets. Add a 'last updated' date visible in the tool footer.\n- Week 2: rewrite the bridge CTA with current product copy. Update the landing page the CTA points to.\n- Week 3: monitor.\n\n**Result after 6 weeks:**\n- Email→trial conversion recovers to 12% (from 6%).\n- Usage increases 18% as updated content ranks slightly higher.\n- The tool is now owned by Maya with a quarterly update cadence: check tax-law changes, review bridge copy, inspect analytics for degradation. Projected lifespan: years, not months.\n\n**Lesson:** the tool didn't fail in a dramatic way. It rotted quietly. No single alert fired. The conversion drop from 15% to 6% happened gradually as the tool and the main product drifted apart. Without an owner, it would have kept decaying until someone killed it assuming the 'tool doesn't work anymore.'"
+      },
+      "contrast": {
+        "neighborConceptId": "ch15-bait-and-hook",
+        "explanation": "The bait-and-hook concept describes the mechanism in its working state; pitfalls describe how the mechanism breaks. Most failures are specific failures of one piece: bait too broad (the tool part), no bridge (the hook part), gating too early (the capture point between bait and hook). A quiet fifth — tool rot — is a failure of the asset-maintenance *around* the bait-and-hook. Each mode has specific symptoms and specific fixes; understanding the mechanism makes diagnosis fast."
+      },
+      "flashcards": [
+        {
+          "id": "ch15-eng-pitfalls-fc1",
+          "type": "recall",
+          "front": "Name the five common engineering-as-marketing pitfalls.",
+          "back": "(1) Tool too broad — cannibalization. (2) No bridge to main product — traffic without conversion. (3) Gating too early — users bounce before value. (4) Targeting unsearched queries — good tool, no traffic. (5) Over-investment in polish — perfect becomes the enemy of shipped."
+        },
+        {
+          "id": "ch15-eng-pitfalls-fc2",
+          "type": "recognition",
+          "front": "What's the symptom of a tool that's 'too broad'?",
+          "back": "Decent usage, flat or negative conversion to paid. Users get most of what they need from the free tool and have no reason to upgrade. The tool cannibalizes revenue instead of funneling to it."
+        },
+        {
+          "id": "ch15-eng-pitfalls-fc3",
+          "type": "recall",
+          "front": "What specifically changes when you move a gate from pre-tool to post-tool?",
+          "back": "Capture rate typically goes from 2–5% to 20–40%. Users are far more willing to give an email after the tool has delivered value than before. Gate the NEXT thing (detailed report, save, reminders) not the tool itself."
+        },
+        {
+          "id": "ch15-eng-pitfalls-fc4",
+          "type": "cloze",
+          "front": "Tools need an ______ and a ______ update cadence to prevent rot. Without it, output becomes misleading, bridge CTAs drift from product reality, and conversion quietly ______.",
+          "back": "owner ; quarterly ; decays (or declines) — rot is a slow failure mode that's hard to detect without active maintenance."
+        },
+        {
+          "id": "ch15-eng-pitfalls-fc5",
+          "type": "recall",
+          "front": "List the six-item prevention checklist for engineering-as-marketing tools.",
+          "back": "(1) One narrow sub-problem, not a mini-workflow. (2) Specific natural bridge to main product. (3) Zero gating before value delivered. (4) Target queries have 500+ monthly searches. (5) Within 70%-polish shipping envelope. (6) In-house maintenance owner assigned."
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "ch15-eng-pitfalls-sc1",
+          "setup": "A company ships a free tool. Three months in: 3,000 monthly visits, 90% tool-run completion, only 4% email capture rate.",
+          "question": "What's wrong, and what's the single change most likely to help?",
+          "modelAnswer": "Symptom points directly at the gating failure mode: high traffic, high run completion (bait works), low capture. Most likely cause: the gate is poorly positioned or poorly framed. Possibilities: (a) gate is pre-tool and the 4% capture is the run-completion *of people who already gated*, not the capture rate of users; (b) gate is post-tool but offers something users don't value ('sign up for our newsletter'); (c) gate is visually buried and many users miss it. Single change most likely to help: redesign the gate to offer a specific valuable *next thing* at the moment of tool completion — 'Email me the full PDF report + set quarterly reminders' instead of 'subscribe to our newsletter.' Expected improvement: 4% to 20–30%. If this doesn't work, the tool's output isn't perceived as valuable enough to trade an email for — that's a deeper bait problem.",
+          "rubric": [
+            "Identifies gating as the specific failure mode",
+            "Lists the possible gating problems (pre-tool, weak offer, buried)",
+            "Prescribes a specific single change (reframe gate as valuable next-thing)",
+            "Quantifies expected improvement",
+            "Names the fallback diagnosis if the change doesn't work",
+            "Doesn't suggest traffic changes (traffic is fine)"
+          ],
+          "difficulty": 1
+        },
+        {
+          "id": "ch15-eng-pitfalls-sc2",
+          "setup": "A company built a free tool 14 months ago. It was their founder's pet project. Metrics trending down: traffic 900 → 400/month, conversion 10% → 3%. The founder moved on to another project and nobody owns it.",
+          "question": "Work through the diagnosis and fix.",
+          "modelAnswer": "Almost certainly tool rot. 14-month-old asset with no owner, downward trends across traffic and conversion simultaneously — classic decay pattern. Likely causes: (1) the tool's content has gone stale (outdated data, deprecated features, changed edge cases); (2) SEO has slipped as competitors have built better-ranking alternatives and the tool's page hasn't been updated or enriched; (3) the bridge CTA points at outdated product copy that no longer describes current features; (4) analytics setup may have drifted (tracking broken, attribution off). Fix: (1) Assign an owner (eng or marketing) with a quarterly-review cadence. (2) First audit: refresh content, update data, check bridge copy against current product, run SEO health-check, verify analytics. Expect 2–3 engineer-weeks for the audit. (3) After fix, re-evaluate in 3 months. Traffic may recover slowly (SEO momentum takes time to rebuild); conversion should recover faster (better bridge copy and relevant CTAs fix within days). Killing the tool is premature — a maintained version is still a compounding asset.",
+          "rubric": [
+            "Identifies rot as the diagnosis",
+            "Names specific rot mechanisms (content stale, SEO drift, bridge outdated, analytics drift)",
+            "Prescribes owner assignment + quarterly cadence",
+            "Specifies a concrete audit scope",
+            "Expected recovery timeline is correct (conversion fast, SEO slow)",
+            "Rejects premature kill"
+          ],
+          "difficulty": 2
+        }
+      ],
+      "teachback": {
+        "prompt": "Explain to an engineering manager the five predictable ways engineering-as-marketing tools fail, and for each give (a) the symptom from outside, (b) the root cause, and (c) the specific fix. End with the six-item prevention checklist.",
+        "rubric": [
+          "All five failure modes with symptom / cause / fix triples",
+          "Tool-too-broad: cannibalization vs funnel",
+          "No-bridge: traffic without conversion",
+          "Gating-early: capture rate collapse",
+          "Unsearched-queries: SEO demand check",
+          "Over-polish: shipping velocity",
+          "Six-item prevention checklist correct and in order",
+          "Uses concrete numbers where useful (capture rate ranges, search volume floors)"
+        ]
+      }
+    }
+  ]
+}
