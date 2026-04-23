@@ -4,11 +4,13 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Chapter } from "@/lib/types";
 import { dueCount, masteryByConcept } from "@/lib/srs";
+import { db } from "@/lib/db";
 import type { FlashcardWithContext } from "./study/FlashcardReview";
 
 interface ChapterProgress {
   dueCount: number;
   landmarkMastery: number; // 0-1
+  completed: boolean;
 }
 
 export default function DashboardClient({
@@ -38,6 +40,8 @@ export default function DashboardClient({
         );
 
         const globalDue = await dueCount(universe);
+        const completions = await db().chapterCompletions.toArray();
+        const completedIds = new Set(completions.map((c) => c.chapterId));
 
         const perChapter: Record<string, ChapterProgress> = {};
         for (const ch of chapters) {
@@ -56,6 +60,7 @@ export default function DashboardClient({
           perChapter[ch.id] = {
             dueCount: due,
             landmarkMastery: avgMastery,
+            completed: completedIds.has(ch.id),
           };
         }
 
@@ -140,8 +145,18 @@ export default function DashboardClient({
                       CH{String(ch.number).padStart(2, "0")}
                     </span>
                     <div className="min-w-0">
-                      <div className="text-[14px] font-medium truncate">
-                        {ch.title}
+                      <div className="flex items-center gap-2">
+                        <div className="text-[14px] font-medium truncate">
+                          {ch.title}
+                        </div>
+                        {prog?.completed && (
+                          <span
+                            className="text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-[var(--accent)]/15 text-[var(--accent)] shrink-0"
+                            title="Chapter marked complete"
+                          >
+                            ✓ Complete
+                          </span>
+                        )}
                       </div>
                       <div className="text-[12px] text-[var(--muted)] truncate">
                         {ch.concepts.length} concepts ·{" "}
