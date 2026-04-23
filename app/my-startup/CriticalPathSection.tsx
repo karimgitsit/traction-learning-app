@@ -72,10 +72,22 @@ export default function CriticalPathSection({
                 const swapIdx = idx + dir;
                 if (swapIdx < 0 || swapIdx >= milestones.length) return;
                 const other = milestones[swapIdx];
-                await db().criticalPathMilestones.bulkPut([
-                  { ...m, order: other.order, updatedAt: Date.now() },
-                  { ...other, order: m.order, updatedAt: Date.now() },
-                ]);
+                const now = Date.now();
+                // Partial update so in-flight edits on either row are preserved.
+                await db().transaction(
+                  "rw",
+                  db().criticalPathMilestones,
+                  async () => {
+                    await db().criticalPathMilestones.update(m.id, {
+                      order: other.order,
+                      updatedAt: now,
+                    });
+                    await db().criticalPathMilestones.update(other.id, {
+                      order: m.order,
+                      updatedAt: now,
+                    });
+                  }
+                );
                 onChange();
               }}
             />
