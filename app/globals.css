@@ -8,6 +8,54 @@
   --accent: #3b82f6;
   --surface: #111113;
   --surface-hover: #18181b;
+  --strong: #fafafa;
+}
+
+/* Light theme */
+html[data-theme="light"] {
+  --background: #fafafa;
+  --foreground: #18181b;
+  --muted: #71717a;
+  --border: #e4e4e7;
+  --surface: #ffffff;
+  --surface-hover: #f4f4f5;
+  --strong: #09090b;
+}
+
+/* System theme — light when OS prefers light */
+@media (prefers-color-scheme: light) {
+  html[data-theme="system"] {
+    --background: #fafafa;
+    --foreground: #18181b;
+    --muted: #71717a;
+    --border: #e4e4e7;
+    --surface: #ffffff;
+    --surface-hover: #f4f4f5;
+    --strong: #09090b;
+  }
+}
+
+/* Accent colors */
+html[data-accent="green"] {
+  --accent: #10b981;
+}
+html[data-accent="purple"] {
+  --accent: #8b5cf6;
+}
+html[data-accent="orange"] {
+  --accent: #f97316;
+}
+html[data-accent="rose"] {
+  --accent: #f43f5e;
+}
+
+/* Font size scale — uses `zoom` so the entire UI (including pixel-locked
+   sizes throughout the app) scales proportionally. */
+html[data-font-size="small"] body {
+  zoom: 0.9;
+}
+html[data-font-size="large"] body {
+  zoom: 1.125;
 }
 
 @theme inline {
