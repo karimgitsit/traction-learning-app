@@ -76,6 +76,16 @@ export default function DashboardClient({
     };
   }, [chapters]);
 
+  const nextChapter = chapters.find(
+    (ch) => !stats?.perChapter[ch.id]?.completed
+  );
+  const continueHref = nextChapter
+    ? `/study?chapter=${nextChapter.slug}`
+    : "/study";
+  const continueLabel = nextChapter
+    ? `CH${String(nextChapter.number).padStart(2, "0")} · ${nextChapter.title}`
+    : "all chapters complete";
+
   return (
     <>
       {/* Action bar */}
@@ -96,7 +106,7 @@ export default function DashboardClient({
         </Link>
 
         <Link
-          href="/study"
+          href={continueHref}
           className="border border-[var(--border)] rounded-md p-4 hover:bg-[var(--surface-hover)] transition flex flex-col"
         >
           <div className="text-[10px] uppercase tracking-wider text-[var(--muted)]">
@@ -104,7 +114,7 @@ export default function DashboardClient({
           </div>
           <div className="text-xl font-semibold mt-1">Continue</div>
           <div className="text-[11px] text-[var(--muted)] mt-0.5">
-            next chapter session
+            {continueLabel}
           </div>
         </Link>
 
@@ -173,7 +183,7 @@ export default function DashboardClient({
                   <div className="flex items-center gap-3 shrink-0 ml-3">
                     <div className="hidden sm:flex flex-col items-end min-w-[80px]">
                       <div className="text-[11px] text-[var(--muted)] font-mono">
-                        {masteryPct}%
+                        Mastery {masteryPct}%
                       </div>
                       <div className="mt-0.5 h-1 w-20 rounded-full bg-[var(--border)] overflow-hidden">
                         <div
