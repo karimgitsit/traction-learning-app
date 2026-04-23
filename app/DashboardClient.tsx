@@ -109,15 +109,15 @@ export default function DashboardClient({
         </Link>
 
         <Link
-          href="/journal"
+          href="/my-startup"
           className="border border-[var(--border)] rounded-md p-4 hover:bg-[var(--surface-hover)] transition flex flex-col"
         >
           <div className="text-[10px] uppercase tracking-wider text-[var(--muted)]">
-            Journal
+            My Startup
           </div>
-          <div className="text-xl font-semibold mt-1">Reflect</div>
+          <div className="text-xl font-semibold mt-1">Apply</div>
           <div className="text-[11px] text-[var(--muted)] mt-0.5">
-            review past entries
+            channels, experiments, critical path
           </div>
         </Link>
       </section>

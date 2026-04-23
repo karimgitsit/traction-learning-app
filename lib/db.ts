@@ -52,6 +52,55 @@ export interface ChapterCompletionRow {
   completedAt: number;
 }
 
+export interface StartupProfileRow {
+  id: string;             // "profile" — singleton
+  name: string;
+  oneLiner: string;
+  stage: string;
+  targetCustomer: string;
+  tractionGoal: string;
+  updatedAt: number;
+}
+
+export type BullseyeRing = "none" | "outer" | "middle" | "inner" | "core";
+
+export interface ChannelIdeaRow {
+  id: string;             // chapterId — one row per channel chapter
+  chapterId: string;
+  ring: BullseyeRing;
+  ideas: string;
+  updatedAt: number;
+}
+
+export type ExperimentStatus = "planned" | "running" | "done";
+
+export interface ChannelExperimentRow {
+  id: string;             // uuid
+  chapterId: string;      // which channel this tests (may be empty for custom)
+  channelLabel: string;   // display label (channel title or free text)
+  hypothesis: string;
+  test: string;
+  cost: string;
+  metric: string;
+  result: string;
+  learning: string;
+  status: ExperimentStatus;
+  createdAt: number;
+  updatedAt: number;
+}
+
+export type MilestoneStatus = "todo" | "doing" | "done";
+
+export interface CriticalPathMilestoneRow {
+  id: string;             // uuid
+  title: string;
+  notes: string;
+  targetDate: string;     // free-text or YYYY-MM-DD
+  status: MilestoneStatus;
+  order: number;
+  updatedAt: number;
+}
+
 export class TractionDB extends Dexie {
   fsrsCards!: Table<FsrsCardRow, string>;
   scenarioAttempts!: Table<ScenarioAttemptRow, string>;
@@ -59,6 +108,10 @@ export class TractionDB extends Dexie {
   journalEntries!: Table<JournalEntryRow, string>;
   sessions!: Table<SessionRow, string>;
   chapterCompletions!: Table<ChapterCompletionRow, string>;
+  startupProfiles!: Table<StartupProfileRow, string>;
+  channelIdeas!: Table<ChannelIdeaRow, string>;
+  channelExperiments!: Table<ChannelExperimentRow, string>;
+  criticalPathMilestones!: Table<CriticalPathMilestoneRow, string>;
 
   constructor() {
     super("traction");
@@ -71,6 +124,12 @@ export class TractionDB extends Dexie {
     });
     this.version(2).stores({
       chapterCompletions: "id, chapterId, completedAt",
+    });
+    this.version(3).stores({
+      startupProfiles: "id, updatedAt",
+      channelIdeas: "id, chapterId, ring, updatedAt",
+      channelExperiments: "id, chapterId, status, updatedAt",
+      criticalPathMilestones: "id, order, status, updatedAt",
     });
   }
 }
