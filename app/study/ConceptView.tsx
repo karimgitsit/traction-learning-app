@@ -293,6 +293,12 @@ function Teachback({
                 href="https://claude.ai/new"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  navigator.clipboard
+                    .writeText(buildPrompt())
+                    .then(() => setCopyState("ok"))
+                    .catch(() => setCopyState("error"));
+                }}
                 className="text-[13px] px-3 py-1.5 rounded bg-[var(--accent)] text-white hover:opacity-90"
               >
                 Open claude.ai →
