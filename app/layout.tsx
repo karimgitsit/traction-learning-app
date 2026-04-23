@@ -50,8 +50,8 @@ function TopNav() {
           <Link href="/library" className="hover:text-[var(--foreground)]">
             Library
           </Link>
-          <Link href="/journal" className="hover:text-[var(--foreground)]">
-            Journal
+          <Link href="/my-startup" className="hover:text-[var(--foreground)]">
+            My Startup
           </Link>
           <Link
             href="/settings"
