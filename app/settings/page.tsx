@@ -6,9 +6,7 @@ export default function SettingsPage() {
       <header className="mb-8">
         <h1 className="text-2xl font-semibold tracking-tight mb-2">Settings</h1>
         <p className="text-[13px] text-[var(--muted)]">
-          Local progress data (flashcard reviews, scenario attempts, journal
-          entries) lives in your browser&apos;s IndexedDB. Use these tools to
-          inspect or reset it.
+          Customize the look and feel, or manage your local progress data.
         </p>
       </header>
 
